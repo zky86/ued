@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>圆角投影</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<style>
+*{ padding:0; margin:0}
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+ textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:20px; }
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="content">
+
+	<h1>下拉渐变</h1>
+
+	<p>Tips：请用火狐，或者谷歌，或者支持 html5 css3 浏览器对比查看效果。</p>		
+	<br  />	
+
+
+
+    <div class="info_box">
+          <a href="#" class="img_box"><img src="images/lj_2.jpg"></a>
+            <ul class="txt_box">
+                <li><a href="#">用户名</a></li>
+                <li><a href="#">用户信息</a></li>
+            </ul>
+    </div>
+<br  />
+<br  />	
+<br  />
+<br  />	
+<textarea name="" cols="80" rows="15">
+
+
+/* ======================= html ====================== */
+
+    <div class="info_box">
+          <a href="#" class="img_box"><img src="images/lj_2.jpg"></a>
+            <ul class="txt_box">
+                <li><a href="#">用户名</a></li>
+                <li><a href="#">用户信息</a></li>
+            </ul>
+    </div>
+
+</textarea>
+	<br  />	
+
+<br  />
+<br  />
+<textarea name="" cols="80" rows="25">
+
+
+/* ======================= css ====================== */
+
+
+.info_box {width:64px;font-size:12px;}
+.info_box .img_box{z-index:99;position:relative;display:block;}
+.info_box .txt_box {
+	background:url(../images/icon_11x6.png) no-repeat center top;padding-top:6px;margin-top:-60px;
+    opacity:0;
+    visibility:hidden;
+}
+.info_box:hover .txt_box {
+    opacity:1;
+    visibility:visible;
+	margin-top:5px;
+	-webkit-transition:all .1s ease-in .1s;
+    -moz-transition:all .1s ease-in .1s;
+    -o-transition:all .1s ease-in .1s;
+    transition:all .1s ease-in .1s;
+}
+.info_box .txt_box li{width:62px;text-align:center;background:#191919;height:30px;line-height:30px;list-style-type:none;-moz-box-shadow:2px 2px 2px #333333; -webkit-box-shadow:2px 2px 2px #333333; box-shadow:2px 2px 2px #333333;}
+.info_box .txt_box li a{display:block;color:#fff;text-decoration:none;}
+.info_box .txt_box li a:hover{background:#333333;text-decoration:none;}
+
+
+</textarea>
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

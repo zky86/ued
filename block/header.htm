@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>页头与页尾</title>
+<style type="text/css">
+*{ padding:0; margin:0}
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+</style>
+</head>
+
+<body>
+<div class="content">
+    <h1>页头与页尾</h1>
+    <ul>
+    	<li>请参考：<a href="http://www.poco.cn/module_common/header/test.php" target="_blank">页头</a> <a href="http://www.poco.cn/module_common/footer/test.php" target="_blank">页尾</a></li>
+        <li>
+<pre>
+<strong>页头使用方法：</strong>
+// 是否直接输出页头内容，缺省为否
+// define("G_POCO_MODULE_HEADER_OUTPUT", 1); 
+// 更改页头logo
+$header_logo = 'http://model.poco.cn/images/index_v2/header_logo.gif';
+// 加载页头
+include_once('/disk/data/htdocs233/poco_main/module_common/header/header.php');
+$tpl->assign("header", $_POCO_MODULE_HEADER);
+</pre>
+        </li>
+                <li>
+<pre>
+<strong>页尾使用方法：</strong>
+// 是否直接输出页尾内容，缺省为否
+// define("G_POCO_MODULE_FOOTER_OUTPUT", 1); 
+// 加载页尾
+include_once('/disk/data/htdocs233/poco_main/module_common/footer/footer.php');
+$tpl->assign("footer", $_POCO_MODULE_FOOTER);
+</pre>
+        </li>
+    </ul>
+    <h2>1.页头</h2>
+    <pre>
+    以下为常用样式，未列举的请参考<a href="http://svn.poco.cn/poco_css/view-css.php?f=header" target="_blank">header.css</a>
+    
+    <strong>更改左侧三个连接的样式</strong>
+         .header_link {
+             top: 56px;
+             left: 0;
+             width: 412px;
+             height: 61px;
+             background: url(header_link_bg.gif) left top no-repeat;
+         }
+        .header_link_1，.header_link_2，.header_link_3 分别对应三个连接
+    <strong>更改快捷链接文字样式</strong>
+        .quick_link li {
+            color: #FFF;
+        }
+        .quick_link a {
+            color: #FFF;
+            text-decoration: none;
+        }
+    <strong>更改主菜单文字样式</strong>
+        .menu li {
+            color: #000;
+        }
+        .menu li a {
+            text-decoration: none;
+        }
+    <strong>更改二级菜单样式</strong>
+        /* 改变下拉菜单的箭头 */
+        .submenu {
+            background: url(../images/index_v2/submenu_triangle.gif) center top no-repeat; 
+        }
+        /* 改变下拉菜单背景色 */
+        .submenu ul{
+            background-color: #FF0099;
+        }
+        /* 改变下拉菜单分隔条样式 */
+        .submenu li {
+            border-bottom: #000 dashed 1px;
+        }
+        /* 改变下拉菜单链接样式 */
+        .submenu li a {
+            text-decoration: none;
+        }
+    <strong>更改主导航样式</strong>
+        .header_mainnav li {
+            color: #000;
+        }
+        .header_mainnav li a {
+            text-decoration: none;
+            color: #000; 
+        }
+    </pre>
+    <h2>2.页尾</h2>
+    <pre>
+    以下为常用样式，未列举的请参考<a href="http://svn.poco.cn/poco_css/view-css.php?f=footer" target="_blank">footer.css</a>
+    
+    //============================搜索区域部分=======================//
+    <strong>页尾需要用到背景的都写在这里，方便修改</strong>
+	#footer_search .footer_search_main,
+	#footer_search .footer_btn_search,
+	#footer_search .footer_link_top,
+	#footer .sitemap_my,
+	#footer .sitemap_help {
+		background-image: url(http://www.poco.cn/module_common/footer/footer_bg.jpg);
+	}   
+    <strong>搜索区域背景色(一般设置为与body相同的背景色)</strong>
+         #footer_search,
+         #footer_search .footer_search_main {
+             background-color: #FF0099;
+         }
+    <strong>搜索标签样式</strong>
+        #footer_search .footer_search_main li { 
+             color: #FFF;
+        }
+    <strong>当前搜索标签样式</strong>
+        #footer_search .current_search_tag { 
+             background-color: #FF64BB;
+        }
+    <strong>热门关注样式</strong>
+        #footer_search .footer_hot_concern { 
+             color: #FFF;
+        }
+        #footer_search .footer_hot_concern a {
+             color: #FFF;
+             text-decoration: underline;
+        }
+    //============================sitemap部分=======================//
+    <strong>标题样式</strong>
+        #footer .sitemap strong {
+             color: #FF0099;
+        }
+    <strong>链接样式</strong>
+        #footer .sitemap a {
+             color: #000;
+        }
+    </pre>
+</div>
+</body>
+</html>

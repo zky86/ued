@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>常用布局 layout.css</title>
+<style type="text/css">
+*{ padding:0; margin:0}
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff;}
+</style>
+</head>
+
+<body>
+<div id="wrapper" class="content">
+  <h1>常用布局 layout.css</h1>
+  <pre>
+  <h2>清除浮动 .clearfix</h2>
+  <textarea cols="80" rows="5">
+  <div class="clearfix">
+        <div class="fl">左浮动</div>
+        <div class="fr">右浮动</div>
+  </div>
+  </textarea>
+  <h2>浮动</h2>
+      左浮动：.fl
+      右浮动：.fr
+  </pre>
+  
+  
+  
+  <pre>
+  <h2>常用布局2,命名改变</h2>
+  <textarea cols="80" rows="15">
+  
+  ================= html ========================
+  
+  <div class="fatherBox clearfix">
+        <div class="son_left">左浮动</div>
+        <div class="son_right">右浮动</div>
+  </div>
+  
+  
+  ================= css ========================
+  .fatherBox{}
+  .fatherBox .son_left{ float:left}
+  .fatherBox .son_right{ float: left}
+  
+  
+  </textarea>
+
+  </pre>
+</div>
+</body>
+</html>

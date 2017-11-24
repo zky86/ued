@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>站内翻页</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="css/zt.css" media="all" />
+<style>
+
+.contentwrap {width: 1000px;margin: 0 auto; line-height:22px; font-size:12px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; margin-bottom:25px}
+
+</style>
+
+<body>
+<div class="contentwrap">
+<!--弹出-->
+<h1>站内翻页</h1>
+
+<!--翻页-->
+<div class="wrap_btn clearfix">
+	<div  class="page_btn"><a class="page_back" href="javascript:void(0)"> < 上一页</a></div>
+	<div class="centersty">
+		<div  class="listpage_cor clearfix"> 
+		<a class="click" >1</a>
+		<a  href="javascript:void(0)">2</a>
+		<a  href="javascript:void(0)">3</a>
+		<a  href="javascript:void(0)">4</a>
+		<a  href="javascript:void(0)">5</a>
+		<a  href="javascript:void(0)">6</a>
+		<a  href="javascript:void(0)">7</a>
+		<a  href="javascript:void(0)">8</a>
+		<a  href="javascript:void(0)">9</a> </div>
+	</div>
+	<div class="page_btn"><a class="page_next" href="javascript:void(0)">下一页 ></a></div>
+
+</div>
+<!--翻页 end-->
+
+<br />
+<br />
+<br />
+
+<textarea name="" cols="155" rows="35">
+
+/* =======================  html  ====================== */
+
+<div class="wrap_btn clearfix">
+	<div  class="page_btn"><a class="page_back" href="javascript:void(0)"> < 上一页</a></div>
+	<div class="centersty">
+		<div  class="listpage_cor clearfix"> 
+		<a class="click" >1</a>
+		<a  href="javascript:void(0)">2</a>
+		<a  href="javascript:void(0)">3</a>
+		<a  href="javascript:void(0)">4</a>
+		<a  href="javascript:void(0)">5</a>
+		<a  href="javascript:void(0)">6</a>
+		<a  href="javascript:void(0)">7</a>
+		<a  href="javascript:void(0)">8</a>
+		<a  href="javascript:void(0)">9</a> </div>
+	</div>
+	<div class="page_btn"><a class="page_next" href="javascript:void(0)">下一页 ></a></div>
+
+</div>
+
+
+
+/* =======================  css  ====================== */
+
+.wrap_btn { width:778px;}
+.wrap_btn .page_btn{ float:left; display:inline}
+.wrap_btn .page_btn a{ text-decoration:none;  display:block; width:219px; height:24px; line-height:24px; text-align:center; padding-left:15px ;color:#999;background:#f0f0f0;}
+.wrap_btn .page_btn a:hover{ color:#fff; background:#9bbad9}
+.wrap_btn .centersty{ float: left; width:305px; height:24px; background:#f0f0f0; margin:0 2px; display:inline;}
+.wrap_btn .centersty .listpage_cor { margin:0 0 0 30px; }
+.wrap_btn .centersty .listpage_cor a{ float:left; display:inline; margin-left:10px; width:10px; line-height:24px; height:24px; vertical-align:middle;text-indent:-9999px;background:url(../images/page_.jpg) no-repeat}
+.wrap_btn .centersty .listpage_cor .click{background:url(../images/page_current.jpg) no-repeat;}
+.wrap_btn .centersty .listpage_cor img {cursor:pointer;}
+
+
+
+
+</textarea>
+
+
+
+
+</div>
+
+
+</body>
+</html>

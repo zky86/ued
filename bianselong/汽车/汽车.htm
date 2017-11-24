@@ -1,0 +1,910 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<title>POCO汽车社区－POCO.CN 我的照片 我的空间</title>
+<meta name="Keywords" content="">
+<meta name="Description" content=" ">
+<link rel="stylesheet" type="text/css" href="css/pcsp.css">
+<link rel="stylesheet" type="text/css" href="css/auto.css">
+
+<script type="text/javascript" language="javascript" src="images/mootools-1.js"></script>
+<script type="text/javascript" language="javascript" src="images/poco_page_switch_mt.js"></script>
+<script type="text/javascript" language="javascript" src="images/poco_common.js"></script>
+<script type="text/javascript" language="javascript" src="images/poco_tab_switch.js"></script>
+<script type="text/javascript">
+var poco_page_switch;
+window.addEvent('domready', function(){						 
+	poco_page_switch = new poco_page_switch(
+	{
+		dataUrl : 'http://auto.poco.cn/module/index_get_today_special.js.php',
+		containerID : 'J_today_special_container',
+		cacheSpace : 'J_today_special_container_space',	
+		pageClass : 'today_special_group',
+		pageType : 'ul',
+		pageIDPre: 'switch_today_special_',
+		index : 1,
+		showCount:1,
+		pageCount:27,
+		shiftNum:0,
+		pars:'',
+		debug:false,
+		preload : true,
+		preloadCount:1,
+		keyboard : false,
+		onInitComplete : function(index)
+		{
+			$('J_today_special_pre_page').addEvent('click', function(){poco_page_switch.prePage()});
+			$('J_today_special_next_page').addEvent('click', function(){poco_page_switch.nextPage()});
+		}
+		
+	});
+	
+	var show_pop_cookie = readCookie('show_car_index_pop_div');
+	if(! (login_id>0 || show_pop_cookie=='close'))
+	{
+		$('top_pop').style.display='';
+	}
+	
+
+});
+
+
+
+
+function close_car_index_pop_div()
+{
+	$('top_pop').style.display = 'none';
+	if ($('car_index_pop_div').checked==true)
+	{
+		writeCookie('show_car_index_pop_div', 'close', 31536000, '.poco.cn');
+	}
+}
+</script>
+<style type="text/css">
+.toggle,.toggle2{ padding:0 0 0 13px;height:30px;overflow:hidden;background:url(http://auto.poco.cn/images_v2/solid_line.gif) repeat-x bottom;} 
+.toggle li,.toggle2 li{ border:#737373 solid 1px;font-size:14px;font-weight:bold;float:left;margin-right:3px;padding-top:1px;}
+.toggle li a,.toggle2 li a{ text-decoration:none;display:block;padding:0 30px;background:#ececec;line-height:27px;}
+.toggle li.current a,.toggle2 li.current a{ background:#fff;color:#737373;}
+.toggle li.current,.toggle2 li.current{ border-bottom:#fff solid 1px;}
+.toggle2{ padding:0 0 0 7px;height:22px;}
+.toggle2 li{ font-size:12px;font-weight:normal;}
+.toggle2 li a{ padding:0 17px;line-height:19px;}
+.toggle3 li a{ padding:0 9px;}
+</style>
+<meta name="google-site-verification" content="Qq6J4FLqw0CS4q7gb6TS7Wc8FbcxHBJr_HM7P9Cw9p8"></head><body>
+<!-- log start -->
+<script language="javascript">
+__poco_site_stat_request_filename = 'car.css';
+</script>
+<script type="text/javascript" src="images/site_stat_code.js"></script><img src="images/car.htm" style="position: absolute; top: -999px;">
+<!-- log end; -->
+<!--header-->
+<!-- log start -->
+<script language="javascript">
+__poco_site_stat_request_filename = 'auto.css'
+</script>
+<script type="text/javascript" src="images/site_stat_code.js"></script><img src="images/auto.htm" style="position: absolute; top: -999px;">
+<script language="javascript">
+__poco_site_stat_request_filename='auto_%CA%D7%D2%B3.css'
+</script>
+<script type="text/javascript" src="images/site_stat_code.js"></script><img src="images/auto_.htm" style="position: absolute; top: -999px;">
+<!-- log end; -->
+
+<!--google verification-->
+
+<!--google verification end-->
+<!-- 系统维护公告 -->
+<!-- <script language="javascript" src="http://my.poco.cn/js/sys_affiche.js?ver=20110106"></script> -->
+<!-- 系统维护公告 end -->
+<div class="bg">
+<!--shadow_top-->
+<div class="shadow_header_top"><div></div></div>
+<!--shadow_top end-->
+
+<!--header-->
+<div id="header">
+    <div class="header_top_bar clearfix">
+        <h1 class="poco_logo"><a href="http://www.poco.cn/" title="POCO 我的照片 我的空间">POCO 我的照片 我的空间</a></h1>
+        <div class="header_top_nav">
+        <span id="header_login_info" class="header_login_info"><ul>
+<li> 
+<strong>Hi!</strong> 小猪 
+</li>
+	    <li id="unread_messages_li" class="unread_messages_li">
+   <div class="fl"> <div id="unread_messages">
+<div class="unread_messages_div">
+<a href="http://my.poco.cn/manage/manage_pm_message.php" target="_blank">悄悄话(<span class="red"><strong>19</strong>新</span>)</a>
+<a href="http://my.poco.cn/manage/manage_pm_notice.php?notice_type=quote" target="_blank">留言被回复(<span>0新</span>)</a>
+<a href="http://my.poco.cn/manage/manage_pm_message.php?flag=friend&amp;folder=inbox&amp;m_type=1" target="_blank">加好友申请(<span class="red"><strong>1</strong>新</span>)</a>
+<a href="http://my.poco.cn/manage/manage_pm_notice.php?notice_type=system" target="_blank">系统通知(<span>0新</span>)</a>
+</div>
+</div>
+    </div>
+	<a id="unread_messages_top" class="unread_messages_top" onmouseover="show_unread_messages('unread_messages',this)" href="http://my.poco.cn/manage/manage_pm_message.php" target="_blank"><img src="images/index_icon_mail.gif">(20)</a>
+    </li>
+	 
+    <li>
+	 
+    		[<a href="http://my.poco.cn/manage/" class="manage" target="_blank">进入管理</a>] 
+		[<a href="http://auto.poco.cn/module_common/login/poco_login_act.php?act=logout&amp;logout_locate=&amp;tmp=1295948838" target="poco_login_info_header_frame" class="logout">退出</a>]
+<iframe name="poco_login_info_header_frame" style="display: none;"></iframe>
+	 | 
+     </li>
+     </ul>
+</span>
+        <style type="text/css">#header_login_info li{ float:left}#header_login_info{ float:left;}#unread_messages{ position:absolute; margin-top:26px; z-index:999; overflow:hidden; line-height:20px; display:none}.unread_messages_div{ border:1px solid #9e9e9e; padding:6px 10px 6px 7px; background:#fff;}.unread_messages_div a{ display:block; text-align:right; white-space:nowrap; }#header .header_top_nav .unread_messages_div .red{ color:#FF0000 }#header .header_top_nav .unread_messages_div span{ color:#000 }#header .header_top_nav .unread_messages_div a:hover { color:#4D4D4D }#header .header_top_nav .unread_messages_div a,#header .header_top_nav .unread_messages_top_hover,#header .header_top_nav .unread_messages_top_hover:hover{ color:#4D4D4D;}.unread_messages_div .red{ color:#F00}.unread_messages_top{ line-height:1; padding:1px; float:left; height:18px; padding-top:4px; text-decoration:none; margin-top:4px;}#header .unread_messages_top_hover:hover{ text-decoration:none}.unread_messages_top_hover{  background:#fff; z-index:1000; position:relative;  border:1px solid #9e9e9e; border-bottom:1px solid #fff; padding:0px 3px;  padding-top:3px; }.unread_messages_top_hover span{ display:none}.unread_messages_li{ padding:0 3px}</style> 
+		<a href="http://www.poco.cn/" target="_blank"><span class="fn_ta f11">POCO</span>首页</a> |  
+        <a href="javascript:void(0)" onclick="setHome(this,window.location)">设为首页</a> |  
+		<a href="javascript:addFavorite('POCO%20%E6%88%91%E7%9A%84%E7%85%A7%E7%89%87%20%E6%88%91%E7%9A%84%E7%A9%BA%E9%97%B4')">加入收藏</a> |
+		<a href="http://phone.poco.cn/" target="_blank">手机<span class="fn_ta f11">POCO</span></a></div>
+    </div>
+    <div class="nav_bar">
+    	<div class="clearfix">
+            <ul class="mainnav clearfix">
+				<li class="current_nav self relative" style="z-index: 999;">汽车<span class="channel">[<font onclick="show_submenu('channels_switch',this);" style="cursor: pointer;">切换社区</font>]</span><div class="dropdown" id="channels_switch" style="display: none; top: 30px; left: 44px;">
+              				<ul><li><a href="http://photo.poco.cn/">摄影</a></li><li><a href="http://food.poco.cn/">美食</a></li><li><a href="http://travel.poco.cn/">旅游</a></li><li><a href="http://pet.poco.cn/">宠物</a></li><li><a href="http://box.poco.cn/">达物</a></li><li><a href="http://mobile.poco.cn/">手机拍客</a></li><li><a href="http://auto.poco.cn/">汽车</a></li><li><a href="http://lady.poco.cn/">女性</a></li><li><a href="http://model.poco.cn/">模特</a></li><li><a href="http://movie.poco.cn/">电影</a></li><li><a href="http://www.poco.cn/">POCO首页</a></li></ul>		
+              				<iframe class="dropdown_iframe"></iframe>
+            				</div></li>                <li><a href="http://my.poco.cn/" title="个人空间">个人空间</a></li>
+                <li><a href="http://read.poco.cn/" title="电子杂志">电子杂志</a></li>
+                <li><a href="http://event.poco.cn/" title="活动">活动</a></li>
+                <li class="hour24"><a href="http://24.poco.cn/" title="24小时">24小时</a></li>
+            </ul>
+    		<div class="header_search">
+				                <form id="form_header_search" name="form_header_search" action="http://my.poco.cn/tags/tag_search.php" method="get" target="_blank" onsubmit="return header_search_check();">
+                	<input id="J_HeaderTsIDs" name="ts_ids" value="图片" type="hidden">
+					
+					<input name="tag_search_referer_source" value="AUTO_TOP_SEARCH" type="hidden">
+                	<input value="点这里搜索422804888张照片" id="J_Q" name="q" onfocus="header_poco_input_for_onmouseover(this)" class="input_text" type="text">
+                    <input name="header_search_type" id="header_search_type" class="header_search_type" onclick="show_submenu('search_types', this);" value="图片" readonly="readonly" type="text">
+                    <input value="搜 索" class="button" type="submit">
+                    <div class="dropdown" style="top: 27px; left: 225px; width: 76px; display: none; z-index: 900;" id="search_types">
+                		<ul>
+                    		<li><a href="#this" onclick="header_search_option(0, '图片'); ">图片</a></li>
+                        	<li><a href="#this" onclick="header_search_option(1, '博客');">博客</a></li>
+                        	<li><a href="#this" onclick="header_search_option(3, '摄影');">摄影</a></li>
+                        	<li><a href="#this" onclick="header_search_option(7, '美食');">美食</a></li>
+                        	<li><a href="#this" onclick="header_search_option(6, '美食diy');">美食diy</a></li>
+                        	<li><a href="#this" onclick="header_search_option(44, '旅游');">旅游</a></li>
+                        	<li><a href="#this" onclick="header_search_option(104, '宠物');">宠物</a></li>
+                        	<li><a href="#this" onclick="header_search_option(8, '人');">人</a></li>
+                        	<li><a href="#this" onclick="header_search_option(14, '活动');">活动</a></li>
+							<li><a href="#this" onclick="header_search_option(52, '专题');">专题</a></li>
+                   	 	</ul>
+                   		<iframe class="dropdown_iframe"></iframe>
+                	</div>
+                </form>
+				            </div>
+        </div>
+        <div class="subnav_bar clearfix">
+			<ul class="subnav clearfix"><li class=" current_subnav"><a href="http://auto.poco.cn/" title="首页">首页</a></li><li class=" normal_nav"><a href="http://auto.poco.cn/car_list.php" title="车生活">车生活</a></li><li class=" normal_nav"><a href="http://auto.poco.cn/car_album.php" title="车主相册">车主相册</a></li><li class=" normal_nav"><a href="http://auto.poco.cn/car_topic.php" title="自驾攻略">自驾攻略</a></li><li class=" normal_nav"><a href="http://auto.poco.cn/car_pocoers.php" title="汽车达人">汽车达人</a></li><li class="  subnav_last normal_nav"><a href="http://www1.poco.cn/topic/test_drive/" title="新车试驾" target="_blank">新车试驾</a></li></ul><ul class="mylink"><li><a href="http://my.poco.cn/manage/?stat_request_channel=229612742" title="我的空间" target="_blank">我的空间</a></li><li><a href="http://my.poco.cn/blog_v2/blog_add.php?publish_type=auto&amp;stat_request_channel=2198518676" title="我要发表" target="_blank">我要发表</a></li></ul>        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+/* 下拉 */
+function header_search_option(id, text){
+	document.getElementById('search_types').style.display='none';
+	document.getElementById("J_HeaderTsIDs").value = id;
+	document.getElementById('header_search_type').value = text;
+}
+
+/* 设为首页 */
+function setHome(obj, url){
+	try{
+		obj.style.behavior = 'url(#default#homepage)';obj.setHomePage(url);
+	}catch(e){
+		if(window.netscape) {
+			try {
+				netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");  
+			}catch (e){ 
+				alert('抱歉！您的浏览器不支持直接设为首页。请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为“true”，点击“加入收藏”后忽略安全提示，即可设置成功。');  
+			}
+			var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+			prefs.setCharPref('browser.startup.homepage', url);
+		}
+	}
+}
+/* 加入收藏 */
+function addFavorite(text){
+	if (window.ActiveXObject){
+		window.external.addFavorite("" + window.location + "", text);
+	}else{
+		window.sidebar.addPanel(text, window.location, "");
+	}
+}
+
+function channels_switch_module_show(is_show)
+{
+	if(is_show)
+	{
+		document.getElementById('channels_switch').style.display=is_show;
+	}
+	else
+	{
+		if(document.getElementById('channels_switch').style.display=='none')
+		{
+			document.getElementById('channels_switch').style.display='block';
+		}
+		else
+		{
+			document.getElementById('channels_switch').style.display='none';
+		}
+	}
+}
+
+var lastTarget = null;
+var target = null;
+var timer = 0;
+function show_submenu(id, obj){
+	clearTimeout(timer);
+	if (lastTarget) lastTarget.style.display = "none";
+	target = document.getElementById(id);
+	lastTarget = target;
+	target.style.display = "inline";
+	//下拉触发
+	target.onmouseover = function(){
+		clearTimeout(timer);	
+	}
+	//移除
+	target.onmouseout = obj.onmouseout = function(){
+		timer = setTimeout(function(){
+			target.style.display = "none";
+		}, 300);	
+	};
+}
+
+// init
+/* 搜索检测 */
+function header_search_check(){
+	var val = document.getElementById("J_Q").value.replace(/(^\s*)|(\s*$)/g, "");
+	if (val=="" || /^点这里搜索\d+张照片$/.test(val)){
+		alert("搜索内容不能为空。");	
+		return false;
+	}
+	return true;
+}
+
+var start_date = new Date(2007, 5, 17);
+var new_date = new Date();
+var now_date = new Date(new_date.getFullYear(), new_date.getMonth()+1, new_date.getDate());
+/* 计算图片总数 */
+var day_num = getDayDiff(start_date, now_date);
+var photo_num = 220454714 + (day_num * 150000);
+var to;
+function mypoco_photo_total(){
+	var photo = document.form_header_search.J_Q;
+	var rd_photo = parseInt(Math.random() * (16-6+1)+6);
+	/* 增加图片数 */
+	photo_num = photo_num + rd_photo;
+	photo.value = "点这里搜索" + photo_num + "张照片";
+	to = setTimeout("mypoco_photo_total()", 2000);
+}
+/* 计算日期差 */
+function getDayDiff(d1, d2){
+	return (d2.getTime() - d1.getTime())/(24*60*60*1000);
+}
+function clear_photo_num(){
+	clearTimeout(to);
+}
+function header_poco_input_for_onmouseover(obj){
+	clear_photo_num();
+	if(document.form_header_search.J_Q.value.indexOf("查找相册图片") > -1 || document.form_header_search.J_Q.value.indexOf("张照片") > -1){
+		document.form_header_search.J_Q.value = "";
+	}
+	obj.onblur = header_poco_input_for_onmouseout;
+	return false;
+}
+function header_poco_input_for_onmouseout(){
+	var curr_page_url = window.location + "";
+	var start = curr_page_url.indexOf("//") + 2;
+	var end   = curr_page_url.indexOf(".");
+	var getlength = end -start;
+	curr_host = curr_page_url.substr(start, getlength);
+	if(document.form_header_search.J_Q.value == ""){
+		if(curr_host == "tu"){
+			document.form_header_search.J_Q.value = "请输入关键字查找图片…";
+		} else {
+			mypoco_photo_total(); 
+		}
+	}
+	return false;
+}
+mypoco_photo_total();
+</script>
+<!--header end-->
+
+<!--header end-->
+<!--content-->
+<div id="content" class="clearfix">
+
+  <!--弹出-->
+  <div id="top_pop" style="display: none;">
+    <div class="toptitle clearfix">
+      <div class="float_l">欢迎您来到<span class="fn_ta">POCO</span>这个都市生活原创分享平台!在这里,您可以:</div>
+      <div class="top_colse">
+          <div class="checkbox"><input value="" checked="checked" id="car_index_pop_div" name="car_index_pop_div" type="checkbox"></div>
+          <span class="text">不再提示</span>
+          <div class="close"><a href="#this" title="关闭" onclick="close_car_index_pop_div();"><img src="images/ico_close.gif" alt="关闭" width="11" height="11"></a></div>
+      </div>
+    </div>
+    <ul class="top_menu">
+      <li><a href="http://auto.poco.cn/car_list.php" target="_blank">浏览车友生活分享</a></li>
+      <li><a href="http://auto.poco.cn/car_album.php" target="_blank">欣赏网友汽车相册</a></li>
+      <li><a href="http://auto.poco.cn/car_pocoers.php" target="_blank">结交车友</a></li>
+      <li><a href="http://ft.poco.cn/blog_v2/blog_add.php?publish_type=auto&amp;init_tag=&amp;stat_request_channel=1832350717" target="_blank">发布自驾作品</a></li>
+      <li><a href="http://auto.poco.cn/car_topic.php" target="_blank">查看自驾攻略</a></li>
+    </ul>
+  </div>
+  <!--弹出结束-->
+
+ <div class="banner994">
+	<!-- 汽车频道v2 ： 首页/一屏/大通栏[994x90] 开始 -->
+	<iframe id="ams_iframe_1535" name="ams_iframe_1535" src="images/a_0_all.htm" border="0" marginwidth="0" marginheight="0" width="994" frameborder="0" height="90" scrolling="no"></iframe>
+	<!-- 汽车频道v2 ： 首页/一屏/大通栏[994x90] 结束 --> 
+ </div>
+ <!--焦点-->
+ <div class="grid_c2f">
+  <div class="col_main">
+   <div class="main_wrap">
+    <div id="con_side" class="clearfix">
+     <div id="focus"> 
+     <!--flash幻灯展示开始-->
+		<!-- 汽车频道v2 ： 首页/一屏/焦点图[280x210] 开始 -->
+		<script language="JavaScript" src="images/a_0_all_003.js"></script><style>#flash_show_1536{ height:210px; text-align:center; padding:0; border-color:#DFF2D2 ;position:relative; border-width:4px;overflow:hidden;}#flash_btn_1536{ z-index:9999;position:absolute;top:138px;left:1px;}#flash_btn_1536 div{ margin:5px;}#flash_show_ctl_1536{ margin-top:5px;color:#3FA600;height:16px;}#flash_show_ctl_1536 a{ color:#6BBD31;}.flash_show_li_dot_1536{ font-family:Webdings;color:#6BBD31;font-size:12px;}#img_prev_btn_1536{ margin-right:3px;}#flash_show_ctl_arrow_1536{ margin-right:5px;}#flash_img_1536 { position:absolute;left:0px}#flash_img_1536 a{ position:absolute;}#flash_img_1536 img{ width:280px;height:210px;}#flash_show_box_1536{ width:280px; overflow:hidden;}</style><div id="flash_show_box_1536"><div id="flash_show_1536"><div id="flash_img_1536"><a style="z-index: 0;" id="img_0" target="_blank" href="http://mag.poco.cn/interphoto/Vol68/?p=30&amp;stat_request_channel=582724428"><img src="images/20110117_145519.jpg" border="0"></a><a style="z-index: 998;" id="img_1" target="_blank" href="http://photo.poco.cn/m/party_detail.php?id=25042"><img src="images/20110114_104845.jpg" border="0"></a><a style="z-index: 999;" id="img_2" target="_blank" href="http://mag.poco.cn/pocozine/Vol73/?p=39&amp;stat_request_channel=697585103"><img src="images/20101231_160951.jpg" border="0"></a><a style="z-index: 0;" id="img_3" target="_blank" href="http://afp.adpolestar.net/adpolestar/wayl/;ad=88F04B8A_43DE_7265_B172_F6497BC48707;ap=0;pu=cav;/?http://hkdl.qq.com/?ctpath=e00b484d4f5541eea51b41319bccc648"><img src="images/20101217_174147.jpg" border="0"></a></div><div id="flash_btn_1536"><div><img onclick="javascript:ads_flash_focus.show_img(0,true)" src="images/flash_btn_1.gif" alt="" style="cursor: pointer;" border="0" width="12" height="11"></div><div><img onclick="javascript:ads_flash_focus.show_img(1,true)" src="images/flash_btn_2.gif" alt="" style="cursor: pointer;" border="0" width="12" height="11"></div><div><img onclick="javascript:ads_flash_focus.show_img(2,true)" src="images/flash_btn_3.gif" alt="" style="cursor: pointer;" border="0" width="12" height="11"></div><div><img onclick="javascript:ads_flash_focus.show_img(3,true)" src="images/flash_btn_4.gif" alt="" style="cursor: pointer;" border="0" width="12" height="11"></div></div></div><div style="display: none;" id="flash_show_control_1536"><div id="flash_show_ctl_1536"><div id="flash_show_ctl_msg_1536" style="float: left; margin-top: 0px; margin-left: 0px;"><span class="flash_show_li_dot_1536">4</span><a target="_blank" href="http://mag.poco.cn/pocozine/Vol73/?p=39&amp;stat_request_channel=697585103" id="flash_title_1536">渐行渐远 POCOer旅行足迹</a></div><div style="padding-top: 2px; float: right;"><a id="img_prev_btn_1536" style="cursor: pointer;" onclick="javascript:ads_flash_focus.pre_pic();" target="_self"><img src="images/flash_back.gif" alt="" border="0" width="11" height="12"></a><a id="img_next_btn_1536" style="cursor: pointer;" onclick="javascript:ads_flash_focus.next_pic();" target="_self"><img src="images/flash_next.gif" alt="" border="0" width="11" height="12"></a></div></div></div></div>
+		<!-- 汽车频道v2 ： 首页/一屏/焦点图[280x210] 结束 -->
+        <!--flash幻灯展示结束-->   
+     </div>
+     <div id="todays" class="relative clearfix">
+      <h3 class="title">今日精选</h3>
+      <div class="todays_box">
+       <div class="s_left"><a href="#this" id="J_today_special_pre_page"><img src="images/s_left.jpg" alt="上一组" width="22" height="60"></a></div>
+       <div style="position: relative;" id="J_today_special_container" class="photo_li">
+       		<div style="width: 1e+8px;" id="J_today_special_container_space">
+                        <ul id="switch_today_special_1" class="fl">
+                                                        <li><a href="http://auto.poco.cn/car_lastphoto.php?id=2492386&amp;stat_request_channel=1348260933" target="_blank"><img src="images/3438201101251132467556_120.jpg" alt="北京国际车展" width="100" height="120"></a><br><a href="http://auto.poco.cn/car_lastphoto.php?id=2492386&amp;stat_request_channel=1348260933" title="北京国际车展" target="_blank">北京国际车展</a></li>
+                                                        <li><a href="http://auto.poco.cn/car_lastphoto.php?id=2491519&amp;stat_request_channel=1348260933" target="_blank"><img src="images/7907201101251131165273_120.jpg" alt="广州车展模特" width="100" height="120"></a><br><a href="http://auto.poco.cn/car_lastphoto.php?id=2491519&amp;stat_request_channel=1348260933" title="广州车展模特" target="_blank">广州车展模特</a></li>
+                                                        <li><a href="http://auto.poco.cn/car_lastphoto.php?id=2489599&amp;stat_request_channel=1348260933" target="_blank"><img src="images/8622201101241226197310_120.jpg" alt="广州车展车模" width="100" height="120"></a><br><a href="http://auto.poco.cn/car_lastphoto.php?id=2489599&amp;stat_request_channel=1348260933" title="广州车展车模" target="_blank">广州车展车模</a></li>
+                                                    </ul><ul style="float: left;" id="switch_today_special_2" class="today_special_group"><li><a href="http://auto.poco.cn/car_lastphoto.php?id=2481301&amp;stat_request_channel=1348260933" target="_blank"><img src="images/9948201101171415059415_120.jpg" alt="深圳冷艳车模" width="100" height="120"></a><br><a href="http://auto.poco.cn/car_lastphoto.php?id=2481301&amp;stat_request_channel=1348260933" title="深圳冷艳车模" target="_blank">深圳冷艳车模</a></li>
+<li><a href="http://auto.poco.cn/car_lastphoto.php?id=2481208&amp;stat_request_channel=1348260933" target="_blank"><img src="images/7307201101171411567329_120.jpg" alt="广州车展车模" width="100" height="120"></a><br><a href="http://auto.poco.cn/car_lastphoto.php?id=2481208&amp;stat_request_channel=1348260933" title="广州车展车模" target="_blank">广州车展车模</a></li>
+<li><a href="http://auto.poco.cn/car_lastphoto.php?id=2479724&amp;stat_request_channel=1348260933" target="_blank"><img src="images/1692201101141115015306_120.jpg" alt="初入车展" width="100" height="120"></a><br><a href="http://auto.poco.cn/car_lastphoto.php?id=2479724&amp;stat_request_channel=1348260933" title="初入车展" target="_blank">初入车展</a></li>
+</ul><ul style="float: left;" id="switch_today_special_3" class="today_special_group"><li><a href="http://auto.poco.cn/car_lastphoto.php?id=2479908&amp;stat_request_channel=1348260933" target="_blank"><img src="images/4974201101141113225466_120.jpg" alt="广州国际车展" width="100" height="120"></a><br><a href="http://auto.poco.cn/car_lastphoto.php?id=2479908&amp;stat_request_channel=1348260933" title="广州国际车展" target="_blank">广州国际车展</a></li>
+<li><a href="http://auto.poco.cn/car_lastphoto.php?id=2478951&amp;stat_request_channel=1348260933" target="_blank"><img src="images/2736201101131140015873_120.jpg" alt="广州车展美模" width="100" height="120"></a><br><a href="http://auto.poco.cn/car_lastphoto.php?id=2478951&amp;stat_request_channel=1348260933" title="广州车展美模" target="_blank">广州车展美模</a></li>
+<li><a href="http://auto.poco.cn/car_lastphoto.php?id=2479091&amp;stat_request_channel=1348260933" target="_blank"><img src="images/6024201101131138081416_120.jpg" alt="香车美女" width="100" height="120"></a><br><a href="http://auto.poco.cn/car_lastphoto.php?id=2479091&amp;stat_request_channel=1348260933" title="香车美女" target="_blank">香车美女</a></li>
+</ul>
+       		</div>
+       </div>
+       <div class="s_right"><a href="#this" id="J_today_special_next_page"><img src="images/s_right.jpg" alt="下一组" width="22" height="60"></a></div>
+      </div>
+     </div>
+    </div>
+    <div class="banner768">
+		<!-- 汽车频道v2 ： 首页/一屏/通栏[768x80] 开始 -->
+		<iframe id="ams_iframe_1541" name="ams_iframe_1541" src="images/a_0_all_002.htm" border="0" marginwidth="0" marginheight="0" width="768" frameborder="0" height="80" scrolling="no"></iframe>
+		<!-- 汽车频道v2 ： 首页/一屏/通栏[768x80] 结束 -->	
+	</div>
+   </div>
+  </div>
+  <div class="col_sub">
+   <!--POCO公告赞助商信息-->
+   <h3 class="title"><span class="fn_ta f13">POCO</span>公告</h3>
+   <div id="notice">
+    <ul>
+             <li>&gt; <a href="http://phone.poco.cn/app/poco365/?stat_request_channel=1824394718" target="_blank">POCO365 APP正式发布</a></li>
+               <li>&gt; <a href="http://phone.poco.cn/app/ip/?stat_request_channel=1824394718" target="_blank">《印象》杂志iphone版免费下载</a></li>
+               <li>&gt; <a href="http://phone.poco.cn/app/android/?stat_request_channel=875870043_98037344_1824394718" target="_blank">最新Android版美食天堂客户端下载</a></li>
+           </ul>
+        <div class="c_line"></div>
+    <h3 class="title">赞助商信息</h3>
+    <ul>
+             <li>&gt; <a href="http://a-m-s.poco.cn/channels/topic/honda.html?stat_request_channel=524121823" target="_blank">广汽本田再创销量新高</a></li>
+               <li>&gt; <a href="http://blog1.poco.cn/myBlogDetail-htx-id-5578386-userid-43412259-pri--n-0.xhtml?stat_request_channel=524121823" target="_blank">街头制FUN，见证粉红改造</a></li>
+               <li>&gt; <a href="http://bbs0.poco.cn/topic.php?p=1&amp;fid=32&amp;tid=12221351&amp;p=1&amp;stat_request_channel=524121823" target="_blank">赢精油礼盒，让你芳香过年</a></li>
+           </ul>
+       </div>
+   <div style="clear: both;"></div>
+   <!--POCO公告赞助商信息结束-->
+   <div class="banner205">
+		<!-- 汽车频道v2 ： 首页/一屏/文字链下方方形图[205x80] 开始 -->
+		<iframe id="ams_iframe_1540" name="ams_iframe_1540" src="images/a_0_all_003.htm" border="0" marginwidth="0" marginheight="0" width="205" frameborder="0" height="80" scrolling="no"></iframe>
+		<!-- 汽车频道v2 ： 首页/一屏/文字链下方方形图[205x80] 结束 -->   
+   </div>
+  </div>
+ </div>
+ <!--焦点结束-->
+ <div class="c_line"></div>
+ <!--图片展示-->
+ <div class="grid_c2f_s312">
+  <div class="col_main">
+   <div class="main_wrap">
+    <!--网络影展-->
+    <h3 class="title" title="热点推荐">热点推荐</h3>
+    <ul class="hot" style="margin-top: 13px;">
+         <li>
+      <div class="pic"><a href="http://blog1.poco.cn/myBlogDetail-htx-id-5578386-userid-43412259-pri--n-0.xhtml?stat_request_channel=2619186869" target="_blank" title="街头制FUN很给力"><img src="images/6041201012291148164003_64.jpg" alt="街头制FUN很给力"></a></div>
+      <div class="text"><strong><a href="http://blog1.poco.cn/myBlogDetail-htx-id-5578386-userid-43412259-pri--n-0.xhtml?stat_request_channel=2619186869" target="_blank" title="街头制FUN很给力">街头制FUN很给力</a></strong>
+       <p>街头制FUN很给力，见证全城粉红改造！</p>
+      </div>
+     </li>
+          <li>
+      <div class="pic"><a href="http://mag.poco.cn/pocozine/Vol73/?p=8&amp;stat_request_channel=2407122654_2619186869" target="_blank" title="POCOZINE 相伴6周年"><img src="images/6014201012311627083355_64.jpg" alt="POCOZINE 相伴6周年"></a></div>
+      <div class="text"><strong><a href="http://mag.poco.cn/pocozine/Vol73/?p=8&amp;stat_request_channel=2407122654_2619186869" target="_blank" title="POCOZINE 相伴6周年">POCOZINE 相伴6周</a></strong>
+       <p>POCO人的6年印记</p>
+      </div>
+     </li>
+          <li>
+      <div class="pic"><a href="http://afp.adpolestar.net/adpolestar/wayl/;ad=7E105C11_974C_36BE_0A63_E045DAFA364D;ap=0;pu=cav;/?http://www1.poco.cn/topic/special/reiz/" target="_blank" title="大师评点助提升"><img src="images/20110119_161219.jpg" alt="大师评点助提升"></a></div>
+      <div class="text"><strong><a href="http://afp.adpolestar.net/adpolestar/wayl/;ad=7E105C11_974C_36BE_0A63_E045DAFA364D;ap=0;pu=cav;/?http://www1.poco.cn/topic/special/reiz/" target="_blank" title="大师评点助提升">大师评点助提升</a></strong>
+       <p>讲述摄影大师奋斗史  分享高手拍摄秘诀<br re=""></p>
+      </div>
+     </li>
+         </ul>
+    <div class="c_line" style="margin-top: 20px;"></div>
+    <h3 class="title mb10" title="手机自拍">自驾攻略</h3>
+    <div class="pic145 clearfix">
+    <ul>
+         <li><a href="http://auto.poco.cn/special_topic/?topic_id=4222&amp;stat_request_channel=4113433437" target="_blank"><img src="images/4677201101211622194025_145.jpg" alt="新春山西自驾之旅"></a><br><a href="http://auto.poco.cn/special_topic/?topic_id=4222&amp;stat_request_channel=4113433437" title="新春山西自驾之旅">新春山西自驾之旅</a></li>
+          <li><a href="http://auto.poco.cn/special_topic/?topic_id=4165&amp;stat_request_channel=4113433437" target="_blank"><img src="images/4571201101181346146234_145.jpg" alt="踏雪寻梅自驾行"></a><br><a href="http://auto.poco.cn/special_topic/?topic_id=4165&amp;stat_request_channel=4113433437" title="踏雪寻梅自驾行">踏雪寻梅自驾行</a></li>
+          <li><a href="http://auto.poco.cn/special_topic/?topic_id=4109&amp;stat_request_channel=4113433437" target="_blank"><img src="images/6396201101051805108073_145.jpg" alt="海南冬日自驾游"></a><br><a href="http://auto.poco.cn/special_topic/?topic_id=4109&amp;stat_request_channel=4113433437" title="海南冬日自驾游">海南冬日自驾游</a></li>
+         </ul>
+    <div class="more"><a href="http://auto.poco.cn/car_topic.php" target="_blank">更多&gt;&gt;</a></div>
+    <div class="c_line mb10"></div>
+    <h3 class="title mb10" title="车生活">车生活</h3>
+    <ul>
+         <li><a href="http://auto.poco.cn/car_lastblog.php?id=5695148&amp;stat_request_channel=2059903916" target="_blank"><img src="images/4747201101251144485342_145.jpg" alt="冰雪珠江源"></a> <a href="http://auto.poco.cn/car_lastblog.php?id=5695148&amp;stat_request_channel=2059903916" title="冰雪珠江源">冰雪珠江源</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-46290836.shtml?stat_request_channel=3346874809" target="_blank">傲雪狐狼</a></p>
+     </li>
+          <li><a href="http://auto.poco.cn/car_lastblog.php?id=5699509&amp;stat_request_channel=2059903916" target="_blank"><img src="images/6778201101251142301209_145.jpg" alt="深冬乌镇"></a> <a href="http://auto.poco.cn/car_lastblog.php?id=5699509&amp;stat_request_channel=2059903916" title="深冬乌镇">深冬乌镇</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-71725.shtml?stat_request_channel=3346874809" target="_blank">RoninJeff</a></p>
+     </li>
+          <li><a href="http://auto.poco.cn/car_lastblog.php?id=5699638&amp;stat_request_channel=2059903916" target="_blank"><img src="images/9555201101251140108669_145.jpg" alt="环游大西北和青藏"></a> <a href="http://auto.poco.cn/car_lastblog.php?id=5699638&amp;stat_request_channel=2059903916" title="环游大西北和青藏">环游大西北和青藏</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-51779803.shtml?stat_request_channel=3346874809" target="_blank">远行鸟人</a></p>
+     </li>
+         </ul>
+    </div>
+   </div>
+  </div>
+  <div class="col_sub">
+   <h3 class="title" title="POCOer都在看什么" style="margin-bottom: 0px;"><span class="fn_ta f13">POCOer</span>都在看什么</h3>
+   <ul class="text_list col_purple">
+    <li><a href="http://my.poco.cn/tags/tag_search.php?q=%B4%BA%BD%DA&amp;more%5B%5D=0&amp;q=%B1%B1%BE%A9%20%D1%A9&amp;stat_request_channel=2641621726_1320968511" target="_blank" class="fb f14 tag_hot">春节</a></li> <li><a href="http://auto.poco.cn/topic/xianggelila/?stat_request_channel=2854600621_1320968511" target="_blank" class="">大香格里拉</a></li> <li><a href="http://travel.poco.cn/topic/vol16/?stat_request_channel=259734740_1320968511" target="_blank" class="fb f14">最美古村</a></li> <li><a href="http://my.poco.cn/tags/tag_search.php?q=%B3%B5%C4%A3&amp;stat_request_channel=1320968511" target="_blank" class="">美女车模</a></li> <li><a href="http://my.poco.cn/tags/tag_search.php?statc_index_v2=1&amp;q=%B3%B5%D5%B9&amp;poco_search_menu_tag=0&amp;stat_request_channel=1320968511" target="_blank" class="">车展</a></li> <li><a href="http://my.poco.cn/tags/tag_search.php?q=%B3%A4%BC%D9&amp;stat_request_channel=1320968511" target="_blank" class="fb">长假</a></li> <li><a href="http://my.poco.cn/tags/tag_search.php?q=%C5%B7%D6%DE&amp;stat_request_channel=1320968511" target="_blank" class="fb f14">奢华欧洲</a></li> <li><a href="http://my.poco.cn/tags/tag_search.php?q=%D7%D4%BC%DD%D3%CE&amp;stat_request_channel=1320968511" target="_blank" class="fb f14">激情自驾</a></li> <li><a href="http://my.poco.cn/tags/tag_search.php?q=%CE%F7%B2%D8&amp;stat_request_channel=1320968511" target="_blank" class="">圣洁西藏</a></li>    </ul> 
+   <div class="c_line" style="margin-top: 0px;"></div>
+   
+   <div class="zbanner312">
+		<!-- 汽车频道v2 ： 首页/二屏/大方形图片[312x214] 开始 -->
+		<iframe id="ams_iframe_1546" name="ams_iframe_1546" src="images/a_0_all_004.htm" border="0" marginwidth="0" marginheight="0" width="312" frameborder="0" height="214" scrolling="no"></iframe>
+		<!-- 汽车频道v2 ： 首页/二屏/大方形图片[312x214] 结束 -->   
+   </div>
+   <div class="c_line"></div>
+
+    <h3 class="title">车友推荐</h3>
+    
+    <div class="pk_pic86_312 clearfix">
+    <ul>
+        <li>
+    	<div class="photo86"><a href="http://my.poco.cn/id-51853724.shtml?stat_request_channel=1417245142" target="_blank" class="i86x86"><img src="images/5723201001181237213874_85.jpg" alt="飞龙自由行"></a></div>
+        <div class="text"><strong><a href="http://my.poco.cn/id-51853724.shtml?stat_request_channel=3346874809" target="_blank" title="飞龙自由行">飞龙自由</a></strong> <br>[广东]<br>飞度 </div>
+    </li>
+        <li>
+    	<div class="photo86"><a href="http://my.poco.cn/id-45975329.shtml?stat_request_channel=1417245142" target="_blank" class="i86x86"><img src="images/4974201001181237113150_85.jpg" alt="梁伟荣"></a></div>
+        <div class="text"><strong><a href="http://my.poco.cn/id-45975329.shtml?stat_request_channel=3346874809" target="_blank" title="梁伟荣">梁伟荣</a></strong> <br>[广州]<br>雷克萨斯 RX300  </div>
+    </li>
+        <li>
+    	<div class="photo86"><a href="http://my.poco.cn/id-51983316.shtml?stat_request_channel=1417245142" target="_blank" class="i86x86"><img src="images/6774201001181237008110_85.jpg" alt="水西流"></a></div>
+        <div class="text"><strong><a href="http://my.poco.cn/id-51983316.shtml?stat_request_channel=3346874809" target="_blank" title="水西流">水西流</a></strong> <br>[浙江]<br>别克</div>
+    </li>
+       </ul>
+   </div>
+	<div class="more mt5"><a href="http://auto.poco.cn/car_pocoers.php" target="_blank">更多&gt;&gt;</a></div>
+  </div>
+ </div>
+ <div class="banner994">
+	<!-- 汽车频道v2 ： 首页/二屏/大通栏[994x90] 开始 -->
+	<iframe id="ams_iframe_1547" name="ams_iframe_1547" src="images/a_0_all_005.htm" border="0" marginwidth="0" marginheight="0" width="994" frameborder="0" height="90" scrolling="no"></iframe>
+	<!-- 汽车频道v2 ： 首页/二屏/大通栏[994x90] 结束 --> 
+ </div>
+ <div class="grid_c2f_s312">
+  <div class="col_main">
+   <div class="main_wrap">
+   <div class="pic145 clearfix">
+       <ul>         <li><a href="http://auto.poco.cn/car_lastphoto.php?id=2489072&amp;stat_request_channel=2059903916" target="_blank"><img src="images/8039201101241211415882_145.jpg" alt="东南 V3菱悦"></a> <a href="http://auto.poco.cn/car_lastphoto.php?id=2489072&amp;stat_request_channel=2059903916" title="东南 V3菱悦">东南 V3菱悦</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-55463666.shtml?stat_request_channel=3346874809" target="_blank">YRIO</a></p>
+     </li>
+          <li><a href="http://auto.poco.cn/car_lastphoto.php?id=2486626&amp;stat_request_channel=2059903916" target="_blank"><img src="images/8368201101201113567559_145.jpg" alt="AUDI TTS"></a> <a href="http://auto.poco.cn/car_lastphoto.php?id=2486626&amp;stat_request_channel=2059903916" title="AUDI TTS">AUDI TTS</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-56156582.shtml?stat_request_channel=3346874809" target="_blank">Enishi Wan</a></p>
+     </li>
+          <li><a href="http://auto.poco.cn/car_lastphoto.php?id=2486026&amp;stat_request_channel=2059903916" target="_blank"><img src="images/2135201101191154564013_145.jpg" alt="唐山南湖"></a> <a href="http://auto.poco.cn/car_lastphoto.php?id=2486026&amp;stat_request_channel=2059903916" title="唐山南湖">唐山南湖</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-32541979.shtml?stat_request_channel=3346874809" target="_blank">hongjun820916</a></p>
+     </li>
+         </ul>
+        <div class="d_line mb10"></div>
+            <ul class="clearfix lh30">         <li><a href="http://auto.poco.cn/car_lastphoto.php?id=2484421&amp;stat_request_channel=2059903916" target="_blank"><img src="images/8794201101181228455302_145.jpg" alt="改装福克斯"></a> <a href="http://auto.poco.cn/car_lastphoto.php?id=2484421&amp;stat_request_channel=2059903916" title="改装福克斯">改装福克斯</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-56268742.shtml?stat_request_channel=3346874809" target="_blank">niaorenshenghuo</a></p>
+     </li>
+          <li><a href="http://auto.poco.cn/car_lastphoto.php?id=2484283&amp;stat_request_channel=2059903916" target="_blank"><img src="images/6400201101181228118183_145.jpg" alt="广州国际车展"></a> <a href="http://auto.poco.cn/car_lastphoto.php?id=2484283&amp;stat_request_channel=2059903916" title="广州国际车展">广州国际车展</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-45161886.shtml?stat_request_channel=3346874809" target="_blank">空降猫咪</a></p>
+     </li>
+          <li><a href="http://auto.poco.cn/car_lastphoto.php?id=2484139&amp;stat_request_channel=2059903916" target="_blank"><img src="images/9520201101181227258320_145.jpg" alt="保时捷Porsch"></a> <a href="http://auto.poco.cn/car_lastphoto.php?id=2484139&amp;stat_request_channel=2059903916" title="保时捷Porsch">保时捷Porsch</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-44031836.shtml?stat_request_channel=3346874809" target="_blank">郭睿</a></p>
+     </li>
+         </ul>
+            <div class="more mt10"><a href="http://auto.poco.cn/car_list.php" target="_blank">更多&gt;&gt;</a></div>
+    </div>
+   </div>
+  </div>
+  <div class="col_sub">
+    <h3 class="title mb10">车主相册</h3>
+ <div class="auto_czxc">
+   <ul>
+       <li><a href="http://my.poco.cn/album/album_show_photo_list.htx&amp;user_id=3178959&amp;set_hash=1046747070&amp;stat_request_channel=3326477567" target="_blank"><img src="images/6594201101251357392141_135.jpg" alt="广州车展"></a><br><strong><a href="http://my.poco.cn/album/album_show_photo_list.htx&amp;user_id=3178959&amp;set_hash=1046747070&amp;stat_request_channel=3326477567" title="广州车展">广州车展</a></strong></li>
+        <li><a href="http://my.poco.cn/album/album_show_photo_list.htx&amp;user_id=55933856&amp;set_hash=2643516405&amp;stat_request_channel=3326477567" target="_blank"><img src="images/9751201101251356422787_135.jpg" alt="北京车展美女"></a><br><strong><a href="http://my.poco.cn/album/album_show_photo_list.htx&amp;user_id=55933856&amp;set_hash=2643516405&amp;stat_request_channel=3326477567" title="北京车展美女">北京车展美女</a></strong></li>
+        <li><a href="http://my.poco.cn/album/album_show_photo_list.htx&amp;user_id=45227262&amp;set_hash=1421094319&amp;stat_request_channel=3326477567" target="_blank"><img src="images/4008201101251355532228_135.jpg" alt="吉普性感美眉"></a><br><strong><a href="http://my.poco.cn/album/album_show_photo_list.htx&amp;user_id=45227262&amp;set_hash=1421094319&amp;stat_request_channel=3326477567" title="吉普性感美眉">吉普性感美眉</a></strong></li>
+        <li><a href="http://my.poco.cn/album/album_show_photo_list.htx&amp;user_id=55773054&amp;set_hash=3962391150&amp;stat_request_channel=3326477567" target="_blank"><img src="images/1990201101251354414048_135.jpg" alt="奥迪A5"></a><br><strong><a href="http://my.poco.cn/album/album_show_photo_list.htx&amp;user_id=55773054&amp;set_hash=3962391150&amp;stat_request_channel=3326477567" title="奥迪A5">奥迪A5</a></strong></li>
+        <li><a href="http://my.poco.cn/album/album_show_details.htx&amp;user_id=53192117&amp;item_id=109304571&amp;no=9&amp;stat_request_channel=3326477567" target="_blank"><img src="images/1820201101251353269583_135.jpg" alt="诺尔盖花湖"></a><br><strong><a href="http://my.poco.cn/album/album_show_details.htx&amp;user_id=53192117&amp;item_id=109304571&amp;no=9&amp;stat_request_channel=3326477567" title="诺尔盖花湖">诺尔盖花湖</a></strong></li>
+        <li><a href="http://my.poco.cn/album/album_show_photo_list.htx&amp;user_id=43163199&amp;set_hash=2212302301&amp;stat_request_channel=3326477567" target="_blank"><img src="images/1382201101251351545380_135.jpg" alt="2008稻城"></a><br><strong><a href="http://my.poco.cn/album/album_show_photo_list.htx&amp;user_id=43163199&amp;set_hash=2212302301&amp;stat_request_channel=3326477567" title="2008稻城">2008稻城</a></strong></li>
+       </ul>
+   </div>
+   <div class="more"><a href="http://www1.poco.cn/catalog/car/car_album.php" target="_blank">更多&gt;&gt;</a></div>
+  </div>
+ </div>
+ <!--图片展示结束-->
+ <div class="c_line"></div>
+  <div class="grid_c">
+    <h3 class="title">友情链接</h3>
+			<div class="list1" style="display: none;" id="list1">
+				<div class="toggle2">
+                   <ul class="toggle2">
+										<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">网址导航</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">汽车综合</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">汽车论坛</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(4);" target="_self">二手车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(5);" target="_self">各地汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(6);" target="_self">各类汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(7);" target="_self">汽车相关</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(8);" target="_self">其它</a></li>
+					                    </ul>
+				</div>
+				 <div class="toggle_con_gzzp">
+									<a title="汽车网址之家" href="http://www.uu7c.com/" target="_blank">汽车网址之家</a>&nbsp;
+									<a title="369网址大全" href="http://www.369.com/" target="_blank">369网址大全</a>&nbsp;
+									<a title="1234网址" href="http://www.hao1234.org/" target="_blank">1234网址</a>&nbsp;
+									<a title="2d34网址导航" href="http://www.2d34.com/" target="_blank">2d34网址导航</a>&nbsp;
+								<a title="查看更多友情链接" href="http://auto.poco.cn/link_new.php" target="_blank">查看更多友情链接&gt;&gt;</a>				</div>
+				<div class="clear"></div>
+			</div>
+					<div class="list1" style="display: block;" id="list2">
+				<div class="toggle2">
+                   <ul class="toggle2">
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">网址导航</a></li>
+										<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">汽车综合</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">汽车论坛</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(4);" target="_self">二手车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(5);" target="_self">各地汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(6);" target="_self">各类汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(7);" target="_self">汽车相关</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(8);" target="_self">其它</a></li>
+					                    </ul>
+				</div>
+				 <div class="toggle_con_gzzp">
+									<a title="车世界" href="http://www.cheshijie.com/" target="_blank">车世界</a>&nbsp;
+									<a title="MSN汽车" href="http://auto.msn.com.cn/" target="_blank">MSN汽车</a>&nbsp;
+									<a title="海奥汽车" href="http://auto.hiao.com/" target="_blank">海奥汽车</a>&nbsp;
+									<a title="中国广播网汽车" href="http://auto.cnr.cn/" target="_blank">中国广播网汽车</a>&nbsp;
+									<a title="大旗汽车" href="http://auto.daqi.com/" target="_blank">大旗汽车</a>&nbsp;
+									<a title="我爱车网" href="http://www.52che.com/" target="_blank">我爱车网</a>&nbsp;
+									<a title="汽车中国" href="http://carschina.com/" target="_blank">汽车中国</a>&nbsp;
+									<a title="爱驾网" href="http://www.ijia360.com/" target="_blank">爱驾网</a>&nbsp;
+									<a title="东方网汽车" href="http://auto.eastday.com/" target="_blank">东方网汽车</a>&nbsp;
+									<a title="中国名车网" href="http://www.chinaauto.com.cn/" target="_blank">中国名车网</a>&nbsp;
+									<a title="中国商用汽车网" href="http://cv.ce.cn/" target="_blank">中国商用汽车网</a>&nbsp;
+									<a title="好车网" href="http://www.goodcar.cn/" target="_blank">好车网</a>&nbsp;
+									<a title="新民汽车网" href="http://auto.xinmin.cn/" target="_blank">新民汽车网</a>&nbsp;
+									<a title="CN汽车网" href="http://www.cnnauto.com/" target="_blank">CN汽车网</a>&nbsp;
+									<a title="众车网" href="http://www.chewld.com/" target="_blank">众车网</a>&nbsp;
+									<a title="银河汽车网" href="http://auto.inhe.net/" target="_blank">银河汽车网</a>&nbsp;
+									<a title="阿里巴巴汽车" href="http://info.china.alibaba.com/news/community/c22.html" target="_blank">阿里巴巴汽车</a>&nbsp;
+									<a title="太湖汽车网" href="http://car.thmz.com/" target="_blank">太湖汽车网</a>&nbsp;
+									<a title="帅车网" href="http://www.shuaiche.com/" target="_blank">帅车网</a>&nbsp;
+									<a title="新浪四川汽车" href="http://sc.sina.com.cn/auto/" target="_blank">新浪四川汽车</a>&nbsp;
+									<a title="东方热线汽车" href="http://auto.cnool.net/" target="_blank">东方热线汽车</a>&nbsp;
+									<a title="365赛车网" href="http://www.i365auto.com/" target="_blank">365赛车网</a>&nbsp;
+									<a title="车马驿站汽车" href="http://www.jumayizhan.com/" target="_blank">车马驿站汽车</a>&nbsp;
+									<a title="厦门汽车网" href="http://www.xm7c.com/" target="_blank">厦门汽车网</a>&nbsp;
+									<a title="安徽汽车网" href="http://www.ahauto.com/" target="_blank">安徽汽车网</a>&nbsp;
+									<a title="凤凰网汽车" href="http://auto.ifeng.com/" target="_blank">凤凰网汽车</a>&nbsp;
+									<a title="深圳汽车大世界" href="http://www.mycar168.com/" target="_blank">深圳汽车大世界</a>&nbsp;
+									<a title="中国买车网" href="http://www.buycarcn.com/" target="_blank">中国买车网</a>&nbsp;
+									<a title="汽车江湖网" href="http://www.qc188.com/" target="_blank">汽车江湖网</a>&nbsp;
+									<a title="合肥二手车" href="http://www.ahsouche.com/" target="_blank">合肥二手车</a>&nbsp;
+									<a title="广州汽车网" href="http://guangzhou.bitauto.com/" target="_blank">广州汽车网</a>&nbsp;
+									<a title="苏州汽车网" href="http://www.aojauto.com/" target="_blank">苏州汽车网</a>&nbsp;
+									<a title="autov汽车网" href="http://www.autov.com.cn/" target="_blank">autov汽车网</a>&nbsp;
+									<a title="斯巴鲁汽车网" href="http://www.sibalu.com/" target="_blank">斯巴鲁汽车网</a>&nbsp;
+									<a title="好车网" href="http://www.goodcar.cn/" target="_blank">好车网</a>&nbsp;
+									<a title="沈阳汽车网" href="http://auto.liao1.com/" target="_blank">沈阳汽车网</a>&nbsp;
+												</div>
+				<div class="clear"></div>
+			</div>
+					<div class="list1" style="display: none;" id="list3">
+				<div class="toggle2">
+                   <ul class="toggle2">
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">网址导航</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">汽车综合</a></li>
+										<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">汽车论坛</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(4);" target="_self">二手车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(5);" target="_self">各地汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(6);" target="_self">各类汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(7);" target="_self">汽车相关</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(8);" target="_self">其它</a></li>
+					                    </ul>
+				</div>
+				 <div class="toggle_con_gzzp">
+									<a title="汽车论坛" href="http://bbs.xgo.com.cn/" target="_blank">汽车论坛</a>&nbsp;
+									<a title="汽车天下论坛" href="http://bbs.chetx.com/" target="_blank">汽车天下论坛</a>&nbsp;
+									<a title="车型大全" href="http://product.cheshi.com/" target="_blank">车型大全</a>&nbsp;
+									<a title="汽车论坛" href="http://bbs.51auto.com/" target="_blank">汽车论坛</a>&nbsp;
+									<a title="卓众汽车社区" href="http://bbs.uncars.com/" target="_blank">卓众汽车社区</a>&nbsp;
+									<a title="315车友会" href="http://bbs.315che.com/" target="_blank">315车友会</a>&nbsp;
+									<a title="虎拜车友网" href="http://www.hubai.com/" target="_blank">虎拜车友网</a>&nbsp;
+									<a title="麦卡车会" href="http://www.mycar168.net/" target="_blank">麦卡车会</a>&nbsp;
+									<a title="车168论坛" href="http://bbs.che168.com/" target="_blank">车168论坛</a>&nbsp;
+												</div>
+				<div class="clear"></div>
+			</div>
+					<div class="list1" style="display: none;" id="list4">
+				<div class="toggle2">
+                   <ul class="toggle2">
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">网址导航</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">汽车综合</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">汽车论坛</a></li>
+										<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(4);" target="_self">二手车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(5);" target="_self">各地汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(6);" target="_self">各类汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(7);" target="_self">汽车相关</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(8);" target="_self">其它</a></li>
+					                    </ul>
+				</div>
+				 <div class="toggle_con_gzzp">
+									<a title="苏州二手车" href="http://www.21che.cn/" target="_blank">苏州二手车</a>&nbsp;
+									<a title="上海二手车" href="http://sale.jinti.com/" target="_blank">上海二手车</a>&nbsp;
+									<a title="2手车讯" href="http://u.carxoo.com/" target="_blank">2手车讯</a>&nbsp;
+									<a title="二手车网" href="http://www.1775.cn/" target="_blank">二手车网</a>&nbsp;
+									<a title="天津二手车" href="http://tj.qcwe.com/" target="_blank">天津二手车</a>&nbsp;
+									<a title="273广东二手车" href="http://gd.273.cn/" target="_blank">273广东二手车</a>&nbsp;
+									<a title="二手车" href="http://www.kuche.com/" target="_blank">二手车</a>&nbsp;
+												</div>
+				<div class="clear"></div>
+			</div>
+					<div class="list1" style="display: none;" id="list5">
+				<div class="toggle2">
+                   <ul class="toggle2">
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">网址导航</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">汽车综合</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">汽车论坛</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(4);" target="_self">二手车</a></li>
+										<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(5);" target="_self">各地汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(6);" target="_self">各类汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(7);" target="_self">汽车相关</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(8);" target="_self">其它</a></li>
+					                    </ul>
+				</div>
+				 <div class="toggle_con_gzzp">
+									<a title="广州汽车网" href="http://guangzhou.bitauto.com/" target="_blank">广州汽车网</a>&nbsp;
+									<a title="深圳汽车网" href="http://shenzhen.bitauto.com/" target="_blank">深圳汽车网</a>&nbsp;
+									<a title="广州汽车网" href="http://www.020auto.cn/" target="_blank">广州汽车网</a>&nbsp;
+									<a title="潮汕汽车网" href="http://www.0754cars.com/" target="_blank">潮汕汽车网</a>&nbsp;
+									<a title="河南汽车网" href="http://www.hn7c.cn/" target="_blank">河南汽车网</a>&nbsp;
+									<a title="北京拼车" href="http://bj.58.com/pinche/" target="_blank">北京拼车</a>&nbsp;
+									<a title="巴渝车网" href="http://www.bayuche.com/" target="_blank">巴渝车网</a>&nbsp;
+									<a title="海西汽车网" href="http://www.05927.com/" target="_blank">海西汽车网</a>&nbsp;
+									<a title="惠州汽车网" href="http://www.0752qc.com/" target="_blank">惠州汽车网</a>&nbsp;
+									<a title="东莞汽车网" href="http://www.0769auto.com/" target="_blank">东莞汽车网</a>&nbsp;
+									<a title="潍坊汽车网" href="http://www.0536qiche.com/" target="_blank">潍坊汽车网</a>&nbsp;
+									<a title="成都拼车网" href="http://www.yezhuer.com/" target="_blank">成都拼车网</a>&nbsp;
+									<a title="广州汽车网" href="http://gz.carschina.com/" target="_blank">广州汽车网</a>&nbsp;
+									<a title="深圳汽车网" href="http://www.16888.com/" target="_blank">深圳汽车网</a>&nbsp;
+									<a title="安徽车迷网" href="http://www.ahcar.com/" target="_blank">安徽车迷网</a>&nbsp;
+									<a title="山西汽车网" href="http://www.sxqiche.com/" target="_blank">山西汽车网</a>&nbsp;
+									<a title="淄博汽车网" href="http://www.zbcars.com/" target="_blank">淄博汽车网</a>&nbsp;
+									<a title="乐山汽车网" href="http://www.lscsw.cn/" target="_blank">乐山汽车网</a>&nbsp;
+									<a title="成都汽车网" href="http://www.shucar.com/" target="_blank">成都汽车网</a>&nbsp;
+									<a title="溜溜吧汽车" href="http://www.668auto.com.cn/" target="_blank">溜溜吧汽车</a>&nbsp;
+									<a title="深圳车辆" href="http://sz.58.com/car.shtml" target="_blank">深圳车辆</a>&nbsp;
+									<a title="南昌汽车网" href="http://www.tiboo.cn/aiche/" target="_blank">南昌汽车网</a>&nbsp;
+												</div>
+				<div class="clear"></div>
+			</div>
+					<div class="list1" style="display: none;" id="list6">
+				<div class="toggle2">
+                   <ul class="toggle2">
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">网址导航</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">汽车综合</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">汽车论坛</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(4);" target="_self">二手车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(5);" target="_self">各地汽车</a></li>
+										<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(6);" target="_self">各类汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(7);" target="_self">汽车相关</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(8);" target="_self">其它</a></li>
+					                    </ul>
+				</div>
+				 <div class="toggle_con_gzzp">
+									<a title="中国军用汽车网" href="http://www.chinamilauto.com/" target="_blank">中国军用汽车网</a>&nbsp;
+									<a title="无敌改装网" href="http://www.modi-auto.com.cn/" target="_blank">无敌改装网</a>&nbsp;
+									<a title="讯网车世界" href="http://www.xwcsj.com/" target="_blank">讯网车世界</a>&nbsp;
+									<a title="新锐汽车网" href="http://www.chelink.com/" target="_blank">新锐汽车网</a>&nbsp;
+									<a title="中国电动车网" href="http://www.ddc.net.cn/" target="_blank">中国电动车网</a>&nbsp;
+												</div>
+				<div class="clear"></div>
+			</div>
+					<div class="list1" style="display: none;" id="list7">
+				<div class="toggle2">
+                   <ul class="toggle2">
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">网址导航</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">汽车综合</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">汽车论坛</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(4);" target="_self">二手车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(5);" target="_self">各地汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(6);" target="_self">各类汽车</a></li>
+										<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(7);" target="_self">汽车相关</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(8);" target="_self">其它</a></li>
+					                    </ul>
+				</div>
+				 <div class="toggle_con_gzzp">
+									<a title="汽车之家新闻" href="http://www.autohome.com.cn/news/" target="_blank">汽车之家新闻</a>&nbsp;
+									<a title="汽车用品网" href="http://www.car2100.com/" target="_blank">汽车用品网</a>&nbsp;
+									<a title="众悦学车网" href="http://www.zyue.com/" target="_blank">众悦学车网</a>&nbsp;
+									<a title="车擂台改装网" href="http://www.carboxing.com.cn/" target="_blank">车擂台改装网</a>&nbsp;
+									<a title="中国购车网" href="http://www.chinagocar.com/" target="_blank">中国购车网</a>&nbsp;
+									<a title="汽车导购" href="http://www.che168.com/buy/" target="_blank">汽车导购</a>&nbsp;
+									<a title="汽车团购网" href="http://tg.yescar.cn/" target="_blank">汽车团购网</a>&nbsp;
+									<a title="深圳汽车租赁" href="http://sz.58.com/zuche/" target="_blank">深圳汽车租赁</a>&nbsp;
+									<a title="中国汽车消费网" href="http://www.315che.com/" target="_blank">中国汽车消费网</a>&nbsp;
+									<a title="汽车导购" href="http://www.bitauto.com/daogou/" target="_blank">汽车导购</a>&nbsp;
+									<a title="汽车图片" href="http://photo.bitauto.com/" target="_blank">汽车图片</a>&nbsp;
+									<a title="汽车导购" href="http://newcar.xcar.com.cn/" target="_blank">汽车导购</a>&nbsp;
+									<a title="汽车快问" href="http://k.pcauto.com.cn/" target="_blank">汽车快问</a>&nbsp;
+									<a title="溜溜吧汽车" href="http://www.668auto.com.cn/" target="_blank">溜溜吧汽车</a>&nbsp;
+									<a title="汽车维修保养网" href="http://www.auto-m.hc360.com/" target="_blank">汽车维修保养网</a>&nbsp;
+									<a title="车库网" href="http://www.cheku.cn/" target="_blank">车库网</a>&nbsp;
+									<a title="中国汽车交易网" href="http://gz.auto18.com/" target="_blank">中国汽车交易网</a>&nbsp;
+									<a title="卖车竞价网" href="http://www.88mycar.com/" target="_blank">卖车竞价网</a>&nbsp;
+									<a title="广州车展" href="http://carschina.com/guangzhouchezhan/" target="_blank">广州车展</a>&nbsp;
+									<a title="北迈汽车汽配网" href="http://www.beimai.com/" target="_blank">北迈汽车汽配网</a>&nbsp;
+									<a title="上海租车" href="http://www.shrentcar.com/" target="_blank">上海租车</a>&nbsp;
+									<a title="车当家" href="http://www.chedangjia.com/" target="_blank">车当家</a>&nbsp;
+									<a title="驾驶员考试网" href="http://www.jsyst.cn/" target="_blank">驾驶员考试网</a>&nbsp;
+									<a title="新车新闻" href="http://info.xcar.com.cn/" target="_blank">新车新闻</a>&nbsp;
+												</div>
+				<div class="clear"></div>
+			</div>
+					<div class="list1" style="display: none;" id="list8">
+				<div class="toggle2">
+                   <ul class="toggle2">
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">网址导航</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">汽车综合</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">汽车论坛</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(4);" target="_self">二手车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(5);" target="_self">各地汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(6);" target="_self">各类汽车</a></li>
+										<li><a href="javascript:void(0);" onmouseover="friends_links_change(7);" target="_self">汽车相关</a></li>
+										<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(8);" target="_self">其它</a></li>
+					                    </ul>
+				</div>
+				 <div class="toggle_con_gzzp">
+									<a title="福州电脑网" href="http://www.itcou.com/" target="_blank">福州电脑网</a>&nbsp;
+									<a title="深圳二手房" href="http://esf.sz.soufun.com/" target="_blank">深圳二手房</a>&nbsp;
+												</div>
+				<div class="clear"></div>
+			</div>
+		        </div>
+	<script type="text/javascript">
+	//new Marquee("friends_links", 0, 1, 1001, 90, 50, 0, 0);
+
+function friends_links_change(id)
+{
+	var f_list = [1,2,3,4,5,6,7,8,,1];
+	var f_count=f_list.length*1-2;
+	for (var i=0;i<f_count;i++) {
+		if (f_list[i] == id) {
+			document.getElementById('list' + f_list[i]).style.display = '';
+		} else {
+			document.getElementById('list' + f_list[i]).style.display = 'none';
+		}
+	}
+}
+</script>
+</div>
+<!--content end-->
+<!--footer-->
+<!--页脚搜索-->
+<script type="text/javascript" language="javascript" src="images/poco_fresh_pop_frame.js"></script>
+<link rel="stylesheet" type="text/css" href="images/all_channel_pop_frame.css">
+<div id="footer_search">
+    <div class="shadow_bottom"></div>
+    <div class="footer_search_main">
+        <form action="http://my.poco.cn/tags/tag_search.php" method="get" target="_blank" onsubmit="return search_check();">
+			<input id="J_TsIDs" name="ts_ids" type="hidden"> 
+			<ul class="clearfix">
+				<li id="J_SearchOption" class="current_search_tag" onclick="search_option(this, null)">图片</li>
+				<li onclick="search_option(this, 1)">博客</li>
+				<li onclick="search_option(this, 3)">摄影</li>
+				<li onclick="search_option(this, 7)">美食</li>
+				<li onclick="search_option(this, 44)">旅游</li>
+				<li onclick="search_option(this, 104)">宠物</li>
+				<li onclick="search_option(this, 8)">人</li>
+				<li><a href="http://search.poco.cn/new/search/" target="_blank">电影</a></li>
+			</ul>
+			<div>
+				<input id="J_FooterQ" name="q" class="footer_input_key" onclick="this.select()" type="text">
+				<input class="footer_btn_search" value="" type="submit">
+			</div>
+			<div class="footer_hot_concern">
+			热门关注：<a href="http://my.poco.cn/tags/tag_search.php?more%5B%5D=6&amp;more%5B%5D2=7&amp;q=%C0%CF%D7%D6%BA%C5" target="_blank">老字号</a><a href="http://my.poco.cn/tags/tag_search.php?q=%C3%C0%C5%AE&amp;select=0&amp;statc_index_v2=1&amp;x=27&amp;y=2" target="_blank">美女</a><a href="http://my.poco.cn/tags/tag_search.php?more%5B%5D=6&amp;more%5B%5D2=7&amp;q=%BF%A7%B7%C8" target="_blank">咖啡</a><a href="http://my.poco.cn/tags/tag_search.php?more%5B%5D=6&amp;more%5B%5D2=7&amp;q=%C0%CF%D7%D6%BA%C5" target="_blank">老字号</a><a href="http://my.poco.cn/tags/tag_search.htx&amp;p=3&amp;q=%CB%AB%C3%E6%20%C8%CB%CF%F1&amp;b_or=&amp;ts_ids=3&amp;c=118&amp;location_id=&amp;sex=&amp;age_mark=&amp;nearby_place=&amp;order_by=sort_order%20DESC&amp;stat_request_channel=" target="_blank">双面佳人</a><a href="http://photo.poco.cn/jiqiao/details_camera_work.php?type=60&amp;channel=camera" target="_blank">室内摄影技巧</a>
+			</div>
+        </form>
+        <a href="#" class="footer_link_top" title="返回顶部"></a>
+    </div>
+	
+	
+			
+		<!-- 变色龙 添加漂浮层 -->
+		<div class="wraprelativ">
+		<div class="pop_tag"></div>
+		</div>
+		<!-- 变色龙 添加漂浮层 end -->
+	
+	
+    <div class="shadow_top"></div>
+</div>
+<!--页脚搜索 end-->
+    
+<div id="footer">    
+    <!--sitemap-->
+    <div class="sitemap clearfix">
+        <div class="sitemap_about clearfix">
+                <p><strong>关于POCO</strong></p>
+				<div style="height: 40px; overflow: hidden;">
+                <a href="http://www.pocosite.com/about/" target="_blank">公司简介</a>
+                <a href="http://www.pocosite.com/about/contact.php" target="_blank">合作联系</a>
+                <a href="http://www.pocosite.com/about/cooperation.php" target="_blank">广告服务</a>
+				<a href="http://www.pocosite.com/job/" target="_blank" class="join_us" style="float: right; color: red; font-weight: bold;">加入POCO团队</a>
+				</div>
+        </div>
+        <div class="sitemap_help clearfix">
+                <p><strong>帮助 &amp; 服务</strong></p>
+				<div style="height: 40px; overflow: hidden;">
+                <a href="http://help.poco.cn/" target="_blank">帮助中心</a>
+                <a href="http://account.poco.cn/" target="_blank">服务中心</a>
+                <a href="http://www.pocosite.com/company/terms.php" target="_blank">使用条款</a>
+                <a href="http://bbs.poco.cn/forum.htx&amp;fid=2#c1" target="_blank">意见反馈</a>
+                <a href="http://bbs.poco.cn/forum.htx&amp;fid=1#c1" target="_blank">技术支持</a>
+                <a href="http://www.pocosite.com/company/download.php" target="_blank">软件下载</a>
+				</div>
+        </div>
+        <div class="sitemap_pococard clearfix">
+                <p><strong>POCO卡</strong></p>
+                <a href="http://card.poco.cn/" target="_blank"><img src="images/poco_card.gif" alt="POCO CARD" width="62" height="51"></a>
+				<p>POCO会员卡，持卡用户可在全国POCO加盟商户消费时享受折扣优惠。</p>
+        </div>
+        <div class="sitemap_cooperation clearfix">
+                <p><strong>商业合作</strong></p>
+                <a href="http://www.kachabank.com/" target="_blank"><img src="images/kachabank.gif" alt="http://www.kachabank.com" width="95" height="23"></a>
+        </div>
+    </div>
+    <!--sitemap end-->
+    
+    <!--copyright-->
+    <div class="copyright">
+        <p class="clearfix"><span class="fl">内容合作、出版发行合作联系方式：020-87396481 <a href="http://bbs0.poco.cn/topic.php?fid=8&amp;tid=6148259&amp;p=1&amp;no_menu=1" target="_blank">不良信息举报</a>　<a href="http://bbs0.poco.cn/topic.php?p=1&amp;fid=1&amp;tid=5931541&amp;p=1" target="_blank">客户服务</a></span><span class="fr"><a href="http://www.pocosite.com/company/certificate.php" target="_blank">ICP证号：粤B2-20030218</a>  Copyright<span style="font-family: Arial;">&#169;</span> 2003-2011 POCO CO.,LTD.</span></p>
+        <p><span class="fl">广告投放联系方式：<a href="http://www.cav-ad.com/" target="_blank"><img src="images/cav.gif" align="absmiddle"></a> 华东：021-32528390  华南：020-87396965  华北：010－85656512</span>
+		<a href="http://www.idc2.com.cn/" target="_blank" class="fr">远景数据中心提供网络带宽</a>
+		</p>
+    </div>
+    <!--copyright end-->
+</div>
+<div style="height: 276px; width: 322px; overflow: hidden; position: fixed; right: 0px; bottom: 0px; display: none; z-index: 999999;" id="poco_fresh_all_catalog_pop_frame"><iframe id="poco_fresh_content_iframe" name="poco_fresh_content_iframe" src="images/poco_fresh.htm" width="322" frameborder="0" height="276" scrolling="no"></iframe></div>
+</div>
+</body>
+</html>

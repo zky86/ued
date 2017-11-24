@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>图片滑动</title>
+</head>
+<script type="text/javascript" src="Scripts/slider.js"></script>
+<script type="text/javascript" src="Scripts/Drag.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/zt.css" media="all" />
+<style>
+body{background:#d0d0d0;}
+.contentwrap {width: 1000px;margin: 0 auto; line-height:22px; font-size:12px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; margin-bottom:25px}
+
+</style>
+
+<body>
+<div class="contentwrap">
+<!--弹出-->
+<h1>图片滑动</h1>
+
+<div id="idContainer" class="picSlider">
+  <div id="idContent" class="contentPicWrap">
+	<div class="picwrap">
+		<div><img src="images/pic.jpg" /></div>
+	</div>
+  </div>
+  
+  <div class="slider_left" id="idSliderLeft"></div>
+  
+  <div class="slider" id="idSlider">
+    <div class="bar" id="idBar">
+      <div class="bar_left"></div>
+      <div class="bar_right"></div>
+    </div>
+  </div>
+  
+  <div class="slider_right" id="idSliderRight"></div>
+  
+</div>
+
+<script>
+var sld = new Slider("idSlider", "idBar", {
+	MaxValue: $("idContent").scrollWidth - $("idContent").clientWidth,
+	onMin: function(){ $("idSliderLeft").style.backgroundPosition = "bottom left"; },
+	onMax: function(){ $("idSliderRight").style.backgroundPosition = "bottom right"; },
+	onMid: function(){ $("idSliderLeft").style.backgroundPosition = "top left"; $("idSliderRight").style.backgroundPosition = "top right"; },
+	onMove: function(){ $("idContent").scrollLeft = this.GetValue(); }
+});
+sld.SetPercent(.5);
+sld.Ease = true;
+$("idSliderLeft").onmouseover = function(){ sld.Run(false); }
+$("idSliderLeft").onmouseout = function(){ sld.Stop(); }
+$("idSliderRight").onmouseover = function(){ sld.Run(true); }
+$("idSliderRight").onmouseout = function(){ sld.Stop(); }
+</script>
+<br />
+<br />
+<br />
+
+
+<div class="f14">Tips:图片展示拖动效果类，尚未使用过。</div>
+<br />
+
+<textarea name="" cols="155" rows="25">
+
+/* =======================  html  ====================== */
+
+<div id="idContainer" class="picSlider">
+  <div id="idContent" class="contentPicWrap">
+	<div class="picwrap">
+		<div><img src="images/pic.jpg" /></div>
+	</div>
+  </div>
+  
+  <div class="slider_left" id="idSliderLeft"></div>
+  
+  <div class="slider" id="idSlider">
+    <div class="bar" id="idBar">
+      <div class="bar_left"></div>
+      <div class="bar_right"></div>
+    </div>
+  </div>
+  
+  <div class="slider_right" id="idSliderRight"></div>
+  
+</div>
+
+
+/* =======================  css  ====================== */
+
+.picSlider{width:373px; overflow:hidden;background:url(images/picbg.jpg) no-repeat}
+.picSlider .contentPicWrap{width:282px;height:177px;overflow:hidden;margin-left:45px;}
+.picSlider .picwrap{padding:20px 0px 0 0px;height:156px;width:1350px;} /* 1350为图片宽度，如果换其他图片，请改为其他图片宽度 */
+.picSlider .slider{position:relative; height:12px;  float:left; width:353px;cursor:pointer;background:url(images/bar.jpg) no-repeat; margin:70px 0 0 11px;display:inline;}
+.picSlider .slider_left, .slider_right{ background:url(images/icon.gif) no-repeat; height:19px; width:28px; float:left; cursor:pointer;display: none}
+.picSlider .slider_left{background-position:left top;}
+.picSlider .slider_right{background-position:right top;}
+.picSlider .bar{ height:20px; width:18px; background:url(images/btn.jpg ) no-repeat;margin-top:-7px;}
+.picSlider .bar_left, .bar_right{background:url(images/lr.gif) no-repeat;height:15px; _font-size:0; width:6px; position:absolute; top:0px; display: none}
+.picSlider .bar_left{background-position:left top;left:-6px;}
+.picSlider .bar_right{background-position:right top;right:-6px;}
+
+</textarea>
+
+
+<textarea name="" cols="155" rows="25">
+/* ======================= 需要引入的js  ====================== */
+
+<script type="text/javascript" src="Scripts/slider.js"></script>
+<script type="text/javascript" src="Scripts/Drag.js"></script>
+
+
+<script>
+var sld = new Slider("idSlider", "idBar", {
+	MaxValue: $("idContent").scrollWidth - $("idContent").clientWidth,
+	onMin: function(){ $("idSliderLeft").style.backgroundPosition = "bottom left"; },
+	onMax: function(){ $("idSliderRight").style.backgroundPosition = "bottom right"; },
+	onMid: function(){ $("idSliderLeft").style.backgroundPosition = "top left"; $("idSliderRight").style.backgroundPosition = "top right"; },
+	onMove: function(){ $("idContent").scrollLeft = this.GetValue(); }
+});
+sld.SetPercent(.5);
+sld.Ease = true;
+$("idSliderLeft").onmouseover = function(){ sld.Run(false); }
+$("idSliderLeft").onmouseout = function(){ sld.Stop(); }
+$("idSliderRight").onmouseover = function(){ sld.Run(true); }
+$("idSliderRight").onmouseout = function(){ sld.Stop(); }
+</script>
+
+</textarea>
+
+</div>
+
+
+</body>
+</html>

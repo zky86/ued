@@ -1,0 +1,73 @@
+/*  
+Theme Name:poco ued theme
+Author URI:470416890@qq.com
+Author:HouzQ
+Description: poco
+*/
+/* 全局CSS定义 */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+ul,ol,li{list-style:none}
+address,cite,dfn,em,var{font-style:normal;}
+fieldset,img{border:0}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* 通用属性 */
+.fl{float:left; margin-right:30px;}
+.fr{float:right;}
+.f14{font-size:14px}
+.f16{font-size:16px}
+.fb{font-weight:bold}
+.tc{text-align:center}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.relative{position:relative}
+.hidden{display:block;font-size:0;height:0;overflow:hidden}
+.clear{clear:both; display:block; font-size:0;height:0;line-height:0;overflow:hidden}
+.clearfix:afte{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.clearfix{display:block}
+
+
+
+body {  }
+.wraper { width:1001px; margin:0 auto; }
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px; padding-left:10px;}
+h1 { border-bottom: 1px solid #CCCCCC; color: #3FA600;font-family: "微软雅黑"; font-size: 26px;font-weight: bold; margin-bottom: 20px; padding: 15px 0;text-align: center;}
+/* 展示状态 */
+.userimgbox { padding-left:45px;}
+.userpic { width:165px; height:165px; padding:3px; }
+.usertxt { padding:25px 0 0 50px; }
+h3{ color:#aaa; font-weight:bold; text-align:center;  font-size:14px;}
+.shuom{ clear:both;}
+.userimgbox{ overflow:hidden; _zoom:1;}
+
+#pane1{ height:200px; }
+.scrollarea .scroll-pane { width: 200px;height: 200px;overflow: auto;background: #ccc;}
+.scrollarea { color:#808080; line-height:18px; margin-top:5px; }
+.scrollarea .jScrollPaneTrack { background: url(../images/x_arrow_bg.jpg) repeat-y;}
+.scrollarea .jScrollPaneDrag { background: url(../images/x_middle.jpg) repeat-y; left:3px; }
+.scrollarea .jScrollPaneDragTop { background: url(../images/x_middle.jpg) no-repeat; height:1px; }
+.scrollarea .jScrollPaneDragBottom {  background: url(../images/x_middle.jpg) no-repeat; height:1px; }
+.scrollarea a.jScrollArrowUp {  background: url(../images/x_arrow_up.jpg) no-repeat; height:9px; }
+.scrollarea a.jScrollArrowDown {  background: url(../images/x_arrow_bottom.jpg) no-repeat;  height:9px; }
+
+#pane2{ height:200px;}
+.scrollarea2 .scroll-pane { width: 200px;height: 200px;overflow: auto;background: #ccc;}
+.scrollarea2{ color:#808080; line-height:18px; margin-top:5px; }
+.scrollarea2 .jScrollPaneTrack{ background:#000;}
+.scrollarea2 .jScrollPaneDrag{ background:#666666 }
+
+
+#pane3{ height:200px;}
+.scrollarea3 .scroll-pane { width: 200px;height: 200px;overflow: auto;background: #ccc;}
+.scrollarea3{ color:#808080; line-height:18px; margin-top:5px;}
+.scrollarea3 .jScrollPaneTrack{ left:0; right:auto}
+.scrollarea3 .jScrollPaneTrack{ background:#000;}
+.scrollarea3 .jScrollPaneDrag{ background:#666666 }
+

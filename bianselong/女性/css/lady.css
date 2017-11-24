@@ -1,0 +1,317 @@
+/* Link */
+a { color:#000; text-decoration:underline; outline:none; }
+a:hover { color:#000; text-decoration:none; }
+img,
+a img { border:0; vertical-align:middle; }
+body{background:#a02869 url(http://lady.poco.cn/images_v2/photo_bg.gif) center top repeat-y;font-family:"宋体", Tahoma; line-height:24px; }
+.more { float:right; text-align:right; font-size:12px; line-height:18px; }
+.more a { color:#000;}
+/* Font  */
+.fb { font-weight:bold; }
+.f11 { font-size:11px; }
+.f12 { font-size:12px; }
+.f13 { font-size:13px; }
+.f14 { font-size:14px; }
+.f22 {font-size:22px;}
+.black { color:#000;}
+.white { color:#FFF; }
+.gray{color:#737373;}
+.grey,
+.grey a  { color:#A02869; }
+.pink,
+.pink a{ color:#a02869;}
+.c-4d4d4d{color:#4d4d4d;}
+.lh14{line-height:14px!important;}
+.lh20 { line-height:20px!important;}
+.lh18{line-height:18px!important;}
+.lh30{line-height:30px!important;}
+.lh35{line-height:35px!important;}
+.mt10{margin-top:10px!important;}
+.mt15{margin-top:15px!important;}
+.mt20{margin-top:20px!important;}
+.mr10{margin-right:10px!important;}
+.mb10{margin-bottom:10px!important;}
+.mb5{margin-bottom:5px!important;}
+.mt5{margin-top:5px!important;}
+.mr5{margin-right:5px!important;}
+.mr20{margin-right:20px!important;}
+.mr50{margin-right:50px!important;}
+.pdl20{padding-left:20px;}
+.fn_nm { font-weight:normal!important;}
+.fn_ta { font-family:Tahoma; }
+.fn_st { font-family:宋体; }
+.text-left{ text-align:left;}
+.col_lady_text,
+.col_lady_text a { color:#ba3b89;}
+
+/* position */
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+.relative { position:relative; }
+.text_center { text-align:center!important; }
+.text_left { text-align:left!important; }
+.text_right { text-align:right!important; }
+
+/*title*/
+.c_line { height:1px; line-height:1px; overflow:hidden; background:#a02869; margin:10px 0px; clear:both; }
+.d_line { background:url(http://lady.poco.cn/images_v2/dot_line.gif) center top repeat-x; height:1px; margin:10px 0px; clear:both;overflow:hidden;}
+
+/*input*/
+.inputbg { background:url(http://lady.poco.cn/images_v2/inputbg.jpg) left top no-repeat; padding-left:4px; color:#808080; }
+.input280 { width:280px; height:23px; line-height:21px; border:1px solid #a02869; }
+.input180 { width:180px; height:21px; line-height:21px; border:1px solid #a02869; }
+.input120 { width:180px; height:21px; line-height:21px; border:1px solid #a02869;}
+.select select { width:116px; height:23px; border:#d2150b; }
+
+/*--
+栅格背景
+------*/
+.grid_c2 { background:url(http://lady.poco.cn/images_v2/grid-c2.gif) center top repeat-y }
+.grid_c2f { background:url(http://lady.poco.cn/images_v2/grid-c2f.gif) center top repeat-y }
+.grid_c2_s312 { background:url(http://lady.poco.cn/images_v2/grid-c2-s312.gif) center top repeat-y; height:100%; }
+.grid_c2f_s312 { background:url(http://lady.poco.cn/images_v2/grid-c2f-s312.gif) center top repeat-y; height:100%; }
+.grid_c3f_s205e280 { background:url(http://lady.poco.cn/images_v2/grid_c3f_s205e280.gif) center top repeat-y; height:100%; }
+
+/*背景线*/
+h3.title { font-size:14px; font-weight:bold; text-indent:20px; background:url(http://lady.poco.cn/images_v2/h3_ico.gif) left 1px no-repeat; color:#ba3b89;line-height:18px; overflow:hidden; height:18px;margin-bottom:10px;}
+h3 a { font-weight:bold; font-size:14px; text-decoration:underline; }
+h3 a:hover { font-weight:bold; font-size:14px; text-decoration:none; }
+h4 a { font-size:12px; text-decoration:underline; }
+h4 a:hover { font-size:12px; text-decoration:none; }
+h5 { color:#ba3b89; }
+strong a { font-weight:bold; font-size:14px; text-decoration:underline; }
+strong a:hover { font-weight:bold; font-size:14px; text-decoration:none; }
+#content { margin-bottom:20px; height:100%; }
+/*弹出*/
+#top_pop { width:992px; background:#f8f8f8; border:#a02869 solid 1px; color:#ba3b89; margin:7px auto; height:74px; }
+#top_pop .top_colse { width:100px; float:right; color:#000; height:23px; line-height:23px; vertical-align:middle; }
+#top_pop .top_colse .checkbox { width:23px; float:left; line-height:18px; *margin-top:1px;
+*margin-top:0px!important;}
+#top_pop .top_colse .text { width:55px; float:left; }
+#top_pop .top_colse .close { width:11px; height:11px; float:left; padding-top:5px; }
+#top_pop .top_menu { text-align:center; width:992px; height:29px; line-height:29px; }
+#top_pop .top_menu li { width:248px; float:left; text-align:center; display:inline; }
+#top_pop .top_menu a { font-size:14px; font-weight:700; color:#ba3b89; text-decoration:underline; }
+#top_pop .top_menu a:hover { font-size:14px; font-weight:700; color:#ba3b89; text-decoration:none; }
+#top_pop .float_l { float:left; height:35px; line-height:35px; text-indent:18px; width:500px; }
+#top_pop .toptitle { width:992px; height:35px; }
+/*弹出结束*/
+/*--------
+
+baaner css
+-----------*/
+.banner994 { width:994px; margin:10px auto; height:90px; clear:both; }
+.banner205 { width:205px; margin-top:10px; height:80px; clear:both; }
+.zbanner312 { width:312px; margin-bottom:10px; height:214px; clear:both; }
+.banner312s { width:312px; margin:0px; height:135px; clear:both; }
+.banner768 { height:80px; width:768px; margin-top:10px; clear:both; overflow:hidden; }
+.banner312x214 { width:312px; height:214px; margin-top:10px;}
+/*--------
+baaner css end
+-----------*/
+/* change */
+.toggle,.toggle2{padding:0 0 0 13px;height:30px;overflow:hidden;background:url(http://lady.poco.cn/images_v2/solid_line.gif) repeat-x  bottom;} 
+.toggle li,.toggle2 li{border:#a02869 solid 1px;font-size:14px;font-weight:bold;float:left;margin-right:3px;padding-top:1px;}
+.toggle li a,.toggle2 li a{text-decoration:none;display:block;padding:0 20px;background:#ececec;line-height:27px;}
+.toggle li.current a,.toggle2 li.current a{background:#fff;color:#ba3b89;}
+.toggle li.current,.toggle2 li.current{border-bottom:#fff solid 1px;}
+.toggle2{padding:0 0 0 7px;height:22px;background:url(http://lady.poco.cn/images_v2/solid_line.gif) repeat-x 0 21px;}
+.toggle2 li{font-size:12px;font-weight:normal;}
+.toggle2 li a{padding:0 28px;line-height:19px;}
+
+/* 分页 */
+.con_pg { height:30px; line-height:30px; clear:both; }
+.page {margin:3px 0; float:right; height:20px; }
+.page a { display:block; float:left; margin-right:4px; height:17px; line-height:17px; overflow:hidden; padding:0 6px; background:#efefef; border:1px solid #cccccc; color:#666; text-decoration:none; display:inline; }
+.page a:hover { background:#ffffff; border:1px solid #a02869; color:#a02869; }
+.page a.current{background:#fff;border:#a02869 solid 1px;color:#a02869;}
+
+
+/*焦点*/
+.fous_pic { width:280px; height:210px;}
+.today_fons { width:467px;}
+.today_fons ul{ width:467px;}
+.today_fons ul li {float:left; padding-top:1px;}
+.today_fons ul li.photo{ width:174px; height:235px; padding-right:13px;}
+.today_fons ul li.text_ul { width:280px;}
+.today_fons .text_ul .text_ul_li { width:280px;}
+.today_fons .text_ul .text_ul_li li { width:280px;}
+.today_fons .mt14{ margin-top:14px;}
+
+
+.ul205_pic64 { width:205px;}
+.ul205_pic64 ul { width:205px; clear:both; padding-bottom:15px;}
+.ul205_pic64 ul li { float:left;}
+.ul205_pic64 ul li.photo64 { height:64px; width:64px; padding-right:10px;}
+.ul205_pic64 ul li.text { width:131px;}
+
+.ul280_pic85 { width:280px;}
+.ul280_pic85 ul { width:280px; padding-top:5px; clear:both;}
+.ul280_pic85 ul li { float:left;}
+.ul280_pic85 ul li.photo85 { height:85px; width:85px; padding-right:10px;}
+.ul280_pic85 ul li.text { width:185px;}
+
+
+.ul768_pic174_text { width:661px; clear:both;}
+.ul768_pic174_text .photo174 { width:174px; float:left; padding-right:12px;}
+.ul768_pic174_text .ul_box { width:475px; float:left;}
+.ul768_pic174_text .text_ul { width:475px;}
+.ul768_pic174_text .text_ul ul { width:237px; float:left;}
+.ul768_pic174_text .text_ul ul li { height:24px;}
+.ul768_pic174_text .title { text-align:center; height:45px;}
+.ul768_pic174_text .text_link { width:475px; height:24px; clear:both;}
+
+
+.ul_312_pic145 { width:312px; overflow:hidden;}
+.ul_312_pic145 ul { width:334px;}
+.ul_312_pic145 ul li { width:145px; text-align:center; font-weight:bold; float:left; padding-right:22px; padding-bottom:5px; line-height:37px;}
+
+.ul768_pic174_text2 { width:661px; clear:both;}
+.ul768_pic174_text2 .photo174 { width:174px; float:left; padding-right:12px;}
+.ul768_pic174_text2 .ul_box { width:475px; clear:both; background:url(http://lady.poco.cn/images_v2/dot_line.gif) 225px top repeat-y; }
+.ul768_pic174_text2 .ul_box_line { width:475px; float:left;}
+.ul768_pic174_text2 .ul_box ul { width:237px; float:left;}
+.ul768_pic174_text2 .ul_box ul li { height:24px;}
+.ul768_pic174_text2 .title { text-align:center; height:45px;}
+.ul768_pic174_text2 .text_link { width:475px; height:24px; clear:both;}
+
+.ul768_pic174_text2 .ul245_pic85 { width:237px; overflow:hidden; height:120px;}
+.ul768_pic174_text2 .ul245_pic85 ul { width:279px; text-align:center;}
+.ul768_pic174_text2 .ul245_pic85 ul li { width:95px; padding-right:34px; float:left; text-align:center; line-height:32px;}
+
+
+.ul312_pic100 { width:312px;}
+.ul312_pic100 ul{ width:312px;}
+.ul312_pic100 ul li { width:312px; height:120px; clear:both; list-style:none; clear:both;}
+.ul312_pic100 li { width:312px; height:120px; clear:both; list-style:none; clear:both; padding-bottom:5px;}
+.ul312_pic100 .photo100 { height:120px; width:100px; float:left;}
+.ul312_pic100 .text { width:205px; height:120px; float:right; padding-left:6px;}
+
+/*女性美容*/
+.ul768_pic165_text { width:768px;}
+.ul768_pic165_text ul { width:768px;}
+.ul768_pic165_text ul li { float:left;}
+.ul768_pic165_text ul li.photo165 { width:167px; padding-right:10px;}
+.ul768_pic165_text ul li.text { width:590px;}
+.ul768_pic165_text .imgbox { display:table-cell; vertical-align:bottom; text-align:center; width:167px; }
+.ul768_pic165_text .show_shadow { background:url(http://lady.poco.cn/images_v2/tj_shadow.gif) no-repeat center 0; height:16px; }
+.ul768_pic165_text .imgbox img { vertical-align:bottom; border:#cbcbcb solid 1px; display:inline-block; }
+
+.fenlei_nav { width:205px;}
+.fenlei_nav li { width:185px; height:30px; line-height:30px; font-size:14px; padding-left:20px;}
+.fenlei_nav a.link { font-size:14px; font-weight:bold;}
+
+.ul205_pic145 { width:205px;}
+.ul205_pic145 li { width:205px; line-height:34px; text-align:center; font-weight:bold; padding-bottom:5px;}
+
+/*公告*/
+.notice { width:205px; }
+.notice li { width:205px; height:24px; line-height:24px; }
+
+.notice_pdl20 { width:205px; }
+.notice_pdl20 li { width:185px; height:24px; line-height:24px; padding-left:20px; }
+
+/*评论样式*/
+.comments { margin-left:20px;}
+#comment .cmt_button { background-color:#ba3b89; }
+#comment .cmt_input_text, .cmt_textarea, .cmt_smile_over_div, .verify_code { border:1px solid #ba3b89; }
+#comment .verify_code { width: 100px;height: 20px }
+
+/*最终页*/
+.zpe_votes { width:768px; clear:both;}
+.zpe_vote { padding:20px 0; width:630px; }
+.zpe_vote a { text-decoration:none;}
+.zpe_vote .piao_sn { float:left; text-align:center; width:60px;}
+.zpe_vote .vote_bor { text-align:center; font:bold 14px/24px "宋体"; margin:0 15px; float:left; background:url(http://lady.poco.cn/images_v2/vote_bor01.gif) left top no-repeat; height:28px; width:97px; line-height:30px; padding:0px 2px 2px 0px; color:#A02869;}
+.zpe_vote .vote_bor2 { text-align:center; font:bold 14px/24px "宋体"; margin:0 15px; float:left; background:url(http://lady.poco.cn/images_v2/vote_bor02.gif) left top no-repeat; height:28px; width:159px; line-height:30px; padding:0px 2px 2px 0px;}
+.zpe_vote .vote_bor a,
+.zpe_vote .vote_bor2 a { display:block;}
+.zpe_vote_r { padding-left:10px; padding-top:10px; width:120px; }
+.zpe_vote_r img { float:left; margin:6px 5px 0 0; }
+.zpe_tags { padding-left:23px;}
+
+
+
+
+
+/* 新版变色龙 2010-11-11 修正 */
+.bg{background:url(../images/poco_i_bg.gif) center 0  repeat-y;}
+
+#header .header_top_bar,.nav_bar{ width:994px; margin:0 auto}
+
+.shadow_top{ height:0px; overflow:hidden}
+
+#footer_search .footer_search_main{ background:none}
+
+
+#header{width:100%;background-color:#FFF; background:url(../images/headbg.jpg)  no-repeat center 0} /*-- 修改头部背景图 大小 1024*110 --*/
+
+
+body {background:url(../images/imgty_1.jpg)  repeat #f27579 ;}  /*-- 外围 shawdow 阴影图片 色值可修改 --*/
+ 
+.shadow_wrap {} 
+
+.shadow_header_top {background: none; background-color:#ef7478}  /*-- 顶部shaw-top 修改图片，大小 1030*8 颜色值 --*/
+
+#header .subnav_bar{ background-color:#f27579 } /*-- 导航条 背景色 --*/
+
+#header .header_top_nav a,#header .header_top_nav{ color:#4d4d4d} /*-- 顶部文字导航颜色   请在这改色值 --*/
+
+#header .subnav .current_subnav a { color:#fff}
+
+#header .header_search .input_text{ border:1px solid #f27579} /*-- 顶部输入框颜色   请在这改色值 --*/
+
+#header .header_search .button { background:#f27579}/*-- 顶部搜索按钮颜色   请在这改色值 --*/
+
+
+#header .mainnav li.hour24 a,#header .mainnav li.ichina a { color:#f27579 } /*-- 24小时 亚运字体 颜色 --*/
+
+#header .mainnav li.hour24{ background-position:-292px 0; background:none} /*-- 24小时 背景定位 --*/
+
+.shadow_top, .shadow_bottom  { background:none} /*-- 底部shawtop与shawbottm  背景色 --*/
+
+h2.title, h3.title {color:#f27579}  /*-- 标题颜色 --*/
+
+.c_line { background-color:#f27579}  /*-- 线颜色 --*/
+
+#footer_search { background:url(../images/footbg.jpg) center 0 no-repeat}  /*-- 底部大图 大小 1024*113  --*/
+
+#footer_search .footer_search_main li { border-right:1px solid #ef5a5f; color:#f27579;}  /*-- 线框 字体 颜色 --*/
+#footer_search .footer_search_main li a{color:#f27579;}
+#footer_search .footer_search_main li.current_search_tag{ color:#fff}
+
+#footer_search .footer_hot_concern,#footer_search .footer_hot_concern a { color:#f27579}  /*-- 字体颜色 --*/
+
+#footer_search .footer_input_key {border:1px solid #ef5a5f}  /*-- 输入框 边框颜色 --*/
+
+
+.wraprelativ { position:relative; width:994px; margin:0 auto}
+.pop_tag {  position:absolute; left:725px; top:-143px; z-index:999;width:148px; height:143px;background:url(../images/photo1.png) center no-repeat;_background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/photo1.png");}   /*-- 漂浮层 --*/
+
+#footer_search .footer_link_top  { background:none } /*-- top 背景图 --*/
+
+#footer .sitemap strong { color:#f27579} /*-- 底部字体颜色 --*/
+
+#footer .sitemap_about, #footer .sitemap_help, #footer .sitemap_pococard {border-right:1px solid #ef5a5f} /*-- 底部线框颜色 --*/
+
+#footer .copyright{ border-top:2px solid #f27579}/*-- 底部线框颜色 --*/
+
+#footer_search .current_search_tag { background-color:#ef5a5f}/*-- tab 当前颜色背景色 --*/
+
+
+h3.title  {background:url(../images/icnew.gif) no-repeat}/*-- title 背景图 --*/
+
+.grid_c2f {background:url(../images/grid-c2f.gif) repeat-y center top }/*-- 线背景图 --*/
+ 
+.grid_c2f_s312 {background:url(../images/grid-c2f-s312.gif) repeat-y center top }/*-- 线背景图 --*/
+
+.grid_c3f_s205e280{background:url(../images/grid_c3f_s205e280.gif) repeat-y center top}
+
+
+.toggle2 li{ border:1px solid #f27579}
+
+.toggle li.current a, .toggle2 li.current a{ color:#f27579}
+
+/* Copyright (c) 2010, Poco.cn.  All rights reserved. */
+

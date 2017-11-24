@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title></title>
+<link href="css/reset.css" rel="stylesheet" />
+<style type="text/css">
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+.clearfix:afte{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:block}
+.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.content {font-size: 14px; line-height: 24px; margin: 0 auto;width: 994px; overflow:hidden;}
+h1 { border-bottom: 1px solid #CCCCCC; color: #3FA600;font-family: "微软雅黑"; font-size: 26px;font-weight: bold; margin-bottom: 20px; padding: 15px 0;text-align: center;}
+.tabTurnPlay .navTitle { padding-bottom:10px; position:relative; }
+.tabTurnPlay .s { position:absolute; border-left:5px solid #fff; border-right:5px solid #fff; border-top:5px solid #f28d04; width:0; height:0; top:26px; }
+.tabTurnPlay .navTitle ul { border:1px solid #dcdcdc; background:#ededed; overflow:hidden; zoom:1; }
+.tabTurnPlay .navTitle ul li { float:left; width:90px; text-align:center; line-height:25px; font-weight:bolder; color:#000; cursor:pointer; font-size:14px; }
+.tabTurnPlay .navTitle ul li.cur a:link { color:#fff; }
+.tabTurnPlay .navTitle ul li.cur a:visited { color:#fff; }
+.tabTurnPlay .navTitle ul li.cur a:hover { color:#fff; text-decoration:none; }
+.tabTurnPlay .navTitle ul li.cur a:active { color:#fff; text-decoration:none; }
+.tabTurnPlay .navTitle ul li.cur { background:#f28d04; color:#fff }
+.tabTurnPlay .con { padding:8px 5px; overflow:hidden; zoom:1 }
+.tabTurnPlay .con ul { float:left; width:48%; padding-left:10px; }
+.tabTurnPlay .con li { width:100%; line-height:25px; }
+textarea {
+    background: none repeat scroll 0 0 #E5E5E5;
+    border: 2px solid #CCCCCC;
+}
+</style>
+
+<script type="text/javascript">
+		var d = document,
+			B = {
+				obj	: function(id){
+					if(typeof id == 'string') return d.getElementById(id);
+						else if(typeof id == 'object') return id;
+				},
+				ie 	: function(){
+					return !-[1,];
+				}
+			},
+			$ = B.obj;
+		
+		//标签切换
+		function funTabTurnPlay(_Id){
+			this.emId = _Id + "_tabTurnPlay";
+ 			
+			var obj	   = $(this.emId),
+				objNav = null,
+				objLi  = null,
+				objS   = obj.getElementsByTagName('i')[0],
+				objDiv = obj.getElementsByTagName('div'),
+				objCon = [];
+			
+			this.inits = function(){
+				for(var i in objDiv){
+					if(objDiv[i].className == 'con') objCon.push(objDiv[i]);
+					if(objDiv[i].className == 'navTitle') objNav = objDiv[i];
+				}
+				objLi = objNav.getElementsByTagName('li');
+				for(var i=0; i<objLi.length; i++){
+					objLi[i].setAttribute('rel',i);
+					objLi[i].onmouseover = function(){
+						var _i = parseInt(this.getAttribute('rel'))+1;
+						for(var j in objLi) objLi[j].className = '';
+						objS.style.left = _i*90-50+'px';
+						this.className = 'cur';
+						for (var c in objCon) {
+							if(objCon[c].getAttribute('rel')!='con'+_i) objCon[c].style.display = 'none';
+								else objCon[c].style.display = '';
+						}
+						
+					}
+				}
+			}
+		}
+		
+		function funDivMsgBox(_Id){
+			var obj 	= $(_Id),
+				objMsg  = null,
+				objJ	= null,
+				objCon	= null;
+			
+			this.init = function(){
+for(var i=0; i<obj.getElementsByTagName('div').length; i++)
+				{
+					switch(obj.getElementsByTagName('div')[i].className){
+						case 'msgbox':
+							objMsg = obj.getElementsByTagName('div')[i];
+							break;
+						case 'con':
+							objCon = obj.getElementsByTagName('div')[i];
+							break;
+						case 'j':
+							objJ = obj.getElementsByTagName('div')[i];
+							break;
+					}
+				}
+				
+				obj.onmouseover = function(){objMsg.style.display = '';}
+				obj.onmouseout = function(){objMsg.style.display = 'none';}
+				objCon.onmouseover = function(){objMsg.style.display = '';}
+				objCon.onmouseout = function(){objMsg.style.display = 'none';}
+				objJonmouseover = function(){objMsg.style.display = '';}
+				objJ.onmouseout = function(){objMsg.style.display = 'none';}
+			}
+		}
+	</script>
+</head>
+<body>
+<div class="content">
+<h1>list切换页</h1>
+ <div id="r1_tabTurnPlay" class="tabTurnPlay">
+  <div class="navTitle">
+   <ul>
+    <li class="cur"><a href="#">政策发布</a></li>
+    <li><a href="#">政策解读</a></li>
+    <li><a href="#">工作通知</a></li>
+    <li><a href="#">征求意见</a></li>
+   </ul>
+   <i class="s" style="left:40px;"></i> </div>
+   
+   <!--切换内容1-->
+  <div rel="con1" class="con">
+   <ul>
+    <li><a href="#" target="_blank" >商务部公告2010年第52号 关于对原产于美国的进...</a></li>
+    <li><a href="#" target="_blank" >商务部公告2010年第48号  关于对原产于欧盟的...</a></li>
+    <li><a href="#" target="_blank">商务部办公厅关于外商投资互联网、自动售货机方...</a></li>
+    <li><a href="#" target="_blank">中华人民共和国商务部公告2010年第49号 </a></li>
+   </ul>
+   <ul>
+    <li><a href="#" target="_blank" >《境外中资企业机构和人员安全管理规定》</a></li>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》</a></li>
+    <li><a href="#" target="_blank">中华人民共和国商务部公告2010年第47号</a></li>
+    <li><a href="#" target="_blank">商务部关于规范发展沐浴业的指导意见</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
+   </ul>
+  </div>
+  
+  <!--切换内容2-->
+  <div rel="con2" class="con" style="display:none;">
+   <ul>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
+   </ul>
+   <ul>
+    <li><a href="#">商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
+   </ul>
+  </div>
+  
+  <!--切换内容3-->
+  <div rel="con3" class="con" style="display:none;">
+   <ul>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
+   </ul>
+   <ul>
+    <li><a href="#">商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
+   </ul>
+  </div>
+  
+  <!--切换内容4-->
+  <div rel="con4" class="con" style="display:none;">
+   <ul>
+    <li><a href="#" target="_blank">22《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
+   </ul>
+   <ul>
+    <li><a href="#">111商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
+   </ul>
+  </div>
+ </div>
+ <textarea name="" cols="150" rows="25">
+ /* ======================= css ====================== */
+.tabTurnPlay .navTitle { padding-bottom:10px; position:relative; }
+.tabTurnPlay .s { position:absolute; border-left:5px solid #fff; border-right:5px solid #fff; border-top:5px solid #f28d04; width:0; height:0; top:26px; }
+.tabTurnPlay .navTitle ul { border:1px solid #dcdcdc; background:#ededed; overflow:hidden; zoom:1; }
+.tabTurnPlay .navTitle ul li { float:left; width:90px; text-align:center; line-height:25px; font-weight:bolder; color:#000; cursor:pointer; font-size:14px; }
+.tabTurnPlay .navTitle ul li.cur a:link { color:#fff; }
+.tabTurnPlay .navTitle ul li.cur a:visited { color:#fff; }
+.tabTurnPlay .navTitle ul li.cur a:hover { color:#fff; text-decoration:none; }
+.tabTurnPlay .navTitle ul li.cur a:active { color:#fff; text-decoration:none; }
+.tabTurnPlay .navTitle ul li.cur { background:#f28d04; color:#fff }
+.tabTurnPlay .con { padding:8px 5px; overflow:hidden; zoom:1 }
+.tabTurnPlay .con ul { float:left; width:48%; padding-left:10px; }
+.tabTurnPlay .con li { width:100%; line-height:25px; }
+</style>
+
+<script type="text/javascript">
+		var d = document,
+			B = {
+				obj	: function(id){
+					if(typeof id == 'string') return d.getElementById(id);
+						else if(typeof id == 'object') return id;
+				},
+				ie 	: function(){
+					return !-[1,];
+				}
+			},
+			$ = B.obj;
+		
+		//标签切换
+		function funTabTurnPlay(_Id){
+			this.emId = _Id + "_tabTurnPlay";
+ 			
+			var obj	   = $(this.emId),
+				objNav = null,
+				objLi  = null,
+				objS   = obj.getElementsByTagName('i')[0],
+				objDiv = obj.getElementsByTagName('div'),
+				objCon = [];
+			
+			this.inits = function(){
+				for(var i in objDiv){
+					if(objDiv[i].className == 'con') objCon.push(objDiv[i]);
+					if(objDiv[i].className == 'navTitle') objNav = objDiv[i];
+				}
+				objLi = objNav.getElementsByTagName('li');
+				for(var i=0; i<objLi.length; i++){
+					objLi[i].setAttribute('rel',i);
+					objLi[i].onmouseover = function(){
+						var _i = parseInt(this.getAttribute('rel'))+1;
+						for(var j in objLi) objLi[j].className = '';
+						objS.style.left = _i*90-50+'px';
+						this.className = 'cur';
+						for (var c in objCon) {
+							if(objCon[c].getAttribute('rel')!='con'+_i) objCon[c].style.display = 'none';
+								else objCon[c].style.display = '';
+						}
+						
+					}
+				}
+			}
+		}
+		
+		function funDivMsgBox(_Id){
+			var obj 	= $(_Id),
+				objMsg  = null,
+				objJ	= null,
+				objCon	= null;
+			
+			this.init = function(){
+for(var i=0; i<obj.getElementsByTagName('div').length; i++)
+				{
+					switch(obj.getElementsByTagName('div')[i].className){
+						case 'msgbox':
+							objMsg = obj.getElementsByTagName('div')[i];
+							break;
+						case 'con':
+							objCon = obj.getElementsByTagName('div')[i];
+							break;
+						case 'j':
+							objJ = obj.getElementsByTagName('div')[i];
+							break;
+					}
+				}
+				
+				obj.onmouseover = function(){objMsg.style.display = '';}
+				obj.onmouseout = function(){objMsg.style.display = 'none';}
+				objCon.onmouseover = function(){objMsg.style.display = '';}
+				objCon.onmouseout = function(){objMsg.style.display = 'none';}
+				objJonmouseover = function(){objMsg.style.display = '';}
+				objJ.onmouseout = function(){objMsg.style.display = 'none';}
+			}
+		}
+	</script>
+    
+   /* =======================  html ====================== */  
+    <div id="r1_tabTurnPlay" class="tabTurnPlay">
+  <div class="navTitle">
+   <ul>
+    <li class="cur"><a href="#">政策发布</a></li>
+    <li><a href="#">政策解读</a></li>
+    <li><a href="#">工作通知</a></li>
+    <li><a href="#">征求意见</a></li>
+   </ul>
+   <i class="s" style="left:40px;"></i> </div>
+   
+   <!--切换内容1-->
+  <div rel="con1" class="con">
+   <ul>
+    <li><a href="#" target="_blank" >商务部公告2010年第52号 关于对原产于美国的进...</a></li>
+    <li><a href="#" target="_blank" >商务部公告2010年第48号  关于对原产于欧盟的...</a></li>
+    <li><a href="#" target="_blank">商务部办公厅关于外商投资互联网、自动售货机方...</a></li>
+    <li><a href="#" target="_blank">中华人民共和国商务部公告2010年第49号 </a></li>
+   </ul>
+   <ul>
+    <li><a href="#" target="_blank" >《境外中资企业机构和人员安全管理规定》</a></li>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》</a></li>
+    <li><a href="#" target="_blank">中华人民共和国商务部公告2010年第47号</a></li>
+    <li><a href="#" target="_blank">商务部关于规范发展沐浴业的指导意见</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
+   </ul>
+  </div>
+  
+  <!--切换内容2-->
+  <div rel="con2" class="con" style="display:none;">
+   <ul>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
+   </ul>
+   <ul>
+    <li><a href="#">商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
+   </ul>
+  </div>
+  
+  <!--切换内容3-->
+  <div rel="con3" class="con" style="display:none;">
+   <ul>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
+   </ul>
+   <ul>
+    <li><a href="#">商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
+   </ul>
+  </div>
+  
+  <!--切换内容4-->
+  <div rel="con4" class="con" style="display:none;">
+   <ul>
+    <li><a href="#" target="_blank">22《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
+   </ul>
+   <ul>
+    <li><a href="#">111商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
+   </ul>
+  </div>
+ </div>
+    </textarea>
+	<div style="text-align:right; font-size:16px; padding:10px; font-size:12px;"><a href="#" style="color:#6AC334;">回到顶部</a></div>
+</div>
+<script type="text/javascript" language="javascript">
+      (new funTabTurnPlay('r1')).inits();
+    </script>
+    
+    
+</body>
+</html>

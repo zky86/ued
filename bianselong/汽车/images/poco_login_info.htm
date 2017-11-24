@@ -1,0 +1,63 @@
+/*<script language="javasvript"></script>*/ var __poco_login_info_header_str = '<'+'ul>\n<'+'li> \n<'+'strong>Hi!<'+'/strong> 小猪 \n<'+'/li>\n\t    <'+'li id="unread_messages_li" class="unread_messages_li">\n   <'+'div class="fl"> <'+'div id="unread_messages">\n<'+'div class="unread_messages_div">\n<'+'a href="http://my.poco.cn/manage/manage_pm_message.php" target="_blank">悄悄话(<'+'span class="red"><'+'strong>19<'+'/strong>新<'+'/span>)<'+'/a>\n<'+'a href="http://my.poco.cn/manage/manage_pm_notice.php?notice_type=quote" target="_blank">留言被回复(<'+'span>0新<'+'/span>)<'+'/a>\n<'+'a href="http://my.poco.cn/manage/manage_pm_message.php?flag=friend&folder=inbox&m_type=1" target="_blank">加好友申请(<'+'span class="red"><'+'strong>1<'+'/strong>新<'+'/span>)<'+'/a>\n<'+'a href="http://my.poco.cn/manage/manage_pm_notice.php?notice_type=system" target="_blank">系统通知(<'+'span>0新<'+'/span>)<'+'/a>\n<'+'/div>\n<'+'/div>\n    <'+'/div>\n\t<'+'a id="unread_messages_top" class="unread_messages_top" onmouseover="show_unread_messages(\'unread_messages\',this)" href="http://my.poco.cn/manage/manage_pm_message.php" target="_blank"><'+'img src="http://www.poco.cn/index_images/index_icon_mail.gif" />(20)<'+'/a>\n    <'+'/li>\n\t \n    <'+'li>\n\t \n    \t\t[<'+'a href="http://my.poco.cn/manage/" class="manage" target="_blank">进入管理<'+'/a>] \n\t\t[<'+'a href="/module_common/login/poco_login_act.php?act=logout&logout_locate=&tmp=1295948838" target="poco_login_info_header_frame" class="logout">退出<'+'/a>]\n<'+'iframe name=\'poco_login_info_header_frame\' style=\'display:none\'><'+'/iframe>\n\t | \n     <'+'/li>\n     <'+'/ul>\n';var ddm_timer;
+var ddm_lastTarget;
+function show_unread_messages(id,obj){
+	clearTimeout(ddm_timer);
+	if (ddm_lastTarget) ddm_lastTarget.style.display = "none";
+	ddm_target = document.getElementById(id);
+	ddm_lastTarget = ddm_target;
+	obj.className='unread_messages_top unread_messages_top_hover';
+	document.getElementById('unread_messages_li').className='';
+	ddm_target.style.display = "block";
+	//alert($('unread_messages').offsetWidth+'|'+$('unread_messages_top').offsetWidth)
+	ddm_target.style.width=ddm_target.offsetWidth+'px';
+	//alert(-(ddm_target.offsetWidth-obj.offsetWidth)+'px')
+	ddm_target.style.marginLeft=-(ddm_target.offsetWidth-obj.offsetWidth)+'px';
+	
+	//$('J_unread_messages_li').className='';
+	//alert();
+	//下拉触发
+	ddm_target.onmouseover = function(){
+		clearTimeout(ddm_timer);	
+	}
+	//移除
+	
+	ddm_target.onmouseout = obj.onmouseout = function(){
+		ddm_timer = setTimeout(function(){
+			obj.className='unread_messages_top';
+			document.getElementById('unread_messages_li').className='unread_messages_li';
+			ddm_target.style.display = "none";
+			try{
+				eval(hash+'_drop_down_out(obj,hash)');
+			}
+			catch(e){}
+			
+		}, 300);	
+	};
+
+
+}
+document.write('<style type="text/css">\
+#header_login_info li{ float:left}\
+#header_login_info{ float:left;}\
+#unread_messages{ position:absolute; margin-top:26px; z-index:999; overflow:hidden; line-height:20px; display:none}\
+.unread_messages_div{ border:1px solid #9e9e9e; padding:6px 10px 6px 7px; background:#fff;}\
+.unread_messages_div a{ display:block; text-align:right; white-space:nowrap; }\
+#header .header_top_nav .unread_messages_div .red{ color:#FF0000 }\
+#header .header_top_nav .unread_messages_div span{ color:#000 }\
+#header .header_top_nav .unread_messages_div a:hover { color:#4D4D4D }\
+#header .header_top_nav .unread_messages_div a,#header .header_top_nav .unread_messages_top_hover,#header .header_top_nav .unread_messages_top_hover:hover{ color:#4D4D4D;}\
+.unread_messages_div .red{ color:#F00}\
+.unread_messages_top{ line-height:1; padding:1px; float:left; height:18px; padding-top:4px; text-decoration:none; margin-top:4px;}\
+#header .unread_messages_top_hover:hover{ text-decoration:none}\
+.unread_messages_top_hover{  background:#fff; z-index:1000; position:relative;  border:1px solid #9e9e9e; border-bottom:1px solid #fff; padding:0px 3px;  padding-top:3px; }\
+.unread_messages_top_hover span{ display:none}\
+.unread_messages_li{ padding:0 3px}\
+</style>');
+
+document.getElementById('header_login_info').innerHTML=__poco_login_info_header_str;if(typeof(__is_pet_bbs)!='undefined')
+{
+	if(__is_pet_bbs == 1 && "\v"=="v")
+	{
+		document.getElementById('unread_messages_top').style.height="23px";
+	}
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>间隙滚动</title>
+<link href="css/css.css" rel="stylesheet" type="text/css"  />
+<script language="javascript" type="text/javascript"  src="Scripts/scroll_080828.js"></script>
+</head>
+<body>
+<div class="w">
+
+<div id="Box2">
+<h1>间隙滚动 demo2</h1>
+<div class="scroUpload">
+<!-- 翻页按钮左 -->
+<div class="leftbg"></div>
+<div class="left_btn" id="ArrLeft_02"></div>
+<!-- 翻页按钮右 -->
+<div class="rightbg"></div>
+<div class="right_btn" id="ArrRight_02"></div>
+    <div class="scrollList" id="SL_Cont_02">
+        <div class="photoMax"><img src="images/ty_12.jpg" /></div>
+        <div class="photoMax"><img src="images/ty_12.jpg" /></div>
+        <div class="photoMax"><img src="images/ty_12.jpg" /></div>
+        <div class="photoMax"><img src="images/ty_12.jpg" /></div>
+    </div>
+<script language="javascript" type="text/javascript">
+<!--//--><![CDATA[//><!--
+var scrollPic_02 = new ScrollPic();
+scrollPic_02.scrollContId   = "SL_Cont_02"; //内容容器ID
+scrollPic_02.arrLeftId      = "ArrLeft_02";//左箭头ID
+scrollPic_02.arrRightId     = "ArrRight_02"; //右箭头ID
+scrollPic_02.frameWidth     = 748;//显示框宽度
+scrollPic_02.pageWidth      = 748; //翻页宽度
+scrollPic_02.speed          = 10; //移动速度(单位毫秒，越小越快)
+scrollPic_02.space          = 50; //每次移动像素(单位px，越大越快)
+scrollPic_02.autoPlay       = false; //自动播放
+scrollPic_02.autoPlayTime   = 5; //自动播放间隔时间(秒)
+scrollPic_02.initialize(); //初始化
+//--><!]]>
+</script>
+</div>
+<h4>Step 1、在html的&lt;head&gt;标签内引入风格应用文件 查看：<a href="Scripts/scroll_080828.js">scroll_080828.js</a></h4>
+<textarea name="" cols="160" rows="2">
+<script type="text/javascript" src="Scripts/scroll_080828.js"></script>
+</textarea>
+<h4>Step 2、CSS部分</h4>
+<textarea name="" cols="160" rows="12">
+.scroUpload{ width:748px; height:430px; overflow:hidden; position:relative; z-index:1}
+.scroUpload .left_btn{left:10px; }
+.scroUpload .right_btn{left:705px;}
+.scroUpload .left_btn, .scroUpload .right_btn{ z-index:999; cursor:pointer; position:absolute; top:180px; width:28px; height:72px; }
+.scroUpload .leftbg{background: url(../images/ty_30.png) no-repeat; width:28px; height:72px; position:absolute; left:10px; top:180px;_background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/ty_30.png");}
+.scroUpload .rightbg{background: url(../images/ty_31.png) no-repeat; width:28px; height:72px; position:absolute; left:705px; top:180px;_background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/ty_31.png");}
+.scroUpload .photo{  background: url(../images/ty_11.jpg) no-repeat; width:748px; height:430px; overflow:hidden; float:left; display:inline;}
+.scroUpload .photo img{ padding:4px;}
+</textarea>
+<h4>Step 3、创建标准的html结构</h4>
+<textarea name="" cols="160" rows="14">
+<div class="scroUpload">
+<!-- 翻页按钮左 -->
+<div class="leftbg"></div>
+<div class="left_btn" id="ArrLeft_02"></div>
+    <div class="scrollList" id="SL_Cont_02">
+        <div class="photo"><img src="images/ty_12.jpg" /></div>
+        <div class="photo"><img src="images/ty_12.jpg" /></div>
+        <div class="photo"><img src="images/ty_12.jpg" /></div>
+        <div class="photo"><img src="images/ty_12.jpg" /></div>
+    </div>
+<!-- 翻页按钮右 -->
+<div class="rightbg"></div>
+<div class="right_btn" id="ArrRight_02"></div>
+</div>
+</textarea>
+<h4>Step 4、对应的javascript</h4>
+<textarea name="" cols="160" rows="16">
+<script language="javascript" type="text/javascript">
+	<!--//--><![CDATA[//><!--
+	var scrollPic_02 = new ScrollPic();
+	scrollPic_02.scrollContId   = "SL_Cont_02"; //内容容器ID
+	scrollPic_02.arrLeftId      = "ArrLeft_02";//左箭头ID
+	scrollPic_02.arrRightId     = "ArrRight_02"; //右箭头ID
+	scrollPic_02.frameWidth     = 748;//显示框宽度
+	scrollPic_02.pageWidth      = 748; //翻页宽度
+	scrollPic_02.speed          = 10; //移动速度(单位毫秒，越小越快)
+	scrollPic_02.space          = 50; //每次移动像素(单位px，越大越快)
+	scrollPic_02.autoPlay       = false; //自动播放
+	scrollPic_02.autoPlayTime   = 5; //自动播放间隔时间(秒)
+	scrollPic_02.initialize(); //初始化
+	//--><!]]>
+</script>
+
+</textarea>
+</div>
+
+
+
+
+
+
+</div>
+</body>
+</html>

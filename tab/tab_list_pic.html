@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>常规选项卡做法</title>
+<style type="text/css">
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+table{border-collapse:collapse;border-spacing:0}
+div, ul, dl { zoom:1; }
+div:after, ul:after, dl:after { content:"."; display:block; clear:both; height:0; visibility:hidden; }
+.listLeft { width:994px; margin:0 auto}
+.tab_list_pic{ width:707px;}
+.top_nav{ height:40px; line-height:40px; background:url(images/fcwr_line03.gif) repeat-x 0 0;}
+.top_nav li{ display:block; float:left; font-size:14px;}
+.top_nav a{ display:block; padding:0 41px; background:url(images/fcwr_line01.gif) no-repeat right 0; text-decoration:none; color:#666;}
+.top_nav a:hover{ color:#666; }
+.top_nav li.now a{ display:block; padding:0 41px; color:#ff6600; font-weight:700; border-right:1px solid #ebcde7;}
+.top_nav li.now a:hover{ color:#ff6600;}
+.top_nav li.now{ background:url(images/fcwr_line02.gif) repeat-x 0 bottom;}
+
+.index_banner{ width:100%; height:70px; padding:10px 0; border-bottom:1px solid #dcbfe2; background:url(images/index_banner_bg.gif) repeat-x 0 bottom; overflow:hidden;}
+.imgArea{ height:270px; background:#fff url(images/fcwr_20100709_bg.jpg) no-repeat 0 0; border-bottom:1px solid #ebcde7; overflow:hidden; zoom:1; height:295px;}
+.imgInfo{ position:relative; float:left; width:570px;  overflow:hidden; zoom:1;}
+.imgInfo ul{ margin-top:10px; height:130px;}
+.imgInfo ul li{ display:inline;}
+.imgInfo ul li a{ display:inline; float:left; height:130px; margin:0 10px 0 18px; text-decoration:none;overflow:hidden;}
+.imgInfo ul li img{ display:block; width:65px; height:90px; padding:3px; margin:0 0 2px 0; background:#fff; border:1px solid #ccc;}
+.imgInfo ul li p{ text-align:center; line-height:20px; vertical-align:middle; }
+.imgInfo ul li a:hover{ text-decoration:underline;}
+textarea{ margin-top:10px; }
+.w{ width:998px; margin:0 auto;}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+h1 a{color:#69F}
+a{ color:#69F;  font-size:14px; font-weight:bold;}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px}
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+</style>
+</head>
+
+<body>
+<div class="w">
+<div class="listLeft">
+<h1>常规选项卡</h1>
+<div class="tab_list_pic">
+<div class="top_nav">
+<ul>
+	<li class="now"  id="on1" ><a href="javascript:void(0)" onclick="tab('on',1,3)" >非诚勿扰</a></li>
+	<li class=""     id="on2" ><a href="javascript:void(0)" onclick="tab('on',2,3)" >百里挑一</a></li>
+	<li class=""     id="on3" ><a href="javascript:void(0)" onclick="tab('on',3,3)" >爱情来敲门</a></li>
+</ul>
+</div>
+
+<div  id="c-on1" class="imgArea" style="display: block;" >
+<div class="imgInfo">
+	<ul>
+		<li><a target="_blank" href="#"><img src="images/56940749_002.jpg" ><p>闫淑娜</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/56940749_002.jpg" ><p>闫淑娜</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/56940749_002.jpg" ><p>闫淑娜</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/56940749_002.jpg" ><p>闫淑娜</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/56940749_002.jpg" ><p>闫淑娜</p></a></li>
+	</ul>
+	<ul>
+        <li><a target="_blank" href="#"><img src="images/57283896.jpg" ><p>田甜</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/57283896.jpg" ><p>田甜</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/57283896.jpg" ><p>田甜</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/57283896.jpg" ><p>田甜</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/57283896.jpg" ><p>田甜</p></a></li>
+	</ul>
+</div>
+</div>
+
+
+<div id="c-on2" class="imgArea" style="display: none;">
+<div class="imgInfo ">
+	<ul>
+		<li><a target="_blank" href="#"><img src="images/57027341.jpg" ><p>黄凌燕</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/57027341.jpg" ><p>黄凌燕</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/57027341.jpg" ><p>黄凌燕</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/57027341.jpg" ><p>黄凌燕</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/57027341.jpg" ><p>黄凌燕</p></a></li>
+    </ul>
+	<ul>
+        <li><a target="_blank" href="#"><img src="images/53894547.jpg" ><p>许文洁</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/53894547.jpg" ><p>许文洁</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/53894547.jpg" ><p>许文洁</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/53894547.jpg" ><p>许文洁</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/53894547.jpg" ><p>许文洁</p></a></li>
+   </ul>
+</div>
+</div>
+
+
+<div id="c-on3" class="imgArea" style="display: none;">
+<div class="imgInfo">
+    <ul>
+		<li><a target="_blank" href="#"><img src="images/6737526.jpg" ><p>陈倩</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/6737526.jpg" ><p>陈倩</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/6737526.jpg" ><p>陈倩</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/6737526.jpg" ><p>陈倩</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/6737526.jpg" ><p>陈倩</p></a></li>
+	</ul>
+	<ul>
+        <li><a target="_blank" href="#"><img src="images/56222217.jpg" ><p>靳志强</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/56222217.jpg" ><p>靳志强</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/56222217.jpg" ><p>靳志强</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/56222217.jpg" ><p>靳志强</p></a></li>
+        <li><a target="_blank" href="#"><img src="images/56222217.jpg" ><p>靳志强</p></a></li>
+	</ul>
+	</div>
+</div>
+<!--爱情来敲门结束-->
+
+
+<script>
+
+/*****************************
+ * 底层获取id缩写
+ * 以及渐入函数封装
+ * 必须引入 2011-5-5
+ ******************************/
+
+var iBase = {
+        Id: function(name){
+            return document.getElementById(name);
+        },
+		//设置元素透明度,透明度值按IE规则计,即0~100
+        SetOpacity: function(ev, v){
+            ev.filters ? ev.style.filter = 'alpha(opacity=' + v + ')' : ev.style.opacity = v / 100;
+        }
+    };
+	
+function fadeIn(elem, speed, opacity){  
+
+      /*  
+
+      * 参数说明  
+
+      * elem==>需要淡入的元素  
+
+      * speed==>淡入速度,正整数(可选)  
+
+      * opacity==>淡入到指定的透明度,0~100(可选)  
+
+     */ 
+
+     speed = speed || 20;  
+
+     opacity = opacity || 100;  
+
+     //显示元素,并将元素值为0透明度(不可见)  
+ 
+     elem.style.display = 'block';  
+
+     iBase.SetOpacity(elem, 0);  
+
+     //初始化透明度变化值为0  
+
+     var val = 0;  
+
+     //循环将透明值以5递增,即淡入效果  
+
+     (function(){  
+
+        iBase.SetOpacity(elem, val);  
+
+        val += 5;  
+
+        if (val <= opacity) {  
+
+            setTimeout(arguments.callee, speed)  
+
+         }  
+		 
+     })();  
+ };
+
+
+
+// 实例开始调用;
+function tab(name,num,end)
+{
+	for(i=1;i<=end;i++)
+	{
+		var d=iBase.Id(name+i);
+		var a=iBase.Id("c-"+name+i);
+		if(i==num)
+		{			
+			d.className="now";
+			fadeIn(a, 1, 100);				
+		}else{
+			d.className="";	
+			a.style.display="none";
+		}				
+	}
+}
+
+
+
+</script>
+</div>
+<h4>Step 1、CSS部分</h4>
+<textarea name="" cols="160" rows="20">
+.tab_list_pic{ width:707px;}
+.top_nav{ height:40px; line-height:40px; background:url(../images/fcwr_line03.gif) repeat-x 0 0;}
+.top_nav li{ display:block; float:left; font-size:14px;}
+.top_nav a{ display:block; padding:0 41px; background:url(../images/fcwr_line01.gif) no-repeat right 0; text-decoration:none; color:#666;}
+.top_nav a:hover{ color:#666; }
+.top_nav li.now a{ display:block; padding:0 41px; color:#ff6600; font-weight:700; border-right:1px solid #ebcde7;}
+.top_nav li.now a:hover{ color:#ff6600;}
+.top_nav li.now{ background:url(../images/fcwr_line02.gif) repeat-x 0 bottom;}
+.imgArea{ height:270px; background:#fff url(../images/fcwr_20100709_bg.jpg) no-repeat 0 0; border-bottom:1px solid #ebcde7; overflow:hidden; zoom:1; height:295px;}
+.imgInfo{ position:relative; float:left; width:570px;  overflow:hidden; zoom:1;}
+.imgInfo ul{ margin-top:10px; height:130px;}
+.imgInfo ul li, .imgInfo ul li a{ display:inline;}
+.imgInfo ul li a{ float:left; height:130px; margin:0 10px 0 18px; text-decoration:none;overflow:hidden;}
+.imgInfo ul li img{ display:block; width:65px; height:90px; padding:3px; margin:0 0 2px 0; background:#fff; border:1px solid #ccc;}
+.imgInfo ul li p{ text-align:center; line-height:20px; vertical-align:middle; }
+.imgInfo ul li a:hover{ text-decoration:underline;}
+</textarea>
+<h4>Step 2、html部分</h4>
+<textarea name="" cols="160" rows="20">
+/* ======================= html ====================== */
+<div class="tab_list_pic">
+<div class="top_nav">
+	<ul>
+		<li class="now"  id="on1" ><a href="javascript:void(0)" onclick="tab('on',1,3)" >非诚勿扰</a></li>
+		<li class=""     id="on2" ><a href="javascript:void(0)" onclick="tab('on',2,3)" >百里挑一</a></li>
+		<li class=""     id="on3" ><a href="javascript:void(0)" onclick="tab('on',3,3)" >爱情来敲门</a></li>
+	</ul>
+</div>
+<div  id="c-on1" class="imgArea" style="display: block;" >
+<div class="imgInfo">
+	<ul>
+		<li><a target="_blank" href="#"><img src="images/56940749_002.jpg" ><p>闫淑娜</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/56940749_002.jpg" ><p>闫淑娜</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/56940749_002.jpg" ><p>闫淑娜</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/56940749_002.jpg" ><p>闫淑娜</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/56940749_002.jpg" ><p>闫淑娜</p></a></li>
+	</ul>
+	
+	<ul>
+		<li><a target="_blank" href="#"><img src="images/57283896.jpg" ><p>田甜</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/57283896.jpg" ><p>田甜</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/57283896.jpg" ><p>田甜</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/57283896.jpg" ><p>田甜</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/57283896.jpg" ><p>田甜</p></a></li>
+	</ul>
+</div>
+</div>
+<div id="c-on2" class="imgArea blty" style="display: none;">
+<div class="imgInfo ">
+	<ul>
+		<li><a target="_blank" href="#"><img src="images/57027341.jpg" ><p>黄凌燕</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/57027341.jpg" ><p>黄凌燕</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/57027341.jpg" ><p>黄凌燕</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/57027341.jpg" ><p>黄凌燕</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/57027341.jpg" ><p>黄凌燕</p></a></li>
+	</ul>
+	<ul>
+		<li><a target="_blank" href="#"><img src="images/53894547.jpg" ><p>许文洁</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/53894547.jpg" ><p>许文洁</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/53894547.jpg" ><p>许文洁</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/53894547.jpg" ><p>许文洁</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/53894547.jpg" ><p>许文洁</p></a></li>
+	</ul>
+</div>
+</div>
+<div id="c-on3" class="imgArea aiqing" style="display: none;">
+<div class="imgInfo">
+	<ul>
+		<li><a target="_blank" href="#"><img src="images/6737526.jpg" ><p>陈倩</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/6737526.jpg" ><p>陈倩</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/6737526.jpg" ><p>陈倩</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/6737526.jpg" ><p>陈倩</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/6737526.jpg" ><p>陈倩</p></a></li>
+	</ul> 
+	<ul> 
+	    <li><a target="_blank" href="#"><img src="images/56222217.jpg" ><p>靳志强</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/56222217.jpg" ><p>靳志强</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/56222217.jpg" ><p>靳志强</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/56222217.jpg" ><p>靳志强</p></a></li>
+		<li><a target="_blank" href="#"><img src="images/56222217.jpg" ><p>靳志强</p></a></li>
+	</ul>
+</div>
+</div>
+</div>
+</textarea>
+<h4>Step 3、对应的javascript</h4>
+<textarea name="" cols="160" rows="14">
+<script type="text/javascript">
+
+function tab(name,num,end)
+{
+	for(i=1;i<=end;i++)
+	{
+		var d=document.getElementById(name+i);
+		var a=document.getElementById("c-"+name+i);
+		d.className=i==num?"now":"";
+		a.style.display=i==num?"block":"none"
+	}
+}
+
+</script>
+
+</textarea>
+
+
+<h4>2011-5-5添加切换渐变功能，改进用户体验，如需使用，请将js代码改成下列的，html结构不用变</h4>
+<textarea name="" cols="160" rows="50">
+<script type="text/javascript">
+
+
+/*****************************
+ * 底层获取id缩写
+ * 以及渐入函数封装
+ * 必须引入 2011-5-5
+ ******************************/
+
+var iBase = {
+        Id: function(name){
+            return document.getElementById(name);
+        },
+		//设置元素透明度,透明度值按IE规则计,即0~100
+        SetOpacity: function(ev, v){
+            ev.filters ? ev.style.filter = 'alpha(opacity=' + v + ')' : ev.style.opacity = v / 100;
+        }
+    };
+	
+function fadeIn(elem, speed, opacity){  
+
+      /*  
+
+      * 参数说明  
+
+      * elem==>需要淡入的元素  
+
+      * speed==>淡入速度,正整数(可选)  
+
+      * opacity==>淡入到指定的透明度,0~100(可选)  
+
+     */ 
+
+     speed = speed || 20;  
+
+     opacity = opacity || 100;  
+
+     //显示元素,并将元素值为0透明度(不可见)  
+ 
+     elem.style.display = 'block';  
+
+     iBase.SetOpacity(elem, 0);  
+
+     //初始化透明度变化值为0  
+
+     var val = 0;  
+
+     //循环将透明值以5递增,即淡入效果  
+
+     (function(){  
+
+        iBase.SetOpacity(elem, val);  
+
+        val += 5;  
+
+        if (val <= opacity) {  
+
+            setTimeout(arguments.callee, speed)  
+
+         }  
+		 
+     })();  
+ };
+
+
+
+// 实例开始调用;
+function tab(name,num,end)
+{
+	for(i=1;i<=end;i++)
+	{
+		var d=iBase.Id(name+i);
+		var a=iBase.Id("c-"+name+i);
+		if(i==num)
+		{			
+			d.className="now";
+			fadeIn(a, 1, 100);				
+		}else{
+			d.className="";	
+			a.style.display="none";
+		}				
+	}
+}
+
+
+
+</script>
+
+</textarea>
+</div>
+</div>
+</body>
+</html>

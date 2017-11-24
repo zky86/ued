@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>简头</title>
+<style type="text/css">
+*{ padding:0; margin:0}
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+</style>
+</head>
+
+<body>
+<div id="wrapper" class="content">
+	<h1>简头</h1>
+    <ol>
+        <li>请参考：<a href="http://www.poco.cn/module_common/header/test_lite.php" target="_blank">http://www.poco.cn/module_common/header/test_lite.php</a></li>
+        <li>样式请参考：<a href="http://svn.poco.cn/poco_css/view-css.php?f=header_lite" target="_blank">header_lite.css</a></li>
+        <li>
+<pre>
+简头使用方法：
+// 是否直接输出页头内容，缺省为否
+// define("G_POCO_MODULE_HEADER_OUTPUT", 1); 
+// 更改页头logo
+$header_logo = 'http://model.poco.cn/images/index_v2/header_logo.gif';
+// 加载页头
+include_once('/disk/data/htdocs233/poco_main/module_common/header/header_lite.php');
+$tpl->assign("header", $_POCO_MODULE_HEADER);
+</pre>
+        </li>
+    </ol>
+</div>
+</body>
+</html>

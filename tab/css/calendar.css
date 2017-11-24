@@ -1,0 +1,80 @@
+/*  
+Theme Name:poco ued theme
+Author URI:470416890@qq.com
+Author:HouzQ
+Description: poco
+*/
+/* 全局CSS定义 */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+ul,ol,li{list-style:none}
+address,cite,dfn,em,var{font-style:normal;}
+fieldset,img{border:0}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* 通用属性 */
+.fl{float:left;}
+.fr{float:right;}
+.f14{font-size:14px}
+.fb{font-weight:bold}
+.tc{text-align:center}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.relative{position:relative}
+.hidden{display:block;font-size:0;height:0;overflow:hidden}
+.clear{clear:both; display:block; font-size:0;height:0;line-height:0;overflow:hidden}
+.clearfix:afte{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.clearfix{display:block}
+
+.w{ width:998px; margin:0 auto;}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+h1 a{color:#69F}
+a{ color:#69F;  font-size:14px; font-weight:bold;}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px}
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+
+.wraper_list{ width:488px;}
+.tab_list{ width:488px; overflow:hidden; zoom:1;}
+.tab_list .nav li,
+.tab_list .nav li .now,
+.tab_list .nav .li1 a, 
+.tab_list .nav .li2 a, 
+.tab_list .nav .li3 a, 
+.tab_list .nav .li4 a{width:120px; height:26px; background:url(../images/bg_sprite.jpg) no-repeat; overflow:hidden;float:left;}
+.tab_list .nav strong{ overflow:hidden; height:0; display:block;}
+.tab_list .nav li{  margin-right:2px;}
+.tab_list .nav .li1 a{ background-position:0 0;}
+.tab_list .nav .li2 a{ background-position:-122px 0;}
+.tab_list .nav .li3 a{ background-position:-244px 0;}
+.tab_list .nav .li4 a{ background-position:-366px 0;}
+.tab_list .nav .li1 .now{ background-position:0 -26px;}
+.tab_list .nav .li2 .now{ background-position:-122px -26px;}
+.tab_list .nav .li3 .now{ background-position:-244px -26px;}
+.tab_list .nav .li4 .now{ background-position:-366px -26px;}
+.tab_list .content{ clear:both;  overflow:hidden; zoom:1; }
+.tab_list .content .imgArea{ overflow:hidden;  width:550px;}
+.tab_list .content .imgArea ul{ margin-top:10px;}
+.tab_list .content .imgArea ul li{ float:left; margin-right:10px;overflow:hidden; display:inline; width:73px;}
+.tab_list .content .imgArea ul li .img{  width:65px; height:90px; padding:3px; margin-bottom:2px; background:#fff; border:1px solid #ccc;}
+.tab_list .content .imgArea ul li a{ color:#000}
+.tab_list .content .imgArea ul li p{ text-align:center; line-height:20px; vertical-align:middle; }
+
+.right{ margin-left:20px;}
+.height{ height:279px;}
+.tabArea{ width:128px; overflow:hidden;  margin:0 auto;}
+.tabArea .top_nav{  height:10px; overflow:hidden; zoom:1;}
+.tabArea .top_nav li, 
+.tabArea .top_nav li a, 
+.tabArea .top_nav li .now{ width:10px; height:10px; background:url(../images/nav_bg2.jpg) no-repeat; overflow:hidden;}
+.tabArea .top_nav strong{ overflow:hidden; height:0; display:block;}
+.tabArea .top_nav li{ margin-right:2px;}
+.tabArea .top_nav li a{ background-position:0 0; }
+.tabArea .top_nav li .now{ background-position:0 -10px;}
+.tabArea .top_nav li, .tabArea .top_nav li a{  float:left; }
+.tabArea .imgArea{ overflow:hidden; width:128px; height:107px;}

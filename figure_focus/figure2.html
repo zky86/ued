@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>一个简易的幻灯片</title>
+<script type="text/javascript" src="Scripts/focusfigure.js"></script>
+<style type="text/css">
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+table{border-collapse:collapse;border-spacing:0}
+.clearfix:afte{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:block}
+.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.clear{clear:both; display:block; font-size:0px;height:0px;line-height:0px;overflow:hidden}
+.f14{font-size:14px}
+.fb{font-weight:bold}
+.relative{position:relative}
+.fr{float:right}
+.fl{float:left}
+.hidden{display:block;font-size:0;height:0;overflow:hidden}
+.text_align{text-align:center}
+.w {font-size: 14px; line-height: 24px; margin: 0 auto;width: 998px; overflow:hidden;}
+h1 { border-bottom: 1px solid #CCCCCC; color: #3FA600;font-family: "微软雅黑"; font-size: 26px;font-weight: bold; margin-bottom: 20px; padding: 15px 0;text-align: center;}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; }
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+a{ color:#69F;}
+
+#galwraper{ position:relative;}
+#gal-wrap { position:relative; margin:15px 0 0 15px;  }
+#gallery { position:absolute; }
+#gallery li { list-style:none; float:left; width: 405px; height:222px;}
+#gallery p { text-align:center; color: #cdcdcd; }
+#gal-panel { overflow:hidden; height:16px; clear:both; position:absolute; left:20px; top:200px;}
+#gal-panel li { float:left; cursor: pointer; }
+#gal-panel li a{ width:16px; height:16px; display:inline; float:left; color:#a2a2a2; background:#000; text-align:center; line-height:16px; text-decoration:none; font-weight:bold; margin-right:5px; background:url(images/a_link_bg.jpg) no-repeat}
+#gal-panel li a:hover,
+#gal-panel li.current a  { color:#eaf47f; background:url(images/a_link_cur.jpg) no-repeat; text-align:center; }
+</style>
+</head>
+<body>
+
+<div class="w">
+    <h1>焦点图</h1>
+	<div id="galwraper">
+		<div id="gal-wrap">
+			<ul id="gallery">
+				<li><p><img src="images/355c_1.jpg" /></p></li>
+				<li><p><img src="images/355c_2.jpg" /></p></li>
+				<li><p><img src="images/355c_3.jpg" /></p></li>
+			</ul>
+		</div>
+		<div id="gal-panel">
+			<ul id="gallery-panel">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</div>
+		<script type="text/javascript"> 
+					var tt = new ss.slider();
+					tt.init({
+						gallery: 'gal-wrap', //此处填写 gallery 的外容器 id. 必填项.
+						control: "gal-panel", //此处填写 panel 的外容器 id. 必填项.
+						dir: false, // 此处填写幻灯片切换的方向. true 为垂直方向, false 为水平方向. 默认为 false. 选填项.
+						index: 0, // 此处填写希望从哪张幻灯片开始. 从 0 开始, 不得大于幻灯片的总长度(即 gallery item 的 length - 1). 默认从 0 开始. 选填项.
+						speed: 16,  // 此处填写幻灯片的切换速度. 数值越大则切换速度越慢. 默认为 16. 选填项.
+						interval: 1000, // 此处填写幻灯片的切换时长. 数值越大则切换时间越长. 单位为毫秒. 默认为 3000(3 秒钟). 选填项.
+						type: 'mouseover' // 此处填写切换幻灯片的形式. 可以接受 click(单击)和 mouseover(移动) 两种形式. 默认为 click.
+					});
+				</script>
+	</div>
+<h4>Step 0、创建风格 <a href="Scripts/focusfigure.js">focusfigure.js</a></h4>
+<textarea name="" cols="160" rows="3">
+<script type="text/javascript" src="Scripts/focusfigure.js"></script>
+</textarea>
+<h4>Step 1、创建CSS</h4>
+<textarea name="" cols="160" rows="15">
+#galwraper{ position:relative;}
+#gal-wrap { position:relative; margin:15px 0 0 15px;  }
+#gallery { position:absolute; }
+#gallery li { list-style:none; float:left; width: 405px; height:222px;}
+#gallery p { text-align:center; color: #cdcdcd; }
+#gal-panel { overflow:hidden; height:16px; clear:both; position:absolute; left:20px; top:200px;}
+#gal-panel li { float:left; cursor: pointer; }
+#gal-panel li a{ width:16px; height:16px; display:inline; float:left; color:#a2a2a2; background:#000; text-align:center; line-height:16px; text-decoration:none; font-weight:bold; margin-right:5px; background:url(../images/a_link_bg.jpg) no-repeat}
+#gal-panel li a:hover,
+#gal-panel li.current a { color:#eaf47f; background:url(../images/a_link_cur.jpg) no-repeat; text-align:center; }
+</textarea>
+<h4>Step 2、创建标准的html结构</h4>
+<textarea name="" cols="160" rows="20">
+<div id="galwraper">
+		<div id="gal-wrap">
+			<ul id="gallery">
+				<li><p><img src="images/355c_1.jpg" /></p></li>
+				<li><p><img src="images/355c_2.jpg" /></p></li>
+				<li><p><img src="images/355c_3.jpg" /></p></li>
+			</ul>
+		</div>
+		<div id="gal-panel">
+			<ul id="gallery-panel">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</div>
+	</div>
+</textarea>
+<h4>Step 3、创建js</h4>
+<textarea name="" cols="160" rows="20">
+<script type="text/javascript"> 
+					var tt = new ss.slider();
+					tt.init({
+						gallery: 'gal-wrap', //此处填写 gallery 的外容器 id. 必填项.
+						control: "gal-panel", //此处填写 panel 的外容器 id. 必填项.
+						dir: false, // 此处填写幻灯片切换的方向. true 为垂直方向, false 为水平方向. 默认为 false. 选填项.
+						index: 0, // 此处填写希望从哪张幻灯片开始. 从 0 开始, 不得大于幻灯片的总长度(即 gallery item 的 length - 1). 默认从 0 开始. 选填项.
+						speed: 16,  // 此处填写幻灯片的切换速度. 数值越大则切换速度越慢. 默认为 16. 选填项.
+						interval: 1000, // 此处填写幻灯片的切换时长. 数值越大则切换时间越长. 单位为毫秒. 默认为 3000(3 秒钟). 选填项.
+						type: 'mouseover' // 此处填写切换幻灯片的形式. 可以接受 click(单击)和 mouseover(移动) 两种形式. 默认为 click.
+					});
+	   </script>
+</textarea>
+</div>
+</body>
+</html>

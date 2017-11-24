@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>站内选项卡toggle</title>
+<style>
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+
+
+.w {font-size: 14px; line-height: 24px; margin: 0 auto;width: 998px; overflow:hidden;}
+h1 { border-bottom: 1px solid #CCCCCC; color: #3FA600;font-family: "微软雅黑"; font-size: 26px;font-weight: bold; margin-bottom: 20px; padding: 15px 0;text-align: center;}
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; }
+
+.toggle,.toggle2{padding:0 0 0 13px;height:30px;overflow:hidden;background:url(images/solid_line.gif) repeat-x  bottom;} 
+.toggle li,.toggle2 li{border:#a02869 solid 1px;font-size:14px;font-weight:bold;float:left;margin-right:3px;padding-top:1px;}
+.toggle li a,.toggle2 li a{text-decoration:none;display:block;padding:0 20px;background:#ececec;line-height:27px;}
+.toggle li.current a,.toggle2 li.current a{background:#fff;color:#ba3b89;}
+.toggle li.current,.toggle2 li.current{border-bottom:#fff solid 1px;}
+.toggle2{padding:0 0 0 7px;height:22px;background:url(images/solid_line.gif) repeat-x 0 21px;}
+.toggle2 li{font-size:12px;font-weight:normal;}
+.toggle2 li a{padding:0 28px;line-height:19px;}
+</style>
+</head>
+
+<body>
+<div class="w">
+		
+<h1>站内选项卡toggle</h1>
+<div class="list1" style="display: block;" id="list1">
+		<div class="toggle2">
+		<ul class="toggle2">
+				<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">tab1</a></li>
+				<li><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">tab2</a></li>
+				<li><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">tab3</a></li>
+		</ul>
+		</div>
+		<div class="toggle_con_gzzp">
+			111111111111111111
+		</div>
+		<div class="clear"></div>
+</div>
+<div class="list1" style="display: none;" id="list2">
+				<div class="toggle2">
+                   <ul class="toggle2">
+						<li><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">tab1</a></li>
+						<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">tab2</a></li>
+						<li><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">tab3</a></li>
+				   </ul>
+				</div>
+				 <div class="toggle_con_gzzp">
+					2222222222222222
+				</div>
+				<div class="clear"></div>
+</div>
+<div class="list1" style="display: none;" id="list3">
+				<div class="toggle2">
+                   <ul class="toggle2">
+						<li><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">tab1</a></li>
+						<li><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">tab2</a></li>
+						<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">tab3</a></li>
+				   </ul>
+				</div>
+				 <div class="toggle_con_gzzp">
+						333333333333333333333
+				 </div>
+				<div class="clear"></div>
+</div>
+<script type="text/javascript">
+	//new Marquee("friends_links", 0, 1, 1001, 90, 50, 0, 0);
+
+function friends_links_change(id)
+{
+	var f_list = [1,2,3,,1];
+	var f_count=f_list.length*1-2;
+	for (var i=0;i<f_count;i++) {
+		if (f_list[i] == id) {
+			document.getElementById('list' + f_list[i]).style.display = '';
+		} else {
+			document.getElementById('list' + f_list[i]).style.display = 'none';
+		}
+	}
+}
+</script>	
+<h4>此实例是hover切换用到的是：“onmouseover”。修改a为”onclick“为点击切换</h4>
+<h4>Step 1、CSS</h4>
+<textarea name="" cols="160" rows="8">
+.toggle,.toggle2{padding:0 0 0 13px;height:30px;overflow:hidden;background:url(../images/solid_line.gif) repeat-x  bottom;} 
+.toggle li,.toggle2 li{border:#a02869 solid 1px;font-size:14px;font-weight:bold;float:left;margin-right:3px;padding-top:1px;}
+.toggle li a,.toggle2 li a{text-decoration:none;display:block;padding:0 20px;background:#ececec;line-height:27px;}
+.toggle li.current a,.toggle2 li.current a{background:#fff;color:#ba3b89;}
+.toggle li.current,.toggle2 li.current{border-bottom:#fff solid 1px;}
+.toggle2{padding:0 0 0 7px;height:22px;background:url(../images/solid_line.gif) repeat-x 0 21px;}
+.toggle2 li{font-size:12px;font-weight:normal;}
+.toggle2 li a{padding:0 28px;line-height:19px;}
+</textarea>
+<h4>Step 2、HTML</h4>
+<textarea name="" cols="160" rows="25">
+<div class="list1" style="display: block;" id="list1">
+	<div class="toggle2">
+		<ul class="toggle2">
+			<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">tab1</a></li>
+			<li><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">tab2</a></li>
+			<li><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">tab3</a></li>
+		</ul>
+	</div>
+	<div class="toggle_con_gzzp">111111111111111111</div>
+	<div class="clear"></div>
+</div>
+<div class="list1" style="display: none;" id="list2">
+	<div class="toggle2">
+		<ul class="toggle2">
+			<li><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">tab1</a></li>
+			<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">tab2</a></li>
+			<li><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">tab3</a></li>
+		</ul>
+	</div>
+	<div class="toggle_con_gzzp">2222222222222222</div>
+	<div class="clear"></div>
+</div>
+<div class="list1" style="display: none;" id="list3">
+	<div class="toggle2">
+		<ul class="toggle2">
+			<li><a href="javascript:void(0);" onmouseover="friends_links_change(1);" target="_self">tab1</a></li>
+			<li><a href="javascript:void(0);" onmouseover="friends_links_change(2);" target="_self">tab2</a></li>
+			<li class="current"><a href="javascript:void(0);" onmouseover="friends_links_change(3);" target="_self">tab3</a></li>
+		</ul>
+	</div>
+	<div class="toggle_con_gzzp">333333333333333333333</div>
+	<div class="clear"></div>
+</div>	
+</textarea>
+
+
+<h4>Step 3、JS</h4>
+
+<h4>tips:[1,2,3,,1] 这里修改选项卡的个数，例如，当选项卡为4个的时候，应改为，[1,2,3,4,,1]</h4>
+<textarea name="" cols="160" rows="18">
+<script type="text/javascript">
+function friends_links_change(id)
+{
+	var f_list = [1,2,3,,1];
+	var f_count=f_list.length*1-2;
+	for (var i=0;i<f_count;i++) {
+		if (f_list[i] == id) {
+			document.getElementById('list' + f_list[i]).style.display = '';
+		} else {
+			document.getElementById('list' + f_list[i]).style.display = 'none';
+		}
+	}
+}
+</script>
+</textarea>
+
+</div>
+</body>
+</html>

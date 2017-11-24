@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>遮罩居中弹出框</title>
+<style>
+*{ padding:0; margin:0}
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px; padding-bottom:20px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+ textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; }
+ .des{ padding:15px 0}
+</style>
+</head>
+
+<body>
+
+<div class="content">
+
+	<h1>遮罩居中弹出框</h1>
+	
+	
+	<p><a href="pop_test.html"  target="_blank">点击查看效果：</a></p>
+	<p>Tips:有个地方需要注意一下， _height:1000px 此css属性针对IE6写的，不同的页面高度不同，可能需要修改此高度，如果找到更好的解决办法可以提出</p>
+	<br  />
+<textarea name="" cols="120" rows="36">
+
+/* =======================  html  ====================== */
+
+
+<!-- 弹出框 -->
+
+<div class="fade"></div>
+
+<div class="pop_Demo">
+	<div class="close"><input type="image" src="images/close.jpg" /></div>
+</div>
+
+
+<!-- 弹出框end -->
+
+
+/* =======================  css  ====================== */
+
+.fade { display:block; background: #000; position: fixed; left: 0; top: 0; width: 100%; height: 100%; filter:alpha(opacity:60);
+opacity: 0.6; z-index: 9999; zoom:1; clear:both; _height:1000px; _position:absolute; }
+
+.pop_Demo{ background:url(../images/pop_register.jpg) no-repeat; width:443px; height:266px; z-index:999999; position:fixed; _position: absolute; top:50%; left:50%; margin-top:-140px; margin-left:-225px;
+_top:expression(eval(document.compatMode &&
+     document.compatMode=='CSS1Compat') ?
+     documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+     document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+     _margin-top:0
+}
+.pop_Demo .close{ padding:10px 10px 0 0;float:right;}
+
+
+</textarea>
+	
+
+</div>
+
+</body>
+</html>

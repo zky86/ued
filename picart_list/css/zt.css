@@ -1,0 +1,117 @@
+/*  
+Theme Name:poco ued theme
+Author URI:poco.cn
+Description: poco
+*/
+
+/** 清除内外边距 **/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote, /* structural elements 结构元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form,
+fieldset,
+legend,
+button,
+input,
+textarea, /* form elements 表单元素 */
+th,
+td, /* table elements 表格元素 */
+img/* img elements 图片元素 */ { border:medium none; margin: 0; padding: 0; }
+/** 设置默认字体 **/
+body,
+button,
+input,
+select,
+textarea { font:normal 12px "宋体"; }
+input,
+select,
+form img,
+button { vertical-align:middle; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-size: 100%; }
+em { font-style:normal; }
+/** 重置列表元素 **/
+ul,
+ol { list-style: none; }
+/** 重置超链接元素 **/
+a { text-decoration: none; color:#333333; }
+a:hover { text-decoration: underline; color:#333333; }
+/** 重置图片元素 **/
+img { border:none; }
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+/** 清楚浮动 **/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.clear { clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
+.clearHidden{ clear:both; overflow:hidden; zoom:1}
+/*** font ***/
+.word_break { white-space:normal; word-wrap:break-word; word-break:break-all; }
+.f14 { font-size:14px; }
+.fb { font-weight:bold; }
+.lh18 { line-height:18px; }
+.lh24 { line-height:24px; }
+/** position **/
+.relative { position:relative; }
+.fr { float:right; }
+.fl { float:left; }
+.pd_t5 { padding-top:5px; }
+.pd_t10 { padding-top:10px; }
+.pd_l10 { padding-left:10px; }
+.pd_l15 { padding-left:15px; }
+.hidden { display:block; font-size:0; height:0; overflow:hidden; }
+.text_align{ text-align:center;}
+/* ====================== 重置结束 ===================== */
+body{padding-bottom:20px;}
+.contentwrap {width: 1000px;margin: 0 auto; line-height:22px; font-size:12px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; margin-bottom:25px}
+.box1{padding:15px 0;}
+
+.div_768_pic64{width:768px;overflow:hidden; }
+.div_768_pic64 .ul_pic64{width:855px;}
+.div_768_pic64 .ul_pic64 li{width:64px;margin-right:77px;  float:left;text-align:center;display:inline;overflow:hidden;}
+
+
+
+.div_768_pic165 { width:768px;overflow:hidden; }
+.div_768_pic165 .ul_pic165 { width:768px; height:183px; float:left; }
+.div_768_pic165 .ul_pic165 li { width:384px; float:left; margin-bottom:0px; float:left; }
+.div_768_pic165 .imgbox { width:167px; float:left; margin-right:10px; }
+.div_768_pic165 .pic165 { display:table-cell; vertical-align:bottom; text-align:left; width:167px; height:167px; overflow: hidden; }
+.div_768_pic165 .pic165 img { vertical-align:bottom; border:#cbcbcb solid 1px; display:inline-block; max-width:165px; max-height:165px }
+.div_768_pic165 .textbox { width:197px; float:left; padding-top:2px; }
+.div_768_pic165 .img_shadow { height:167px; width:167px; padding-bottom:10px; }
+
+/* 翻页 */
+
+/* tab翻页 */
+.wrap_btn { width:778px;}
+.wrap_btn .page_btn{ float:left; display:inline}
+.wrap_btn .page_btn a{ text-decoration:none;  display:block; width:219px; height:24px; line-height:24px; text-align:center; padding-left:15px ;color:#999;background:#f0f0f0;}
+.wrap_btn .page_btn a:hover{ color:#fff; background:#9bbad9}
+.wrap_btn .centersty{ float: left; width:305px; height:24px; background:#f0f0f0; margin:0 2px; display:inline;}
+.wrap_btn .centersty .listpage_cor { margin:0 0 0 30px; }
+.wrap_btn .centersty .listpage_cor a{ float:left; display:inline; margin-left:10px; width:10px; line-height:24px; height:24px; vertical-align:middle;text-indent:-9999px;background:url(../images/page_.jpg) no-repeat}
+.wrap_btn .centersty .listpage_cor .click{background:url(../images/page_current.jpg) no-repeat;}
+.wrap_btn .centersty .listpage_cor img {cursor:pointer;}
+

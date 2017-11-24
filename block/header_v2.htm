@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>新版页头</title>
+<style type="text/css">
+*{ padding:0; margin:0}
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+</style>
+</head>
+
+<body>
+<div id="wrapper" class="content">
+    <h1>新版页头</h1>
+    <ul>
+    	<li>请参考：<a href="http://www.poco.cn/module_common/header_v2/test.php" target="_blank">http://www.poco.cn/module_common/header_v2/test.php</a></li>
+        <li>
+<pre>
+<strong>使用方法</strong>
+// 当前频道，缺省为POCO首页
+// define('G_POCO_CURRENT_CHANNEL', 'photo');
+
+// 是否直接输出页头内容，缺省为否
+// define('G_POCO_MODULE_HEADER_OUTPUT', 1); 
+
+// 加载页头
+include_once('/disk/data/htdocs233/poco_main/module_common/header_v2/header.php');
+$tpl->assign('header', $_POCO_MODULE_HEADER);
+</pre>
+        </li>
+        <li><strong>可选频道：</strong>
+		<pre>
+'index' => '首页',
+'photo' => '摄影',
+'food' => '美食',
+'travel' => '旅游',
+'box' => '达物',
+'mobile' => '拍客',
+'pet' => '宠物',
+'auto' => '汽车',
+'mypoco' => '个人空间',
+'read' => '电子杂志',
+'activity' => '活动'
+	</pre>
+	</li>
+	<li>
+	<strong>样式配置：</strong>
+    <pre>
+以下为常用样式，未列举的请参考<a href="http://svn.poco.cn/poco_css/view-css.php?f=header_v2" target="_blank">header_v2.css</a>
+
+/* 头部需要用到背景的都写在这里，方便修改 */
+#header,
+#header .poco_logo a,
+#header .mainnav li,
+#header .mainnav li.current_nav,
+#header .mainnav li.hour24,
+#header .subnav li,
+#header .mylink,
+#header .header_search .input_text {
+	background-image: url(http://www.poco.cn/module_common/css_tpl/mobile_header_bg.png); 
+}
+/* 子导航栏背景色 */
+#header .subnav_bar {
+	background-color: #653D6A; 
+}
+/* 子导航间隔及背景位置 */
+#header .subnav li {
+	width: auto;
+	padding: 0 15px;
+	background-position: right 0;  
+}
+/* 搜索框边框 */
+#header .header_search .input_text {
+	border: 1px solid #653D6A;  
+}
+/* 搜索按钮背景色 */
+#header .header_search .button {
+	background-color: #653D6A; 
+}
+    </pre>
+	</li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/*  
+Theme Name:poco ued theme
+Author URI:470416890@qq.com
+Author:HouzQ
+Description: poco
+*/
+/* 全局CSS定义 */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+ul,ol,li{list-style:none}
+address,cite,dfn,em,var{font-style:normal;}
+fieldset,img{border:0}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* 通用属性 */
+.fl{float:left;}
+.fr{float:right;}
+.f14{font-size:14px}
+.fb{font-weight:bold}
+.tc{text-align:center}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.relative{position:relative}
+.hidden{display:block;font-size:0;height:0;overflow:hidden}
+.clear{clear:both; display:block; font-size:0;height:0;line-height:0;overflow:hidden}
+.clearfix:afte{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.clearfix{display:block}
+
+.wraper_list{ width:488px; margin:0 auto;}
+.tab_list_pic{ width:488px; overflow:hidden; zoom:1;}
+.top_nav, .top_nav .tab1 a, .top_nav .tab1 .now, .top_nav .tab2 .now, .top_nav .tab3 .now,  .top_nav .tab4 .now{ height:26px; background:url(../images/bg_sprite.jpg) no-repeat;}
+.top_nav li{ width:120px; height:26px; float:left; margin-right:2px;}
+.top_nav strong{ overflow:hidden; height:0; display:block;}
+.top_nav li a{ display:block; text-decoration:none; color:#666; width:120px; height:26px; float:left; }
+.top_nav .tab1 a{ background-position:0 -26px;}
+.top_nav .tab1 .now{ background-position:0 0;}
+.top_nav .tab2 .now{ background-position:-122px -26px;}
+.top_nav .tab3 .now{ background-position:-244px -52px;}
+.top_nav .tab4 .now{ background-position:-366px -78px;}
+.tab_continfo{ clear:both;  overflow:hidden; zoom:1; }
+.tab_continfo .imgArea{ position:relative; overflow:hidden; zoom:1; width:550px;}
+.tab_continfo .imgArea ul{ margin-top:10px;}
+.tab_continfo .imgArea ul li{ float:left; margin-right:10px;overflow:hidden; display:inline; width:73px; height:130px;}
+.tab_continfo .imgArea ul li .img{  width:65px; height:90px; padding:3px; margin-bottom:2px; background:#fff; border:1px solid #ccc;}
+.tab_continfo .imgArea ul li a{ color:#000}
+.tab_continfo .imgArea ul li p{ text-align:center; line-height:20px; vertical-align:middle; }
+.tab_continfo .imgArea ul li a:hover{ text-decoration:underline;}

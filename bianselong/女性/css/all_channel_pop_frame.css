@@ -1,0 +1,24 @@
+iang@charset "gb2312";
+/* CSS Document */
+.all_channel_pop_frame_tbl{ width:328px;}
+.all_channel_pop_frame_top{ height:7px}
+.all_channel_pop_frame_top img{ width:671px; height:13px}
+.all_channel_pop_frame_bottom{ height:9px}
+.all_channel_pop_frame_bottom div{ overflow:hidden; width:328px;}
+.all_channel_pop_frame_bottom img{ width:671px; height:9px;margin-left:-331px; display:block}
+
+.all_channel_pop_frame_top img,.all_channel_pop_frame_right img,.all_channel_pop_frame_bottom img{ background:url(http://my.poco.cn/manage/images/new_thing.png); _background:url(); _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src= http://my.poco.cn/manage/images/new_thing.png); }
+.all_channel_pop_frame_top div{ overflow:hidden; width:328px; height:7px}
+.all_channel_pop_frame_right{ float:left; width:5px; margin-right:1px; height:100%; overflow:hidden}
+.all_channel_pop_frame_info{ width:304px; padding-right:8px; padding-left:10px; border-left:1px solid #d8d8d8; float:left; height:100%; background:#fff}
+.all_channel_pop_frame_info .title{ padding-left:35px; margin-bottom:10px; line-height:30px; font-weight:bold; background:url(http://my.poco.cn/manage/images/new_thing_title.gif) no-repeat; height:30px; color:#009327;}
+.all_channel_pop_frame_info .title a{ background:url(http://my.poco.cn/manage/theme/default/images/but.png) repeat scroll 0 -32px transparent;height:12px;
+overflow:hidden;width:11px;float:right;cursor:pointer; margin:2px;}
+.all_channel_pop_frame_info .new_things_page a{ width:80px; background:#fff; text-decoration:none; height:24px; font-weight:bold; text-align:center; border:1px solid #d6d6d6; line-height:24px; vertical-align:middle; display:inline; cursor:pointer}
+.all_channel_pop_frame_info .new_things_page{ text-align:center; line-height:24px; height:29px; clear:both; vertical-align:middle; color:#cc0000; padding-top:5px;}
+.all_channel_pop_frame_info .new_things_page .pre{ float:left; margin-left:25px; color:#666;}
+.all_channel_pop_frame_info .next{ float:right; margin-right:25px;}
+.all_channel_pop_frame_info .new_things_page .a{ color:#000;}
+.new_things_loding{ position:absolute; z-index:1; left:50%; top:50%; margin:-27px 0 0 -27px;}
+.all_channel_pop_frame_right img{ margin-left:-664px; display:block; width:671px; overflow:hidden }
+.all_channel_pop_frame_height{ position:relative; height:400px}

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>CSS命名规范</title>
+<style type="text/css">
+*{ padding:0; margin:0}
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+h2{ font-size:14px; font-weight:bold}
+textarea{background:none; border:none; overflow-y:hidden}
+ol{ list-style-type: decimal-leading-zero; margin-left:30px}
+</style>
+</head>
+
+<body>
+<div class="content">
+  <h1>CSS命名规范</h1>
+    <ol>
+        <li>css 文件编码统一使用 GB2312 编码 ；</li>
+        <li>html 文件的 doctype, 统一采用 xhtml1-transitional.dtd ；</li>
+        <li>尽量使用class属性而非id属性来定义元素的样式 ；</li>
+        <li>id 和 class 的命名规则为： 内容优先，表现为辅。首先根据内容来取名，比如 mainnav, 如果根据内容找不到合适的命名，可以再结合表现来定，比如 col_main ；</li>
+        <li>id 和 class 名称一律小写，多个单词用下划线连接，但比如 recommend_news ；</li>
+        <li>id 和 class 名称中只能出现26个小写英文字母、数字和下划线，并且不能以下划线或数字开头，任何其它字符都严禁出现 ；</li>
+        <li>id 和 class 尽量用英文单词命名，确实找不到合适的单词时，可以考虑使用中文拼音，比如 dating ；</li>
+        <li>在不影响语义的情况下，id 和 class 名称中可以适当采用英文单词缩写，比如 col, nav等，但切忌自造缩写 ；</li>
+        <li>使用语义化方式而非结构化方式来命名CSS类，以避免结构化改变所带来的问题 ；
+        <img  src="../images/sem_vs_struct.png" alt="structure" /> <br />
+		<p style="color:#666">图1为结构化方式，图2为语义化方式</p>
+		</li>
+        <li>在 JS 中当作 hook 用的 id 和 class, 命名规则为 J_UpperCamelCase. J 是钩子的象形 ；</li>
+    </ol>
+</div>
+</body>
+</html>

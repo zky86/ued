@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>焦点图</title>
+<script type="text/javascript" src="Scripts/jquery.js"></script>
+<script type="text/javascript" src="Scripts/jquery.carouFredSel-5.5.0.js"></script>
+<style type="text/css">
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+table{border-collapse:collapse;border-spacing:0}
+.clearfix:afte{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:block}
+.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.clear{clear:both; display:block; font-size:0px;height:0px;line-height:0px;overflow:hidden}
+.f14{font-size:14px}
+.fb{font-weight:bold}
+.relative{position:relative}
+.fr{float:right}
+.fl{float:left}
+.hidden{display:block;font-size:0;height:0;overflow:hidden}
+.text_align{text-align:center}
+
+*{ padding:0; margin:0}
+
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+
+.scrollBox{width:560px;}
+.scrollBox .img_list li{float:left;display:inline;width:554px;height:235px;overflow:hidden;}
+.scrollBox .page-wrap{padding:5px 0 0 230px;}
+.scrollBox .pre{display:inline;background:url(images/l-12x12.png);width:12px;height:12px;overflow:hidden;margin-right:10px;}
+.scrollBox .next{display:inline;background:url(images/r-12x12.png);width:12px;height:12px;overflow:hidden;}
+.scrollBox .page-box a{display:inline;float:left;background:url(images/circle-12x12-n.png);width:12px;height:12px;overflow:hidden;margin-right:10px;text-indent:-9999px;}
+.scrollBox .page-box a.selected{background:url(images/circle-12x12-s.png);}
+
+.w {font-size: 14px; line-height: 24px; margin: 0 auto;width: 998px; overflow:hidden;}
+h1 { border-bottom: 1px solid #CCCCCC; color: #3FA600;font-family: "微软雅黑"; font-size: 26px;font-weight: bold; margin-bottom: 20px; padding: 15px 0;text-align: center;}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; }
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+a{ color:#69F;}
+</style>
+</head>
+
+<body>
+<div class="w">
+  <h1>左右翻滚效果</h1>
+  <div class="scrollBox">
+    <ul class="img_list clearfix" id="foo2">
+      <li><img src="images/img-554x235-1.png"></li>
+      <li><img src="images/img-554x235-1.png"></li>
+      <li><img src="images/img-554x235-1.png"></li>
+    </ul>
+    <div class="page-wrap clearfix">
+      <a href="#" class="pre fl" id="prev2"></a>
+      <div class="page-box fl" id="pager2"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+      <a href="#" class="next fl" id="next2"></a>
+    </div>
+  <script type="text/javascript">
+				//	Scrolled by user interaction
+				$('#foo2').carouFredSel({
+					prev: '#prev2',
+					next: '#next2',
+					pagination: "#pager2",
+					auto: false
+				});
+
+</script>
+</div>
+<h4>Step 0、创建风格 <a href="Scripts/jquery.js">jquery.js</a>&nbsp;&nbsp;&nbsp;<a href="Scripts/jquery.carouFredSel-5.5.0.js">jquery.carouFredSel-5.5.0.js</a></h4>
+<textarea name="" cols="160" rows="3">
+<script type="text/javascript" src="Scripts/jquery.js"></script>
+<script type="text/javascript" src="Scripts/jquery.carouFredSel-5.5.0.js"></script>
+</textarea>
+<h4>Step 1、创建CSS</h4>
+<textarea name="" cols="160" rows="15">
+.scrollBox{width:560px;}
+.scrollBox .img_list li{float:left;display:inline;width:554px;height:235px;overflow:hidden;}
+.scrollBox .page-wrap{padding:5px 0 0 230px;}
+.scrollBox .pre{display:inline;background:url(../images/l-12x12.png);width:12px;height:12px;overflow:hidden;margin-right:10px;}
+.scrollBox .next{display:inline;background:url(../images/r-12x12.png);width:12px;height:12px;overflow:hidden;}
+.scrollBox .page-box a{display:inline;float:left;background:url(../images/circle-12x12-n.png);width:12px;height:12px;overflow:hidden;margin-right:10px;text-indent:-9999px;}
+.scrollBox .page-box a.selected{background:url(../images/circle-12x12-s.png);}
+</textarea>
+<h4>Step 2、创建标准的html结构</h4>
+<textarea name="" cols="160" rows="22">
+
+ <div class="scrollBox">
+    <ul class="img_list clearfix" id="foo2">
+      <li><img src="images/img-554x235-1.png"></li>
+      <li><img src="images/img-554x235-1.png"></li>
+      <li><img src="images/img-554x235-1.png"></li>
+    </ul>
+    <div class="page-wrap clearfix">
+      <a href="#" class="pre fl" id="prev2"></a>
+      <div class="page-box fl" id="pager2"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+      <a href="#" class="next fl" id="next2"></a>
+    </div>
+</div>
+</textarea>
+<h4>Step 3、创建js</h4>
+<textarea name="" cols="160" rows="7">
+<script type="text/javascript">
+				//	Scrolled by user interaction
+				$('#foo2').carouFredSel({
+					prev: '#prev2',
+					next: '#next2',
+					pagination: "#pager2",
+					auto: false
+				});
+
+</script>
+</textarea>
+
+</div>
+</body>
+</html>

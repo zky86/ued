@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gbk" />	
+<title>栅格布局 grids.css</title>
+<link type="text/css" href="../cssiframe/pcsp.css" rel="stylesheet" />
+<style type="text/css">
+
+	body { font: 14px/150% Tahoma, sans-serif; color: #333}
+	#header { text-align: center; background:none}
+	h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+	h2 { font: 14px 'Courier New', monospace; margin-bottom: 5px; color:red }
+	a { outline: none; text-decoration: none; }
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+	.grid_c,
+	.grid_c2, .grid_c2f,
+	.grid_c2_s312, .grid_c2f_s312
+	{
+		margin-bottom: 10px;
+		clear: both;
+	}
+
+	.col_sub { background: #DBEDF6; }
+	.col_extra { background: #EAFBEA; }
+
+	.test_box { padding: 10px; height: 90px; border: 1px dashed #aaa; clear:both; }
+	.test_box_big { padding: 10px; height: 90px; border: 1px dashed #aaa; clear:both; }
+	.test_box_small { padding: 10px; height: 90px; border: 1px dashed #aaa; clear:both; }
+
+	.width { font-family: 'Courier New', monospace; padding: 10px }
+
+	#header ul { float: right; }
+	#header li { float: left; padding: 10px; width:80px; }
+	#content { clear: both; }
+	#footer { margin-bottom: 20px; }
+	#footer .top { float: right; padding: 20px; }
+
+	#content { *position: relative; } /* 否则ie下切换宽度自适应时布局会乱掉 */
+	#content .col_main .width {}
+	textarea{ background:#e5e5e5; border:2px solid #ccc; }
+</style>
+</head>
+<body>
+<div id="content">
+	<div id="header">
+		<h1>Poco栅格布局</h1>
+	</div>
+	
+	<div class="dboxDes">
+	<p>使用说明：</p>
+
+	<P>站内pcsp.css已经包含了grids，引入pcsp.css即可使用</P>
+	<p>只需要栅格布局css，可以引入layout文件：http://www.poco.cn/css_common/grids.css    </p>
+	<br />
+	
+	</div>
+	
+	<div id="content">
+		<h2>通栏：.grid_c</h2>
+		<div class="grid_c">
+			<!--<div class="col-main">  犯傻了，通栏布局根本不需要再包一层
+				<div class="main-wrap">-->
+					<div class="test_box">main<span class="width">994px</span></div>
+					<!--</div>
+			</div>-->
+		</div>
+		
+<textarea name="" cols="158" rows="10">
+
+/* ======================= html ====================== */
+
+<div class="grid_c">
+	<div class="test_box">main<span class="width">994px</span></div>
+</div>
+
+
+</textarea>
+<br /><br /><br />	
+		
+		<!-- 两栏：sub : main -->
+		<h2>两栏：.grid_c2</h2>
+		<div class="grid_c2">
+			<div class="col_main">
+				<div class="main_wrap">
+					<div class="test_box">main<span class="width">768px</span></div>
+				</div>
+			</div>
+			<div class="col_sub">
+				<div class="test_box_big">sub<span class="width">205px</span></div>
+			</div>
+		</div>
+		<textarea name="" cols="158" rows="15">
+/* ======================= html ====================== */
+
+<div class="grid_c2">
+	<div class="col_main">
+		<div class="main_wrap">
+			<div class="test_box">main<span class="width">768px</span></div>
+		</div>
+	</div>
+	<div class="col_sub">
+		<div class="test_box_big">sub<span class="width">205px</span></div>
+	</div>
+</div>
+
+</textarea>
+		<!-- 两栏：main : sub -->
+<br /><br /><br />			
+
+		
+		
+		
+		<h2>两栏：.grid_c2f</h2>
+		<div class="grid_c2f">
+			<div class="col_main">
+				<div class="main_wrap">
+					<div class="test_box">main<span class="width">768px</span></div>
+				</div>
+			</div>
+			<div class="col_sub">
+				<div class="test_box_big">sub<span class="width">205px</span></div>
+			</div>
+		</div>
+		<textarea name="" cols="158" rows="15">
+
+/* ======================= html ====================== */
+
+<div class="grid_c2f">
+	<div class="col_main">
+		<div class="main_wrap">
+			<div class="test_box">main<span class="width">768px</span></div>
+		</div>
+	</div>
+	<div class="col_sub">
+		<div class="test_box_big">sub<span class="width">205px</span></div>
+	</div>
+</div>
+
+
+</textarea>
+<br /><br /><br />	
+        <!-- 两栏：sub : main -->
+		<h2>两栏：.grid_c2_s312</h2>
+		<div class="grid_c2_s312">
+			<div class="col_main">
+				<div class="main_wrap">
+					<div class="test_box">main<span class="width">661px</span></div>
+				</div>
+			</div>
+			<div class="col_sub">
+				<div class="test_box_big">sub<span class="width">312px</span></div>
+			</div>
+		</div>
+		
+		
+		<textarea name="" cols="158" rows="15">
+
+/* ======================= html ====================== */
+
+<div class="grid_c2_s312">
+	<div class="col_main">
+		<div class="main_wrap">
+			<div class="test_box">main<span class="width">661px</span></div>
+		</div>
+	</div>
+	<div class="col_sub">
+		<div class="test_box_big">sub<span class="width">312px</span></div>
+	</div>
+</div>
+
+</textarea>
+<br /><br /><br />	
+        <!-- 两栏：main : sub -->
+		<h2>两栏：.grid_c2f_s312</h2>
+		<div class="grid_c2f_s312">
+			<div class="col_main">
+				<div class="main_wrap">
+					<div class="test_box">main<span class="width">661px</span></div>
+				</div>
+			</div>
+			<div class="col_sub">
+				<div class="test_box_big">sub<span class="width">312px</span></div>
+			</div>
+		</div>
+		<textarea name="" cols="158" rows="15">
+
+/* ======================= html ====================== */
+
+<div class="grid_c2f_s312">
+	<div class="col_main">
+		<div class="main_wrap">
+			<div class="test_box">main<span class="width">661px</span></div>
+		</div>
+	</div>
+	<div class="col_sub">
+		<div class="test_box_big">sub<span class="width">312px</span></div>
+	</div>
+</div>
+
+
+</textarea>
+<br /><br /><br />	
+<p><a href="#">返回顶部</a></p>
+	</div>
+</div>
+</body>
+</html>

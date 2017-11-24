@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>相册展示模块</title>
+<link href="css/zt.css" type="text/css" rel="stylesheet"  />
+
+<style>
+.content {width: 1000px;margin: 0 auto; line-height:22px; font-size:12px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+ textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; margin-bottom:25px}
+</style>
+</head>
+
+<body>
+
+<div class="content">
+
+	<h1>相册展示模块</h1>
+	
+
+<div class="picshow-block clearfix">
+
+	<div class="min_pic_left">
+	
+		<div class="btn_top"><a href="javascript:void(0)"><img src="images/btn_top.jpg" id="gotop" /></a></div>
+	
+		<div class="showbox" id="showArea">
+			<ul>
+			<li><img src="images/min_pic_1.jpg"  class="thumb_img"  rel="images/max_pic_1.jpg"  /></li>
+			<li><img src="images/min_pic_2.jpg"  class="thumb_img"  rel="images/max_pic_2.jpg"  /></li>
+			<li><img src="images/min_pic_3.jpg"  class="thumb_img"  rel="images/max_pic_3.jpg"  /></li>
+			<li><img src="images/min_pic_4.jpg"  class="thumb_img"  rel="images/max_pic_4.jpg"  /></li>
+			<li><img src="images/min_pic_5.jpg"  class="thumb_img"  rel="images/max_pic_5.jpg"  /></li>
+			</ul>
+		</div>
+		
+		<div class="btn_bottom"><a href="javascript:void(0)"><img src="images/btn_bottom.jpg" id="gobottom" /></a></div>
+	
+	</div>
+
+	<div class="max_pic_right"><img src="images/max_pic_1.jpg" id="main_img"/></div>
+
+</div>
+
+
+
+<script>
+function $(e) {return document.getElementById(e);}
+document.getElementsByClassName = function(cl) {
+	var retnode = [];
+	var myclass = new RegExp('\\b'+cl+'\\b');
+	var elem = this.getElementsByTagName('*');
+	for (var i = 0; i < elem.length; i++) {
+		var classes = elem[i].className;
+		if (myclass.test(classes)) retnode.push(elem[i]);
+	}
+	return retnode;
+}
+var MyMar;
+var speed = 1; //速度，越大越慢
+var spec = 1; //每次滚动的间距, 越大滚动越快
+var ipath = 'images/'; //图片路径
+var thumbs = document.getElementsByClassName('thumb_img');
+for (var i=0; i<thumbs.length; i++) {
+	var obj=thumbs[i];
+	obj.onmouseover = function () {$('main_img').src=this.getAttribute('rel'); $('main_img').link=this.getAttribute('link');};
+	thumbs[i].onclick = function () {window.location.href= this.getAttribute('rel');}
+}
+$('main_img').onclick = function () {window.location.href= this.getAttribute('link');}
+$('gotop').onmouseover = function() {this.src = ipath + 'btn_top.jpg'; MyMar=setInterval(gotop,speed);} //向上鼠标经过时按钮图片
+$('gotop').onmouseout = function() {this.src = ipath + 'btn_top.jpg'; clearInterval(MyMar);}//向上鼠标离开按钮图片
+$('gobottom').onmouseover = function() {this.src = ipath + 'btn_bottom.jpg'; MyMar=setInterval(gobottom,speed);}//向下鼠标经过时按钮图片
+$('gobottom').onmouseout = function() {this.src = ipath + 'btn_bottom.jpg'; clearInterval(MyMar);}//向下鼠标离开按钮图片
+function gotop() {$('showArea').scrollTop-=spec;}
+function gobottom() {$('showArea').scrollTop+=spec;}						
+</script> 
+
+	
+	
+<br />
+<br />
+<textarea name="" cols="120" rows="35">
+
+/* ======================= html ====================== */
+
+<div class="picshow-block clearfix">
+
+	<div class="min_pic_left">
+	
+		<div class="btn_top"><a href="javascript:void(0)"><img src="images/btn_top.jpg" id="gotop" /></a></div>
+	
+		<div class="showbox" id="showArea">
+			<ul>
+			<li><img src="images/min_pic_1.jpg"  class="thumb_img"  rel="images/max_pic_1.jpg"  /></li>
+			<li><img src="images/min_pic_2.jpg"  class="thumb_img"  rel="images/max_pic_2.jpg"  /></li>
+			<li><img src="images/min_pic_3.jpg"  class="thumb_img"  rel="images/max_pic_3.jpg"  /></li>
+			<li><img src="images/min_pic_4.jpg"  class="thumb_img"  rel="images/max_pic_4.jpg"  /></li>
+			<li><img src="images/min_pic_5.jpg"  class="thumb_img"  rel="images/max_pic_5.jpg"  /></li>
+			</ul>
+		</div>
+		
+		<div class="btn_bottom"><a href="javascript:void(0)"><img src="images/btn_bottom.jpg" id="gobottom" /></a></div>
+	
+	</div>
+
+	<div class="max_pic_right"><img src="images/max_pic_1.jpg" id="main_img"/></div>
+
+</div>
+
+
+/* ======================= css ====================== */
+
+.picshow-block{}
+.picshow-block .min_pic_left{  width:88px; float:left;}
+.picshow-block .min_pic_left .showbox{ height:222px; width:88px; overflow:hidden;}
+.picshow-block .min_pic_left .showbox li{ padding-top:5px;}
+.picshow-block .min_pic_left .btn_top{ padding-bottom:15px; text-align:center}
+.picshow-block .min_pic_left .btn_bottom{ padding-top:15px; text-align:center}
+.picshow-block .max_pic_right{ width:322px; float:left; margin:30px 0 0 15px;}
+
+
+ 
+
+</textarea>
+
+
+<textarea name="" cols="120" rows="35">
+<script>
+function $(e) {return document.getElementById(e);}
+document.getElementsByClassName = function(cl) {
+	var retnode = [];
+	var myclass = new RegExp('\\b'+cl+'\\b');
+	var elem = this.getElementsByTagName('*');
+	for (var i = 0; i < elem.length; i++) {
+		var classes = elem[i].className;
+		if (myclass.test(classes)) retnode.push(elem[i]);
+	}
+	return retnode;
+}
+var MyMar;
+var speed = 1; //速度，越大越慢
+var spec = 1; //每次滚动的间距, 越大滚动越快
+var ipath = 'images/'; //图片路径
+var thumbs = document.getElementsByClassName('thumb_img');
+for (var i=0; i<thumbs.length; i++) {
+	var obj=thumbs[i];
+	obj.onmouseover = function () {$('main_img').src=this.getAttribute('rel'); $('main_img').link=this.getAttribute('link');};
+	thumbs[i].onclick = function () {window.location.href= this.getAttribute('rel');}
+}
+$('main_img').onclick = function () {window.location.href= this.getAttribute('link');}
+$('gotop').onmouseover = function() {this.src = ipath + 'btn_top.jpg'; MyMar=setInterval(gotop,speed);} //向上鼠标经过时按钮图片
+$('gotop').onmouseout = function() {this.src = ipath + 'btn_top.jpg'; clearInterval(MyMar);}//向上鼠标离开按钮图片
+$('gobottom').onmouseover = function() {this.src = ipath + 'btn_bottom.jpg'; MyMar=setInterval(gobottom,speed);}//向下鼠标经过时按钮图片
+$('gobottom').onmouseout = function() {this.src = ipath + 'btn_bottom.jpg'; clearInterval(MyMar);}//向下鼠标离开按钮图片
+function gotop() {$('showArea').scrollTop-=spec;}
+function gobottom() {$('showArea').scrollTop+=spec;}						
+</script>
+
+</textarea>
+
+</div>
+
+
+
+
+</body>
+</html>

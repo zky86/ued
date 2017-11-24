@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>jQuery手机移动端触屏日历日期选择</title>
+    <link href="css/css.css" rel="stylesheet" type="text/css"  />
+    <link href="css/dateTime.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+    <script type="text/javascript" src="js/date.js" ></script>
+    <script type="text/javascript" src="js/iscroll.js" ></script>
+    <script type="text/javascript">
+$(function(){
+    $('#beginTime').date();
+    $('#endTime').date({theme:"datetime"});
+});
+</script>
+</head>
+
+<body>
+    <div class="w">
+        <h1>使用说明</h1>
+        <h4>实例：</h4>
+        <div>
+           <!--效果html开始-->
+           <div class="demo">
+               <div class="lie">
+                   日期设置-1:<input  id="beginTime" class="kbtn" />
+               </div>
+               <div class="lie">
+                   日期设置-2:<input id="endTime" class="kbtn" />
+               </div>
+           </div>
+           <div id="datePlugin"></div>
+           <!--效果html结束-->  
+        </div>
+        <br />
+        <h4>Step 1、在html的&lt;head&gt;标签内引入风格应用文件</h4>
+        <p>
+            <pre><code>&lt;script type="text/javascript" src="js/jquery-1.9.1.min.js"&gt;&lt;/script&gt;<br/>&lt;script type="text/javascript" src="js/date.js"&gt;&lt;/script&gt;<br />&lt;script type="text/javascript" src="js/iscroll.js"&gt;&lt;/script&gt;</code></pre>
+            <p class="link" style="font-size:12px;">可应用于手机端(兼容:FF、chrome、不兼容IE)</p>
+            <h4>
+                Step 2、创建标准的html结构，并填充你的内容(tip1:#beginTime为简单模式，#endTime为包含时、分模式；tips2:要更改控件标题，请到date.js里修改。)
+            </h4>
+     <textarea name="" cols="160" rows="14">
+    <!--效果html开始-->
+    <div class="demo">
+        <div class="lie">
+            日期设置-1:<input  id="beginTime" class="kbtn" />
+        </div>
+        <div class="lie">
+            日期设置-2:<input id="endTime" class="kbtn" />
+        </div>
+    </div>
+    <div id="datePlugin"></div>
+    <!--效果html结束--> 
+    </textarea>
+            <h4>Step 3、在step1代码之后的任意一个位置调用(建议在&lt;head&gt;标签结束前调用)</h4>
+    <textarea name="" cols="160" rows="19">
+    <link href="css/dateTime.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+    <script type="text/javascript" src="js/date.js" ></script>
+    <script type="text/javascript" src="js/iscroll.js" ></script>
+    <script type="text/javascript">
+    $(function(){
+        $('#beginTime').date();
+        $('#endTime').date({theme:"datetime"});
+    });
+    </script>
+            </textarea>
+        </div>
+</body>
+    </html>

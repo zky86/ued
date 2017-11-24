@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>栅格布局</title>
+<style type="text/css">
+*{ padding:0; margin:0}
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+</style>
+</head>
+
+<body>
+<div id="wrapper" class="content">
+  <h1>MyPoco栅格布局</h1>
+    <ol>
+        <li>mypoco栅格布局从应用层面分2层：主页的栅格布局，内页的栅格布局；但实际上可应用于任何场合</li>
+        <li>栅格布局分3种类型：一栏，两栏，三栏
+		<pre>
+        一栏DOM 结构如下：
+        <textarea cols="80" rows="5">
+        <div class="grid">
+            一栏内容
+        </div>        
+        </textarea>
+        两栏DOM 结构如下：
+        <textarea cols="80" rows="8">
+        <div class="grid_c2">
+            <div class="col_main">
+            	<div class="main_wrap">主内容</div>
+            </div>
+            <div class="col_sub">副内容</div>
+        </div>        
+        </textarea>
+        三栏DOM 结构如下：
+        <textarea cols="80" rows="9">
+        <div class="grid_c3">
+            <div class="col_main">
+            	<div class="main_wrap">主内容</div>
+            </div>
+            <div class="col_sub">副内容</div>
+            <div class="col_extra">额外内容</div>
+        </div>        
+        </textarea>
+        </pre>
+        </li>
+        <li>主页栅格布局：
+         <pre>
+         * 窄屏布局(两栏)
+              .grid_c2_s50p | 50% / 50% | main - sub
+              .grid_c2_s35p | 65% / 35% | main - sub
+              .grid_c2f_s35p | 35% / 65% | sub - main
+         * 宽屏布局(三栏)
+              .grid_c3_se25p  | 25% / 50% / 25% | sub - main - extra
+              .grid_c3_s20pe40p  | 20% / 40% / 40% | sub - main - extra
+              .grid_c3_s50pe25p  | 50% / 25% / 25% | sub - main - extra
+        </pre>
+        </li>
+        <li>内页栅格布局：
+         <pre>
+          .grid_c2_s200 | 200px / 100% | sub - main
+        </pre>
+        </li>
+    </ol>
+</div>
+</body>
+</html>

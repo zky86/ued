@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>文字列表二</title>
+<link rel="stylesheet" href="../cssiframe/pcsp.css" type="text/css" />
+<link rel="stylesheet" href="css/pic_article.css" type="text/css" />
+</head>
+<body>
+<div class="content">
+<h1>文字列表二</h1>
+<div class="demo">
+  <p>可根据实际情况，进行调整与修改</p>
+</div>
+<br />
+<p>&nbsp;</p>
+<p class="top_title"><strong>1.特殊效果列表</strong></p>
+<p class="top_title">(1)摄影首页特别推荐，容器宽度994px</p>
+<p>效果如下：</p>
+<!--容器宽度994px-->
+<div class="out_photo_text clearfix">
+  <div style="width: 120px; line-height: 35px; height: 40px;" class="fl">
+    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tbody>
+        <tr>
+          <td><strong>特别推荐：</strong></td>
+          <td><a id="opus_choice_pre_page" title="向左翻" href="#this"><img src="images/bt01.gif"></a> &nbsp;<a id="opus_choice_next_page" title="向右翻" href="#this"><img src="images/bt02.gif"></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="float: left; position: relative;" class="work_container" id="work_container">
+    <div id="work_space" style="width: 1e+8px;">
+      <div class="special_group" id="plus_page1" style="float: left;"> <a target="_blank" title="POCO邀您周末下午茶—B.R.O" href="#">POCO邀您周末下午茶—B.R.O</a> </div>
+      <div class="special_group" id="plus_page2" style="float: left;"> <a target="_blank" title="【2010广州美食大赏】之佰搭果" href="#">【2010广州美食大赏】之佰搭果</a> </div>
+      <div class="special_group" id="plus_page3" style="float: left;"> <a target="_blank" title="POCO主推系列PURO之EMMA的离别" href="#">POCO主推系列PURO之EMMA的离别</a> </div>
+    </div>
+  </div>
+</div>
+<!--容器宽度994px end-->
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="156" rows="20">
+/* ======================= css ====================== */
+.out_photo_text { width:974px; height:40px; overflow:hidden; line-height:40px; padding-left:20px; background:#f8f8f8; padding-top:8px; }
+.out_photo_text h2 { color:#737373; }
+.out_photo_text ul { float:right; text-align:center; width:880px; }
+.out_photo_text ul li { float:left; width:293px; text-align:center; }
+.out_photo_text ul li a { font-size:14px;  text-align:center; text-decoration:underline; }
+.out_photo_text ul li a:hover { font-size:14px;  text-align:center; text-decoration: none; }
+.work_container{	width:800px;	line-height:35px;	overflow:hidden;	}
+#work_space{width:1000000px;line-height:35px;padding:0px;margin:0px;}	
+.special_group{width:230px; float:left; text-align:center; line-height:35px;padding-right:22px; padding-left:22px;display: inline; font-size:14px; }
+/* ======================= html ====================== */
+<div class="out_photo_text clearfix">
+  <div style="width: 120px; line-height: 35px; height: 40px;" class="fl">
+    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tbody>
+        <tr>
+          <td><strong>特别推荐：</strong></td>
+          <td><a id="opus_choice_pre_page" title="向左翻" href="#this"><img src="images/bt01.gif"></a> &nbsp;<a id="opus_choice_next_page" title="向右翻" href="#this"><img src="images/bt02.gif"></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="float: left; position: relative;" class="work_container" id="work_container">
+    <div id="work_space" style="width: 1e+8px;">
+      <div class="special_group" id="plus_page1" style="float: left;"> <a target="_blank" title="POCO邀您周末下午茶—B.R.O" href="#">POCO邀您周末下午茶—B.R.O</a> </div>
+      <div class="special_group" id="plus_page2" style="float: left;"> <a target="_blank" title="【2010广州美食大赏】之佰搭果" href="#">【2010广州美食大赏】之佰搭果</a> </div>
+      <div class="special_group" id="plus_page3" style="float: left;"> <a target="_blank" title="POCO主推系列PURO之EMMA的离别" href="#">POCO主推系列PURO之EMMA的离别</a> </div>
+    </div>
+  </div>
+</div>
+</textarea>
+<p>&nbsp;</p>
+<p class="top_title">(2)网友即时动态,容器宽度为507px,含有tab切换和分页</p>
+<p>效果如下：</p>
+<div style="width: 507px;" class="fl" id="dynamic_state_list">
+  <h3 title="网友即时动态" class="title mb10">网友即时动态</h3>
+  <ul class="toggle2 mb5">
+    <li name="dynamic_state_tab" class="current"><a title="全部动态" href="#this">全部动态</a></li>
+    <li name="dynamic_state_tab" class="fl"><a title="作品动态" href="#this">作品动态</a></li>
+    <li name="dynamic_state_tab" class="fl"><a title="相册动态" href="#this">相册动态</a></li>
+    <li name="dynamic_state_tab" class="fl"><a title="空间动态" href="#this">空间动态</a></li>
+    <li class="fr look_around"><a title="随便看看" target="_blank" href="http://do.poco.cn/">随便看看<img height="14" width="26" src="http://my.poco.cn/space/images/space_new/new.gif" alt="new"></a></li>
+  </ul>
+  <div id="dynamic_state_cache_space">
+    <div id="dynamic_state_cache_0" style="">
+      <ul class="dt_ul">
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="曦" class="green" href="#">曦</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at0">：[美食推荐] <a target="_blank" href="#">成都の怀石料理--稻之源日本料理</a> <br>
+            <div class="fl mr5"><a target="_blank" href="#"><img src="http://image.poco.cn/m_img_gateway/index.php?v=1.5*size=110*hash=9a62aa2*http%3A%2F%2Fimg181.poco.cn%2Fmypoco%2Fmyphoto%2F20110221%2F15%2F16463184201102211515061008770731631_003_640.jpg"></a></div>
+            对于日式料理，一直认为它是视觉的艺术，食物色彩清雅，漆器艳丽...<br>
+            <br>
+            <a target="_blank" href="#">点此浏览作品</a>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 15:54</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at0"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="曦" class="green" href="#">曦</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at1">：我在“<a target="_blank" href="#">稻之源</a>”餐厅发表了食评“<a target="_blank" href="#">&nbsp;对于日式料理，一直认为它是视觉的艺术，</a>” <br>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 15:49</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at1"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="二十六日·晴" class="green" href="#">二十六日·晴</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at2">：我与 <a target="_blank" href="#">熊猫七七</a> 、 <a target="_blank" href="#">ray（阿力）</a> 、 <a target="_blank" href="#">POCO用户拓展部</a> 现在成为好友 <br>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 14:14</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at2"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="燕子" class="green" href="#">燕子</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at3">：我与 <a target="_blank" href="#">qq81234568pp</a> 、 <a target="_blank" href="#">留声机</a> 、 <a target="_blank" href="#">刀子</a> 、 <a target="_blank" href="#">导演 刘光灿</a> 、 <a target="_blank" href="#">小飞侠</a> 等17位POCOer现在成为好友 <br>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 14:19</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at3"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="SIN." class="green" href="#">SIN.</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at4">：[心情博文] <a target="_blank" href="#">handmade {烫花器</a> <br>
+            <div class="fl mr5"><a target="_blank" href="#"><img src="#"></a></div>
+            <br>
+            <br>
+            <a target="_blank" href="#">点此浏览作品</a>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 13:35</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at4"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="小蠢" class="green" href="#">小蠢</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at5">：获得"旅游社区首页勋章"一枚 <br>
+            <div class="fl mr5"><a target="_blank" href="#"><img src="http://image.poco.cn/m_img_gateway/index.php?v=1.5*size=110*hash=d5fe747*http%3A%2F%2Fimg181.poco.cn%2Fmypoco%2Fmyphoto%2F20110219%2F18%2F4272349120110219185615085_640.jpg"></a></div>
+            <img onload="fixPng(this);" style="float: left;" src="http://my.poco.cn/award/award_png/s/travel-s-a.png">
+            <div style="margin-left: 30px;">
+              <p>我的作品<a target="_blank" href="#">《两官盛宴（二）&mdash;&mdash;蒂卡波湖畔的晚餐和早餐》</a>被推荐上了旅游社区首页啦！</p>
+              <p style="margin-top: 10px;"><a target="_blank" href="#">点此浏览作品</a><br>
+                <a target="_blank" href="#">了解如何获得勋章</a></p>
+            </div>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 12:20</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at5"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="┆Ting┆" class="green" href="#">┆Ting┆</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at6">：刚写了“<a target="_blank" href="#">距离</a>” </span> <span class="fl gray time">02-21 12:46</span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="Aaron sky" class="green" href="#">Aaron sky</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at7">：我与 <a target="_blank" href="#">子龍less</a> 现在成为好友 </span> <span class="fl gray time">02-21 11:12</span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="郑建文" class="green" href="#">郑建文</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at8">：我与 <a target="_blank" href="#">ben</a> 、 <a target="_blank" href="http://my.poco.cn/id-56114715.shtml?stat_request_channel=3612649622">国艺轩</a> 、 <a target="_blank" href="#">chenchaoxianchenkaiwen</a> 现在成为好友 <br>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 11:05</span> <span class="fl xiala_img"><img  src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at8"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="Jameswu" class="green" href="#">Jameswu</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at9">：我申请添加 <a target="_blank" href="#">Alba</a> 为好友 </span> <span class="fl gray time">02-21 10:29</span>
+            <div class="clear"></div>
+          </div>
+        </li>
+      </ul>
+      <div class="page fr font_gb mt10"><a class="click">1</a><a href="#">2</a><a href="#">3</a><a onclick="dynamic_state_tab_switch.getPageData('4', '&amp;type_flag=all')" href="#">4</a><a href="#">5</a><a onclick=href="#">6</a><a href="#">7</a><a title="下一页"  href="#">下一页</a></div>
+    </div>
+  </div>
+</div>
+<!--end-->
+<p class="clear">&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="textarea" cols="156" rows="20">
+/* ======================= css ====================== */
+.toggle,.toggle2{padding:0 0 0 13px;height:30px;overflow:hidden;background:url(http://my.poco.cn/space/images/solid_line.gif) repeat-x bottom;} 
+.toggle li,.toggle2 li{border:#6ac334 solid 1px;font-size:14px;font-weight:bold;margin-right:3px;padding-top:1px;}
+.toggle li a,.toggle2 li a{text-decoration:none;display:block;padding:0 10px;background:#ececec;line-height:27px;}
+.toggle li.current a,.toggle2 li.current a{background:#fff;color:#52a91c;}
+.toggle li.current,.toggle2 li.current{float:left;border-bottom:#fff solid 1px;}
+.toggle li.look_around, .toggle2 li.look_around, .toggle2 li.look_around a{ margin:0px;padding:0px; border:0px;background:#FFF;}
+.toggle2{padding:0 0 0 7px;height:22px;}
+.toggle2 li{font-size:12px;font-weight:normal;}
+.toggle2 li a{padding:0 9px;line-height:19px;}
+.dq_ico{padding-left:25px;line-height:26px;}
+.dq_ico strong{width:80px;overflow:hidden;display:block;float:left;}
+.dq_ico1{background:url(http://my.poco.cn/space/images/icobg_01.jpg) no-repeat left top;}
+.dq_ico2{background:url(http://my.poco.cn/space/images/icobg_02.jpg) no-repeat left 3px;line-height:25px;}
+.dq_ico3{background:url(http://my.poco.cn/space/images/icobg_03.jpg) no-repeat left 3px;}
+.dt_ul li{ background:url(http://my.poco.cn/space/images/dot_line.gif) repeat-x bottom;padding:6px 3px 10px 0px;text-align:right; }
+.dt_ul li .green { color: #52A91C;}
+.dt_ul .name{width:80px;height:23px;overflow:hidden;float:left;display:block;text-align:right;}
+.dt_ul .title{width:329px;height:23px;display:block;overflow:hidden;text-align:left;padding-right:2px; font-weight:normal; font-size:12px;}
+.dt_ul .img_dynamic_arrow{cursor:pointer;vertical-align:bottom;}
+.dynamic_state_content a img { margin-bottom:7px;}
+/* ======================= html ====================== */
+<div style="width: 507px;" class="fl" id="dynamic_state_list">
+  <h3 title="网友即时动态" class="title mb10">网友即时动态</h3>
+  <ul class="toggle2 mb5">
+    <li name="dynamic_state_tab" class="current"><a title="全部动态" href="#this">全部动态</a></li>
+    <li name="dynamic_state_tab" class="fl"><a title="作品动态" href="#this">作品动态</a></li>
+    <li name="dynamic_state_tab" class="fl"><a title="相册动态" href="#this">相册动态</a></li>
+    <li name="dynamic_state_tab" class="fl"><a title="空间动态" href="#this">空间动态</a></li>
+    <li class="fr look_around"><a title="随便看看" target="_blank" href="http://do.poco.cn/">随便看看<img height="14" width="26" src="http://my.poco.cn/space/images/space_new/new.gif" alt="new"></a></li>
+  </ul>
+  <div id="dynamic_state_cache_space">
+    <div id="dynamic_state_cache_0" style="">
+      <ul class="dt_ul">
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="曦" class="green" href="#">曦</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at0">：[美食推荐] <a target="_blank" href="#">成都の怀石料理--稻之源日本料理</a> <br>
+            <div class="fl mr5"><a target="_blank" href="#"><img src="http://image.poco.cn/m_img_gateway/index.php?v=1.5*size=110*hash=9a62aa2*http%3A%2F%2Fimg181.poco.cn%2Fmypoco%2Fmyphoto%2F20110221%2F15%2F16463184201102211515061008770731631_003_640.jpg"></a></div>
+            对于日式料理，一直认为它是视觉的艺术，食物色彩清雅，漆器艳丽...<br>
+            <br>
+            <a target="_blank" href="#">点此浏览作品</a>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 15:54</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at0"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="曦" class="green" href="#">曦</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at1">：我在“<a target="_blank" href="#">稻之源</a>”餐厅发表了食评“<a target="_blank" href="#">&nbsp;对于日式料理，一直认为它是视觉的艺术，</a>” <br>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 15:49</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at1"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="二十六日·晴" class="green" href="#">二十六日·晴</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at2">：我与 <a target="_blank" href="#">熊猫七七</a> 、 <a target="_blank" href="#">ray（阿力）</a> 、 <a target="_blank" href="#">POCO用户拓展部</a> 现在成为好友 <br>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 14:14</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at2"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="燕子" class="green" href="#">燕子</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at3">：我与 <a target="_blank" href="#">qq81234568pp</a> 、 <a target="_blank" href="#">留声机</a> 、 <a target="_blank" href="#">刀子</a> 、 <a target="_blank" href="#">导演 刘光灿</a> 、 <a target="_blank" href="#">小飞侠</a> 等17位POCOer现在成为好友 <br>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 14:19</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at3"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="SIN." class="green" href="#">SIN.</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at4">：[心情博文] <a target="_blank" href="#">handmade {烫花器</a> <br>
+            <div class="fl mr5"><a target="_blank" href="#"><img src="#"></a></div>
+            <br>
+            <br>
+            <a target="_blank" href="#">点此浏览作品</a>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 13:35</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at4"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="小蠢" class="green" href="#">小蠢</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at5">：获得"旅游社区首页勋章"一枚 <br>
+            <div class="fl mr5"><a target="_blank" href="#"><img src="http://image.poco.cn/m_img_gateway/index.php?v=1.5*size=110*hash=d5fe747*http%3A%2F%2Fimg181.poco.cn%2Fmypoco%2Fmyphoto%2F20110219%2F18%2F4272349120110219185615085_640.jpg"></a></div>
+            <img onload="fixPng(this);" style="float: left;" src="http://my.poco.cn/award/award_png/s/travel-s-a.png">
+            <div style="margin-left: 30px;">
+              <p>我的作品<a target="_blank" href="#">《两官盛宴（二）&mdash;&mdash;蒂卡波湖畔的晚餐和早餐》</a>被推荐上了旅游社区首页啦！</p>
+              <p style="margin-top: 10px;"><a target="_blank" href="#">点此浏览作品</a><br>
+                <a target="_blank" href="#">了解如何获得勋章</a></p>
+            </div>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 12:20</span> <span class="fl xiala_img"><img src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at5"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="┆Ting┆" class="green" href="#">┆Ting┆</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at6">：刚写了“<a target="_blank" href="#">距离</a>” </span> <span class="fl gray time">02-21 12:46</span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="Aaron sky" class="green" href="#">Aaron sky</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at7">：我与 <a target="_blank" href="#">子龍less</a> 现在成为好友 </span> <span class="fl gray time">02-21 11:12</span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="郑建文" class="green" href="#">郑建文</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at8">：我与 <a target="_blank" href="#">ben</a> 、 <a target="_blank" href="http://my.poco.cn/id-56114715.shtml?stat_request_channel=3612649622">国艺轩</a> 、 <a target="_blank" href="#">chenchaoxianchenkaiwen</a> 现在成为好友 <br>
+            <div class="clear"></div>
+            </span> <span class="fl gray time">02-21 11:05</span> <span class="fl xiala_img"><img  src="http://my.poco.cn/manage/images/xiajiantou.gif" class="img_dynamic_arrow" id="img_dynamic_arrow_all_p1_at8"></span>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="dynamic_state_div"> <span class="name"><a target="_blank" title="Jameswu" class="green" href="#">Jameswu</a></span> <span style="line-height: 24px;" class="fl mr5 title over_font dynamic_state_content" id="J_ToggleShow_all_p1_at9">：我申请添加 <a target="_blank" href="#">Alba</a> 为好友 </span> <span class="fl gray time">02-21 10:29</span>
+            <div class="clear"></div>
+          </div>
+        </li>
+      </ul>
+      <div class="page fr font_gb mt10"><a class="click">1</a><a href="#">2</a><a href="#">3</a><a onclick="dynamic_state_tab_switch.getPageData('4', '&amp;type_flag=all')" href="#">4</a><a href="#">5</a><a onclick=href="#">6</a><a href="#">7</a><a title="下一页"  href="#">下一页</a></div>
+    </div>
+  </div>
+</div>
+</textarea>
+<p>&nbsp;</p>
+<div style="text-align:right; font-size:16px; padding:10px; font-size:12px;"><a href="#" style="color:#6AC334;">回到顶部</a></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>图片滚动demo</title>
+<link href="css/css.css" rel="stylesheet" type="text/css"  />
+</head>
+
+<body>
+<div class="w">
+<h1>使用说明</h1>
+<h4>Step 1、在html的&lt;head&gt;标签内引入风格应用文件 </h4>
+<p><pre><code>&lt;script language="javascript" type="text/javascript"  src="Scripts/scroll_080828.js"&gt;&lt;/script&gt;</code></pre>
+<p class="link" style="font-size:12px;">(查看<a href="jxgd.html" target="_blank">demo</a> <a href="jxzz.html" target="_blank">demo2</a>,兼容:FF3.6、 ie6.7、chrome10.0、Maxthon3)</p>
+<h4>Step 2、创建标准的html结构，并填充你的内容(tip1:例子div class="pic"数为5，实际可随意增减，但至少为2)</h4>
+<textarea name="" cols="160" rows="14">
+<div class="scrollbox">
+	<div class="left" id="ArrLeft_01"></div>
+		<div class="scrollList" id="SL_Cont_01">
+			<div class="pic"><img src="images/s_165x165.jpg"/></div>
+			<div class="pic"><img src="images/s_165x165.jpg"/></div>
+			<div class="pic"><img src="images/s_165x165.jpg"/></div>
+			<div class="pic"><img src="images/s_165x165.jpg"/></div>
+			<div class="pic"><img src="images/s_165x165.jpg"/></div>
+		</div>
+	<div class="right" id="ArrRight_01"></div>
+</div>
+</textarea>
+<h4>Step 3、在step1代码之后的任意一个位置调用(建议在&lt;head&gt;标签结束前调用)</h4>
+<textarea name="" cols="160" rows="19">
+<script language="javascript" type="text/javascript">
+<!--//--><![CDATA[//><!--
+	var scrollPic_01 = new ScrollPic();
+	scrollPic_01.scrollContId   = "SL_Cont_01"; //内容容器ID
+	scrollPic_01.arrLeftId      = "ArrLeft_01";//左箭头ID
+	scrollPic_01.arrRightId     = "ArrRight_01"; //右箭头ID
+	
+	scrollPic_01.frameWidth     = 750;//显示框宽度
+	scrollPic_01.pageWidth      = 189; //翻页宽度
+	
+	scrollPic_01.speed          = 2; //移动速度(单位毫秒，越小越快)
+	scrollPic_01.space          = 15; //每次移动像素(单位px，越大越快)
+	scrollPic_01.autoPlay       = true; //自动播放 (false:手动 true:自动)
+	scrollPic_01.autoPlayTime   = 5; //自动播放间隔时间(秒)
+	
+	scrollPic_01.initialize(); //初始化
+
+//--><!]]>
+</script>
+</textarea>
+</div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style>
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+.w{ width:994px; margin:0 auto;}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px;  margin-top:10px;}
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+body{ padding-bottom:25px}
+
+
+.text_palyTop {border:1px solid #aaa; width:400px; }
+.text_palyTop #div1{ height:18px; overflow:hidden;}
+.text_palyTop a{display:block;line-height:18px;}
+
+
+.text_palyLeft {width:200px;  overflow:hidden; }
+.text_palyLeft .g2 {  height:16px; float:left; overflow:hidden;}
+.text_palyLeft .g2 span{float:left; margin-right:10px;}
+</style>
+</head>
+<body>
+<div class="w">
+
+<h1>文字滚动</h1>
+<h4>文字向上滚动</h4>
+<div class="text_palyTop">
+<div id="div1">
+<a href="#">请教高手帮我看下这段代码 FLASH显示不了</a>
+<a href="#">请教在UTF-8编辑下的符号显示问题 </a>
+<a href="#">jquery做的一个滑动效果,不知如何增加延迟,现在太灵敏了</a>
+
+<a href="#">技术研究-QQ09版按钮渐显渐隐的由来 </a>
+<a href="#">javascript读取Json数据并分页显示，支持键盘和滚轮翻页 </a>
+<a href="#">腾讯网奇怪的PNG文件，拜师以求解惑</a>
+<a href="#">更新lhgdialog-ver2.0.1弹出窗口组件 2009-7-18 </a>
+</div>
+<script>
+
+var box=document.getElementById("div1"),can=true;
+box.innerHTML+=box.innerHTML;
+box.onmouseover=function(){can=false};
+box.onmouseout=function(){can=true};
+new function (){
+var stop=box.scrollTop%18==0&&!can;
+if(!stop)box.scrollTop==parseInt(box.scrollHeight/2)?box.scrollTop=0:box.scrollTop++;
+setTimeout(arguments.callee,box.scrollTop%18?10:1500);
+};
+</script>
+
+</div>
+<textarea name="" cols="160" rows="5">
+
+.text_palyTop {border:1px solid #aaa; width:400px; }
+.text_palyTop #div1{ height:18px; overflow:hidden;}
+.text_palyTop a{display:block;line-height:18px;}
+
+
+</textarea>
+<textarea name="" cols="160" rows="13">
+
+<div class="text_palyTop">
+	<div id="div1">
+		<a href="#"> 请教高手帮我看下这段代码 FLASH显示不了 </a>
+		<a href="#"> 请教在UTF-8编辑下的符号显示问题 </a>
+		<a href="#"> jquery做的一个滑动效果,不知如何增加延迟,现在太灵敏了</a>
+		
+		<a href="#"> 技术研究-QQ09版按钮渐显渐隐的由来 </a>
+		<a href="#"> javascript读取Json数据并分页显示，支持键盘和滚轮翻页 </a>
+		<a href="#"> 腾讯网奇怪的PNG文件，拜师以求解惑</a>
+		<a href="#"> 更新lhgdialog-ver2.0.1弹出窗口组件 2009-7-18 </a>
+	</div>
+</div>
+
+</textarea>
+<textarea name="" cols="160" rows="13">
+<script>
+	var box=document.getElementById("div1"),can=true;
+	box.innerHTML+=box.innerHTML;
+	box.onmouseover=function(){can=false};
+	box.onmouseout=function(){can=true};
+	new function (){
+	var stop=box.scrollTop%18==0&&!can;
+	if(!stop)box.scrollTop==parseInt(box.scrollHeight/2)?box.scrollTop=0:box.scrollTop++;
+	setTimeout(arguments.callee,box.scrollTop%18?10:1500);
+	};
+</script>
+</textarea>
+
+<h4>文字向左滚动</h4>
+<div class="text_palyLeft" id="g1" onmouseover="clearInterval(timer)" onmouseout="timer=setInterval(mar,30)">
+   <div class="scroll" id="scroll">
+     <div class="g2" id="g2">
+
+          <span><a href="#"> [1].这是一条新闻 </a></span>
+          <span><a href="#"> [2].刘翔的了兵乓球冠军 </a></span>
+          <span><a href="#"> [3].乔布斯进军NBA </a></span>
+          <span><a href="#"> [4].胡锦涛下课 </a></span>
+          <span><a href="#"> [5].奥巴马最终娶了凤姐 </a></span>
+  </div>
+
+  <div id="g3" class="g2"></div>
+ </div> 
+ <script language="javascript" type="text/javascript">
+var s,s2,s3,s4,timer;
+function init(){
+s=getid("g1");
+s2=getid("g2");
+s3=getid("g3");
+s4=getid("scroll");
+s4.style.width=(s2.offsetWidth*6+100)+"px";
+s3.innerHTML=s2.innerHTML;
+timer=setInterval(mar,30)
+}
+function mar(){
+if(s2.offsetWidth<=s.scrollLeft){
+s.scrollLeft-=s2.offsetWidth;
+}else{s.scrollLeft++;}
+}
+function getid(id){
+return document.getElementById(id);
+}
+window.onload=init;
+</script>
+</div>
+<textarea name="" cols="160" rows="5">
+
+.text_palyLeft {width:200px;  overflow:hidden; }
+.text_palyLeft .g2 {  height:16px; float:left; overflow:hidden;}
+.text_palyLeft .g2 span{float:left; margin-right:10px;}
+
+</textarea>
+<textarea name="" cols="160" rows="13">
+
+<div class="text_palyLeft" id="g1" onmouseover="clearInterval(timer)" onmouseout="timer=setInterval(mar,30)">
+	<div class="scroll" id="scroll">
+		<div class="g2" id="g2">
+			<span><a href="#"> [1].这是一条新闻 </a></span>
+			<span><a href="#"> [2].刘翔的了兵乓球冠军 </a></span>
+			<span><a href="#"> [3].乔布斯进军NBA </a></span>
+			<span><a href="#"> [4].胡锦涛下课 </a></span>
+			<span><a href="#"> [5].奥巴马最终娶了凤姐 </a></span>
+		</div>
+		<div id="g3" class="g2"></div>
+	</div> 
+</div>
+
+</textarea>
+<textarea name="" cols="160" rows="13">
+<script language="javascript" type="text/javascript">
+	var s,s2,s3,s4,timer;
+	function init(){
+	s=getid("g1");
+	s2=getid("g2");
+	s3=getid("g3");
+	s4=getid("scroll");
+	s4.style.width=(s2.offsetWidth*6+100)+"px";
+	s3.innerHTML=s2.innerHTML;
+	timer=setInterval(mar,30)
+	}
+	function mar(){
+	if(s2.offsetWidth<=s.scrollLeft){
+	s.scrollLeft-=s2.offsetWidth;
+	}else{s.scrollLeft++;}
+	}
+	function getid(id){
+	return document.getElementById(id);
+	}
+	window.onload=init;
+</script>
+</textarea>
+
+</div>
+
+
+
+
+</body>
+</html>

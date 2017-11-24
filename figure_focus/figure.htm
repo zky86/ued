@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>焦点图</title>
+
+<script type="text/javascript" src="Scripts/contentslider.js"></script>
+<style type="text/css">
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+table{border-collapse:collapse;border-spacing:0}
+.clearfix:afte{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:block}
+.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.clear{clear:both; display:block; font-size:0px;height:0px;line-height:0px;overflow:hidden}
+.f14{font-size:14px}
+.fb{font-weight:bold}
+.relative{position:relative}
+.fr{float:right}
+.fl{float:left}
+.hidden{display:block;font-size:0;height:0;overflow:hidden}
+.text_align{text-align:center}
+
+*{ padding:0; margin:0}
+
+i.iToc{font-style:normal;}
+i.toc{font-style:normal;cursor:pointer;}
+.contentdiv{display:none;zoom:1;overflow:hidden;}
+.sliderfilter{filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);-moz-opacity:1;opacity:1;}
+
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+
+.box355c{width:405px;position:relative; height:222px; overflow:hidden}
+.box355c .pagination{height:16px;clear:both;position:absolute; top:200px; right:30px;}
+.box355c .pagination .subLineTab{display:none;}
+.box355c .pagination .subPageTab{float:right}
+.box355c .pagination a{width:15px; height:15px; display:inline; float:left; color:#a2a2a2;background:#000;text-align:center;line-height:15px;text-decoration:none;font-weight:bold;margin-right:5px; background:url(images/a_link_bg.jpg) no-repeat}
+.box355c .pagination a:hover, 
+/* 此处注意 */ .box355c .pagination a.selected{color:#FFF;background:url(images/a_link_cur.jpg) no-repeat;}
+.box355c .dTitle{font-weight:bold;line-height:26px; text-align:center; width:230px;}
+.box355c .pagination .subPageTab  i{font-style: normal;}
+
+.w {font-size: 14px; line-height: 24px; margin: 0 auto;width: 998px; overflow:hidden;}
+h1 { border-bottom: 1px solid #CCCCCC; color: #3FA600;font-family: "微软雅黑"; font-size: 26px;font-weight: bold; margin-bottom: 20px; padding: 15px 0;text-align: center;}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; }
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+a{ color:#69F;}
+</style>
+</head>
+
+<body>
+<div class="w">
+  <h1>五屏焦点图</h1>
+  <div class="box355c">
+<div id="slider5" class="sliderwrapper">
+
+
+<div class="contentdiv">
+<p><img src="images/355c_1.jpg" /></p>
+</div>
+
+<div class="contentdiv" >
+<p><img src="images/355c_2.jpg" /></p>
+</div>
+
+<div class="contentdiv">
+<p><img src="images/355c_3.jpg" /></p>
+</div>
+
+<div class="contentdiv">
+<p><img src="images/355c_4.jpg" /></p>
+</div>
+
+<div class="contentdiv" >
+<p><img src="images/355c_5.jpg" /></p>
+</div>
+
+
+</div>
+
+<div id="paginate-slider5" class="pagination">
+<i class="toc"></i><i class="toc"></i><i class="toc"></i><i class="toc"></i><i class="toc"></i><i class="toc"></i><i class="toc"></i><i class="toc"></i><i class="toc"></i><i class="toc"></i>
+</div>
+
+<script type="text/javascript">
+featuredcontentslider.init({id: "slider5",contentsource: ["inline", ""],toc: "#increment",nextprev: ["", ""], revealtype: "click", enablefade: [true, 0.15], autorotate: [true, 3500], delay: 200,onChange: function(previndex, curindex){}})
+</script>
+</div>
+<h4>Step 0、创建风格 <a href="Scripts/contentslider.js">contentslider.js</a></h4>
+<textarea name="" cols="160" rows="3">
+<script type="text/javascript" src="Scripts/contentslider.js"></script>
+</textarea>
+<h4>Step 1、创建CSS</h4>
+<textarea name="" cols="160" rows="15">
+.box355c{width:405px;position:relative; height:222px; overflow:hidden}
+.box355c .pagination{height:16px;clear:both;position:absolute; top:200px; right:30px;}
+.box355c .pagination .subLineTab{display:none;}
+.box355c .pagination .subPageTab{float:right}
+.box355c .pagination a{width:15px; height:15px; display:inline; float:left; color:#a2a2a2;background:#000;text-align:center;line-height:15px;text-decoration:none;font-weight:bold;margin-right:5px; background:url(../images/a_link_bg.jpg) no-repeat}
+.box355c .pagination a:hover, /* 此处注意 */
+.box355c .pagination a.selected{color:#FFF;background:url(../images/a_link_cur.jpg) no-repeat;}
+.box355c .dTitle{font-weight:bold;line-height:26px; text-align:center; width:230px;}
+.box355c .pagination .subPageTab  i{font-style: normal;}
+i.iToc{font-style:normal;}
+i.toc{font-style:normal;cursor:pointer;}
+.contentdiv{display:none;zoom:1;overflow:hidden;}
+.sliderfilter{filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);-moz-opacity:1;opacity:1;}
+</textarea>
+<h4>Step 2、创建标准的html结构</h4>
+<textarea name="" cols="160" rows="22">
+
+<div class="box355c">
+	<div id="slider5" class="sliderwrapper">
+		<div class="contentdiv"><p><img src="images/355c_1.jpg" /></p></div>
+		<div class="contentdiv"><p><img src="images/355c_2.jpg" /></p></div>
+		<div class="contentdiv"><p><img src="images/355c_3.jpg" /></p></div>
+		<div class="contentdiv"><p><img src="images/355c_4.jpg" /></p></div>
+		<div class="contentdiv"><p><img src="images/355c_5.jpg" /></p></div>
+	</div>
+    <div id="paginate-slider5" class="pagination">
+        <i class="toc"></i>
+        <i class="toc"></i>
+        <i class="toc"></i>
+        <i class="toc"></i>
+        <i class="toc"></i>
+    </div>
+
+</div>
+</textarea>
+<h4>Step 3、创建js</h4>
+<textarea name="" cols="160" rows="7">
+<script type="text/javascript">
+featuredcontentslider.init({id: "slider5",contentsource: ["inline", ""],toc: "#increment",nextprev: ["", ""], revealtype: "click", enablefade: [true, 0.15], autorotate: [true, 3500], delay: 200,onChange: function(previndex, curindex){}})
+</script>
+</textarea>
+
+<br />
+            <div class="box897c">
+	<div id="slider2" class="sliderwrapper">
+		<div class="contentdiv"><p><img src="images/ll-img-15.jpg" /></p></div>
+		<div class="contentdiv"><p><img src="images/ll-img-15.jpg" /></p></div>
+		<div class="contentdiv"><p><img src="images/ll-img-15.jpg" /></p></div>
+        <div class="contentdiv"><p><img src="images/ll-img-15.jpg" /></p></div>
+        <div class="contentdiv"><p><img src="images/ll-img-15.jpg" /></p></div>
+        <div class="contentdiv"><p><img src="images/ll-img-15.jpg" /></p></div>
+	</div>
+    <div id="paginate-slider2" class="pagination">
+        <i class="toc"><img src="images/ll-jdimg-1.jpg" alt="" /></i>
+        <i class="toc"><img src="images/ll-jdimg-1.jpg" alt="" /></i>
+        <i class="toc"><img src="images/ll-jdimg-1.jpg" alt="" /></i>
+        <i class="toc"><img src="images/ll-jdimg-1.jpg" alt="" /></i>
+        <i class="toc"><img src="images/ll-jdimg-1.jpg" alt="" /></i>
+        <i class="toc"><img src="images/ll-jdimg-1.jpg" alt="" /></i>
+    </div>
+
+</div>
+<style>
+.box897c{width:897px; height:334px; overflow:hidden; position:relative }
+.box897c .pagination{height:203px; width:320px; clear:both;position:absolute; top:133px; right:-9px;}
+.box897c .pagination .subLineTab{display:block;}
+.box897c .pagination .subPageTab{float:right}
+.box897c .pagination a{width:148px; height:60px; display:block; float:left; margin-right:5px; text-indent:0; }
+.box897c .dTitle{font-weight:bold;line-height:26px; text-align:center; width:230px;}
+.box897c .pagination .subPageTab  i{font-style: normal;}
+.box897c i.iToc{font-style:normal;}
+.box897c i.toc{font-style:normal;cursor:pointer;  width:150px; height:63px; display:inline; float:left; margin:0 7px 7px 0; _overflow:hidden;}
+.box897c .contentdiv{display:none;zoom:1;overflow:hidden; width:538px; height:336px;}
+.box897c .sliderfilter{filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);-moz-opacity:1;opacity:1;}
+
+</style>
+<script type="text/javascript">
+featuredcontentslider.init({id: "slider2",contentsource: ["inline", ""],toc: "markup",nextprev: ["", ""], revealtype: "click", enablefade: [true, 0.15], autorotate: [true, 3500], delay: 200,onChange: function(previndex, curindex){}})
+</script>
+
+
+
+<h4>Step 3、创建js（下面的数字可换文字或图片）</h4>
+<p>修改属性toc,<br />
+改为toc: "markup"</p>
+<br />
+<textarea name="" cols="160" rows="7">
+<script type="text/javascript">
+featuredcontentslider.init({id: "slider5",contentsource: ["inline", ""],toc: "markup",nextprev: ["", ""], revealtype: "click", enablefade: [true, 0.15], autorotate: [true, 3500], delay: 200,onChange: function(previndex, curindex){}})
+</script>
+</textarea>
+<br />
+<br />
+</div>
+</body>
+</html>

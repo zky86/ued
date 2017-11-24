@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>圆角投影</title>
+
+
+
+<link rel="stylesheet" type="text/css" media="all" href="css/css.css" />
+
+
+<style>
+*{ padding:0; margin:0}
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+ textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:20px; }
+ .des{ padding:15px 0}
+.top{ padding:30px 0}
+
+#pane1 {width:350px; height:250px;}
+
+
+.testDiv{
+padding:50px;
+background:#cccccc;
+border:1px solid #708bab;
+
+border-radius:5px;
+-weblit-border-radius:5px;
+-moz-border-radius:5px;
+-webkit-box-shadow:3px 3px 3px #C7C7C7;
+-moz-box-shadow:3px 3px 3px #C7C7C7
+
+}
+
+</style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div class="content">
+
+	<h1>圆角背景图（上中下） 布局</h1>
+
+	<p>Tips：圆角背景图方式布局（此模块未经最优处理，大部分情况应用于于商业部门项目，主要是节省时间。）</p>		
+	<br  />	
+
+
+<div class="wrapBox">
+<div class="topPic"></div>
+<div class="centerPic">
+测试 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+<div class="footPic"></div>
+</div>
+
+
+	
+<br  />	
+<textarea name="" cols="100" rows="25">
+/* ======================= html ====================== */
+
+<div class="wrapBox">
+	<div class="topPic"></div>
+	<div class="centerPic">
+	测试 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+	</div>
+	<div class="footPic"></div>
+</div>
+
+/* ======================= css ====================== */
+		
+.wrapBox{}
+.wrapBox .topPic{ width:315px; height:8px; overflow:hidden; background:url(../images/topPic.jpg) no-repeat}
+.wrapBox .centerPic{ width:315px;background:url(../images/centerPic.jpg) repeat-y}
+.wrapBox .footPic{ width:315px; height:8px; overflow:hidden; background:url(../images/footPic.jpg) no-repeat}
+</textarea>
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

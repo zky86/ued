@@ -1,0 +1,113 @@
+@charset "gb2312";
+/* CSS Document */
+
+body,p{ padding:0; margin:0; font-size:12px;}
+.fresh_div{ width:320px; height:274px; padding:1px;}
+.fresh_div .new_things_page span{ color:#808080}
+.fresh_div .new_things_page{ position:absolute; bottom:0px; text-align:right; width:100%; padding-bottom:4px; left:0px;}
+.fresh_div .pre{ padding-left:13px; text-decoration:none; background-position:160px -291px}
+.fresh_div .next{ padding-right:13px; text-decoration:none; background-position:36px -291px} 
+.fresh_div .hidden{ display:none}
+#fresh_loding{ position:absolute; left:50%; top:50%; width:32px; height:32px; margin:-16px 0 0 -16px; z-index:1; visibility:hidden}
+#fresh_loding div{ -moz-opacity:0.8; opacity: 0.8; filter:Alpha(opacity=80); background:#fff; width:100%; height:100%}
+#fresh_loding img{ display:block; margin-top:-100%; position:relative}
+
+.tpl_4 .fresh_title{ height:34px;padding-left:35px; font-size:14px; font-weight:bold; line-height:34px; overflow:hidden}
+.tpl_4 .fresh_title span{ font-size:12px; font-weight:normal; color:#e5e5e5}
+.tpl_4 .fresh_title a{ height:14px; width:14px; float:right; cursor:pointer; margin:11px 13px 0 0}
+.tpl_4 .fresh_count{ height:238px; margin:0 9px; position:relative}
+.tpl_4 .link{ text-align:center; width:145px;}
+.tpl_4 .link a{ text-decoration:underline}
+.tpl_4 .page_title{ font-family:'宋体'; padding:13px 0 3px 0; font-weight:bold}
+.tpl_4 .fresh_baoti{ text-align:center; font-weight:bold; font-size:14px; padding-bottom:7px; padding-top:8px;}
+.tpl_4 .img_icon{ overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle; width:145px; height:145px;}
+.tpl_4 .img_icon div{ position:static; *position:absolute;top:50%; display:block}
+.tpl_4 .img_icon img{ position:static; *position:relative;top:-50%;left:-50%; border:none; *display:block}
+.tpl_4 .content{ line-height:18px; color:#808080; display:block; margin:0 0 2px 0; overflow:hidden; height:36px;}
+.tpl_4 .fl{ float:left}
+.tpl_4 .fr{ float:right}
+
+
+
+.tpl_3 .fresh_title{ height:34px;padding-left:35px; font-size:14px; font-weight:bold; line-height:34px; overflow:hidden}
+.tpl_3 .fresh_title span{ font-size:12px; font-weight:normal; color:#e5e5e5}
+.tpl_3 .fresh_title a{ height:14px; width:14px; float:right; cursor:pointer; margin:11px 13px 0 0}
+.tpl_3 .fresh_count{ height:238px; margin:0 9px; position:relative}
+.tpl_3 .link{ line-height:24px; background:url(http://my.poco.cn/apps/fresh/images/new_things_link_icon.gif) no-repeat 0 8px; padding-left:10px;}
+.tpl_3 .link a{ text-decoration:underline}
+.tpl_3 .page_title{ font-family:'宋体'; padding:13px 0 3px 0; font-weight:bold}
+.tpl_3 .img_icon{ overflow:hidden; text-align:center; width:100%; height:80px; margin-bottom:8px;}
+.tpl_3 .img_icon img{ border:none}
+.tpl_3 .fr{ float:right}
+.tpl_3 .xglj{ margin-top:5px; display:block; font-weight:bold; color:#808080}
+.tpl_3 .content{ line-height:18px; color:#808080; display:block; margin:0 0 7px 0;}
+
+
+
+
+.tpl_2 .fresh_title{ height:34px;padding-left:35px; font-size:14px; font-weight:bold; line-height:34px; overflow:hidden}
+.tpl_2 .fresh_title span{ font-size:12px; font-weight:normal; color:#e5e5e5}
+.tpl_2 .fresh_title a{ height:14px; width:14px; float:right; cursor:pointer; margin:11px 13px 0 0}
+.tpl_2 .fresh_count{ height:238px; margin:0 9px; position:relative}
+
+.tpl_2 .img_icon{  overflow:hidden; text-align:center; width:100%; padding-top:12px}
+.tpl_2 .img_icon img{ border:none}
+.tpl_2 .fr{ float:right}
+
+
+
+
+.tpl_1 .fresh_title{ height:34px;padding-left:35px; font-size:14px; font-weight:bold; line-height:34px; overflow:hidden}
+.tpl_1 .fresh_title span{ font-size:12px; font-weight:normal; color:#e5e5e5}
+.tpl_1 .fresh_title a{ height:14px; width:14px; float:right; cursor:pointer; margin:11px 13px 0 0}
+.tpl_1 .fresh_count{ height:238px; margin:0 9px; position:relative}
+.tpl_1 .link{ line-height:24px; background:url(http://my.poco.cn/apps/fresh/images/new_things_link_icon.gif) no-repeat 0 8px; padding-left:10px;}
+.tpl_1 .link a{ text-decoration:underline}
+.tpl_1 .page_title{ font-family:'宋体'; padding:13px 0 3px 0; font-weight:bold}
+.tpl_1 .img_icon{ overflow:hidden; text-align:center; width:130px; height:80px;}
+.tpl_1 .img_icon img{ border:none}
+.tpl_1 .fr{ float:right}
+.tpl_1 .xglj{ margin-top:5px; display:block; font-weight:bold; color:#808080}
+.tpl_1 .content{ line-height:18px; color:#808080; display:block; margin:0 0 7px 0;}
+
+
+
+.tpl_7 .fresh_title{ height:34px;padding-left:35px; font-size:14px; font-weight:bold; line-height:34px; overflow:hidden}
+.tpl_7 .fresh_title span{ font-size:12px; font-weight:normal; color:#e5e5e5}
+.tpl_7 .fresh_title a{ height:14px; width:14px; float:right; cursor:pointer; margin:11px 13px 0 0}
+.tpl_7 .fresh_count{ height:238px; margin:0 9px; position:relative}
+.tpl_7 .link{ line-height:24px; background:url(http://my.poco.cn/apps/fresh/images/new_things_link_icon.gif) no-repeat 0 8px; padding-left:10px;}
+.tpl_7 .link a{ text-decoration:underline}
+.tpl_7 .page_title{ font-family:'宋体'; padding:13px 0 3px 0; font-weight:bold}
+.tpl_7 .img_shuoming{ padding-left:90px; color:#808080; line-height:18px; clear:both; height:80px;}
+.tpl_7 .img_shuoming a, .tpl_7 .img_shuoming a:hover{ color:#808080; text-decoration:none}
+.tpl_7 .img_icon{ margin-left:-90px; float:left; overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle; width:80px; height:80px;}
+.tpl_7 .img_icon div{  position:static; *position:absolute;top:50%; display:block}
+.tpl_7 .img_icon img{ position:static; *position:relative;top:-50%;left:-50%; border:none; *display:block}
+
+
+
+.tpl_6 .fresh_title{ height:34px;padding-left:35px; font-size:14px; font-weight:bold; line-height:34px; overflow:hidden}
+.tpl_6 .fresh_title span{ font-size:12px; font-weight:normal; color:#e5e5e5}
+.tpl_6 .fresh_title a{ height:14px; width:14px; float:right; cursor:pointer; margin:11px 13px 0 0}
+.tpl_6 .fresh_count{ height:238px; margin:0 9px; position:relative}
+.tpl_6 .link{ line-height:24px; background:url(http://my.poco.cn/apps/fresh/images/new_things_link_icon.gif) no-repeat 0 8px; padding-left:10px;}
+.tpl_6 .link a{ text-decoration:underline}
+.tpl_6 .page_title{ font-family:'宋体'; padding:13px 0 3px 0; font-weight:bold}
+.tpl_6 .fresh_baoti{ text-align:center; font-weight:bold; font-size:14px; padding-bottom:7px; padding-top:8px;}
+.tpl_6 .fresh_baoti a, .tpl_6 .fresh_baoti a:hover{ color:#000;text-decoration:none}
+.tpl_6 .img_div{ overflow:hidden; text-align:center; width:100%; height:100px; margin:0 auto8px auto;}
+
+
+
+.tpl_5 .fresh_title{ height:34px;padding-left:35px; font-size:14px; font-weight:bold; line-height:34px; overflow:hidden}
+.tpl_5 .fresh_title span{ font-size:12px; font-weight:normal; color:#e5e5e5}
+.tpl_5 .fresh_title a{ height:14px; width:14px; float:right; cursor:pointer; margin:11px 13px 0 0}
+.tpl_5 .fresh_count{ height:238px; margin:0 9px; position:relative}
+.tpl_5 .link{ line-height:24px; background:url(http://my.poco.cn/apps/fresh/images/new_things_link_icon.gif) no-repeat 0 8px; padding-left:10px;}
+.tpl_5 .link a{ text-decoration:underline}
+.tpl_5 .content{ line-height:18px; color:#808080; display:block; margin:0 0 7px 0;}
+.tpl_5 .content a, .tpl_5 .content a:hover{ color:#808080; text-decoration:none}
+.tpl_5 .page_title{ font-family:'宋体'; padding:13px 0 7px 0; font-weight:bold}
+.tpl_5 .fresh_baoti{ text-align:center; font-weight:bold; font-size:14px; padding-bottom:10px}
+.tpl_5 .fresh_baoti a, .tpl_5 .fresh_baoti a:hover{ color:#000;text-decoration:none}

@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>分页代码</title>
+<link rel="stylesheet" href="../cssiframe/pcsp.css" type="text/css" />
+<link rel="stylesheet" href="css/pic_article.css" type="text/css" />
+</head>
+<body>
+<div class="content">
+<h1>分页代码</h1>
+<div class="demo">
+  <p>下面为各类型的分页效果与代码，可根据实际情况，进行<strong style="color:#F00;">样式</strong>的调整</p>
+</div>
+<br />
+<p>&nbsp;</p>
+<p class="top_title"><strong>1.图片列表分页</strong></p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<!--图片分页代码-->
+<div class="show_page">
+  <div class="page"><a class="click">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a title="下一页" href="#">下一页</a><a title="下十页" href="#">&gt;&gt;&gt;</a></div>
+</div>
+<!--图片分页代码end-->
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="16">
+/* ======================= css ====================== */
+.show_page { height:30px; clear:both; padding:10px 0; font-size:12px; }
+.page { margin:5px 0; float:right; height:20px; font-family:"宋体"; clear:both; }
+.page a { display:block; float:left; margin-right:4px; height:17px; line-height:17px; overflow:hidden; padding:0 6px; background:#efefef; border:1px solid #cccccc; color:#666; text-decoration:none; display:inline; }
+.page a:hover { background:#ffffff; border:1px solid #737373; color:#737373; }
+.page .click { background:#ffffff; border:1px solid #737373; color:#737373; }
+/* ======================= html ====================== */
+<div class="show_page">
+  <div class="page"><a class="click">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a title="下一页" href="#">下一页</a><a title="下十页" href="#">&gt;&gt;&gt;</a></div>
+</div>
+<!--图片分页代码end-->
+  </textarea>
+<p>&nbsp;</p>
+<p class="top_title"><strong>2.图片内容页分页</strong></p>
+<p>(1)正常翻页</p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<p>&lt;1&gt;正常翻页</p>
+<!--正常翻页-->
+<div class="detail_but"> <a class="prev_group" href="#">上一组</a> <a class="prev_page"  href="#">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page"  href="#">下一页 &gt;</a> <a class="next_group"  href="#">下一组</a> </div>
+<p>&lt;1&gt;正常翻页2</p>
+<!--正常翻页2-->
+<div class="detail_but"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; margin-top:50px; font-size:12px;}
+.detail_but .prev_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but .prev_group a,
+.detail_but .next_group a { text-decoration:underline; display:block;}
+.detail_but .prev_group a:hover,
+.detail_but .next_group a:hover { text-decoration:none;}
+.detail_but .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but .prev_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px;}
+.detail_but .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px;}
+.detail_but .prev_page a,
+.detail_but .next_page a { text-decoration:none; font-family: "宋体"; display:block;}
+.detail_but .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--正常翻页-->
+<div class="detail_but">
+<a class="prev_group" href="#">上一组</a>
+<a class="prev_page"  href="#">&lt; 上一页</a>
+<div class="page_nu">第1/296张</div>
+<a class="next_page"  href="#">下一页 &gt;</a>
+<a class="next_group"  href="#">下一组</a>
+</div>
+<!--正常翻页2-->
+<div class="detail_but">
+<a class="prev_page">&lt; 上一页</a>
+<div class="page_nu2">第1/296张</div>
+<a class="next_page">下一页 &gt;</a>
+</div>
+  </textarea>
+<p>&nbsp;</p>
+<p>(2)翻页末端</p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<p>&lt;1&gt;翻页末端</p>
+<!--翻页末端-->
+<div class="detail_but"> <a class="prev_group col_group_end">上一组</a> <a class="prev_page_end">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page_end">下一页 &gt;</a> <a class="next_group col_group_end">下一组</a> </div>
+<!--翻页末端2-->
+<p>&lt;1&gt;翻页末端2</p>
+<div class="detail_but"> <a class="prev_page_end">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page_end">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but .col_group_end a { text-decoration:underline; display:block; color:#C7C7C7;}
+.detail_but .prev_page_end { float:left; height:28px; line-height:28px; width:73px; background:url(../images/lb_l_end.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px;}
+.detail_but .next_page_end { float:left; height:28px; line-height:28px; width:73px; background:url(../images/lb_l_end.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px;}
+.detail_but .prev_page_end a,
+.detail_but .next_page_end a { text-decoration:none; font-family: "宋体"; display:block; color:#C7C7C7;}
+.detail_but .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--翻页末端-->
+<div class="detail_but"> <a class="prev_group col_group_end">上一组</a> <a class="prev_page_end">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page_end">下一页 &gt;</a> <a class="next_group col_group_end">下一组</a> </div>
+<!--翻页末端2-->
+<div class="detail_but"> <a class="prev_page_end">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page_end">下一页 &gt;</a> </div>
+  </textarea>
+<p>&nbsp;</p>
+<p>(3)正常翻页_food</p>
+<p>&nbsp;</p>
+<p>效果如下：</p
+>
+<p>&lt;1&gt;正常翻页_food</p>
+<!--正常翻页_food-->
+<div class="detail_but_food"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<p>&lt;2&gt;正常翻页_food2</p>
+<!--正常翻页_food2-->
+<div class="detail_but_food"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but_food { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; margin-top:50px; font-size:12px;}
+.detail_but_food .prev_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/food_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#d2150b;}
+.detail_but_food .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/food_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#d2150b;}
+.detail_but_food .prev_page a,
+.detail_but_food .next_page a { text-decoration:none; font-family: "宋体"; display:block; color:#d2150b;}
+.detail_but_food .prev_group a,
+.detail_but_food .next_group a { text-decoration:underline; display:block; color:#d2150b;}
+.detail_but_food .prev_group a:hover,
+.detail_but_food .next_group a:hover { text-decoration:none;}
+.detail_but_food .prev_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_food .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_food .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but_food .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--翻页末端-->
+<div class="detail_but_food"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<!--正常翻页_food2-->
+<div class="detail_but_food"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+  </textarea>
+<p>&nbsp;</p>
+<p>(4)正常翻页_photo</p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<p>&lt;1&gt;正常翻页_photo</p>
+<!--正常翻页_photo-->
+<div class="detail_but_photo"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<p>&lt;2&gt;正常翻页_photo2</p>
+<!--正常翻页_photo2-->
+<div class="detail_but_photo"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but_photo { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; margin-top:50px; font-size:12px;}
+.detail_but_photo .prev_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/photo_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#737373;}
+.detail_but_photo .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/photo_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#737373;}
+.detail_but_photo .prev_page a,
+.detail_but_photo .next_page a { text-decoration:none; font-family: "宋体"; display:block; color:#737373;}
+.detail_but_photo .prev_group a,
+.detail_but_photo .next_group a { text-decoration:underline; display:block; color:#737373;}
+.detail_but_photo .prev_group a:hover,
+.detail_but_photo .next_group a:hover { text-decoration:none;}
+.detail_but_photo .prev_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_photo .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_photo .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but_photo .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--正常翻页_photo-->
+<div class="detail_but_photo"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<!--正常翻页_photo2-->
+<div class="detail_but_photo"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+  </textarea>
+<p>&nbsp;</p>
+<p>(5)正常翻页_box</p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<p>&lt;1&gt;正常翻页_box</p>
+<!--正常翻页_box-->
+<div class="detail_but_box"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<p>&lt;2&gt;正常翻页_box2</p>
+<!--正常翻页_box2-->
+<div class="detail_but_box"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but_box { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; margin-top:50px; font-size:12px;}
+.detail_but_box .prev_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/box_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#C9B600;}
+.detail_but_box .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/box_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#C9B600;}
+.detail_but_box .prev_page a,
+.detail_but_box .next_page a { text-decoration:none; font-family: "宋体"; display:block; color:#C9B600;}
+.detail_but_box .prev_group a,
+.detail_but_box .next_group a { text-decoration:underline; display:block; color:#C9B600;}
+.detail_but_box .prev_group a:hover,
+.detail_but_box .next_group a:hover { text-decoration:none;}
+.detail_but_box .prev_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_box .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_box .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but_box .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--正常翻页_box-->
+<div class="detail_but_box"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<!--正常翻页_box2-->
+<div class="detail_but_box"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+  </textarea>
+<p>&nbsp;</p>
+<p>(6)正常翻页_auto</p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<p>&lt;1&gt;正常翻页_auto</p>
+<!--正常翻页_auto-->
+<div class="detail_but_auto"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<p>&lt;2&gt;正常翻页_auto2</p>
+<!--正常翻页_auto2-->
+<div class="detail_but_auto"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but_auto { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; margin-top:50px; font-size:12px;}
+.detail_but_auto .prev_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/auto_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#2C435F;}
+.detail_but_auto .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/auto_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#2C435F;}
+.detail_but_auto .prev_page a,
+.detail_but_auto .next_page a { text-decoration:none; font-family: "宋体"; display:block; color:#2C435F;}
+.detail_but_auto .prev_group a,
+.detail_but_auto .next_group a { text-decoration:underline; display:block; color:#2C435F;}
+.detail_but_auto .prev_group a:hover,
+.detail_but_auto .next_group a:hover { text-decoration:none;}
+.detail_but_auto .prev_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_auto .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_auto .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but_auto .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--正常翻页_auto-->
+<div class="detail_but_auto"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<!--正常翻页_auto2-->
+<div class="detail_but_auto"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+  </textarea>
+<p>&nbsp;</p>
+<p>(7)正常翻页_lady</p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<p>&lt;1&gt;正常翻页_lady</p>
+<!--正常翻页_lady-->
+<div class="detail_but_lady"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+  <p>&lt;2&gt;正常翻页_lady2</p>
+<!--正常翻页_lady2-->
+<div class="detail_but_lady"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but_lady { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; margin-top:50px; font-size:12px;}
+.detail_but_lady .prev_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/lady_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#A02869;}
+.detail_but_lady .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/lady_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#A02869;}
+.detail_but_lady .prev_page a,
+.detail_but_lady .next_page a { text-decoration:none; font-family: "宋体"; display:block; color:#A02869;}
+.detail_but_lady .prev_group a,
+.detail_but_lady .next_group a { text-decoration:underline; display:block; color:#A02869;}
+.detail_but_lady .prev_group a:hover,
+.detail_but_lady .next_group a:hover { text-decoration:none;}
+.detail_but_lady .prev_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_lady .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_lady .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but_lady .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--正常翻页_lady-->
+<div class="detail_but_lady"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<!--正常翻页_lady2-->
+<div class="detail_but_lady"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+</textarea>
+<p>&nbsp;</p>
+<p>(8)正常翻页_mobile</p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<p>&lt;1&gt;正常翻页_mobile</p>
+<!--正常翻页_mobile-->
+<div class="detail_but_mb"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<p>&lt;2&gt;正常翻页_mobile2</p>
+<!--正常翻页_mobile2-->
+<div class="detail_but_mb"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but_mb { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; margin-top:50px; font-size:12px;}
+.detail_but_mb .prev_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/mb_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#643D68;}
+.detail_but_mb .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/mb_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#643D68;}
+.detail_but_mb .prev_page a,
+.detail_but_mb .next_page a { text-decoration:none; font-family: "宋体"; display:block; color:#643D68;}
+.detail_but_mb .prev_group a,
+.detail_but_mb .next_group a { text-decoration:underline; display:block; color:#643D68;}
+.detail_but_mb .prev_group a:hover,
+.detail_but_mb .next_group a:hover { text-decoration:none;}
+.detail_but_mb .prev_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_mb .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_mb .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but_mb .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--正常翻页_mobile-->
+<div class="detail_but_mb"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<!--正常翻页_mobile2-->
+<div class="detail_but_mb"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+</textarea>
+<p>&nbsp;</p>
+<p>(9)正常翻页_mobile</p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<p>&lt;1&gt;正常翻页_mobile</p>
+<!--正常翻页_model-->
+<div class="detail_but_model"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<p>&lt;2&gt;正常翻页_mobile2</p>
+<!--正常翻页_model2-->
+<div class="detail_but_model"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but_model { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; margin-top:50px; font-size:12px;}
+.detail_but_model .prev_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/model_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#CE1172;}
+.detail_but_model .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/model_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#CE1172;}
+.detail_but_model .prev_page a,
+.detail_but_model .next_page a { text-decoration:none; font-family: "宋体"; display:block; color:#CE1172;}
+.detail_but_model .prev_group a,
+.detail_but_model .next_group a { text-decoration:underline; display:block; color:#CE1172;}
+.detail_but_model .prev_group a:hover,
+.detail_but_model .next_group a:hover { text-decoration:none;}
+.detail_but_model .prev_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_model .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_model .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but_model .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--正常翻页_mobile-->
+<div class="detail_but_model"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<!--正常翻页_model2-->
+<div class="detail_but_model"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+</textarea>
+<p>&nbsp;</p>
+<p>(10)正常翻页_pet</p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<p>&lt;1&gt;正常翻页_pet</p>
+<!--正常翻页_pet-->
+<div class="detail_but_pet"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<p>&lt;2&gt;正常翻页_pet2</p>
+<!--正常翻页_pet2-->
+<div class="detail_but_pet"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but_pet { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; margin-top:50px; font-size:12px;}
+.detail_but_pet .prev_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/pet_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#6F9F0F;}
+.detail_but_pet .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/pet_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#6F9F0F;}
+.detail_but_pet .prev_page a,
+.detail_but_pet .next_page a { text-decoration:none; font-family: "宋体"; display:block; color:#6F9F0F;}
+.detail_but_pet .prev_group a,
+.detail_but_pet .next_group a { text-decoration:underline; display:block; color:#6F9F0F;}
+.detail_but_pet .prev_group a:hover,
+.detail_but_pet .next_group a:hover { text-decoration:none;}
+.detail_but_pet .prev_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_pet .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_pet .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but_pet .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--正常翻页_pet-->
+<div class="detail_but_pet"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<!--正常翻页_pet2-->
+<div class="detail_but_pet"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+</textarea>
+<p>&nbsp;</p>
+<p>(11)正常翻页_space</p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<p>&lt;1&gt;正常翻页_space</p>
+<!--正常翻页_space-->
+<div class="detail_but_space"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<p>&lt;2&gt;正常翻页_space2</p>
+<!--正常翻页_space2-->
+<div class="detail_but_space"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but_space { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; margin-top:50px; font-size:12px;}
+.detail_but_space .prev_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/space_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#6AC334;}
+.detail_but_space .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/space_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#6AC334;}
+.detail_but_space .prev_page a,
+.detail_but_space .next_page a { text-decoration:none; font-family: "宋体"; display:block; color:#6AC334;}
+.detail_but_space .prev_group a,
+.detail_but_space .next_group a { text-decoration:underline; display:block; color:#6AC334;}
+.detail_but_space .prev_group a:hover,
+.detail_but_space .next_group a:hover { text-decoration:none;}
+.detail_but_space .prev_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_space .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_space .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but_space .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--正常翻页_space-->
+<div class="detail_but_space"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<!--正常翻页_space2-->
+<div class="detail_but_space"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+</textarea>
+<p>&nbsp;</p>
+<p>(12)正常翻页_space</p>
+<p>&nbsp;</p>
+<p>效果如下：</p>
+<p>&lt;1&gt;正常翻页_travel</p>
+<!--正常翻页_travel-->
+<div class="detail_but_travel"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<p>&lt;1&gt;正常翻页_trave2</p>
+<!--正常翻页_travel2-->
+<div class="detail_but_travel"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+<p>&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="20">
+/* ======================= css ====================== */
+.detail_but_travel { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; margin-top:50px; font-size:12px;}
+.detail_but_travel .prev_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/tl_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#8DC6DD;}
+.detail_but_travel .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(../images/tl_lb_l.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#8DC6DD;}
+.detail_but_travel .prev_page a,
+.detail_but_travel .next_page a { text-decoration:none; font-family: "宋体"; display:block; color:#8DC6DD;}
+.detail_but_travel .prev_group a,
+.detail_but_travel .next_group a { text-decoration:underline; display:block; color:#8DC6DD;}
+.detail_but_travel .prev_group a:hover,
+.detail_but_travel .next_group a:hover { text-decoration:none;}
+.detail_but_travel .prev_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_travel .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but_travel .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but_travel .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+/* ======================= html ====================== */
+<!--正常翻页_travel-->
+<div class="detail_but_travel"> <a class="prev_group">上一组</a> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> <a class="next_group">下一组</a> </div>
+<!--正常翻页_travel2-->
+<div class="detail_but_travel"> <a class="prev_page">&lt; 上一页</a>
+  <div class="page_nu2">第1/296张</div>
+  <a class="next_page">下一页 &gt;</a> </div>
+  </textarea>
+<!--图片内容页分页 end-->
+<p>&nbsp;</p>
+<p class="top_title"><strong>3.上下篇</strong></p>
+<p>效果如下：</p>
+<!--容器宽度312px-->
+<div class="d_line"></div>
+<div class="qiehuan">
+  <div class="previous">上一篇： <a href="#">幸福娃娃 </a> </div>
+  <div class="next">下一篇： <a href="#">SD少女-Romantic MEMO </a> </div>
+</div>
+<div class="d_line"></div>
+<!--容器宽度312px end-->
+<p style="clear:both; width:100%;">&nbsp;</p>
+<p>相关代码：</p>
+<textarea name="" cols="155" rows="12">
+/* ======================= css ====================== */
+.qiehuan { width:738px; margin:0 auto; clear:both; padding-top:10px;}
+.qiehuan .previous { float:left; width:319px;}
+.qiehuan .next { float:right;  width:319px;}
+/* ======================= html ====================== */
+<div class="d_line"></div>
+<div class="qiehuan">
+  <div class="previous">上一篇： <a href="#">幸福娃娃 </a> </div>
+  <div class="next">下一篇： <a href="#">SD少女-Romantic MEMO </a> </div>
+</div>
+<div class="d_line"></div>
+</textarea>
+<p>&nbsp;</p>
+<div style="text-align:right; font-size:16px; padding:10px; font-size:12px;"><a href="#" style="color:#6AC334;">回到顶部</a></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无缝滚动</title>
+<style type="text/css">
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+.clearfix:afte{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:block}
+.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.w{ width:998px; margin:0 auto;}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+h1 a{ text-decoration:none; color:#0099cc}
+a{ color:#69F;  font-size:14px; font-weight:bold;}
+div, ul, dl { zoom:1; }
+div:after, ul:after, dl:after { content:"."; display:block; clear:both; height:0; visibility:hidden; }
+
+.scro .pre{ width:17px; height:46px; padding:25px 9px 0 0; }
+.scro .next{width:17px; height:46px; padding:25px 0 0 9px;  }
+.scro .show{ width:845px; overflow:hidden; height:125px; position:relative;}
+.scro .pre, .scro .next{ cursor:pointer;}
+.scro .pre, .scro .next, .scro .show{ float:left; display:inline;} 
+.scro .dbg{ width:156px; height:89px; margin:2px;}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px}
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+</style>
+</head>
+<body>
+<div class="w">
+
+<div class="srowrapbox">
+<h1>无缝滚动 </h1>
+<div class="scro">
+<div class="pre"><img src="images/img_ll_8.png" id="turn_left" /></div>
+<div class="show">
+<div class="show_roll" id="pic_marquee">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG"  /></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG"/></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG"  /></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG" /></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG"  /></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG" /></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="next"><img src="images/img_ll_10.png" id="turn_right" /></div>
+</div>
+</div>
+<script type="text/javascript" src="Scripts/MSClass.js"></script>
+<script type="text/javascript" src="Scripts/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+var marquee1 = new Marquee("pic_marquee")
+marquee1.Direction = "left";
+marquee1.Step = 1;
+marquee1.Width = 845;
+marquee1.Height = 125;
+marquee1.Timer = 20;
+marquee1.ScrollStep = 52;
+marquee1.Start();
+
+$().ready(function(){
+$("#turn_left").click(function(){
+marquee1.Direction=2;
+});
+$("#turn_right").click(function(){
+marquee1.Direction=3;
+});
+});
+</script>
+<h4>Step 1、在html的&lt;head&gt;标签内引入风格应用文件 查看：<a href="Scripts/MSClass.js">MSClass.js</a> <a href="Scripts/jquery-1.4.2.min.js">jquery-1.4.2.min.js</a></h4>
+<textarea name="" cols="160" rows="2">
+<script type="text/javascript" src="Scripts/MSClass.js"></script>
+<script type="text/javascript" src="Scripts/jquery-1.4.2.min.js"></script>
+</textarea>
+<h4>Step 2、CSS部分</h4>
+<textarea name="" cols="160" rows="9">
+.scro{ padding:24px 0 0 2px;}
+.scro .pre{ width:17px; height:46px; padding:25px 9px 0 0; }
+.scro .next{width:17px; height:46px; padding:25px 0 0 9px;  }
+.scro .show{ width:845px; overflow:hidden; height:125px; position:relative;}
+.scro .pre, .scro .next{ cursor:pointer;}
+.scro .pre, .scro .next, .scro .show{ float:left; display:inline;} 
+.scro .dbg{ width:156px; height:89px; margin:2px;}
+
+</textarea>
+<h4>Step 3、创建标准的html结构</h4>
+<textarea name="" cols="160" rows="20">
+<div class="scro">
+<div class="pre"><img src="images/img_ll_8.png" id="turn_left" /></div>
+<div class="show">
+<div class="show_roll" id="pic_marquee">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG"  /></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG"/></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG"  /></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG" /></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG"  /></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+<td>
+  <table  border="0" cellspacing="0" cellpadding="0" width="172">
+    <tr>
+      <td>
+        <div class="dbg">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="160" height="89" align="center" valign="middle"><img src="images/img_ll_test3.JPG" /></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="next"><img src="images/img_ll_10.png" id="turn_right" /></div>
+</div>
+</textarea>
+<h4>Step 4、对应的javascript</h4>
+<textarea name="" cols="160" rows="18">
+<script type="text/javascript">
+	var marquee1 = new Marquee("pic_marquee")
+		marquee1.Direction = "left";
+		marquee1.Step = 1;
+		marquee1.Width = 845;
+		marquee1.Height = 125;
+		marquee1.Timer = 20;
+		marquee1.ScrollStep = 52;
+		marquee1.Start();
+	$().ready(function(){
+		$("#turn_left").click(function(){
+			marquee1.Direction=2;
+		});
+		$("#turn_right").click(function(){
+			marquee1.Direction=3;
+		});
+	});
+</script>
+</textarea>
+
+</div>
+</body>
+</html>

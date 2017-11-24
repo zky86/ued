@@ -1,0 +1,1303 @@
+/* Photo css */
+body { background:#737373 url(http://photo.poco.cn/images_v2/photo_bg.gif) center top repeat-y; font-family:"宋体", Tahoma; line-height:24px; }
+/* Link */
+a { color:#000; text-decoration:underline; outline:none; }
+a:hover { color:#000; text-decoration:none; }
+img,
+a img { border:0; vertical-align:middle; }
+/* Font  */
+.fb { font-weight:bold; }
+.f12 { font-size:12px; }
+.f13 { font-size:13px; }
+.f14 { font-size:14px; }
+.white { color:#FFF; }
+.green { color:#737373; }
+.grey { color:#737373; }
+.black { color:#000; }
+.fn_ta { font-family:Tahoma; }
+.fn_st { font-family:宋体; }
+/* position */
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+.relative { position:relative; display:inline; }
+.text_center { text-align:center!important; }
+.text_left { text-align:left!important; }
+.text_right { text-align:right!important; }
+/*input*/
+.inputbg { background:url(../images_v2/inputbg.jpg) left top no-repeat; padding-left:4px; color:#808080; }
+.input180 { width:180px; height:21px; line-height:21px; border:1px solid #737373; }
+.input120 { width:120px; height:21px; line-height:21px; border:1px solid #737373;}
+.select select { width:116px; height:23px; border:#d2150b; }
+.select78 { width:190px; height:23px; border:#737373; }
+/* background */
+.lh20 { line-height:20px; }
+.lh18 { line-height:18px!important; }
+.lh30 { line-height:30px!important; }
+.mt10 { margin-top:10px!important; }
+.mr10 { margin-right:10px!important; }
+.mb10 { margin-bottom:10px!important; }
+.ml10 { margin-left:10px!important; }
+.mb5 { margin-bottom:5px!important; }
+.mt5 { margin-top:5px!important; }
+.mar0 { margin-top:0px; margin-bottom:0px; }
+.mr5 { margin-right:5px!important; }
+.mr20 { margin-right:20px!important; }
+.mt20 { margin-top:20px!important; }
+.mb20 { margin-bottom:20px!important; }
+.fn_nm { font-weight:normal!important; }
+/*------
+背景阴影
+-------*/
+.shadow { margin:0 auto; background:#737373 url(http://photo.poco.cn/images_v2/doll_bg.gif) center repeat-y; height:100%; }
+/*--
+栅格背景
+------*/
+.grid_c2 { background:url(http://photo.poco.cn/images_v2/grid-c2.gif) center top repeat-y }
+.grid_c2f { background:url(http://photo.poco.cn/images_v2/grid-c2f.gif) center top repeat-y }
+.grid_c2_s312 { background:url(http://photo.poco.cn/images_v2/grid-c2-s312.gif) center top repeat-y; height:100%; }
+.grid_c2f_s312 { background:url(http://photo.poco.cn/images_v2/grid-c2f-s312.gif) center top repeat-y; height:100%; }
+/*title*/
+.c_line { height:1px; line-height:1px; overflow:hidden; background:#737373; margin:10px 0px; clear:both; }
+.d_line { background:url(http://photo.poco.cn/images_v2/dot_line.gif) center 8px repeat-x scroll; height:10px; margin:5px 0px; clear:both; }
+/*背景线*/
+.topic a { color:#737373; }
+.topic .more { float:right; text-align:right; font-size:12px; line-height:18px; }
+.topic .more a { color:#737373; font-weight:normal; }
+h3.title { font-size:14px; font-weight:700; text-indent:22px; background:url(http://photo.poco.cn/images_v2/photo_23.gif) left 2px no-repeat; color:#737373; height:21px; line-height:18px; overflow:hidden; height:18px; margin-bottom:5px; }
+h3 a { font-weight:bold; font-size:14px; text-decoration:underline; }
+h3 a:hover { font-weight:bold; font-size:14px; text-decoration:none; }
+h4 a { font-size:12px; text-decoration:underline; }
+h4 a:hover { font-size:12px; text-decoration:none; }
+h5 { color:#737373; }
+strong a { font-weight:bold; font-size:14px; text-decoration:underline; }
+strong a:hover { font-weight:bold; font-size:14px; text-decoration:none; }
+.more { text-align:right; font-family: "宋体"; line-height:18px; height:18px; clear:both; }
+.more a { font-size:12px; text-decoration:underline; font-family: "宋体"; line-height:18px; height:18px; clear:both; }
+.more a:hover { font-size:12px; text-decoration:none; font-family: "宋体" }
+#content { margin-bottom:20px; height:100%; }
+/*弹出*/
+#top_pop { width:992px; background:#f8f8f8; border:#737373 solid 1px; color:#737373; margin:7px auto; height:74px; }
+#top_pop .top_colse { width:100px; float:right; color:#000; height:23px; line-height:23px; vertical-align:middle; }
+#top_pop .top_colse .checkbox { width:23px; float:left; margin-top:4px; *margin-top:1px;
+*margin-top:0px!important;
+}
+#top_pop .top_colse .text { width:55px; float:left; }
+#top_pop .top_colse .close { width:11px; height:11px; float:left; padding-top:5px; }
+#top_pop .top_menu { text-align:center; width:992px; height:29px; line-height:29px; }
+#top_pop .top_menu li { width:165px; float:left; text-align:center; display:inline; }
+#top_pop .top_menu a { font-size:14px; font-weight:700; color:#737373; text-decoration:underline; }
+#top_pop .top_menu a:hover { font-size:14px; font-weight:700; color:#737373; text-decoration:none; }
+#top_pop .float_l { float:left; height:35px; line-height:35px; text-indent:18px; width:500px; }
+#top_pop .toptitle { width:992px; height:35px; }
+/*弹出结束*/
+/*--------
+
+baaner css
+-----------*/
+.banner994 { width:994px; margin:10px auto; height:90px; clear:both; }
+.banner205 { width:205px; margin-top:10px; height:80px; clear:both; }
+.zbanner312 { width:312px; margin-bottom:10px; height:214px; clear:both; }
+.banner312s { width:312px; margin:0px; height:135px; clear:both; }
+.banner768 { height:80px; width:768px; margin-top:10px; clear:both; overflow:hidden; }
+/*--------
+baaner css end
+-----------*/
+
+
+
+
+/*--------
+摄影频道首页--今日焦点
+-----------*/
+#con_side { width:768px; margin:0 auto; height:210px; overflow:hidden; }
+#focus { float:left; width:280px; height:210px; margin-right:10px; position:relative; z-index:1 }
+#focus .btn { width:21px; height:21px; position:absolute; z-index:2; left: 3px; top: 186px; }
+#todays { float:left; width:478px; overflow:hidden; height:210px; }
+#todays .todays_box { width:453px; margin:0 auto; }
+#todays .photo_li { width:357px; height:160px; float:left; padding-top:30px; overflow:hidden; }
+#todays .photo_li ul { width:387px; height:160px; }
+#todays .photo_li ul li { width:100px; height:120px; float:left; text-align:center; line-height:24px; padding-right:29px; display: inline; }
+#todays .s_left { float:left; height:60px; width:22px; padding-top:68px; padding-right:26px; }
+#todays .s_right { float:left; height:60px; width:22px; padding-top:68px; padding-left:26px; }
+/*--------
+摄影频道首页--今日焦点结束
+-----------*/
+/*--------
+网络影展
+-----------*/
+.hot { width:660px; margin:10px auto; height:67px; }
+.hot li { width:220px; float:left; height:64px; }
+.hot .pic { width:64px; height:64px; float:left; }
+.hot .text { height:64px; width:140px; padding-left:10px; float:left; padding-right:5px; }
+.hot .text p { line-height:18px; }
+/*--------
+网络影展结束
+-----------*/
+
+/*--------
+推荐作品
+-----------*/
+.commend { width:660px; height:226px; margin-bottom:0px; }
+.commend li { float:left; line-height:24px; }
+.commend li.title { width:25px; height:226px; }
+.commend li.piclist { width:635px; height:226px; }
+.commend .picli { width:542px; height:203px; margin:0 auto;overflow:hidden; }
+.commend .picli .pic_con { width:145px; float:left; height:200px; text-align:center; margin:5px 0 0; padding-right:52px; display:inline; }
+.commend .picli .pic_box { width:596px; }
+.commend .picli .pic_item_title { display:block;overflow:hidden;height:22px }
+.commend .picli .pic_item_user_level {  display:block;overflow:hidden;height:18px }
+.commend .picli .pic_img_link { display:block;width:145px;width:145px;overflow:hidden; }
+.commend198 { width:660px; height:198px; margin-bottom:0px; }
+.commend198 li { float:left; line-height:24px; }
+.commend198 li.title { width:25px; height:198px; }
+.commend198 li.piclist { width:635px; height:198px; }
+.commend198 .picli { width:542px; height:180px; margin:0 auto; overflow:hidden; }
+.commend198 .picli .pic_con { width:145px; float:left; height:175px; text-align:center; margin-top:5px; padding-right:52px; display:inline; }
+.commend198 .picli .pic_box { width:596px; }
+/*--------
+推荐作品结束
+-----------*/
+
+/*--------
+公告
+-----------*/
+#notice { width:205px;}
+#notice ul { width:205px;}
+#notice li { width:194px; height:24px; padding-left:11px; line-height:24px; background:url(http://photo.poco.cn/images_v2/tagli.gif) left center no-repeat; }
+#notice a { text-decoration:underline; }
+#notice a:hover { text-decoration:none; }
+/*无箭头列表*/
+#notice2 { width:205px; }
+#notice2 ul { width:205px; padding-left:0px; }
+#notice2 li { width:205px; height:24px; padding-left:0px; line-height:24px; }
+#notice2 a { text-decoration:underline; }
+#notice2 a:hover { text-decoration:none; }
+.notice { width:205px; }
+.notice ul { width:205px; padding-left:0px; }
+.notice li { width:205px; height:24px; padding-left:0px; line-height:24px; }
+.notice a { text-decoration:underline; }
+.notice a:hover { text-decoration:none; }
+.zhanzhang { width:205px; }
+.zhanzhang li { width:68px; float:left; display:inline; text-align:center; }
+.zhanzhang li a { font-size:12px; font-weight:bold; }
+/*--------
+公告结束
+-----------*/
+/*--------
+poco在看什么
+-----------*/
+.text_list { width:312px; height:226px; clear:both; overflow:hidden;}
+.text_list li { width:104px; float:left; display:inline; height:32px; line-height:32px; text-align:center;}
+.text_list li a { color:#737373; text-decoration:underline; display:inline-block;  width:104px; text-align:center;}
+.text_list li a.tag_hot { background:url(http://photo.poco.cn/images_v2/poco_indexbg.gif) -256px -60px no-repeat; }
+.text_list li a:hover { color:#737373; text-decoration:none;}
+/*--------
+poco在看什么结束
+-----------*/
+.hot_city { width:312px; height:100%; clear:both; }
+.hot_city ul li { width:52px; float:left; height:24px; line-height:24px; text-align:center; }
+.hot_city a { font-size:12px; color:#000; text-decoration:underline; }
+.hot_city a:hover { font-size:12px; color:#000; text-decoration:none; }
+/*各地活动*/
+.fh_title { width:312px; padding-bottom:0px; line-height:21px; height:21px; clear:both; color:#737373; }
+.fh_title span a { color:#000; }
+.fh_title span a:hover { color:#000; }
+.fh_title .link a { text-decoration:underline; color:#737373; }
+.fh_title .link a:hover { text-decoration:none; color:#737373; }
+.fh_title a { text-decoration:underline; color:#000; }
+.fh_title a:hover { text-decoration:none; color:#000; }
+.city_event { width:312px; clear:both; height:100%; }
+.city_event .ul_text { width:312px; }
+.city_event .ul_text li { width:301px; padding-left:11px; height:24px; line-height:24px; background:url(http://photo.poco.cn/images_v2/tagli.gif) left center no-repeat; list-style:none; float:left; display:inline; }
+.city_event .event { width:312px; padding-bottom:10px; }
+.city_event .event_pic { width:135px; height:85px; float:left; }
+.city_event .event_text { width:170px; float:left; padding-left:5px; }
+.city_event .event_text p { line-height:18px; }
+.city_event .ul_text a { text-decoration:underline; }
+.city_event .ul_text a:hover { text-decoration:none; }
+/*----
+摄影专题
+--------*/
+#ph_re { width:312px; clear: both; }
+#ph_re .ph_box { width:312px; height:120px; padding-top:10px; clear:both; }
+#ph_re .ph_box .pic { width:100px; height:120px; float:left; }
+#ph_re .ph_box .text { width:205px; height:120px; float:left; padding-left:6px; }
+#ph_re .ph_box .text ul { width:205px; line-height:18px; }
+#ph_re .ph_box .text ul li { width:190px; padding-left:15px; height:18px; line-height:18px; background:url(http://photo.poco.cn/images_v2/tagli.gif) left center no-repeat; }
+#ph_re .ph_box .text h3 { padding-top:4px; padding-bottom:8px; }
+#ph_re .ph_box .text a { text-decoration:underline; }
+#ph_re .ph_box .text a:hover { text-decoration:none; }
+/*------------
+相机品牌
+----------*/
+#camera { width:312px; clear:both; }
+#camera .ca_box { width:312px; clear:both; }
+#camera .ca_box .pic { width:135px; height:85px; float:right; padding-left:5px; }
+#camera .ca_box .text { width:170px; height:85px; float:left; }
+#camera .ca_box .text p { line-height:18px; }
+#camera .ca_box .text h3 { padding-bottom:3px; }
+#camera ul { width:312px; padding-top:5px; }
+#camera ul li { width:141px; padding-left:15px; height:24px; line-height:24px; background:url(http://photo.poco.cn/images_v2/tagli.gif) left center no-repeat; float:left; display:inline; }
+/*------
+摄影-外拍
+-------------*/
+.ph_but { width:342px; height:30px; padding-left:652px; margin-top:10px; }
+.ph_but li { width:159px; height:28px; padding:0px 2px 2px 0px; float:left; display:inline; text-align:center; line-height:28px; background:url(http://photo.poco.cn/images_v2/but_161.jpg) left top no-repeat; margin-left:10px; }
+.ph_but li a { color:#737373; font-weight:bold; display:block; text-decoration:none; }
+#pic_ul994 { width:994px; overflow:hidden; }
+#pic_ul994 ul { width:1036px; margin-top:10px; }
+#pic_ul994 ul li { width:165px; text-align:center; float:left; display:inline; padding-right:42px; }
+.out_photo_text { width:974px; height:40px; line-height:40px; padding-left:20px; border-top:1px dotted #737373; padding-top:8px; }
+.out_photo_text h2 { color:#737373; }
+.out_photo_text ul { float:right; text-align:center; width:880px; }
+.out_photo_text ul li { float:left; width:293px; text-align:center; }
+.out_photo_text ul li a { font-size:12px; font-weight:700; text-align:center; text-decoration:underline; }
+.out_photo_text ul li a:hover { font-size:12px; font-weight:700; text-align:center; text-decoration: none; }
+.pic_li { width:660px; }
+.pic_li li { width:330px; float:left; height:120px; display:inline; line-height:24px; padding-top:10px; }
+.pic_li .photo { width:100px; height:120px; float:left; height:120px; }
+.pic_li .text { padding-left:8px; width:220px; float:left; height:120px; }
+.text_ul { width:312px; }
+.text_ul li { width:78px; text-align:center; float:left; padding-top:5px; line-height:24px; display:inline; }
+.text_ul a { font-size:14px; text-align:center; text-decoration:underline; }
+.text_ul a:hover { font-size:14px; text-align:center; text-decoration: none; }
+.text li { width:292px; padding-top:5px; padding-left:20px; }
+.text_li li { width:272px; padding-left:15px; height:24px; line-height:24px; background:url(http://photo.poco.cn/images_v2/tagli.gif) left center no-repeat; }
+.text_li a { font-size:12px; text-align:center; text-decoration:underline; }
+.text_li a:hover { font-size:12px; text-align:center; text-decoration: none; }
+#pic_roll { float:left; width:994px; overflow:hidden; height:210px; }
+#pic_roll .photo_li { width:848px; height:160px; float:left; padding-top:15px; overflow:hidden; }
+#pic_roll .photo_li ul { width:900px; height:160px; }
+#pic_roll .photo_li ul li { width:100px; height:120px; float:left; text-align:center; line-height:24px; padding-right:49px; display: inline; }
+#pic_roll h5 { font-weight:normal; }
+#pic_roll .s_left { float:left; height:45px; width:22px; padding-top:53px; padding-right:26px; padding-left:20px; }
+#pic_roll .s_right { float:right; height:45px; width:22px; padding-top:68px; padding-left:26px; padding-right:20px; }
+.grid_c .fr a { font-size:12px; text-align:center; text-decoration:underline; padding:0 5px; }
+.grid_c .fr a:hover { font-size:12px; text-align:center; text-decoration: none; }
+#seach_li { width:974px; height:60px; padding-left:20px; clear:both; }
+#seach_li .seach_title { height:24px; width:994px; }
+#seach_li .hdmc { border:1px solid #737373; height:21px; line-height:21px; width:174px; background:url(http://photo.poco.cn/images_v2/inputbg.jpg) left topno-repeat; padding-left:4px; }
+#seach_li input,
+#seach_li select,
+#seach_li label { vertical-align:middle; display:inline; }
+#seach_li input,
+#seach_li select { color:#808080; }
+#seach_li .button { height:23px; line-height:23px; width:62px; background-color:#737373; color:#FFF; font-size:12px; border:0; cursor:pointer; }
+#seach_li label { height:50px; line-height:50px; }
+#seach_li .fr_pm { padding-left:50px; }
+#seach_li .select_year { width:86px; }
+#seach_li .select_month { width:60px; }
+#seach_li .select_day { width:60px; }
+#seach_li .select_sheng { width:62px; }
+#seach_li .select_shi { width:120px; }
+.toggle_con { width:994px; margin-top:10px; }
+.toggle_con .con_ul { width:994px; clear:both; background:url(http://photo.poco.cn/images_v2/grid-c2f.gif) center top repeat-y; }
+.toggle_con .con_ul .imgbox { display:table-cell; vertical-align:bottom; text-align:center; width:167px; }
+.toggle_con .con_l { width:768px; float:left; display:inline; }
+.toggle_con .con_r { width:205px; float:right; display:inline; padding-top:35px; }
+.toggle_con .photo { width:167px; float:left; display:inline; text-align:center; }
+.toggle_con .photo img { border:#cbcbcb solid 1px; }
+.toggle_con .text { width:590px; float:left; padding-left:10px; display:inline; }
+.toggle_con .text .con_text_title { height:24px; line-height:24px; margin-bottom:10px;}
+.toggle_con .text .con_text_title span { color:#737373; }
+.toggle_con .con_r .author_ph { width:64px; height:64px; float:left; }
+.toggle_con .con_r .author_text { float:left; width:130px; padding-left:10px; }
+#toggles { width:994px; height:30px; background:url(http://photo.poco.cn/images_v2/solid_line.gif) 0px 29px repeat-x; margin-bottom:10px; }
+#toggles .toggle { height:30px; padding-left:6px; width:570px; float:left; }
+#toggles .toggle li { float:left; padding-top:1px; border:1px solid #737373; border-bottom:none; margin-right:3px; width:128px; height:27px; text-align:center; }
+#toggles .toggle a { display:block; font-weight: bold; background:#ececec; height:27px; line-height:27px; color:#000; font-weight:bold; text-decoration:none; font-size:14px; }
+#toggles .toggle a.click,
+#toggles .toggle a:hover { background:#fff; border-bottom:1px solid #fff; color:#737373; }
+#toggles .toggle_select { float:right; }
+#toggles .toggle_select select { width:90px; height:21px; }
+#toggles_sbar { width:205px; height:26px; margin-bottom:10px; background:url(http://photo.poco.cn/images_v2/solid_line.gif) 0px 25px repeat-x; }
+#toggles_sbar .toggle { height:26px; padding-left:8px; width:192px; float:left; }
+#toggles_sbar .toggle li { float:left; padding-top:1px; border:1px solid #737373; border-bottom:none; margin-right:3px; width:55px; height:23px; text-align:center; position:relative; }
+#toggles_sbar .toggle a { display:block; background:#ececec; height:23px; line-height:23px; color:#000; font-weight: normal; text-decoration:none; }
+#toggles_sbar .toggle a.click,
+#toggles_sbar .toggle a:hover { background:#fff; color:#737373; border-bottom:1px solid #FFF; }
+/*------
+摄影-外拍
+-------------*/
+
+/*----------
+分页 开始
+-------------*/
+.con_pg { height:30px; line-height:30px; clear:both; }
+.page { margin:5px 0; float:right; height:20px; font-family:"宋体"; clear:both; }
+.page a { display:block; float:left; margin-right:4px; height:17px; line-height:17px; overflow:hidden; padding:0 6px; background:#efefef; border:1px solid #cccccc; color:#666; text-decoration:none; display:inline; }
+.page a:hover { background:#ffffff; border:1px solid #737373; color:#737373; }
+.page .click { background:#ffffff; border:1px solid #737373; color:#737373; }
+/*----------
+分页 开始结束
+-------------*/
+
+
+
+
+/*------
+摄影-妆型
+-------------*/
+.pic_ca { width:768px; }
+.pic_ca { width:768px; }
+.pic_ca ul li { width:145px; float:left; line-height:25px; text-align:center; margin-right:47px; padding-top:10px; display:inline; }
+.pic_con { width:205px; float:left; height:218px; text-align:center; margin:5px 0 10px; }
+.new_bar { width:768px;}
+.new_bar ul { clear:both; width:768px;}
+.new_bar ul li { width:384px; float:left; padding-top:5px; margin-bottom:0px; float:left;}
+.new_bar .imgbox { display:table-cell; vertical-align:bottom; text-align:center; *display:block;
+*font-size:148px;_font-size:148px; *font-family:Arial;
+width:167px; height:167px; }
+.new_barl { width:167px; float:left; margin-right:10px; height:183px; overflow: hidden; }
+.new_barr { width:197px; float:left; padding-top:2px; }
+.new_barr span { padding-top:5px; padding-bottom:5px; padding-top:5px; display:block; line-height:20px; color:#737373; line-height:18px; }
+.new_barr a { text-decoration:underline }
+.new_barr a:hover { text-decoration:none }
+.border_top { border-top:1px solid #737373; padding-top:5px; margin-top:10px; }
+.new_pic { width:994px; overflow:hidden }
+.new_picc { width:1200px; padding-top:10px; }
+.new_picc li { list-style:none; width:165px; text-align:center; line-height:30px; float:left; margin-right:42px; font-size:12px; font-weight:bold; }
+.new_picc li a { text-decoration:underline }
+.new_picc li a:hover { text-decoration:none }
+.new_tu { width:203px; background:url(http://photo.poco.cn/images_v2/rr.gif) center top; padding:0px 2px 2px 0px; line-height:28px; height:28px; text-align:center; }
+.new_tu a { font-weight:bold; text-decoration:none; display:block; color:#737373; }
+/*--------
+摄影-妆型结束
+-----------*/
+.fh_title768 { width:768px; padding-bottom:0px; line-height:21px; height:21px; clear:both; color:#737373; }
+/*--------
+摄影-妆型
+-----------*/
+/*--------
+摄影-妆型结束
+-----------*/
+/* page shoutou */
+.sy_table { width:768px; }
+.sy_table th { font-weight:bold; }
+.sy_table tr { background:url(http://photo.poco.cn/images_v2/dot_line.gif) repeat-x left bottom; padding:5px 20px 10px; line-height:35px; }
+.sy_table td,
+.sy_table th { padding-left:20px; }
+/* page xinshang */
+.xs_sorll { width:768px; }
+.xs_sorll .con_pic { width:590px; overflow:hidden; float:left; margin-left:30px; }
+.xs_sorll .con_pic ul { width:800px; }
+.xs_sorll .con_pic ul li { width:167px; float:left; display:inline; padding-right:44px; text-align:center; }
+.xs_sorll .yz_sorll_r { width:22px; float:right; padding:50px 16px; }
+.xs_sorll .yz_sorll_l { width:22px; float:left; padding:50px 16px; }
+.xs_sorll .imgbox { display:table-cell; vertical-align:bottom; text-align:center; *display:block;
+*font-size:158px!important;
+_font-size:168px; *font-family:Arial;
+width:167px; height:167px; }
+/*------
+申请加盟摄影工作室
+-------------*/
+.grid_c2f_s460 { width:994px; }
+.grid_c2f_s460 .main_wrap { float:left; width:514px; }
+.grid_c2f_s460 .col_sub { float:left; float:right; width:390px; }
+#work { width:514px; margin-top:10px; }
+#work input { border:1px solid #737373; height:21px; line-height:21px; width:211px; background:url(http://photo.poco.cn/images_v2/inputbg.jpg) left topno-repeat; padding-left:4px; vertical-align:middle; }
+#work select { height:21px; line-height:21px; width:76px; margin-right:10px; border:1px solid #737373; color:#737373; vertical-align:middle; }
+#work textarea { border:1px solid #737373; height:115px; line-height:21px; width:211px; margin-top:10px; }
+#work p { line-height:35px; padding:0px; margin:0; }
+#work label { text-align:right; line-height:35px; display: inline-block; *display: inline;
+zoom: 1; width:150px; }
+#work .label_textarea { line-height:23px; height:127px; vertical-align:top; padding-top:10px; }
+#work .button { height:23px; line-height:23px; width:62px; background-color:#737373; color:#FFF; font-size:12px; border:0; cursor:pointer; }
+#work .sbmit_block { padding-left:150px; }
+#text { width:370px; margin-top:58px; padding-top:10px; padding-left:15px; }
+#text p { line-height:25px; vertical-align:middle; }
+#text .balck { padding-left:24px; vertical-align:middle; }
+/*------
+申请加盟摄影工作室结束
+-------------*/
+
+/*--------------------------------------------------------------------------------------
+整合
+----------------------------------------------------------------------------------------*/
+em,
+dl,
+dt,
+dd,
+ol { border:0; margin:0; font-style:normal; }
+/* publice */
+.clear_self { overflow:auto; }
+.font14,
+.font14 a { font-size:14px; }
+.font_nor,
+.font_nor a { font-size:12px; font-weight:normal; color:#000; }
+.pdl20 { padding-left:23px; }
+.pdl20 select { width:114px; border:#737373; }/*左栏下脚下拉框宽度*/
+.col73 a { color:#737373; }
+.mar0,
+.pic_li145 { width:768px; overflow:hidden; clear:both; }
+.pic_li145 ul { width:832px; }
+.pic_li145 ul li { width:145px; float:left; text-align:center; font-weight:bold; padding-left:20px; padding-right:20px; display:inline; font-size:14px; overflow:hidden;/* height:145px*/}
+.pic_li145 li.mar0,
+.duqu_pic63 li.mar0 { margin:0; }
+.duqu_pic84 li.mar0 { margin:0; }
+.mr10 { margin-right:10px; }
+.mr5 { margin-right:10px; }
+.mb10 { margin-bottom:10px; }
+.font_gb { font-family:"宋体"; }
+/* other */
+.copy_url .copy_url_text { border:#737373 solid 1px; padding:3px; height:16px; float:left; margin-right:3px; width:235px; }
+.copy_url .copy_url_button { background:#737373; text-align:center; color:#fff; padding:3px; height:24px; border:0; cursor:pointer; width:160px; }
+/* layout */
+.box994 { width:994px; margin:0 auto; }
+.box205 { width:205px; float:left; }
+.box770 { width:770px; float:left; }
+.h3_un { background:url(http://photo.poco.cn/images_v2/ico_01.gif) no-repeat 32px 5px; }
+.h3_un a { font-size:12px; font-weight:normal; }
+.h3_un a:hover { font-size:12px; font-weight:normal; }
+/* page tuijian */
+.l205_list { padding-left:20px; overflow:auto; }
+.l205_list a { color:#000; }
+.l205_list li { height:30px; line-height:30px; background:url(http://photo.poco.cn/images_v2/yz_ico2.gif) no-repeat left center; padding-left:10px; float:left; width:80px; }
+.hot_key { width:185px; overflow:hidden; }
+.hot_key a { display:inline-block; padding:3px; }
+.hot_key a.tag_hot { background:url(http://photo.poco.cn/images_v2/yz_ico3.gif) no-repeat right top; padding-right:20px; }
+.hot_button { background:url(http://photo.poco.cn/images_v2/hr_but3.gif) left top; width:203px; height:28px; line-height:28px; text-align:center; padding:0px 2px 2px 0px; margin-top:5px; }
+.hot_button a { text-decoration:none; }
+.show_list { width:768px; overflow:hidden; }
+.show_list ul { width:800px; }
+.show_list .text { line-height:18px; width:167px; text-align:center; background:url(http://photo.poco.cn/images_v2/tj_shadow.gif) no-repeat center top; padding-top:15px; clear:both; }
+.show_list ul li { width:167px; float:left; text-align:center; padding-right:33px; display:inline; }
+.show_list .imgbox { display:table-cell; vertical-align:bottom; text-align:center; *display:block;
+*font-size:149px;_font-size:158px;*font-family:Arial;width:167px; height:167px; }
+.show_shadow { background:url(http://photo.poco.cn/images_v2/tj_shadow.gif) no-repeat center 0; height:16px; }
+.imgbox img { vertical-align:bottom; border:#cbcbcb solid 1px; display:inline-block; }
+.show_page { height:30px; clear:both; padding:10px 0; }
+.pho_des a { display:block; background:#efefef; border:#ccc solid 1px; padding:0 5px; text-decoration:none; line-height:20px; float:left; margin:0 3px; }
+.pho_des a.current { border:#737373 solid 1px; background:#fff; }
+.pho_info { text-align:center; width: auto; line-height:18px; padding-top:4px; padding-bottom:0px; }
+.pho_info .pho_data1,
+.pho_info .pho_data2,
+.pho_info .pho_data3,
+.pho_info .pho_data4 { height:14px; line-height:14px; display:inline; text-align:left; margin-left:2px; }
+.pho_info .pho_data1 { overflow:hidden; padding-left:18px; background: url(http://photo.poco.cn/images_v2/ico_show.gif) no-repeat 0 center; }
+.pho_info .pho_data2 { overflow:hidden; padding-left:18px; background: url(http://photo.poco.cn/images_v2/ico_show.gif) no-repeat -48px center; }
+.pho_info .pho_data3 { overflow:hidden; padding-left:18px; background: url(http://photo.poco.cn/images_v2/ico_show.gif) no-repeat -90px center; }
+.pho_info .pho_data4 { overflow:hidden; padding-left:18px; background: url(http://photo.poco.cn/images_v2/ico_show.gif) no-repeat -165px center; }
+.pho_moderator { height:18px; padding-top:5px; }
+/* page diqu */
+.diqu_bg { background:url(http://photo.poco.cn/images_v2/diqu_bg.jpg); padding:0px 2px 2px 0px; width:121px; height:28px; line-height:28px; text-align:center; float:right;color:#737373; }
+.diqu_bg a { text-decoration:none; color:#737373;/* display:block;*/ }
+.diqu_dl { width:746px; margin-left:22px; }
+.diqu_dl dt { font-weight:bold; color:#737373; margin-top:10px; line-height:18px; width:746px; clear:both; }
+.diqu_dl dd { line-height:18px; }
+.diqu_dl dd a { line-height:18px; margin-right:7px; }
+.diqu_list { border-bottom:#737373 solid 1px; padding:0 10px; height:25px; }
+.diqu_list a { border:#737373 solid 1px; background:#ececec; text-decoration:none; display:inline-block; width:55px; text-align:center; margin-bottom:-1px; float:left; margin-right:3px; position:relative; }
+.diqu_list105 { height:31px; }
+.diqu_list105 a { width:105px; height:30px; line-height:29px; font-weight:bold; font-size:14px; }
+.diqu_list a.current { border-bottom:#fff solid 1px; background:none; color:#737373; }
+.diqu_textli { width:748px; padding-left:20px; padding-top:5px; }
+.diqu_textli li { width:350px; float:left; overflow:hidden; }
+.diqu_textli .text_date { color:#737373; margin-left:20px; }
+.diqu_pic205 { width:205px; }
+.diqu_pic205 li { width:205px; text-align:center; font-weight:bold; font-size:14px; padding-top:10px; padding-bottom:5px; }
+.duqu_pic63 { padding-top:10px; width:994px; overflow:hidden; }
+.duqu_pic63 ul { width:1064px; }
+.duqu_pic63 ul li { width:63px; float:left; text-align:center; padding-right:70px; display:inline; line-height:18px; }
+.duqu_pic63 ul li p { padding-top:5px; }
+.duqu_pic84 { padding-top:10px; width:994px; overflow:hidden; }
+.duqu_pic84 ul { width:1064px; }
+.duqu_pic84 ul li { width:100px; float:left; text-align:center; padding-right:26px; display:inline; line-height:18px; }
+.duqu_pic84 ul li p { padding-top:5px; }
+/* page hongren */
+.hr_down,
+.hr_up { background:url(http://photo.poco.cn/images_v2/hr_but1.gif) left top no-repeat; padding:0px 2px 2px 0px; text-align:center; height:28px; line-height:28px; margin-top:10px; width:205px; }
+.hr_down a,
+.hr_up a { text-decoration:none; color:#737373; font-size:14px; font-weight:bold; display:block; }
+.hr_up { background:url(http://photo.poco.cn/images_v2/hr_but2.gif) left top no-repeat; }
+.hr_list li { padding-left:20px; padding-right:10px; color:#737373; text-align:left; }
+/*.hr_list li a { float:left; }*/
+.hr_search { text-align:center; padding:15px 0; }
+.hr_pic65 { width:768px; }
+.hr_pic65 li { width:256px; float:left; line-height:18px; padding:0; }
+.hr_pic65 li img { float:left; margin:0 10px 10px 0; }
+.hr_pic65 li p { clear:both; font-family:"宋体"; }
+.hengren { width:768px; clear:both; overflow:hidden; }
+.hengren ul { width:805px; clear:both; }
+.hengren ul li { width:231px; height:236px; background:url(http://photo.poco.cn/images_v2/hongrenbg.jpg) left top no-repeat; padding:0px 2px 2px 0px; float:left; padding-right:36px; margin-bottom:36px; }
+.hengren .hr_top { width:210px; margin-top:10px; margin-right:auto; margin-left:auto; clear:both; }
+.hengren .hr_top .hr_tx { width:64px; height:64px; float:left; }
+.hengren .hr_top .text { width:134px; float:right; padding-left:10px; }
+.hengren .hr_con { height:150px; padding-top:10px; width:210px; clear:both; margin-right:auto; margin-left:auto; overflow:hidden; }
+.hengren .hr_con .ul_box { height:150px; width:220px; clear:both; }
+.hengren .hr_con .ul_box .pic { height:150px; width:100px; text-align:center; float:left; display:inline; padding-right:10px; line-height:24px; }
+/* page jiqiao */
+.jq_text { padding-left:25px; }
+.jq_text li { width:165px; float:left; padding:0 10px 0 10px; overflow:hidden; background:url(http://photo.poco.cn/images_v2/yz_ico2.gif) no-repeat left center; }
+/* page jiqian sub */
+.des .h3_un { background-position:right; padding-right:10px; }
+.jq_table { width:770px; color:#737373; }
+.jq_table tr,
+.jq_table td { border-collapse:collapse; line-height:50px; }
+.jq_table td { background:url(http://photo.poco.cn/images_v2/dot_line.gif) center bottom repeat-x scroll; }
+.li_level { padding-left:20px; line-height:30px; overflow:auto; }
+.li_level li { background:url(http://photo.poco.cn/images_v2/yz_ico2.gif) no-repeat left 11px; padding-left:15px; }
+.li_level ul { padding-left:15px; +padding-left:0px;
+}
+.li_level ul ul li { background:none; padding-left:12px; }
+li.li_level_un { background:url(http://photo.poco.cn/images_v2/jq_sub_ico.gif) no-repeat left 13px; }
+/* page lianbo */
+.lb_des { width:748px; padding-top:10px; padding-left:23px!important; }
+.lb_top { text-align:center; padding-top:15px; padding-bottom:10px; }
+.lb_top .lb_title_tag { width:768px; text-align:right; padding-top:5px; }
+.lb_top .text_title { width:768px; text-align:center; height:24px; line-height:24px; }
+.lb_top h2{ display:inline; }
+.lb_title { text-align:center; }
+.lb_title,
+.lb_title_sub { padding:5px 20px 0 0; text-align:center; vertical-align: bottom; }
+.lb_title_sub2 { margin-left:0; height:21px; vertical-align: bottom; }
+.lb_pic { border:#d3d3d3 solid 1px; padding:10px; text-align:center; }
+.lb_pic img { margin:0 auto; }
+.lb_pic_name { padding:15px 0 5px; font-size:14px; }
+.lb_pic_name .fl { padding-left:350px; }
+.lb_pic_page { padding:10px 0; text-align:center; padding-left:180px; }
+.lb_pic_page .text { float:left; width:60px; padding-top:8px; }
+.lb_pic_page .page_up,
+.lb_pic_page .page_down { background:url(http://photo.poco.cn/images_v2/lb_l.gif) left top; width:71px; height:28px; display:inline-block; margin:0 20px; float:left; padding:0px 2px 2px 0px; line-height:28px; }
+.lb_pic_page .page_down a,
+.lb_pic_page .page_up a { display:block; }
+.lb_pic_page .page_down { background:url(http://photo.poco.cn/images_v2/lb_r.gif); }
+.lb_pic_page .page_up a,
+.lb_pic_page .page_down a { text-decoration:none; color:#737373; text-align:center; line-height:28px; font-weight:bold; }
+.lb_other { padding:0px; width:768px; background:url(http://photo.poco.cn/images_v2/dot_line.gif) center repeat-y scroll; }
+.lb_about { width:348px; padding:5px 10px 5px 23px; }
+.lb_about p { margin:auto; }
+.lb_pic145 { width:384px; padding:0px 0px; }
+.lb_pic145 ul { width:370px; margin:0 auto; padding-left:16px; }
+.lb_pic145 ul li { width:167px; padding:0px; text-align:center; float:left; padding-right:16px; line-height:18px; }
+.lb_pic145 ul li img { }
+.lb_pic145 .imgbox { display:table-cell; vertical-align:bottom; text-align:center; *display:block;*font-size:149px!important;_font-size:168px; *font-family:Arial;width:167px; height:167px; }
+.lb_pic145 ul li p { text-align:center; }
+.lb_pic145 ul li p a { color:#000; }
+.lb_author { text-align:center; padding:10px; width:100%; }
+.lb_pic_li145 li { text-align:center; width:205px; font-weight:bold; padding-bottom:15px; line-height:28px; }
+.lb_pic_li145_ad { width:205px; }
+.lb_pic_li145_ad li { width:205px; margin-bottom:15px; text-align:center; }
+.lb_pic_li145_yp li { text-align:center; width:205px; line-height:24px; font-weight:bold;margin-bottom:10px;}
+/* page yinzhan */
+.yz_big img { *float:left; *margin-right:10px; }
+.yz_big .con_text { height:205px; width:420px; float:right; }
+.yz_big .con_text .text { height:215px; }
+.yz_ptext { height:130px; overflow:hidden; }
+.yz_pic { width:768px; float:left; }
+.yz_pic ul { width:660px; float:left; }
+.yz_pic li { width:145px; float:left; padding:0 10px; text-align:center; font-weight:bold; }
+.yz_sorll { width:22px; float:left; padding:100px 16px; /*padding:150px 16px;*/ }
+/* page zoupin */
+.li_about { width:205px; }
+.li_about .text { width:170px; background:url(http://photo.poco.cn/images_v2/yz_ico2.gif) no-repeat 20px 18px; padding:10px 10px 0px 35px; }
+.li_about .text a { line-height:28px; }
+.li_about li { color:#737373; line-height:18px; width:205px; }
+.li_about a { font-size:14px; font-weight:bold; }
+
+.plus_img_box { width:768px; border:#d3d3d3 solid 1px; text-align:center; margin:15px auto; padding:10px 0px 5px 0px; }
+.plus_img_title { line-height:24px; font-size:14px; width:768px; }
+
+.detail_but a { text-decoration:none; display:block; color:#737373; }
+.detail_but { width:414px; clear:both; margin-left:auto; margin-right:auto;  height:30px; line-height:24px; }
+.detail_but .prev_group,
+.detail_but .next_group { float:left; width:80px; text-align:center; padding:2px;}
+.detail_but .page_nu { float:left; width:90px; text-align:center; height:24px; line-height:24px; padding:2px;}
+.detail_but .prev_page,
+.detail_but .next_page { float:left; height:28px; line-height:28px; width:73px; background:url(http://photo.poco.cn/images_v2/bnt_bg_1.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px;}
+.detail_but .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+
+
+.detail_but .prev_page_end ,
+.detail_but .next_page_end { float:left; height:28px; line-height:28px; width:73px; background:url(http://photo.poco.cn/images_v2/lb_l_end.gif) center bottom no-repeat; text-align:center; padding:0px 2px 2px 0px; color:#C7C7C7;}
+.detail_but .prev_page_end a,
+.detail_but .next_page_end a { color:#C7C7C7;}
+.detail_but .page_nu2 { float:left; width:260px; text-align:center; height:24px; line-height:24px; padding:2px;}
+
+/* page zhanyin */
+.zy_pic { width:974px; text-align:center; margin:0 auto; }
+.zy_pic .photo { width:864px; float:left; margin:0 auto; text-align:center; }
+.zy_pic .yz_sorll_r { width:22px; float:right; padding:190px 16px; }
+.zy_pic .yz_sorll_l { width:22px; float:left; padding:190px 16px; }
+.zy_text { width:800px; line-height:18px; margin:0 auto }
+.zy_pic img { margin:10px auto; }
+.zy_pic_page { padding:10px 0; text-align:center; width:974px; clear:both; margin:0 auto; }
+.zy_pic_page span { margin:0 20px; }
+.zy_pic_sorll { width:940px; margin:5px 25px; display:inline; }
+.zy_pic_sorll .imgbox { display:table-cell; vertical-align:bottom; text-align:center; *display:block;
+*font-size:158px!important;
+_font-size:168px; *font-family:Arial;
+width:167px; }
+.zy_pic_sorll .yz_sorll_r { width:22px; float:right; padding:70px 16px; }
+.zy_pic_sorll .yz_sorll_l { width:22px; float:left; padding:70px 16px; }
+.zy_pic_sorll li { width:165px; padding:0 21px; }
+.zy_pic_sorll li img { margin:0 auto; }
+.zy_pic_sorll ul { width:830px; }
+.zy_author { padding:0 20px; width:450px; float:left; margin:10px 20px 5px 0; background:url(http://photo.poco.cn/images_v2/dot_line.gif) right 0px repeat-y scroll; }
+.zy_author img { float:left; margin-right:20px; }
+.des { padding-left:0px; }
+.des_title { padding-left:0px; }
+/* page zoupin_end */
+.text_link a { text-decoration:underline!important; }
+.text_link a:hover { text-decoration: none!important; }
+.author_info { width:100%; text-align:left; }
+.author_info a img { display:inline-block; }
+
+.author_info { width:100%; text-align:left; }
+.author_info a img { display:inline-block; }
+
+.author_info { width:768px;}
+.author_info ul { float:left; width:256px;}
+.author_info ul li { height:24px; line-height:24px;}
+.author_info .ph_taoxiang { height:64px; width:64px; float:left; padding-right:10px; text-align:center;}
+.author_info .text { width:180px; float:left;}
+
+.zpe_votes { width:768px; clear:both; }
+.zpe_vote { padding:20px 0; width:580px; text-align:center; margin-left:30px;}
+.zpe_vote a { text-decoration:none; }
+.zpe_vote .piao_sn { float:left; text-align:center; width:60px; }
+.zpe_vote .vote_bor { text-align:center; font:bold 14px/24px "宋体"; margin:0 15px; float:left; background:url(http://photo.poco.cn/images_v2/vote_bor01.gif) left top no-repeat; height:28px; width:97px; line-height:28px; padding:0px 2px 2px 0px; }
+.zpe_vote .vote_bor2 { text-align:center; font:bold 14px/24px "宋体"; margin:0 15px; float:left; background:url(http://photo.poco.cn/images_v2/vote_bor02.gif) left top no-repeat; height:28px; width:159px; line-height:28px; padding:0px 2px 2px 0px; }
+.zpe_vote .vote_bor a,
+.zpe_vote .vote_bor2 a { display:block; }
+.zpe_vote_r { padding-left:10px; padding-top:10px; width:120px; }
+.zpe_vote_r img { float:left; margin:6px 5px 0 0; }
+.zpe_tags { padding-left:23px; }
+
+/*======地区达人首页===========*/
+
+
+/*广州精华作品*/
+.toggle,
+.toggle2 { padding:0 0 0 13px; height:30px; overflow:hidden; background:url(http://photo.poco.cn/images_v2/solid_line.gif) repeat-x bottom; margin-bottom:10px; }
+.toggle li,
+.toggle2 li { border:#737373 solid 1px; font-size:14px; font-weight:bold; float:left; margin-right:3px; padding-top:1px; }
+.toggle li a,
+.toggle2 li a { text-decoration:none; display:block; padding:0 10px; background:#ececec; line-height:27px; }
+.toggle li.current a,
+.toggle2 li.current a { background:#fff; color:#737373; }
+.toggle li.current,
+.toggle2 li.current { border-bottom:#fff solid 1px; }
+.toggle2 { padding:0 0 0 7px; height:22px; }
+.toggle2 li { font-size:12px; font-weight:normal; }
+.toggle2 li a { padding:0 17px; line-height:19px; }
+
+
+
+.toggle_con_gzzp { width:994px; overflow:hidden; }
+.toggle_con_gzzp ul { width:716px; margin:10px auto; }
+.toggle_con_gzzp ul li { width:165px; float:left; display:inline; text-align:center; padding-right:55px; }
+
+.fatie { width:154px; text-align:center; height:28px; padding:0px 2px 2px 0px; line-height:28px; background:url(http://photo.poco.cn/images_v2/fatie.gif) left top no-repeat;}
+.fatie a { font-size:14px; color:#000; display:block; font-weight:bold; text-decoration:none;}
+
+.toggle_con_luntan { width:661px;}
+.toggle_con_luntan  ul{ width:661px; height:54px; background:url(http://photo.poco.cn/images_v2/dot_line.gif) center bottom repeat-x; padding-bottom:2px;}
+.toggle_con_luntan  ul li { float:left; height:54px; line-height:54px;}
+.toggle_con_luntan li.zhuti { width:396px; }
+.toggle_con_luntan li.zhuti a { font-size:14px;}
+.toggle_con_luntan li.zuozhe { width:88px; }
+.toggle_con_luntan li.yuedu { width:66px; }
+.toggle_con_luntan li.huifu { width:110px; color:#737373; }
+.toggle_con_luntan .tag_img { float:left; width:17px; height:17px; padding-left:20px; padding-right:16px; padding-top:18px;}
+
+.huigu { width:312px; overflow:hidden;}
+.huigu ul { width:336px; padding-left:10px;}
+.huigu ul li { width:135px; float:left; padding-right:24px; text-align:center;}
+
+.pic85_312{ width:312px; overflow:hidden; }
+.pic85_312 ul { width:337px;}
+.pic85_312 ul li{ width:85px;float:left; padding-right:25px;text-align:center;font-weight:bold; height:115px;}
+.diqu_btu2 { width:312px;}
+.diqu_btu2 li { width:147px; height:28px; padding:0px 2px 2px 0px; background:url(http://photo.poco.cn/images_v2/btu2bg.gif)  left top no-repeat; text-align:center; line-height:28px;}
+.diqu_btu2 a { font-size:14px; font-weight:bold; text-decoration:none; display:block; color:#737373;}
+
+/*摄影-地区站机构*/
+.jiameng_con { width:661px;}
+.jiameng_con td { height:36px; line-height:36px;}
+.jiameng_con tr { width:661px; height:36px; background:url(http://photo.poco.cn/images_v2/dot_line.gif) center bottom repeat-x; padding-bottom:2px;}
+.jiameng_con .name { width:180px; padding-left:20px;}
+.jiameng_con .sheyingshi { width:135px;}
+.jiameng_con .call { width:86px;}
+.jiameng_con .mail { width:126px;}
+.jiameng_con .diqu { width:160px;}
+.jiameng_con .address {width:326px;}
+
+
+.jiameng_con .tag_tuijian { padding-right:30px; padding-top:8px; background:url(http://photo.poco.cn/images_v2/tuijian.gif) right top no-repeat; display:inline;}
+
+.jiameng_youshi { width:312px; margin-bottom:10px;}
+.jiameng_youshi ul { width:312px; padding-bottom:10px;}
+.jiameng_youshi ul li { float:left; line-height:18px;}
+.jiameng_youshi ul li.number { width:13px; float:left;}
+.jiameng_youshi ul li.text { width:299px;}
+
+.jm_liucheng { width:312px; margin-bottom:15px;}
+.jm_liucheng li { float:left;}
+.jm_liucheng .text_box { height:23px; line-height:23px; border:1px solid #d3d3d3; color:#737373; padding:0 9px; background-color:#f5f5f5;}
+.jm_liucheng .jiantou_r { width:25px; height:24px; background:url(http://photo.poco.cn/images_v2/jiantou_r.gif) no-repeat center;}
+.jm_form textarea { width:250px; height:113px; border:1px solid #737373; float:left; margin-bottom:4px;}
+.jm_form select { width:92px; height:23px; float:left; margin-right:4px;}
+.jm_form label { text-align:right; width:50px; float:left;}
+.jm_form p { line-height:23px; padding:5px 0;}
+
+/*摄影-地区站达人*/
+.diqu_daren { width:768px; overflow:hidden;}
+.diqu_daren ul { width:802px;}
+.diqu_daren ul li { background:url(http://photo.poco.cn/images_v2/diqu_daren_bg.gif) left top no-repeat; padding:0px 2px 2px 0px; height:86px; width:232px; float:left; padding-right:33px; display:inline; padding-bottom:27px;}
+.diqu_daren .photo { width:64px; height:64px; float:left; padding:11px;}
+.diqu_daren .text { float:left; width:146px; padding-top:11px;}
+
+.diqu_zhanzhang { width:205px; overflow:hidden;}
+.diqu_zhanzhang ul { width:238px; padding-top:5px;}
+.diqu_zhanzhang ul li { float:left; width:86px; padding-right:33px; text-align:center; padding-bottom:10px;}
+
+
+
+/* change */
+.change,.change2{padding:0 0 0 13px;height:30px;overflow:hidden;background:url(http://photo.poco.cn/images_v2/solid_line.gif) repeat-x bottom;} 
+.change li,.change2 li{border:#737373 solid 1px;font-size:14px;font-weight:bold;float:left;margin-right:3px;padding-top:1px;}
+.change li a,.change2 li a{text-decoration:none;display:block;padding:0 10px;background:#ececec;line-height:27px;}
+.change li.current a,.change2 li.current a{background:#fff;color:#737373;}
+.change li.current,.change2 li.current{border-bottom:#fff solid 1px;}
+.change2{padding:0 0 0 7px;height:22px;}
+.change2 li{font-size:12px;font-weight:normal;}
+.change2 li a{padding:0 13px;line-height:19px;}
+
+.change_box{border:#737373 solid 1px;padding:15px;border-top:none;width:962px;overflow:hidden;}
+.change_box .pic64{width:1024px;}
+.change_box .pic64 li{width:64px;float:left;margin-right:64px;text-align:center;}
+
+.table_dline td,.table_dline th{background:url(http://photo.poco.cn/images_v2/dot_line.gif) repeat-x bottom;line-height:33px;padding-bottom:5px;}
+
+.but105 a{display:block;color:#737373;text-decoration:none;font-size:14px;font-weight:bold;background:url(http://photo.poco.cn/images_v2/but205.gif);line-height:28px;width:203px;text-align:center; display:block; padding:0px 2px 2px 0px;}
+.but105 a:hover{color:#737373;}
+
+.box460{width:440px;float:left;}
+.img_text img{float:left;margin-right:10px;}
+
+.hd_sroll ul{width:645px;float:left;padding:0 15px;display:inline;}
+.hd_sroll img{float:left;}
+.hd_sroll ul li{width:135px;margin:0 13px;text-align:center;float:left;display:inline;}
+.hd_sroll img.srool_l{float:left;margin:60px 0 0 30px;}
+.hd_sroll img.srool_r{margin-top:60px;}
+
+.center{text-align:center;}
+.hd_honeren_t1{padding:10px 0 10px 170px;}
+
+.show_list994{width:994px;}
+.show_list994 ul{width:1200px;}
+.show_list994 ul li{padding-right:40px;}
+
+.button { background-color:#737373; width:62px; height:23px; border:0; line-height:23px; color:#FFF; cursor:pointer;vertical-align:auto; }
+
+/* 下拉层 */
+.dropdown { width:72px; position:absolute; top: 0px; left: 0px; z-index:999; overflow:hidden; padding:0px; margin:0px; }
+.dropdown ul { margin:0 auto; background:#efefef; border:1px solid #737373; padding:1px; }
+.dropdown ul li { background:none; font-weight:normal; font-size:12px; text-align:left; float:none; padding:0px; margin:0px; line-height:20px;}
+.dropdown ul li a { display:block; color:#737373; font-size:12px; text-decoration:none; padding-left:5px; text-align:left; height:20px; font-weight:normal; margin:0px; float:none;}
+.dropdown ul li a:hover { color:#FFF; background-color:#737373; text-decoration:none;}
+.dropdown_iframe { position:absolute; z-index:-1; top:0px; left:0px; filter:alpha(opacity=0); width:200px; height:600px;}
+
+/* 评论样式 */
+.comments { margin-left:20px;}
+#comment .cmt_button { background-color:#737373; }
+#comment .cmt_input_text, .cmt_textarea, .cmt_smile_over_div,  .verify_code { border:1px solid #737373; }
+#comment .cmt_shortcut a { color:#737373; }
+#comment .verify_code { width: 100px;height: 20px }
+
+/*地区页有情链接*/
+.li120 li{width:120px;float:left;}
+.fb_link { padding-left:20px; width:974px; clear:both; margin-top:5px;}
+.fb_link li { float:left; pading-left:10px; padding-right:10px; width:auto; width:120px; text-align:center;}
+
+
+/*------
+申请加盟摄影工作室
+-------------*/
+.grid_c2f_s460 { width:994px; }
+.grid_c2f_s460 .main_wrap { float:left; width:514px; }
+.grid_c2f_s460 .col_sub { float:left; float:right; width:390px; }
+#work { width:514px; margin-top:10px; }
+#work input { border:1px solid #737373; height:21px; line-height:21px; width:211px; background:url(http://photo.poco.cn/images_v2/inputbg.jpg) left topno-repeat; padding-left:4px; vertical-align:middle; }
+#work select { height:21px; line-height:21px; width:76px; margin-right:10px; border:1px solid #737373; color:#737373; vertical-align:middle; }
+#work textarea { border:1px solid #737373; height:115px; line-height:21px; width:211px; margin-top:10px; }
+#work p { line-height:35px; padding:0px; margin:0; }
+#work label { text-align:right; line-height:35px; display: inline-block; *display: inline;
+zoom: 1; width:150px; }
+#work .label_textarea { line-height:23px; height:127px; vertical-align:top; padding-top:10px; }
+#work .button { height:23px; line-height:23px; width:62px; background-color:#737373; color:#FFF; font-size:12px; border:0; cursor:pointer; }
+#work .sbmit_block { padding-left:150px; }
+#text { width:370px; margin-top:58px; padding-top:10px; padding-left:15px; }
+#text p { line-height:25px; vertical-align:middle; }
+#text .balck { padding-left:24px; vertical-align:middle; }
+/*------
+申请加盟摄影工作室结束
+-------------*/
+
+/*提示层*/
+.poco_pop { border:2px solid #737373; margin:1px; padding:15px;}
+.poco_pop .title { color:#737373; }
+.poco_pop .time { color:#737373; font-weight:bold; font-size:14px; padding-left:5px; }
+.poco_pop .text { clear:both; word-wrap:break-word; word-break:break-all; overflow: hidden;}
+.poco_pop .pop_btu { margin:10px; padding-top:10px; text-align:center; }
+.poco_pop .button { margin-left:5px; margin-right:5px; float:none; }
+.poco_pop_iframe { position:absolute; z-index:-1; top:0px; left:0px; filter:alpha(opacity=0); width:2000px; height:2000px;}
+
+/*外拍活动留言*/
+#comment .button2 { background-color:#737373; width:62px; height:23px; border:0; line-height:23px; color:#FFF; cursor:pointer; }
+#comment .upfile { width:195px; border:1 solid ##d4d4d4; height:21px; line-height:21px; background:url(http://photo.poco.cn/images_v2/inputbg.jpg) left top no-repeat; padding-right:5px;}
+
+/*pop_top_text*/
+.pop_top_text { border:#737373 1px solid; padding:6px; height:24px; line-height:24px; background:#f8f8f8;}
+
+/*作品分类*/
+.category_text { width:661px; margin-bottom:0px; overflow:hidden;}
+.category_text ul { width:660px; padding-left:10px;}
+.category_text ul li { float:left; padding-left:9px; padding-right:7px; height:24px; line-height:24px;}
+.category_text ul li .query_in{ float:left; padding-left:10px; padding-right:7px; height:24px; line-height:24px; width:80px;}
+/*编辑推荐*/
+.zuopin_other { padding:0px; width:768px; background:url(../images/dot_line.gif) center repeat-y scroll; }
+.zuopin_other .zp_ul { width:370px; float:left;}
+.zuopin_other .zp_ur { width:370px; float:right;}
+.ul380_pic165 { width:360px; overflow:hidden;}
+.ul380_pic165 ul{ width:460px;}
+.ul380_pic165 ul li { width:167px; float:left; text-align:center; padding-right:25px; _display:inline; }
+.ul380_pic165 .imgbox { display:table-cell; vertical-align:bottom; text-align:center; *display:block;*font-size:149px;_font-size:149px; *font-family:Arial;width:167px; height:167px; }
+.ul380_pic165 .show_author { line-height:18px; width:167px; text-align:center;}
+.ul380_pic165 .show_shadow { background:url(../images/tj_shadow.gif) no-repeat center 0; height:16px; }
+.ul380_pic165 .imgbox img { vertical-align:bottom; border:#cbcbcb solid 1px; display:inline-block; font-size:0px; }
+.ul380_pic165 strong a { font-weight:bold; font-size:14px; text-decoration:underline; }
+.ul380_pic165 strong a:hover { font-weight:bold; font-size:14px; text-decoration:none; }
+
+.ul768_pic165 { width:768px; overflow:hidden;}
+.ul768_pic165 ul{ width:801px;}
+.ul768_pic165 ul li { width:167px; float:left; text-align:center; padding-right:25px; _display:inline; }
+.ul768_pic165 .imgbox { display:table-cell; vertical-align:bottom; text-align:center; *display:block;*font-size:149px;_font-size:149px; *font-family:Arial;width:167px; height:167px; }
+.ul768_pic165 .show_author { line-height:18px; width:167px; text-align:center;}
+.ul768_pic165 .show_shadow { background:url(../images/tj_shadow.gif) no-repeat center 0; height:16px; }
+.ul768_pic165 .imgbox img { vertical-align:bottom; border:#cbcbcb solid 1px; display:inline-block; font-size:0px; }
+.ul768_pic165 strong a { font-weight:bold; font-size:14px; text-decoration:underline; }
+.ul768_pic165 strong a:hover { font-weight:bold; font-size:14px; text-decoration:none; }
+
+
+
+/*vip留言*/
+#comment_vip { width:768px;}
+#comment_vip ul { width:748px; margin-left:20px;}
+#comment_vip .line { border-bottom:1px solid #d4d4d4; }
+#comment_vip ul li { float:left;}
+#comment_vip ul li.head_pic { width:64px; padding:10px 20px 10px 0px; text-align:center;}
+#comment_vip ul li.com_text { width:663px;}
+#comment_vip .title { height:24px; line-height:24px; padding-top:5px;}
+#comment_vip .time_col { color:#999;}
+#comment_vip .text { width:663px; line-height:18px;}
+#comment_vip .fb { font-weight: bold;}
+#comment_vip .huifu { width:663px; text-align:left; margin-top:10px;}
+#comment_vip .huifu a { color:#999; }
+#comment_vip .gray { color:#999;}
+#comment_vip .text_bg { border:1px solid #d4d4d4; background-color:#fafafa; padding:5px; color:#000; margin-bottom:10px; }
+#comment_vip .d_line_text { background:url(../images/dot_line.gif) center bottom repeat-x scroll; height:5px; margin:5px 0px; clear:both; padding-bottom:0px; }
+#comment_vip .black { color:#000;}
+#comment_vip .liuyan_number { font-size:12px; font-weight:bold; text-align:center; width:768px; height:24px; line-height:24px; padding:15px 0;}
+#comment_vip .com_box { width:748px; padding-top:15px; height:100%; float:left; height:200px; padding-left:20px;}
+#comment_vip .com_input { width:558px; float:left;}
+#comment_vip .com_checkbox { float:right; width:190px; margin-top:60px;}
+#comment_vip .inpu_top { height:24px; clear:both; line-height:23px;}
+#comment_vip .com_input { width:529px; height:113px; border:1 solid #d4d4d4;}
+#comment_vip select { width:74px; margin-right:4px; float:left;}
+#comment_vip .input_box { height:21px; border:1px solid #d4d4d4; background:url(../images/inputbg.jpg) left top no-repeat; padding-left:2px; line-height:21px; margin-right:4px; float:left;}
+#comment_vip .button { background-color:#737373; width:62px; height:23px; border:0; line-height:23px; color:#FFF; cursor:pointer; float:left; }
+#comment_vip .button2 { background-color:#737373; width:62px; height:23px; border:0; line-height:23px; color:#FFF; cursor:pointer; }
+#comment_vip .textarea { width:527px; margin-top:5px;}
+#comment_vip textarea { width:525px; height:113px; border:1px solid #d4d4d4; background:url(../images_v2/inputbg.jpg) left top no-repeat; padding:4px; color:#808080;}
+#comment_vip .btu { width:530px; clear:both; margin-top:5px;}
+#comment_vip .upfile { width:195px; border:1 solid ##d4d4d4; height:21px; line-height:21px; background:url(../images_v2/inputbg.jpg) left top no-repeat; padding-right:5px;}
+/*增加*/
+#comment_vip .liuyan_number2 { font-size:12px;  text-align:left; width:768px; height:24px; line-height:24px; padding:15px 0;}
+
+/*最新商业样片*/
+.ul768_pic165_text2 { width:768px; overflow:hidden;}
+.ul768_pic165_text2 ul { width:796px; clear:both; margin-top:10px;}
+.ul768_pic165_text2 ul li { width:370px; float:left; padding-right:28px;}
+.ul768_pic165_text2 .imgbox { width:167px; height:167px; text-align:left; overflow:hidden;}
+.ul768_pic165_text2 .text { float:left; width:193px; line-height:18px; padding-left:10px;}
+.ul768_pic165_text2 span { color:#737373;}
+.ul768_pic165_text2 .title { font-size:14px; font-weight:bold; line-height:24px;}
+.ul768_pic165_text2 .box_shadow { float:left; height:auto; width:167px; padding-bottom:4px;}
+.ul768_pic165_text2 .imgbox img {  border:#cbcbcb solid 1px; display:inline-block; font-size:0px; max-width:165px;
+max-height:165px }
+/*其他推荐样片*/
+.ul205_pic_165 { width:205px; overflow:hidden;}
+.ul205_pic_165 ul { width:205px;}
+.ul205_pic_165 li { width:205px; text-align:center; margin-top:10px;}
+.ul205_pic_165 .imgbox { width:167px; height:167px; text-align:center; margin:auto; overflow: hidden;}
+.ul205_pic_165 .title { font-size:14px; font-weight:bold; line-height:24px; padding-bottom:5px;}
+.ul205_pic_165 .imgbox img {  border:#cbcbcb solid 1px; display:inline-block; font-size:0px; max-width:165px;
+max-height:165px }
+.ul205_pic_165 .box_shadow { height:167px; width:167px; background: url(../images/tj_shadow.gif) no-repeat center bottom; margin:auto; padding-bottom:14px;}
+
+
+.roll994_pic165_box { width:994px; margin:0 auto; }
+.roll994_pic165_box .roll_prev { float:left; width:22px; padding:40px; margin-top:20px; }
+.roll994_pic165_box .roll_next { float:left; width:22px; padding:40px; margin-top:20px; }
+.roll994_pic165 { width:790px; overflow:hidden; margin:0 auto; float:left; }
+.roll994_pic165 ul { width:994px; }
+.roll994_pic165 ul li { width:167px; float:left; text-align:center; padding-right:39px; _display:inline; }
+.roll994_pic165 .imgbox { display:table-cell; vertical-align:bottom; text-align:center; *display:block;
+*font-size:149px!important;
+*font-family:Arial;
+width:167px; height:167px; overflow: hidden; }
+.roll994_pic165 .author { line-height:18px; width:167px; text-align:center; }
+.roll994_pic165 .imgbox img { vertical-align:bottom; border:#cbcbcb solid 1px; display:inline-block; max-width:165px; max-height:165px }
+.roll994_pic165 .box_shadow { height:167px; width:167px; padding-bottom:14px; background: url(../images_v2/tj_shadow.gif) no-repeat center bottom; }
+.roll994_pic100_box { width:994px; }
+.roll994_pic165 .title { font-size:14px; font-weight:bold; line-height:24px; height:24px; width:165px; overflow:hidden; }
+
+
+
+.tips_style { line-height:18px; padding:10px; width:260px; background:#FFF; border:1px solid #737373; display:none; word-wrap:break-word; word-break: break-all; overflow: hidden;z-index:999}
+.tips_style .title { font-weight:bold; color:#000; padding-bottom:10px; }
+.tips_style .content_dsp { font-weight:bold; color:#000; }
+.tips_style .content { color:#666; }
+.tips_style .highlight { color:#F00; font-weight:bold; }
+
+
+
+
+/* 10-12 添加css */
+.nav_list_6{}
+.nav_list_6 .liclass{ background:url(../images/ty_img_2.jpg?) no-repeat 0 -1px; line-height:30px; padding-left:20px; zoom:1}
+.nav_list_6 .liclass a{ font-size:14px; color:#727272; text-decoration:none}
+.nav_list_6 .current a{ font-weight:bold}
+
+
+.wrap_box1912 .c_lin2{ margin-top:5px}
+
+
+
+
+#trackBar
+{
+ background:url(../images/ty_img_3.jpg) no-repeat}
+	
+
+#trackBar_slider
+{
+    border:1px solid #808080;
+    background-color:#FFFFFF;
+}
+
+#trackBar2
+{
+    background-color:#CC0000;
+}
+
+#trackBar2_slider
+{
+    border:1px solid #808080;
+    background-color:#FFFFFF;
+}
+
+
+
+.wrap_box1912 .drag_box_w{ clear:both; clear:both; overflow:hidden; height:60px; padding-top:5px;}
+.wrap_box1912 .dbox1 {float:left; width:550px;}
+.wrap_box1912 .dbox1 .bgimg{}
+.wrap_box1912 .dbox1 .box_relative{ position:relative; z-index:999;}
+.wrap_box1912 .dbox1 .timenum{ position:absolute; left:0px; top:0px; z-index:999;}
+.wrap_box1912 .dbox1 .fbcor{ font-weight:bold; color:#000}
+.wrap_box1912 .dbox1 .cor70{ color:#868484}
+.wrap_box1912 .dbox1 .dayti{ margin-left:60px}
+.wrap_box1912 .dbox1 .dayti2{ margin-left:125px}
+.wrap_box1912 .dbox1 .dayti3{ margin-left:200px}
+
+.wrap_box1912 .dbox2{ float:left; font-size:14px; padding:15px 5px 0 10px}
+.wrap_box1912 .show_list{ width:768px; overflow:hidden}
+.wrap_box1912 .pd10px{ margin-left:8px}
+
+
+/* 随便看看css */
+.wrap_box1912 .sm2{ background: none; padding-left:15px; font-size:12px; font-weight:normal; color:#727272;}
+.navlbox{ padding-top:20px}
+.navlbox .linkmore{ padding-left:20px}
+
+
+
+
+/*编辑推荐*/
+.wrap_box1912 .c_lin2{ margin-top:5px}
+.wrap_box1912 .title{ background:none; font-weight:bold; color:#000;}
+.wrap_box1912 .int{ text-indent:0px;}
+.wrap_box1912 .sm{ background:url(../images/xh_p_1.jpg) no-repeat; padding-left:15px; margin-left:10px; font-size:12px; font-weight:normal; color:#727272; cursor:pointer;}
+.wrap_box1912 .poprel{ position:relative; margin-left:130px; z-index:9999}
+.wrap_box1912 .pop{ position:absolute; width:311px; height:94px; border:1px solid #777777; background:#f6f6f6; top:25px;}
+.wrap_box1912 .v{ background:url(../images/xh_p_v.jpg) no-repeat; width:9px; height:5px; position:absolute; right:10px; top:-5px;}
+.wrap_box1912 .icontent{ padding:15px 15px 0;}
+
+/* 猜你感性兴趣*/
+.wrap_box1912 .zcdl{ }
+.wrap_box1912 .ndl{ font-size:16px; font-weight:bold; color:#777777; margin-top:60px; text-align:center;}
+.wrap_box1912 .dzbox{ width:365px; padding-left:200px; margin-top:10px; padding-bottom:200px}
+.wrap_box1912 .b_t{ background:url(../images/xh_p_3.jpg) no-repeat; width:120px; height:30px; display:inline; float:left; margin-top:0px; margin-right:10px;}
+.wrap_box1912 .link_zc{ line-height:30px;}
+
+.wrap_box1912 .wrap_width{ width:768px; overflow:hidden; padding-top:10px} 
+.wrap_box1912 .wrap_width #toggles .toggle a{ font-size:14px; font-weight:normal; color:#555555} 
+.wrap_box1912 .wrap_width #toggles .toggle a.click{ font-weight: bold}
+.wrap_box1912 #toggles .toggle li{ width:101px}
+
+.wrap_box1912 .pday{ text-align:center; font-size:14px; color:#737373; padding:10px 0;}
+.wrap_box1912 .month, .wrap_box1912 .month a{color:#9a9a9a;}
+.wrap_box1912 .link_page { width:768px; overflow:hidden; height:30px; padding:10px 0; font-size:14px;}
+.wrap_box1912 .link_page a{ text-decoration:none; padding:0 6px; height:17px; line-height:17px; border-right:1px solid #7d7d7d; display:block; float:left; color:#343434;}
+.wrap_box1912 .link_page .cur{ background:#737373; color:#fff;}
+.wrap_box1912 .link_page a:hover{ color:#fff; text-decoration:none; background:#737373;}
+.wrap_box1912 .link_page .b_r{ border:none;}
+.wrap_box1912 .show_page .mtb{ margin:5px 0; height:20px; width:275px; float:left; display:inline;}
+.wrap_box1912 .show_page .bot{ clear:none;}
+/*2010年10月13日 */
+.wrap_box1912 .alink{ height:30px; padding:10px 0 10px 10px;}
+.wrap_box1912 .alink a{border-right:1px solid #7D7D7D; color:#343434; display:block; float:left; height:17px; line-height:17px;  padding:2px 10px; text-decoration:none;}
+.wrap_box1912 .alink .acuer{ background:#737373; color:#fff;}
+.wrap_box1912 .alink a:hover{ color:#fff; text-decoration:none; background:#737373;}
+.wrap_box1912 .alink .b_r{ border:none;}
+
+.wrap_box1912 .link_page{  clear:both;}
+.wrap_box1912 .link_page a{ padding:0 5px;}
+
+/*内容推荐切换功能块*/
+#pcrs_commend_change {line-height:12px;}
+#pcrs_commend_change .icon_q{ float:left;background:url(http://photo.poco.cn/images_v2/iconbg.gif) no-repeat 0 1px; width:13px; height:16px; z-index:9999; cursor:pointer} 
+#pcrs_commend_change .icon_sj{ background:url(http://photo.poco.cn/images_v2/iconbg.gif) no-repeat 0 -80px; width:246px; height:10px; overflow:hidden}
+#pcrs_commend_change .tbox{ border:1px solid #cccccc; width:244px; height:45px;background:#fff; border-top:none }
+#pcrs_commend_change .tbox .p1{ padding:5px 0 0 4px}
+#pcrs_commend_change .tbox .close_btn{ float:right; padding:4px 2px 0 0; }
+#pcrs_commend_change .icontext{ cursor:pointer;vertical-align:middle; border:0;background:url(http://photo.poco.cn/images_v2/iconbg.gif) no-repeat 0 -17px ; width:40px; height:16px;margin:0 5px}
+#pcrs_commend_change .rtext{ cursor:pointer;vertical-align:middle;border:0; background:url(http://photo.poco.cn/images_v2/iconbg.gif) no-repeat 0 -41px ; width:110px; height:16px;margin:0 5px}
+#pcrs_commend_change .rtext_out { margin:0 5px;border:0;width:84px; height:16px;cursor:pointer;background:url(http://photo.poco.cn/images_v2/iconbg.gif) no-repeat 0 -61px ;}
+#pcrs_commend_change .pop_info { top:19px; left:-23px; position:absolute; z-index:9999; line-height:19px; color:#727272; cursor:auto;}
+.commend .picli .pic_con .interest_info {color:gray;position:relative;width:145px;}
+.commend .picli .pic_con .interest_islike {display:none;position:absolute;background-color:#fff;top:0px;left:0px;width:145px;_top:5px;}
+
+#J_poco_share_bnt { float:left; margin-left:20px; margin-top:2px; }
+#J_poco_share_bnt li{ color:#737373}
+#J_poco_share_bnt ul{ border-color:#737373}
+.poco_share_box a:hover { text-decoration:underline; }
+
+
+
+/* 热门留言被赞图片 */
+#comment_vip .like_img .ellipsis {
+	font-style:normal;
+  color: #CCCCCC;
+  font-family: Tahoma;
+  font-size: 36px;
+  overflow: hidden;
+  padding-left: 10px;
+}
+#comment_vip .like_img{ line-height:normal}
+#comment_vip .like_img a{ margin-right:5px}
+#comment_vip .like_img img{ vertical-align:top }
+#comment_vip .like_img .quote_symbol{ float:left; margin-right:5px; width:22px; height:17px;
+background:url(http://my.poco.cn/cmt/images/quote32.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://my.poco.cn/cmt/images/quote32.png");	
+	}
+/* end留言被赞图片 */
+
+
+/* 2011-05-23 */
+.hudong .banner_hd{ margin-bottom:10px;}
+.hudong .hd_list{ margin:4px 0;}
+.hudong .hd_list li{ line-height:20px; }
+.hudong .hd_list strong{ font-size:14px; margin-right:5px;}
+.text_list { height:auto}
+#camera ul{ width:165px; padding-top:0;}
+#camera ul li{ height:22px; line-height:22px;}
+#ph_re .ph_box{ margin:6px 0 8px; height:120px; overflow:hidden;}
+.gd_link{ margin-top:-20px; }
+#ph_re{ overflow:hidden;}
+.qita{ margin-top:-20px;}
+/* 2011-05-23 end */
+
+/* 2011-8-24 地区站调整 */
+.diqu_dl { width:768px; margin-left:0px; font-size:14px}
+.diqu_dl dt { color:#000; margin:2px 0 ;  width:768px;  }
+.diqu_dl dd {  padding-bottom:13px; }
+.diqu_dl dd a {  margin-right:8px; ; display:inline-block; white-space:nowrap; line-height:22px;  }
+.hot_oneweek{ width:205px; overflow:hidden;}
+.hot_oneweek ul{ width:97px; float:left; display:block; }
+.sqktBox{ width:193px; border:1px solid #e2e2e2; background:#f3f3f3; padding:16px 5px 10px; margin-top:5px;}
+.sqktBox .sq_link{ display:block; background:url(../images/ll_dqzimg_01.gif) no-repeat; width:192px; height:34px; text-indent:-9999em; margin:0 0 16px 1px;}
+.sqktBox .listItem{background:url(../images/ll_dqzimg_02.gif) no-repeat; width:100px; height:18px; text-indent:-9999em; overflow:hidden; }
+.sqktBox .list li{ padding-left:4px; background:url(../images/ll_dqzimg_03.gif) 3px 3px no-repeat;  }
+.sqktBox .list{ padding:10px 0;}
+.sqktBox .list li .num{ display:block; width:16px; height:20px; overflow:hidden; float:left; color:#fff; text-align:center; margin-right:1px;}
+.sqktBox .info{ color:#707070; padding-left:4px;}
+.diqu_textli { padding-left:0px; }
+.diqu_textli li { height:25px; line-height:25px; }
+.zxwpBox{ width:748px; padding-left:20px;}
+.hdhgBox{ width:748px; overflow:hidden;}
+.hdhgBox ul{ width:800px;}
+.hdhgBox ul li{ padding-left:0; padding-right:47px; font-size:12px; font-weight:normal; width:145px;}
+.duqu_pic84 ul li a.i64x64{ display:block; margin:0 auto;}
+
+/* 2011-08-23 POCO相机美图欣赏 */
+.col1e9200, .col1e9200 a{color:#1e9200;}
+.poco_camamer{ width:312px; overflow:hidden;}
+.poco_camamer a{ text-decoration:none;}
+.poco_camamer .listItem{ position:relative; width:100%;}
+.poco_camamer .listItem .more{ position:absolute; right:0; top:3px;  }
+.poco_camamer .list{ padding-bottom:5px;}
+.poco_camamer .list li{ padding:10px 0 13px; width:312px; clear:both; min-height:145px; _height:145px; _overflow:visible;}
+.poco_camamer .list li .img_box{ float:left; width:145px; height:145px; overflow:hidden;}
+.poco_camamer .list li .text_box{ width:150px; float:left; padding-left:14px; line-height:18px;}
+.poco_camamer .list li .text_box h4{ font-weight:normal; line-height:35px; height:35px; padding-bottom:5px;}
+.poco_camamer .list li .text_box h4 .kind{ background:#1e9200; color:#fff; font-size:16px; padding:0 9px; font-family:"微软雅黑","黑体","宋体";  margin-right:5px; }
+.poco_camamer .list li .text_box .use_ca{ color:#909090; padding-bottom:5px;}
+.poco_camamer .list li .text_box .user{ padding-top:10px;}
+.poco_camamer .btn , .poco_camamer .info{ background:url(../images/ll_photo_ca4.gif) left top repeat-x; padding:11px 0;}
+.poco_camamer .btn a{ display:block; background:url(../images/ll_photo_ca1.jpg) no-repeat; width:174px; height:30px; text-indent:-9999em; }
+.poco_camamer .info h4.title{ font-family:"微软雅黑","黑体","宋体"; font-size:18px; line-height:22px; padding-bottom:5px; }
+.poco_camamer .info h4.title span{ color:#e22601;}
+.poco_camamer .info li{ float:left; width:90px; padding-left:21px;}
+.poco_camamer .info li a{ text-decoration:underline;}
+.poco_camamer .info li a:hover{ text-decoration:none;}
+.poco_camamer .info li.ico1{ background:url(../images/ll_photo_ca2.jpg) 0 3px no-repeat;}
+.poco_camamer .info li.ico2{ background:url(../images/ll_photo_ca3.jpg) 0 3px no-repeat;}
+
+/* 2011-10-09 地区站加推荐 */
+.club_commend_b { float: left; background-color: #999999; display: block; height: 20px; width: 45px; margin-left: 35px; *_margin-left: 17px; text-decoration: none; overflow: hidden; }
+.club_commend_b_u { margin-left: 5px; }
+
+/* 2011-10-31 增加摄影名人、红人认证正式推出模块*/
+.hrrz_ll{ width:994px; height:195px; overflow:hidden; margin-bottom:10px; color:#606060}
+.hrrz_ll .hrrz_info{ float:left; width:671px;}
+.hrrz_ll .hrrz_info .listItem{ background:url(../images/ll_hrsimg_1.jpg) no-repeat; width:100%; height:42px; text-indent:-9999px;}
+.hrrz_ll .hrrz_info .conBox{ background:#ededed; height:105px; padding:8px 0 0 11px; width:660px;}
+.hrrz_ll .hrrz_info .txt_btn{  background:url(../images/ll_hrsimg_2.jpg) no-repeat; width:658px; height:40px; line-height:40px; padding-right:13px; font-style:oblique;  font-size:26px;  font-family:"微软雅黑","黑体","宋体";  }
+.hrrz_ll .hrrz_info .txt_btn a{ margin-top:5px; *+margin-top:0;}
+.hrrz_ll .hrrz_info .mr_list{ width:213px; float:left; }
+.hrrz_ll .hrrz_info .mr_list ul{ padding-left:26px;}
+.hrrz_ll .hrrz_info h4.title{ font-size:18px;  font-family:"微软雅黑","黑体","宋体";  padding:0 0 3px 26px;}
+.hrrz_ll .hrrz_info .mr_list h4.title{ background:url(../images/ll_hrsimg_3.jpg) 0 3px no-repeat; }
+.hrrz_ll .hrrz_info .hr_list{ width:430px; float:left;}
+.hrrz_ll .hrrz_info .hr_list h4.title{ background:url(../images/ll_hrsimg_4.jpg) 0 3px no-repeat; }
+.hrrz_ll .hrrz_info li{ width:180px;  line-height:18px; color:#717171; min-height:20px; _height:20px; _overflow:visible;}
+.hrrz_ll .hrrz_info li span{ display:block; float:left; height:20px; }
+.hrrz_ll .retjBox{ float:left; width:323px; background:#f5f5f5; height:195px;}
+.hrrz_ll .retjBox .r_top{  background:url(../images/ll_hrsimg_11.jpg) no-repeat; width:100%; height:6px; overflow:hidden; }
+.hrrz_ll .retjBox .r_btm{  background:url(../images/ll_hrsimg_12.jpg) no-repeat; width:100%; height:6px; overflow:hidden;}
+.hrrz_ll .retjBox .listItem{ font-size:18px;  font-family:"微软雅黑","黑体","宋体"; padding-left:13px; height:33px; overflow:hidden; line-height:28px;}
+.hrrz_ll .retjBox .img_show{ padding:0 10px; }
+.hrrz_ll .retjBox .img_show .s_left, .hrrz_ll .retjBox .img_show .s_right{ float:left; width:18px; height:34px; margin-top:58px;}
+.hrrz_ll .retjBox .img_show .s_list{ width:251px; float:left;   margin:0 7px; *+margin-top:-5px;overflow:hidden;height:150px}
+.hrrz_ll .retjBox .img_show .s_list li{ margin-right:8px;float:left;display:block;width:251px;}
+
+.hrrz_ll .retjBox .img_show .s_list .top{ background:url(../images/ll_hrsimg_6.jpg) no-repeat; height:8px; width:251px; overflow:hidden;}
+.hrrz_ll .retjBox .img_show .s_list .textAear{padding-left:14px; height:134px; overflow:hidden;  background:url(../images/ll_hrsimg_8.jpg) repeat-y;}
+.hrrz_ll .retjBox .img_show .s_list .btm{ background:url(../images/ll_hrsimg_7.jpg) no-repeat; height:8px; width:100%; overflow:hidden;}
+.hrrz_ll .retjBox .img_show .s_list .img_box{ float:left; width:86px; height:86px; padding-right:10px; }
+.hrrz_ll .retjBox .img_show .s_list .txt_box{ float:left; width:133px; line-height:18px;}
+.hrrz_ll .retjBox .img_show .s_list .txt_box h4.title a{ display:block; float:left; margin-right:5px; color:#737373; font-size:14px;}
+.hrrz_ll .retjBox .img_show .s_list h4.title .ico{ display:block; float:left; background:url(../images/ll_img_3.gif) no-repeat; width:15px; height:15px; }
+.hrrz_ll .retjBox .img_show .s_list .txt_box h4.title .ico_g { background: url(../images/ll_img_16.gif) no-repeat; display: block; float: left; height: 15px; width: 15px;}
+.hrrz_ll .retjBox .img_show .s_list .txt_box p{ color:#a4a4a4;}
+.hrrz_ll .retjBox .img_show .s_list .txt_box .fwl{ padding-top:10px;}
+.hrrz_ll .retjBox .img_show .s_list .info_box{ width:230px; clear:both; color:#a0a0a0; padding-top:5px; line-height:18px;height: 38px;overflow: hidden;}
+.hrrz_ll .retjBox a{ text-decoration:none;}
+.hrrz_ll .retjBox a:hover{ text-decoration:underline;}
+
+
+
+/* 新版变色龙 2011-11-18 修正 */
+.sy_bg{ background:url(../images/poco_i_bg.gif) center top repeat-y;}
+
+
+#header .header_top_bar,.nav_bar{ width:994px; margin:0 auto}
+
+.shadow_top{ height:0px; overflow:hidden}
+
+#footer_search .footer_search_main{ background:none; }
+#footer_search .footer_search_main form{ margin:18px 0 0 248px;}
+
+#header{width:100%;background-color:#FFF; background:url(../images/headbg.jpg)  no-repeat center 0} /*-- 修改头部背景图 大小 1024*110 --*/
+
+
+body {background:#e7e7e7 url(../images/bg.jpg) center top fixed no-repeat}  /*-- 外围 shawdow 阴影图片 色值可修改 --*/
+ 
+.shadow_wrap {} 
+
+.shadow_header_top {background:url(../images/header_bg.png) center -178px no-repeat}  /*-- 顶部shaw-top 修改图片，大小 1030*8 颜色值 --*/
+
+#header .subnav_bar{ background:#737373;  }/*-- 导航条 背景色 --*/
+#header .subnav_bar li{ background-position: right 0; padding: 2px 13px 0 12px; height:25px; line-height:25px;}
+#header .mylink li{ padding:0 !important;}
+
+
+#header .header_top_nav a,#header .header_top_nav{ color:#000} /*-- 顶部文字导航颜色   请在这改色值 --*/
+
+#header .subnav .current_subnav a { color:#fff}
+
+#header .header_search .input_text{ border:1px solid #737373; color:#808080} /*-- 顶部输入框颜色   请在这改色值 --*/
+#header .header_search .header_search_type{ color:#808080}
+
+#header .header_search .button { background:#737373}/*-- 顶部搜索按钮颜色   请在这改色值 --*/
+
+
+#header .mainnav li.hour24 a,#header .mainnav li.ichina a { color:#fff } /*-- 24小时 亚运字体 颜色 --*/
+
+#header .mainnav li.hour24{ background-position:-292px 0; background:none} /*-- 24小时 背景定位 --*/
+
+.shadow_top, .shadow_bottom  { background:none} /*-- 底部shawtop与shawbottm  背景色 --*/
+
+h2.title, h3.title {color:#a9221c}  /*-- 标题颜色 --*/
+
+.c_line { background-color:#aeaeae}  /*-- 线颜色 --*/
+
+#footer_search { background:url(../images/footbg.jpg) center 0 no-repeat}  /*-- 底部大图 大小 1024*113  --*/
+
+#footer_search .footer_search_main li { border-right:1px solid #a9221c; color:#000}  /*-- 线框颜色 --*/
+
+#footer_search .footer_hot_concern,#footer_search .footer_hot_concern a, #footer_search .footer_search_main li a { color:#000}  /*-- 字体颜色 --*/
+#footer_search .footer_hot_concern a{ text-decoration:underline}
+#footer_search .footer_hot_concern a:hover{ text-decoration:none}
+
+#footer_search .footer_input_key {border:1px solid #d7d6d7}  /*-- 输入框 边框颜色 --*/
+
+
+.wraprelativ { position:relative; width:994px; margin:0 auto}
+.pop_tag {  position:absolute; left:725px; top:-143px; z-index:999;width:148px; height:143px;background:url(../images/photo1.png) center no-repeat;_background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/photo1.png")}   /*-- 漂浮层 --*/
+
+#footer_search .footer_link_top  { background:none } /*-- top 背景图 --*/
+
+#footer .sitemap strong { color:#a9221c} /*-- 底部字体颜色 --*/
+
+#footer .sitemap_about, #footer .sitemap_help, #footer .sitemap_pococard {border-right:1px solid #a9221c} /*-- 底部线框颜色 --*/
+
+#footer .copyright{ border-top:2px solid #a9221c}/*-- 底部线框颜色 --*/
+
+#footer_search .current_search_tag { background-color:#a9221c; color:#fff !important;}/*-- tab 当前颜色背景色 --*/
+
+h3.title  {background:url(../images/icnew.gif) no-repeat}
+
+.grid_c2f {background:url(../images/grid-c2f.gif) repeat-y center top }
+ 
+.grid_c2f_s312 {background:url(../images/grid-c2f-s312.gif) repeat-y center top }
+
+/*弹出*/
+#top_pop {  background:#a9221c; border:#a9221c solid 1px; color:#fff;  }
+#top_pop .top_colse { color:#fff; }
+#top_pop .top_menu a { color:#fff;  }
+#top_pop .top_menu a:hover {  color:#fff;  }
+
+#header .header_search .input_text, #header .dropdown ul { border-color: #737373;}/*-- 频道 --*/
+#header .dropdown ul li a, #header .mainnav .dropdown ul li a, #footer .sitemap strong { color: #737373;}
+
+
+
+/*2010年11月22日 */
+
+.pop_tag{ top:-134px; left:700px; width:199px; height:106px;}
+
+/* Copyright (c) 2010, Poco.cn.  All rights reserved. */

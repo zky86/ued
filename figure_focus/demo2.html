@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>Untitled Document</title>
+<style type="text/css">
+/* Reset style */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+table{border-collapse:collapse;border-spacing:0}
+a{ color:#69F; font-size:14px; font-weight:bold;}
+.w {font-size: 14px; line-height: 24px; margin: 0 auto;width: 998px; overflow:hidden;}
+h1 { border-bottom: 1px solid #CCCCCC; color: #3FA600;font-family: "微软雅黑"; font-size: 26px;font-weight: bold; margin-bottom: 20px; padding: 15px 0;text-align: center;}
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; }
+/* iFocus style */
+#ifocus { width:525px; height:245px; border:1px solid #DEDEDE; background:#F8F8F8; }
+	#ifocus_pic { display:inline; position:relative; float:left; width:410px; height:225px; overflow:hidden; margin:10px 0 0 10px; }
+		#ifocus_piclist { position:absolute; }
+		#ifocus_piclist li { width:410px; height:225px; overflow:hidden; }
+		#ifocus_piclist img { width:410px; height:225px; }
+	#ifocus_btn { display:inline; float:right; width:91px; margin:9px 9px 0 0; }
+		#ifocus_btn li { width:91px; height:57px; cursor:pointer; opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50); }
+		#ifocus_btn img { width:75px; height:45px; margin:7px 0 0 11px; }
+		#ifocus_btn .current { background: url(images/ifocus_btn_bg.gif) no-repeat; opacity:1; -moz-opacity:1; filter:alpha(opacity=100); }
+	#ifocus_opdiv { position:absolute; left:0; bottom:0; width:410px; height:35px; background:#000; opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50); }
+	#ifocus_tx { position:absolute; left:8px; bottom:8px; color:#FFF; }
+		#ifocus_tx .normal { display:none; }
+</style>
+
+<script type="text/javascript" src="Scripts/jq_ifocus.js"></script>
+</head>
+
+<body>
+<div class="w">
+<h1>焦点图片轮换</h1>
+<div id="ifocus">
+	<div id="ifocus_pic">
+		<div id="ifocus_piclist" style="left:0; top:0;">
+			<ul>
+				<li><a href="#" target="_blank"><img src="images/pic400_01.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/pic400_02.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/pic400_03.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/pic400_04.jpg" alt="" /></a></li>
+			</ul>
+		</div>
+		<div id="ifocus_opdiv"></div>
+		<div id="ifocus_tx">
+			<ul>
+				<li class="current">焦点图 a1</li>
+				<li class="normal">焦点图 b2</li>
+				<li class="normal"> 焦点图 c3</li>
+				<li class="normal">焦点图 d4</li>
+			</ul>
+		</div>
+	</div>
+	<div id="ifocus_btn">
+		<ul>
+			<li class="current"><img src="images/btn_01.jpg" alt="" /></li>
+			<li class="normal"><img src="images/btn_02.jpg" alt="" /></li>
+			<li class="normal"><img src="images/btn_03.jpg" alt="" /></li>
+			<li class="normal"><img src="images/btn_04.jpg" alt="" /></li>
+		</ul>
+	</div>
+</div>
+<h4>Step 1、script部分 <a href="Scripts/jq_ifocus.js">jq_ifocus.js</a></h4>
+<textarea name="" cols="160" rows="3">
+<script type="text/javascript" src="Scripts/jq_ifocus.js"></script>
+</textarea>
+<h4>Step 1、CSS部分</h4>
+<textarea name="" cols="160" rows="18">
+#ifocus { width:525px; height:245px; border:1px solid #DEDEDE; background:#F8F8F8; }
+#ifocus_pic { display:inline; position:relative; float:left; width:410px; height:225px; overflow:hidden; margin:10px 0 0 10px; }
+#ifocus_piclist { position:absolute; }
+#ifocus_piclist li { width:410px; height:225px; overflow:hidden; }
+#ifocus_piclist img { width:410px; height:225px; }
+#ifocus_btn { display:inline; float:right; width:91px; margin:9px 9px 0 0; }
+#ifocus_btn li { width:91px; height:57px; cursor:pointer; opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50); }
+#ifocus_btn img { width:75px; height:45px; margin:7px 0 0 11px; }
+#ifocus_btn .current { background: url(images/ifocus_btn_bg.gif) no-repeat; opacity:1; -moz-opacity:1; filter:alpha(opacity=100); }
+#ifocus_opdiv { position:absolute; left:0; bottom:0; width:410px; height:35px; background:#000; opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50); }
+#ifocus_tx { position:absolute; left:8px; bottom:8px; color:#FFF; }
+#ifocus_tx .normal { display:none; }
+</textarea>
+<h4>Step 2、HTML部分</h4>
+<textarea name="" cols="160" rows="24">
+<div id="ifocus">
+	<div id="ifocus_pic">
+		<div id="ifocus_piclist" style="left:0; top:0;">
+			<ul>
+				<li><a href="#" target="_blank"><img src="images/pic400_01.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/pic400_02.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/pic400_03.jpg" alt="" /></a></li>
+				<li><a href="#" target="_blank"><img src="images/pic400_04.jpg" alt="" /></a></li>
+			</ul>
+		</div>
+		<div id="ifocus_opdiv"></div>
+		<div id="ifocus_tx">
+			<ul>
+				<li class="current">焦点图 a1</li>
+				<li class="normal">焦点图 b2</li>
+				<li class="normal"> 焦点图 c3</li>
+				<li class="normal">焦点图 d4</li>
+			</ul>
+		</div>
+	</div>
+	<div id="ifocus_btn">
+		<ul>
+			<li class="current"><img src="images/btn_01.jpg" alt="" /></li>
+			<li class="normal"><img src="images/btn_02.jpg" alt="" /></li>
+			<li class="normal"><img src="images/btn_03.jpg" alt="" /></li>
+			<li class="normal"><img src="images/btn_04.jpg" alt="" /></li>
+		</ul>
+	</div>
+</div>
+</textarea>
+</div>
+
+</body>
+</html>

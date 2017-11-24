@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>弹出框</title>
+</head>
+<script type="text/javascript" src="Scripts/iepngfix_tilebg.js"></script>
+<script type="text/javascript" src="Scripts/jquery.min.js"></script>
+<script language="javascript">
+function showDbg(){
+		$("#fade").show();
+	}
+	
+	function hideDbg(){
+		$("#fade").hide();
+	}
+	
+	function showDialog(did){
+		if($("#"+did+":hidden")){
+			$("#"+did).show();	
+		}
+	}
+	
+	function hideDialog(did){
+		if($("#"+did+":visible")){
+			$("#"+did).hide();	
+		}
+	}
+
+</script>
+<style type="text/css">
+ img, div, input { behavior: url("Scripts/iepngfix.htc") }
+ 
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+textarea{ background:#e5e5e5; border:2px solid #ccc; }
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+.w{ width:960px; margin:0 auto;}
+.fade {display:block; background: #000; position: fixed; left: 0; top: 0; z-index: 10; width: 100%; height: 100%; filter: Alpha(opacity=60);-moz-opacity: 0.6;-khtml-opacity: 0.5;opacity: 0.5; z-index: 9999; _height:1000px;}
+.popup01{width:450px; height:450px; font-size: 12px; background:url(images/tanc_bg.png) center top no-repeat; position: fixed; _position: absolute; top: 50%; left: 50%; z-index: 99999; margin-top:-200px; margin-left:-194px;
+clear:both; _top:expression(eval(document.compatMode &&
+     document.compatMode=='CSS1Compat') ?
+     documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+     document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+     _margin-top:0
+}
+.close { width:11px; height:11px; float:right; padding:130px 40px 0 0;}
+.but { width:300px; margin:0 auto; clear:both; text-align:center; padding-top:130px; }
+.but a { background:url(../images/black.gif) center no-repeat;}
+</style>
+
+<body>
+<div class="w">
+<!--弹出-->
+<h1>弹出滤镜</h1>
+<div style="font-size:16px; color:#09F; font-weight:bold; margin-bottom:20px;"><a href="#this" onclick="showDbg();showDialog('join');" style="color:#3FA600; font-size:14px; font-weight:blod">点击弹出</a></div>
+
+<textarea name="" cols="155" rows="45">
+/* ======================= png透明js ====================== */
+<script type="text/javascript" src="Scripts/iepngfix_tilebg.js"></script> /*png透明*/
+
+/* ======================= css ====================== */
+ img, div, input { behavior: url("Scripts/iepngfix.htc") } /*png透明 css*/
+
+.fade {display:block; background: #000; position: fixed; left: 0; top: 0; z-index: 10; width: 100%; height: 100%; filter: Alpha(opacity=60);-moz-opacity: 0.6;-khtml-opacity: 0.5;opacity: 0.5; z-index: 9999; _height:1000px;}
+.popup01{width:450px; height:450px; font-size: 12px; background:url(images/tanc_bg.png) center top no-repeat; position: fixed; _position: absolute; top: 50%; left: 50%; z-index: 99999; margin-top:-200px; margin-left:-194px;
+clear:both;}
+.close { width:11px; height:11px; float:right; padding:130px 40px 0 0;}
+.but { width:300px; margin:0 auto; clear:both; text-align:center; padding-top:130px; }
+.but a { background:url(../images/black.gif) center no-repeat;}
+
+/* ======================= html ====================== */
+ 
+===】】放入最外层div下面【【===
+
+<!--弹出-->
+<div id="fade" class="fade" style="display:none"></div>
+<div class="popup01" id="join" style="display:none">
+    <div class="close">
+        <a href="#this" onclick="hideDbg();hideDialog('join');"><img src="images/tanc_x.gif" width="11" height="11" /></a>
+    </div>
+    <div class="but">
+        <a href="#"><img src="images/tanc_btn.jpg" width="99" height="26" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><img src="images/tanc_tuijian.jpg" width="163" height="26" /></a>
+    </div>
+</div>
+
+<script type="text/javascript" src="Scripts/jquery.min.js"></script>
+<script language="javascript">
+function showDbg(){
+		$("#fade").show();
+	}
+	
+	function hideDbg(){
+		$("#fade").hide();
+	}
+	
+	function showDialog(did){
+		if($("#"+did+":hidden")){
+			$("#"+did).show();	
+		}
+	}
+	
+	function hideDialog(did){
+		if($("#"+did+":visible")){
+			$("#"+did).hide();	
+		}
+	}
+
+</script>
+</textarea>
+<div style="text-align:right; font-size:16px; padding:10px; font-size:12px;"><a href="#" style="color:#6AC334;">回到顶部</a></div>
+</div>
+<div id="fade" class="fade" style="display:none"></div>
+<div class="popup01" id="join" style="display:none">
+    <div class="close"><a href="#this" onclick="hideDbg();hideDialog('join');"><img src="images/tanc_x.gif" width="11" height="11" /></a></div>
+    <div class="but"><a href="#"><img src="images/tanc_btn.jpg" width="99" height="26" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/tanc_tuijian.jpg" width="163" height="26" /></a></div>
+</div>
+</body>
+</html>

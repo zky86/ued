@@ -1,0 +1,61 @@
+/*<script language="javasvript"></script>*/ var __poco_login_module_str = '<'+'iframe name=\'login_act_frame\' style=\'display:none\'><'+'/iframe>\n<'+'form name=\'poco_v2_login_form\' method=\'post\' onSubmit=\'return ValidateForm()\' id=\'poco_v2_login_form\' action=\'/module_common/login/poco_login_act.php\' target=\'login_act_frame\' />\n\n<'+'input type=\'hidden\' name=\'locate\' value=\'http://my.poco.cn/manage/\'>\n<'+'input type=\'hidden\' name=\'warm_tag\' value=\'1\'>\n<'+'input type=\'hidden\' name=\'CookieDate\' value=\'1\'>\n<'+'input name="act" type="hidden" id="act" value="login" />\n<'+'ul class="login_ul">\n  <'+'li style="position:relative;" class="login_li">\n    <'+'label for="user_name">登录帐号：<'+'/label>\n    <'+'input name="user_name" type="text" class="input120 inputbg" id="__user_name_loginiframe" onfocus=\'this.select()\' value="POCO号码"  />\n    <'+'input type=\'hidden\' name=\'login_type\' id=\'__login_type_loginiframe\'  value=\'1\' />\n    <'+'div class="selector_icon"  onclick="show_submenu(\'__DropDown_loginiframe\',this)"><'+'/div>\n    <'+'div class="dropdown" style="top:25px; left:66px; display:none; width:126px;" id="__DropDown_loginiframe">\n      <'+'ul>\n        <'+'li><'+'a href="#this" onclick="login_type_selector(0, \'用户名\');">用户名<'+'/a><'+'/li>\n        <'+'li><'+'a href="#this" onclick="login_type_selector(1, \'POCO号码\');">POCO号码<'+'/a><'+'/li>\n        <'+'li><'+'a href="#this" onclick="login_type_selector(2, \'QQ号码\');">QQ号码<'+'/a><'+'/li>\n        <'+'li><'+'a href="#this" onclick="login_type_selector(3, \'Email\');">Email<'+'/a><'+'/li>\n      <'+'/ul>\n      <'+'!--<'+'iframe class="dropdown_iframe"><'+'/iframe>-->\n    <'+'/div>\n  <'+'/li>\n  <'+'li class="login_li">\n    <'+'label for="psw">　　密码：<'+'/label>\n    <'+'input id="__pass_word_loginiframe" name=\'pass_word\'  type="password" class="input120 inputbg"  />\n  <'+'/li>\n  <'+'li class="btu">\n    <'+'input id=\'chkbox_remember_me\' type=\'checkbox\' onclick=\'document.getElementById("dont_remember_login_state").value=this.checked ? "0": "1";\' value=\'\'/>\n    <'+'span>下次自动登录<'+'/span>\n    <'+'input type=\'hidden\' name=\'dont_remember_login_state\' id=\'dont_remember_login_state\' value=\'1\' />\n  <'+'/li>\n  <'+'li class="btu2">\n    <'+'input name="sbmit" type="submit" value="登 录" id="" class="button" />\n    <'+'a href="http://account.poco.cn/retrieve/" class="psw_link">找回密码<'+'/a><'+'/li>\n<'+'/ul>\n<'+'/form>\n<'+'div class="btu_fl fb f14"><'+'a href=" http://www1.poco.cn/reg1/reg.php?locate=http%3A%2F%2Fmy.poco.cn%2Fv2%2F%3F_admin_login">注册您的<'+'span class="f13 fn_ta">MYPOCO空间<'+'/span><'+'/a><'+'/div>\n';document.getElementById('space_login_iframe_js').innerHTML=__poco_login_module_str
+function login_type_selector(login_type, type_name)
+{
+	document.getElementById('__DropDown_loginiframe').style.display='none';
+	document.getElementById('__user_name_loginiframe').value=type_name;
+	document.getElementById('__login_type_loginiframe').value=login_type;
+}
+
+function ValidateForm() {
+	var user_nameValue = document.getElementById("__user_name_loginiframe").value
+	var pass_wordValue	=	document.getElementById('__pass_word_loginiframe').value;
+	var login_type		=	document.getElementById('__login_type_loginiframe').value;
+
+	if(user_nameValue==""||pass_wordValue=="")
+	{
+		alert("在继续进行之前请先输入账号和密码！");
+		return false;
+	}
+	else if(login_type==2)
+	{
+		if(isNaN(user_nameValue))
+		{
+			alert("请输入数字的QQ号码!");
+			return false;
+		}
+	}
+	else if(login_type==1)
+	{
+		if(isNaN(user_nameValue))
+		{
+			alert("请输入数字的POCO号码!");
+			return false;
+		}
+	}
+	else if(login_type==3)
+	{
+		if(!check_email_format(user_nameValue))
+		{
+			alert("请输入正确的Email!");
+			return false;
+		}
+	}
+	
+	return true;
+}
+function check_email_format(email)
+{
+	if(!email){return false;}
+	var re=/^\S+(\.?(\S+\.)*\S+)?@(([a-z0-9]+-*)?[a-z0-9]+\.)+[a-z]{2,6}.?$/i;
+	return re.test(email);
+}
+/*统计函数*/
+function __user_login_link_click(id)
+{ 
+	var now=new Date(); 
+	var number = now.getSeconds();
+
+	var tarstr="http://ad1.adpolestar.net/ADPolestar/lgs/way/;er=&mv=710&pu=cav&ad="+id+"?http://www.poco.cn";
+	var str="var picSdv"+number+"=new Image();picSdv"+number+".src='"+tarstr+"';"; 
+	eval(str);
+}

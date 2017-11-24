@@ -1,0 +1,95 @@
+/*  
+Theme Name:poco ued theme
+Author URI:poco.cn
+Description: poco
+*/
+
+/** 清除内外边距 **/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote, /* structural elements 结构元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form,
+fieldset,
+legend,
+button,
+input,
+textarea, /* form elements 表单元素 */
+th,
+td, /* table elements 表格元素 */
+img/* img elements 图片元素 */ { border:medium none; margin: 0; padding: 0; }
+/** 设置默认字体 **/
+body,
+button,
+input,
+select,
+textarea { font:normal 12px "宋体"; }
+input,
+select,
+form img,
+button { vertical-align:middle; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-size: 100%; }
+em { font-style:normal; }
+/** 重置列表元素 **/
+ul,
+ol { list-style: none; }
+/** 重置超链接元素 **/
+a { text-decoration: none; color:#333333; }
+a:hover { text-decoration: underline; }
+/** 重置图片元素 **/
+img { border:none; }
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+/** 清楚浮动 **/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.clear { clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
+.clearHidden{ clear:both; overflow:hidden; zoom:1}
+/*** font ***/
+.word_break { white-space:normal; word-wrap:break-word; word-break:break-all; }
+.f14 { font-size:14px; }
+.fb { font-weight:bold; }
+.lh18 { line-height:18px; }
+.lh24 { line-height:24px; }
+/** position **/
+.relative { position:relative; }
+.fr { float:right; }
+.fl { float:left; }
+.pd_t5 { padding-top:5px; }
+.pd_t10 { padding-top:10px; }
+.pd_l10 { padding-left:10px; }
+.pd_l15 { padding-left:15px; }
+.hidden { display:block; font-size:0; height:0; overflow:hidden; }
+.text_align{ text-align:center;}
+/* ====================== 重置结束 ===================== */
+
+.picSlider{width:373px; overflow:hidden;background:url(../images/picbg.jpg) no-repeat}
+.picSlider .contentPicWrap{width:282px;height:177px;overflow:hidden;margin-left:45px;}
+.picSlider .picwrap{padding:20px 0px 0 0px;height:156px;width:1350px;} /* 1350为图片宽度，如果换其他图片，请改为其他图片宽度 */
+.picSlider .slider{position:relative; height:12px;  float:left; width:353px;cursor:pointer;background:url(../images/bar.jpg) no-repeat; margin:70px 0 0 11px;display:inline;}
+.picSlider .slider_left, .slider_right{ background:url(../images/icon.gif) no-repeat; height:19px; width:28px; float:left; cursor:pointer;display: none}
+.picSlider .slider_left{background-position:left top;}
+.picSlider .slider_right{background-position:right top;}
+.picSlider .bar{ height:20px; width:18px; background:url(../images/btn.jpg ) no-repeat;margin-top:-7px;}
+.picSlider .bar_left, .bar_right{background:url(../images/lr.gif) no-repeat;height:15px; _font-size:0; width:6px; position:absolute; top:0px; display: none}
+.picSlider .bar_left{background-position:left top;left:-6px;}
+.picSlider .bar_right{background-position:right top;right:-6px;}

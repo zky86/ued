@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>图片上下张切换效果</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="css/zt.css" media="all" />
+<style>
+
+.contentwrap {width: 1000px;margin: 0 auto; line-height:22px; font-size:12px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; margin-bottom:25px}
+
+</style>
+
+<body>
+<div class="contentwrap">
+<!--弹出-->
+<h1>图片上下张切换效果</h1>
+
+<ul id="photoView">
+  <li id="prev" title="查看上一张" onclick="viewPhoto('prev');"></li>
+  <li id="next" title="查看下一张" onclick="viewPhoto('next');"></li>
+  <li><img id="img" src="images/pic1.jpg"  /></li>
+</ul>
+
+<div id="msg">当前图片：photo/pic1.jpg</div>
+
+
+<br />
+<br />
+<br />
+
+
+<div class="f14">Tips:上下翻页图片</div>
+<br />
+
+<textarea name="" cols="155" rows="25">
+
+/* =======================  html  ====================== */
+
+<ul id="photoView">
+  <li id="prev" title="查看上一张" onclick="viewPhoto('prev');"></li>
+  <li id="next" title="查看下一张" onclick="viewPhoto('next');"></li>
+  <li><img id="img" src="images/pic1.jpg"  /></li>
+</ul>
+
+<div id="msg">当前图片：photo/pic1.jpg</div>
+
+
+
+/* =======================  css  ====================== */
+
+#photoView {width:400px; height:300px;position:relative;}
+#photoView li{ position:absolute; z-index:1001; height:300px; }
+#photoView #prev,#photoView #next { width:200px; background:url(../images/bg.gif) repeat; cursor:url(../images/prev.cur),auto; left:0px; top:0px; z-index:1002; *cursor:url(images/prev.cur),auto;}
+#photoView #next { cursor:url(../images/next.cur), auto;*cursor:url(images/next.cur), auto; left:200px; z-index:1003; }
+
+
+
+</textarea>
+
+
+
+
+</div>
+
+
+</body>
+</html>

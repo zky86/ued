@@ -1,0 +1,101 @@
+/*  
+Theme Name:poco ued theme
+Author URI:470416890@qq.com
+Author:HouzQ
+Description: poco
+*/
+/* ======================= 样式重置 ====================== */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 12px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+table{border-collapse:collapse;border-spacing:0}
+.clearfix:afte{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:block}
+.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.clear{clear:both; display:block; font-size:0px;height:0px;line-height:0px;overflow:hidden}
+.f14{font-size:14px}
+.fb{font-weight:bold}
+.relative{position:relative}
+.fr{float:right}
+.fl{float:left}
+.hidden{display:block;font-size:0;height:0;overflow:hidden}
+.text_align{text-align:center}
+/* ======================= 重置结束 ====================== */
+
+.w {font-size: 14px; line-height: 24px; margin: 0 auto;width: 998px; overflow:hidden;}
+h1 { border-bottom: 1px solid #CCCCCC; color: #3FA600;font-family: "微软雅黑"; font-size: 26px;font-weight: bold; margin-bottom: 20px; padding: 15px 0;text-align: center;}
+
+body{ background:#fff}
+textarea{ margin-top:10px;}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+h1 a{color:#69F;}
+a{ color:#69F; font-size:14px; font-weight:bold;}
+.w{ width:998px; margin:0 auto;}
+.w p{ margin-top:10px;}
+.w pre { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px}
+.w h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+.link a{ text-decoration:underline;}
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; }
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+
+
+#Box1, #Box2, #Box3{ margin-bottom:20px;}
+/* ======================= #Box1 ====================== */
+#Box1 .scrollbox{overflow:hidden;	width: 840px; height: 180px;  }
+#Box1 .scrollbox .left, /* 此处注意 */
+#Box1 .scrollbox .right{ float: left; cursor: pointer; display:inline;  }
+#Box1 .scrollbox .left{ margin:35px 20px 0 10px;}
+#Box1 .scrollbox .right{margin:35px 0 0 20px;}
+#Box1 .scrollbox .scrollList{ float: left; display: inline; overflow: hidden;}
+#Box1 .scrollbox .pic{	width: 165px; height: 165px; margin-top: 2px;   float:left ; padding-right:20px;}
+
+
+/* ======================= #Box2 ====================== */
+#Box2 .scroUpload{ width:748px; height:430px; overflow:hidden; position:relative; z-index:1}
+#Box2 .scroUpload .leftbg{background: url(../images/ty_30.png) no-repeat; width:28px; height:72px; position:absolute; left:10px; top:180px;_background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/ty_30.png");}
+#Box2 .scroUpload .left_btn{width:28px; height:72px; position:absolute; left:10px; top:180px; z-index:999; cursor:pointer}
+#Box2 .scroUpload .rightbg{background: url(../images/ty_31.png) no-repeat; width:28px; height:72px; position:absolute; left:705px; top:180px;_background:none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images/ty_31.png");}
+#Box2 .scroUpload .right_btn{width:28px; height:72px; position:absolute; left:705px; top:180px; z-index:999; cursor:pointer}
+#Box2 .scroUpload .photoMax{  background: url(../images/ty_11.jpg) no-repeat; width:748px; height:430px; overflow:hidden; float:left; display:inline;}
+#Box2 .scroUpload .photoMax img{ padding:4px;}
+
+/* ======================= #Box3 ====================== */
+#Box3 .scroUpload { width:674px; height:126px;  overflow: hidden; position:relative}
+#Box3 .scroUpload .p22{	 line-height: 22px; text-align: left;}
+#Box3 .scroUpload .scrollbox{overflow:hidden;	width: 660px; height: 126px; margin: 0 auto; text-align: left; margin-top:0px}
+#Box3 .scroUpload .left{width: 29px; height: 72px; float: left; background:url(../images/xh_left.jpg) no-repeat; cursor: pointer; margin-top:24px; display:inline; }
+#Box3 .scroUpload .scrollList{	 float: left; display: inline; overflow: hidden; height:130px; width:605px;}
+#Box3 .scroUpload .right{	width: 35px; height: 72px; float: left; background: url(../images/xh_right.jpg) no-repeat; cursor: pointer;position:absolute; top:24px; left:640px; z-index:10 }
+#Box3 .scroUpload .scrollbox .pic .photobox {width:106; height:106; overflow:hidden; text-align:center; vertical-align:middle}
+#Box3 .scroUpload .scrollbox .pic .btn { text-align:center; margin-top:2px; overflow:hidden}
+#Box3 .scroUpload .pic{	width: 110px; height: 130px; text-align:center;   float:left; margin:2px 5px 0; }
+
+
+/* ======================= #Box4 ====================== */
+#Box4 .scroUpload { width:920px; height:180px; margin-top:20px;}
+#Box4 .scroUpload .scrollbox{overflow:hidden;	width: 920px; height: 180px; }
+#Box4 .scroUpload .left, #Box4 .scroUpload .right{ width: 30px; height: 86px; float: left; display:inline; cursor: pointer;}
+#Box4 .scroUpload .left{background: url(../images/ty_8.jpg) no-repeat;  margin:35px 20px 0 10px; }
+#Box4 .scroUpload .right{ background: url(../images/ty_9.jpg) no-repeat;  margin:35px 0 0 15px}
+#Box4 .scroUpload .scrollList{ float: left; display: inline; overflow: hidden; }
+#Box4 .scroUpload .pic{	width: 169px; height: 169px; margin-top: 2px;   float:left ;background: url(../images/ty_10.jpg) no-repeat; margin-right:20px}
+#Box4 .scroUpload .scrollbox .pic .photobox { padding:2px;}
+
+
+.srowrapbox{ }
+.scro{ padding:24px 0 0 2px;}
+.scro .pre{ width:17px; height:46px; padding:25px 9px 0 0; cursor:pointer}
+.scro .next{width:17px; height:46px; padding:25px 0 0 9px; cursor:pointer}
+.scro .show{ width:845px; overflow:hidden; height:125px; position:relative;}
+.scro .dbg{   width:156px; height:89px; margin:2px;}
+.scro .dbg:hover{ border:2px solid #0096db; margin:0px;}
+.dej_bigpic{ width:650px;  height:614px; margin:0 auto; background:url(../images/img_ll_5.gif) center 156px no-repeat;}
+
+

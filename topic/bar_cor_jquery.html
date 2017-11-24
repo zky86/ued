@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>滚动条颜色（兼容主流浏览器）</title>
+
+
+
+<link rel="stylesheet" type="text/css" media="all" href="css/jScrollPane.css" />
+
+
+<style>
+*{ padding:0; margin:0}
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+ textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; }
+ .des{ padding:15px 0}
+.top{ padding:30px 0}
+
+#pane1 {width:350px; height:250px;}
+
+</style>
+
+
+<script type="text/javascript" src="Scripts/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="Scripts/jScrollPane.js"></script>
+
+<script type="text/javascript">
+$(function(){
+$('#pane1').jScrollPane({scrollbarWidth:15, scrollbarMargin:10}); /* scrollbarWidth修改滚动条的宽度 */
+});
+</script>
+
+</head>
+
+<body>
+
+<div class="content">
+
+	<h1>滚动条颜色（兼容主流浏览器）</h1>
+	
+		<p><span  style="color:red">在本地第一次预览，请刷新一次再看效果</span>。</p>
+			<br />
+	
+	<div id="pane1" class="scroll-pane">
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+</div>
+	
+
+
+
+	<p class="des">Tips：id="pane1" ，此为滚动条颜色div的id，有多个div需要变颜色的时候，id依次修改为，id="pane2" ，id="pane3" ...... css，js也要对应修改。&nbsp;&nbsp;$drag.css({'height':？+'px'}, 此处？是手动设置滚动条拖动位置的高度。</p>
+	<P>需要引入两个js，<a href="Scripts/jquery-1.2.6.min.js">jquery-1.2.6.min.js</a> 与 <a href="Scripts/jScrollPane.js">jScrollPane.js</a>，一个jScrollPane.css，<a href="css/" target="_blank">点击查看</a></P>
+	
+	
+<textarea name="" cols="120" rows="35">
+
+
+/* ======================= html ====================== */
+
+<div id="pane1" class="scroll-pane">
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+    <p>测试内容测试内容</p>
+</div>
+
+
+/* ======================= css ====================== */
+		
+#pane1 {width:350px; height:250px;}
+
+</textarea>
+
+
+<textarea name="" cols="120" rows="18">
+
+/* ======================= 需要引入的css与js ，方法====================== */
+
+<link rel="stylesheet" type="text/css" media="all" href="css/jScrollPane.css" />
+<script type="text/javascript" src="Scripts/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="Scripts/jScrollPane.js"></script>
+
+<script type="text/javascript">
+$(function(){
+$('#pane1').jScrollPane({scrollbarWidth:15, scrollbarMargin:10}); /* scrollbarWidth修改滚动条的宽度 */
+});
+</script>
+
+
+</textarea>
+
+<p class="top"><a href="#">返回顶部</a></p>
+</div>
+
+
+
+
+</body>
+</html>

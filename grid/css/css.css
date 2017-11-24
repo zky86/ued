@@ -1,0 +1,4 @@
+.wrapBox{}
+.wrapBox .topPic{ width:315px; height:8px; overflow:hidden; background:url(../images/topPic.jpg) no-repeat}
+.wrapBox .centerPic{ width:315px;background:url(../images/centerPic.jpg) repeat-y}
+.wrapBox .footPic{ width:315px; height:8px; overflow:hidden; background:url(../images/footPic.jpg) no-repeat}

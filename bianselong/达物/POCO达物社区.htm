@@ -1,0 +1,654 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<title>POCO达物社区－POCO.CN 我的照片 我的空间</title>
+<meta name="Keywords" content="">
+<meta name="Description" content=" ">
+<link rel="stylesheet" type="text/css" href="css/pcsp.css">
+<link rel="stylesheet" type="text/css" href="css/box.css">
+<script type="text/javascript" language="javascript" src="images/mootools-1.js"></script>
+<script type="text/javascript" language="javascript" src="images/poco_page_switch_mt.js"></script>
+<script type="text/javascript" language="javascript" src="images/poco_common.js"></script>
+<script type="text/javascript">
+var poco_page_switch;
+window.addEvent('domready', function(){						 
+	poco_page_switch = new poco_page_switch(
+	{
+		dataUrl : 'module/index_get_today_special.js.php',
+		containerID : 'J_today_special_container',
+		cacheSpace : 'J_today_special_container_space',	
+		pageClass : 'today_special_group',
+		pageType : 'ul',
+		moveDirection : 'left',
+		index : 1,
+		showCount:1,
+		pageCount:117,
+		shiftNum:0,
+		pars:'',
+		debug:false,
+		preload : true,
+		preloadCount:1,
+		keyboard : false,
+		onInitComplete : function(index)
+		{
+			$('J_today_special_pre_page').addEvent('click', function(){poco_page_switch.prePage()});
+			$('J_today_special_next_page').addEvent('click', function(){poco_page_switch.nextPage()});
+		}
+		
+	});
+	
+	var show_pop_cookie = readCookie('show_box_index_pop_div');
+	if(! (login_id>0 || show_pop_cookie=='close'))
+	{
+		$('top_pop').style.display='';
+	}
+});
+
+function close_box_index_pop_div()
+{
+	$('top_pop').style.display = 'none';
+	if ($('box_index_pop_div').checked==true)
+	{
+		writeCookie('show_box_index_pop_div', 'close', 31536000, '.poco.cn');
+	}
+}
+</script>
+<meta name="google-site-verification" content="Qq6J4FLqw0CS4q7gb6TS7Wc8FbcxHBJr_HM7P9Cw9p8"></head><body>
+<!-- 广告 开始 -->
+<script language="JavaScript" src="images/a_0_js.js"></script>
+<!-- 广告 结束 -->
+<div style="display: none;">
+<script language="JavaScript">
+<!--
+if(Cookie.read('_poco_test2_'))
+{
+	document.write('<script src="http://s17.cnzz.com/stat.php?id=2421859&web_id=2421859" language="JavaScript"><\/script>');
+}
+
+document.write('<script src="http://s17.cnzz.com/stat.php?id=2433503&web_id=2433503" language="JavaScript"><\/script>');
+//-->
+</script><script src="images/stat.htm" language="JavaScript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=2433503" target="_blank" title="站长统计">站长统计</a><img src="images/stat.gif" width="0" border="0" height="0">
+</div>
+<!--header-->
+<!-- log start -->
+<script language="javascript">
+__poco_site_stat_request_filename = 'box.css'
+</script>
+<script type="text/javascript" src="images/site_stat_code.js"></script><img src="images/box.htm" style="position: absolute; top: -999px;">
+<script language="javascript">
+__poco_site_stat_request_filename='box_%CA%D7%D2%B3.css'
+</script>
+<script type="text/javascript" src="images/site_stat_code.js"></script><img src="images/box_.htm" style="position: absolute; top: -999px;">
+<!-- log end; -->
+
+<!--google verification-->
+
+<!--google verification end-->
+<!-- 系统维护公告 -->
+<!-- <script language="javascript" src="http://my.poco.cn/js/sys_affiche.js?ver=20110106"></script> -->
+<!-- 系统维护公告 end -->
+
+<div class="bg">
+<!--shadow_top-->
+<div class="shadow_header_top"><div></div></div>
+<!--shadow_top end-->
+<!--header-->
+<div id="header">
+    <div class="header_top_bar clearfix">
+        <h1 class="poco_logo"><a href="http://www.poco.cn/" title="POCO 我的照片 我的空间">POCO 我的照片 我的空间</a></h1>
+        <div class="header_top_nav">
+        <span id="header_login_info" class="header_login_info"></span>
+        <a href="http://www1.poco.cn/reg1/reg.php?referer=http%3A%2F%2Fbox.poco.cn%2Findex.php%3F">免费注册</a>/<a href="http://www1.poco.cn/login.php?locate=http%3A%2F%2Fbox.poco.cn%2Findex.php%3F">登录</a> |  <a href="http://help.poco.cn/" target="_blank">新手指南</a> |  
+		<a href="http://www.poco.cn/" target="_blank"><span class="fn_ta f11">POCO</span>首页</a> |  
+        <a href="javascript:void(0)" onclick="setHome(this,window.location)">设为首页</a> |  
+		<a href="javascript:addFavorite('POCO%20%E6%88%91%E7%9A%84%E7%85%A7%E7%89%87%20%E6%88%91%E7%9A%84%E7%A9%BA%E9%97%B4')">加入收藏</a> |
+		<a href="http://phone.poco.cn/" target="_blank">手机<span class="fn_ta f11">POCO</span></a></div>
+    </div>
+    <div class="nav_bar">
+    	<div class="clearfix">
+            <ul class="mainnav clearfix">
+				<li class="current_nav self relative" style="z-index: 999;">达物<span class="channel">[<font onclick="show_submenu('channels_switch',this);" style="cursor: pointer;">切换社区</font>]</span><div class="dropdown" id="channels_switch" style="display: none; top: 30px; left: 44px;">
+              				<ul><li><a href="http://photo.poco.cn/">摄影</a></li><li><a href="http://food.poco.cn/">美食</a></li><li><a href="http://travel.poco.cn/">旅游</a></li><li><a href="http://pet.poco.cn/">宠物</a></li><li><a href="http://box.poco.cn/">达物</a></li><li><a href="http://mobile.poco.cn/">手机拍客</a></li><li><a href="http://auto.poco.cn/">汽车</a></li><li><a href="http://lady.poco.cn/">女性</a></li><li><a href="http://model.poco.cn/">模特</a></li><li><a href="http://movie.poco.cn/">电影</a></li><li><a href="http://www.poco.cn/">POCO首页</a></li></ul>		
+              				<iframe class="dropdown_iframe"></iframe>
+            				</div></li>                <li><a href="http://my.poco.cn/" title="个人空间">个人空间</a></li>
+                <li><a href="http://read.poco.cn/" title="电子杂志">电子杂志</a></li>
+                <li><a href="http://event.poco.cn/" title="活动">活动</a></li>
+                <li class="hour24"><a href="http://24.poco.cn/" title="24小时">24小时</a></li>
+            </ul>
+    		<div class="header_search">
+				                <form id="form_header_search" name="form_header_search" action="http://my.poco.cn/tags/tag_search.php" method="get" target="_blank" onsubmit="return header_search_check();">
+                	<input id="J_HeaderTsIDs" name="ts_ids" value="图片" type="hidden">
+					
+					<input name="tag_search_referer_source" value="BOX_TOP_SEARCH" type="hidden">
+                	<input value="点这里搜索429404916张照片" id="J_Q" name="q" onfocus="header_poco_input_for_onmouseover(this)" class="input_text" type="text">
+                    <input name="header_search_type" id="header_search_type" class="header_search_type" onclick="show_submenu('search_types', this);" value="图片" readonly="readonly" type="text">
+                    <input value="搜 索" class="button" type="submit">
+                    <div class="dropdown" style="top: 27px; left: 225px; width: 76px; display: none; z-index: 900;" id="search_types">
+                		<ul>
+                    		<li><a href="#this" onclick="header_search_option(0, '图片'); ">图片</a></li>
+                        	<li><a href="#this" onclick="header_search_option(1, '博客');">博客</a></li>
+                        	<li><a href="#this" onclick="header_search_option(3, '摄影');">摄影</a></li>
+                        	<li><a href="#this" onclick="header_search_option(7, '美食');">美食</a></li>
+                        	<li><a href="#this" onclick="header_search_option(6, '美食diy');">美食diy</a></li>
+                        	<li><a href="#this" onclick="header_search_option(44, '旅游');">旅游</a></li>
+                        	<li><a href="#this" onclick="header_search_option(104, '宠物');">宠物</a></li>
+                        	<li><a href="#this" onclick="header_search_option(8, '人');">人</a></li>
+                        	<li><a href="#this" onclick="header_search_option(14, '活动');">活动</a></li>
+							<li><a href="#this" onclick="header_search_option(52, '专题');">专题</a></li>
+                   	 	</ul>
+                   		<iframe class="dropdown_iframe"></iframe>
+                	</div>
+                </form>
+				            </div>
+        </div>
+        <div class="subnav_bar clearfix">
+			<ul class="subnav clearfix"><li class=" current_subnav"><a href="http://box.poco.cn/" title="首页">首页</a></li><li class=" normal_nav"><a href="http://box.poco.cn/bling_list.php" title="达物分享">达物分享</a></li><li class=" normal_nav"><a href="http://box.poco.cn/bling_topic.php" title="新奇达物">新奇达物</a></li><li class=" normal_nav"><a href="http://box.poco.cn/bling_pocoers.php" title="明星达人">明星达人</a></li><li class=" normal_nav"><a href="http://bbs.poco.cn/forum.htx&amp;fid=57#c10" title="潮流前线">潮流前线</a></li><li class="  subnav_last normal_nav"><a href="http://box.poco.cn/bling_group_discuss.php" title="讨论区">讨论区</a></li></ul><ul class="mylink"><li><a href="http://my.poco.cn/manage/?stat_request_channel=231741709" title="我的空间" target="_blank">我的空间</a></li><li><a href="http://my.poco.cn/blog_v2/blog_add.php?publish_type=box&amp;stat_request_channel=3886112310" title="我要发表" target="_blank">我要发表</a></li></ul>        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+/* 下拉 */
+function header_search_option(id, text){
+	document.getElementById('search_types').style.display='none';
+	document.getElementById("J_HeaderTsIDs").value = id;
+	document.getElementById('header_search_type').value = text;
+}
+
+/* 设为首页 */
+function setHome(obj, url){
+	try{
+		obj.style.behavior = 'url(#default#homepage)';obj.setHomePage(url);
+	}catch(e){
+		if(window.netscape) {
+			try {
+				netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");  
+			}catch (e){ 
+				alert('抱歉！您的浏览器不支持直接设为首页。请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为“true”，点击“加入收藏”后忽略安全提示，即可设置成功。');  
+			}
+			var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+			prefs.setCharPref('browser.startup.homepage', url);
+		}
+	}
+}
+/* 加入收藏 */
+function addFavorite(text){
+	if (window.ActiveXObject){
+		window.external.addFavorite("" + window.location + "", text);
+	}else{
+		window.sidebar.addPanel(text, window.location, "");
+	}
+}
+
+function channels_switch_module_show(is_show)
+{
+	if(is_show)
+	{
+		document.getElementById('channels_switch').style.display=is_show;
+	}
+	else
+	{
+		if(document.getElementById('channels_switch').style.display=='none')
+		{
+			document.getElementById('channels_switch').style.display='block';
+		}
+		else
+		{
+			document.getElementById('channels_switch').style.display='none';
+		}
+	}
+}
+
+var lastTarget = null;
+var target = null;
+var timer = 0;
+function show_submenu(id, obj){
+	clearTimeout(timer);
+	if (lastTarget) lastTarget.style.display = "none";
+	target = document.getElementById(id);
+	lastTarget = target;
+	target.style.display = "inline";
+	//下拉触发
+	target.onmouseover = function(){
+		clearTimeout(timer);	
+	}
+	//移除
+	target.onmouseout = obj.onmouseout = function(){
+		timer = setTimeout(function(){
+			target.style.display = "none";
+		}, 300);	
+	};
+}
+
+// init
+/* 搜索检测 */
+function header_search_check(){
+	var val = document.getElementById("J_Q").value.replace(/(^\s*)|(\s*$)/g, "");
+	if (val=="" || /^点这里搜索\d+张照片$/.test(val)){
+		alert("搜索内容不能为空。");	
+		return false;
+	}
+	return true;
+}
+
+var start_date = new Date(2007, 5, 17);
+var new_date = new Date();
+var now_date = new Date(new_date.getFullYear(), new_date.getMonth()+1, new_date.getDate());
+/* 计算图片总数 */
+var day_num = getDayDiff(start_date, now_date);
+var photo_num = 220454714 + (day_num * 150000);
+var to;
+function mypoco_photo_total(){
+	var photo = document.form_header_search.J_Q;
+	var rd_photo = parseInt(Math.random() * (16-6+1)+6);
+	/* 增加图片数 */
+	photo_num = photo_num + rd_photo;
+	photo.value = "点这里搜索" + photo_num + "张照片";
+	to = setTimeout("mypoco_photo_total()", 2000);
+}
+/* 计算日期差 */
+function getDayDiff(d1, d2){
+	return (d2.getTime() - d1.getTime())/(24*60*60*1000);
+}
+function clear_photo_num(){
+	clearTimeout(to);
+}
+function header_poco_input_for_onmouseover(obj){
+	clear_photo_num();
+	if(document.form_header_search.J_Q.value.indexOf("查找相册图片") > -1 || document.form_header_search.J_Q.value.indexOf("张照片") > -1){
+		document.form_header_search.J_Q.value = "";
+	}
+	obj.onblur = header_poco_input_for_onmouseout;
+	return false;
+}
+function header_poco_input_for_onmouseout(){
+	var curr_page_url = window.location + "";
+	var start = curr_page_url.indexOf("//") + 2;
+	var end   = curr_page_url.indexOf(".");
+	var getlength = end -start;
+	curr_host = curr_page_url.substr(start, getlength);
+	if(document.form_header_search.J_Q.value == ""){
+		if(curr_host == "tu"){
+			document.form_header_search.J_Q.value = "请输入关键字查找图片…";
+		} else {
+			mypoco_photo_total(); 
+		}
+	}
+	return false;
+}
+mypoco_photo_total();
+</script>
+<!--header end-->
+
+<!--header end-->
+<!--content-->
+<div id="content" class="clearfix">
+<!--弹出-->
+<div id="top_pop" style="">
+    <div class="toptitle clearfix">
+    <div class="float_l">欢迎您来到<span class="fn_ta">POCO</span>这个都市生活原创分享平台!在这里,您可以:</div>
+    <div class="top_colse">
+    	<div class="checkbox"><input value="" checked="checked" id="box_index_pop_div" name="box_index_pop_div" type="checkbox"></div>
+        <span class="text">不再提示</span>
+        <div class="close"><a href="#this" title="关闭" onclick="close_box_index_pop_div();"><img src="images/ico_close.gif" alt="关闭" width="11" height="11"></a></div>
+    </div>
+    </div>
+    <ul class="top_menu">
+        <li><a href="http://box.poco.cn/bling_topic.php" target="_blank">看看古怪新奇达物</a></li>
+        <li><a href="http://box.poco.cn/bling_list.php" target="_blank">分享达物故事</a></li>
+        <li><a href="http://ft.poco.cn/blog_v2/blog_add.php?publish_type=box&amp;init_tag=&amp;stat_request_channel=754247962" target="_blank">晒晒您的达物</a></li>
+        <li><a href="http://box.poco.cn/bling_pocoers.php" target="_blank">结识收藏达人</a></li>
+    </ul>
+</div>
+<!--弹出结束-->
+
+
+<div class="banner994">
+<!-- 达物社区频道v2 ： 首页/一屏/大通栏[994x90] 开始 -->
+<iframe id="ams_iframe_1509" name="ams_iframe_1509" src="images/a_0_all.htm" border="0" marginwidth="0" marginheight="0" width="994" frameborder="0" height="90" scrolling="no"></iframe>
+<!-- 达物社区频道v2 ： 首页/一屏/大通栏[994x90] 结束 --> 
+</div>
+
+<!--焦点-->
+<div class="grid_c2f">
+<div class="col_main">
+<div class="main_wrap">
+    <div id="con_side" class="clearfix">
+        <div id="focus">
+        <!--flash幻灯展示开始-->
+			<!-- 达物社区频道v2 ： 首页/一屏/焦点图[280x210] 开始 -->
+			<iframe id="ams_iframe_1510" name="ams_iframe_1510" src="images/a_0_all_002.htm" border="0" marginwidth="0" marginheight="0" width="280" frameborder="0" height="210" scrolling="no"></iframe>
+			<!-- 达物社区频道v2 ： 首页/一屏/焦点图[280x210] 结束 -->
+        <!--flash幻灯展示结束-->
+        </div>
+        
+        <div id="todays" class="relative clearfix">
+            <h3 class="title">今日精选</h3>
+            <div class="todays_box">
+                <div class="s_left"><a href="#this" id="J_today_special_pre_page"><img src="images/s_left.jpg" alt="上一组" width="22" height="60"></a></div>
+                    <div style="position: relative;" id="J_today_special_container" class="photo_li">
+                        <div style="width: 1e+8px;" id="J_today_special_container_space"><ul style="float: left;" id="switch_page_1" class="today_special_group"><ul>
+        <li><a href="http://box.poco.cn/bling_lastblog.php?id=5871355&amp;stat_request_channel=1070223630" target="_blank"><img src="images/8563201103101005511906_120.jpg" alt="夏达 LOLI 兔子" width="100" height="120"></a><br><a href="http://box.poco.cn/bling_lastblog.php?id=5871355&amp;stat_request_channel=1070223630" title="夏达 LOLI 兔子" target="_blank">夏达 LOLI 兔子</a></li>
+        <li><a href="http://box.poco.cn/bling_lastblog.php?id=5865547&amp;stat_request_channel=1070223630" target="_blank"><img src="images/2521201103090959367217_120.jpg" alt="给莫惊瞳的礼物" width="100" height="120"></a><br><a href="http://box.poco.cn/bling_lastblog.php?id=5865547&amp;stat_request_channel=1070223630" title="给莫惊瞳的礼物" target="_blank">给莫惊瞳的礼物</a></li>
+        <li><a href="http://box.poco.cn/bling_lastphoto.php?id=2541196&amp;stat_request_channel=1070223630" target="_blank"><img src="images/6836201103081026297726_120.jpg" alt="白小会交往日记" width="100" height="120"></a><br><a href="http://box.poco.cn/bling_lastphoto.php?id=2541196&amp;stat_request_channel=1070223630" title="白小会交往日记" target="_blank">白小会交往日记</a></li>
+    </ul></ul><ul style="float: left;" id="switch_page_2" class="today_special_group"><ul>
+        <li><a href="http://box.poco.cn/bling_lastphoto.php?id=2538677&amp;stat_request_channel=1070223630" target="_blank"><img src="images/9543201103070959231196_120.jpg" alt="彩虹的颜色" width="100" height="120"></a><br><a href="http://box.poco.cn/bling_lastphoto.php?id=2538677&amp;stat_request_channel=1070223630" title="彩虹的颜色" target="_blank">彩虹的颜色</a></li>
+        <li><a href="http://box.poco.cn/bling_lastblog.php?id=5836262#cmt_start&amp;stat_request_channel=1070223630" target="_blank"><img src="images/2493201103041003064781_120.jpg" alt="深夜的那一抹欣慰" width="100" height="120"></a><br><a href="http://box.poco.cn/bling_lastblog.php?id=5836262#cmt_start&amp;stat_request_channel=1070223630" title="深夜的那一抹欣慰" target="_blank">深夜的那一抹欣</a></li>
+        <li><a href="http://box.poco.cn/bling_lastphoto.php?id=2533225&amp;stat_request_channel=1070223630" target="_blank"><img src="images/6739201103031039091781_120.jpg" alt="美军海豹5隊戰士" width="100" height="120"></a><br><a href="http://box.poco.cn/bling_lastphoto.php?id=2533225&amp;stat_request_channel=1070223630" title="美军海豹5隊戰士" target="_blank">美军海豹5隊戰</a></li>
+    </ul></ul><ul style="float: left;" id="switch_page_3" class="today_special_group"><ul>
+        <li><a href="http://box.poco.cn/bling_lastblog.php?id=5827743&amp;stat_request_channel=1070223630" target="_blank"><img src="images/8524201103021030376306_120.jpg" alt="LIFE" width="100" height="120"></a><br><a href="http://box.poco.cn/bling_lastblog.php?id=5827743&amp;stat_request_channel=1070223630" title="LIFE" target="_blank">LIFE</a></li>
+        <li><a href="http://box.poco.cn/bling_lastblog.php?id=5821329#cmt_start&amp;stat_request_channel=1070223630" target="_blank"><img src="images/6281201103011013064833_120.jpg" alt="Wall-E职场记" width="100" height="120"></a><br><a href="http://box.poco.cn/bling_lastblog.php?id=5821329#cmt_start&amp;stat_request_channel=1070223630" title="Wall-E职场记" target="_blank">Wall-E职场记</a></li>
+        <li><a href="http://box.poco.cn/bling_lastphoto.php?id=2530539#cmt_start&amp;stat_request_channel=1070223630" target="_blank"><img src="images/5730201103011009542060_120.jpg" alt="和平" width="100" height="120"></a><br><a href="http://box.poco.cn/bling_lastphoto.php?id=2530539#cmt_start&amp;stat_request_channel=1070223630" title="和平" target="_blank">和平</a></li>
+    </ul></ul></div>
+                    </div>
+                <div class="s_right"><a href="#this" id="J_today_special_next_page"><img src="images/s_right.jpg" alt="下一组" width="22" height="60"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner768">
+        <!-- 达物社区频道v2 ： 首页/一屏/通栏[768x80] 开始 -->
+        <iframe id="ams_iframe_1514" name="ams_iframe_1514" src="images/a_0_all_003.htm" border="0" marginwidth="0" marginheight="0" width="768" frameborder="0" height="80" scrolling="no"></iframe>
+        <!-- 达物社区频道v2 ： 首页/一屏/通栏[768x80] 结束 -->	
+    </div>
+</div>
+</div>
+
+
+<div class="col_sub">
+ <!--POCO公告赞助商信息-->
+ <h3 class="title"><span class="fn_ta f13">POCO</span>公告</h3>
+ <div id="notice">
+  <ul>
+      <li>&gt; <a href="http://phone.poco.cn/app/ip/?stat_request_channel=1345739824" target="_blank">《印象》杂志iphone版免费下载</a></li>
+           <li>&gt; <a href="http://photo.poco.cn/m/party_detail.php?tab=intro&amp;id=25535&amp;stat_request_channel=1345739824" target="_blank">在喧嚣的城拍下那一抹绿</a></li>
+           <li>&gt; <a href="http://box.poco.cn/bling_topic.htx&amp;channel=today&amp;stat_request_channel=1345739824" target="_blank">热门达物专题，你一定会喜欢</a></li>
+       </ul>
+    <div class="c_line"></div>
+  <h3 class="title">赞助商信息</h3>
+  <ul>
+         <li>&gt; <a href="http://blog1.poco.cn/myBlogDetail-htx-id-5751367-userid-43412259-pri--n-0.xhtml" target="_blank">大师评点助提升  丰厚大奖待赢取</a></li>
+           <li>&gt; <a href="http://blog1.poco.cn/myBlogDetail-htx-id-5709926-userid-43412259-pri--n-0.xhtml" target="_blank">i-page设计大晒 快来晒宠爱</a></li>
+           <li>&gt; <a href="http://blog1.poco.cn/myBlogDetail-htx-id-5685739-userid-43412259-pri--n-0.xhtml" target="_blank">优雅生活 体验沙龙 免费参加</a></li>
+       </ul>
+   </div>
+ <div style="clear: both;"></div>
+ <!--POCO公告赞助商信息结束-->
+ <div class="banner205">
+      <!-- 达物社区频道v2 ： 首页/一屏/文字链下方方形图[205x80] 开始 -->
+      <iframe id="ams_iframe_1515" name="ams_iframe_1515" src="images/a_0_all_004.htm" border="0" marginwidth="0" marginheight="0" width="205" frameborder="0" height="80" scrolling="no"></iframe>
+      <!-- 达物社区频道v2 ： 首页/一屏/文字链下方方形图[205x80] 结束 -->   
+ </div>
+</div>
+</div>
+ <!--焦点结束-->
+ <div class="c_line"></div>
+ <!--图片展示-->
+ <div class="grid_c2f_s312">
+  <div class="col_main">
+   <div class="main_wrap">
+    <!--网络影展-->
+    <h3 class="title" title="热点推荐">热点推荐</h3>
+    <ul class="hot">
+         <li>
+      <div class="pic"><a href="http://photo.poco.cn/m/party_detail.php?id=24152&amp;stat_request_channel=176853635" target="_blank"><img src="images/2515201101251634146422_64.jpg" alt="达物玩家征集令！"></a></div>
+      <div class="text"><strong><a href="http://photo.poco.cn/m/party_detail.php?id=24152&amp;stat_request_channel=176853635" target="_blank">达物玩家征集令！</a></strong>
+       <p> 想作品登上《型格》杂志吗？请火速参加！ </p>
+      </div>
+     </li>
+          <li>
+      <div class="pic"><a href="http://mobile.poco.cn/special_topic/topic_id-5422.html?stat_request_channel=176853635" target="_blank"><img src="images/1089201103091755356942_64.jpg" alt="那些iphone4拍的照片"></a></div>
+      <div class="text"><strong><a href="http://mobile.poco.cn/special_topic/topic_id-5422.html?stat_request_channel=176853635" target="_blank">那些iphone4拍的照</a></strong>
+       <p> 器材是其次，心中的影像才最重要。 </p>
+      </div>
+     </li>
+          <li>
+      <div class="pic"><a href="http://mobile.poco.cn/special_topic/topic_id-5370.html?stat_request_channel=3628995001_176853635" target="_blank"><img src="images/8851201102241736171559_64.jpg" alt="美女集中营（二）"></a></div>
+      <div class="text"><strong><a href="http://mobile.poco.cn/special_topic/topic_id-5370.html?stat_request_channel=3628995001_176853635" target="_blank">美女集中营（二）</a></strong>
+       <p> 美女集中营第二期，有你喜欢的美女吗？ </p>
+      </div>
+     </li>
+         </ul>
+    <div class="c_line" style="margin-top: 20px;"></div>
+    
+    <h3 class="title mb10" title="新奇达物">新奇达物</h3>
+    <div class="pic145">
+         <ul class="clearfix">
+         <li><a href="http://box.poco.cn/special_topic/topic_id-5405.html?stat_request_channel=3036026589" target="_blank"><img src="images/5534201103091757059208_145.jpg" alt="台湾小呆猫来袭！" width="145" height="145"></a><br><a href="http://box.poco.cn/special_topic/topic_id-5405.html?stat_request_channel=3036026589" title="台湾小呆猫来袭！" target="_blank">台湾小呆猫来袭！</a></li>
+          <li><a href="http://box.poco.cn/special_topic/topic_id-5388.html?stat_request_channel=3036026589" target="_blank"><img src="images/2960201103011558244028_145.jpg" alt="会说话的达物摄影" width="145" height="145"></a><br><a href="http://box.poco.cn/special_topic/topic_id-5388.html?stat_request_channel=3036026589" title="会说话的达物摄影" target="_blank">会说话的达物摄影</a></li>
+          <li><a href="http://box.poco.cn/special_topic/index.php?p=1&amp;topic_id=5357&amp;stat_request_channel=3036026589" target="_blank"><img src="images/5003201102221822041169_145.jpg" alt="如何拍好达物作品？" width="145" height="145"></a><br><a href="http://box.poco.cn/special_topic/index.php?p=1&amp;topic_id=5357&amp;stat_request_channel=3036026589" title="如何拍好达物作品？" target="_blank">如何拍好达物作品？</a></li>
+         </ul>
+       
+    <div class="d_line mb10"></div>
+            <ul class="clearfix">
+         <li><a href="http://box.poco.cn/special_topic/topic_id-5335.html?stat_request_channel=4141110981_3036026589" target="_blank"><img src="images/3445201102231722009356_145.jpg" alt="你的高达被选上了？" width="145" height="145"></a><br><a href="http://box.poco.cn/special_topic/topic_id-5335.html?stat_request_channel=4141110981_3036026589" title="你的高达被选上了？" target="_blank">你的高达被选上了？</a></li>
+          <li><a href="http://box.poco.cn/special_topic/index.php?p=1&amp;topic_id=5312&amp;stat_request_channel=3036026589" target="_blank"><img src="images/4182201102151702143989_157.jpg" alt="不能再萌的小动物" width="145" height="145"></a><br><a href="http://box.poco.cn/special_topic/index.php?p=1&amp;topic_id=5312&amp;stat_request_channel=3036026589" title="不能再萌的小动物" target="_blank">不能再萌的小动物</a></li>
+          <li><a href="http://box.poco.cn/special_topic/index.php?p=1&amp;topic_id=5301&amp;stat_request_channel=3036026589" target="_blank"><img src="images/6846201102121803302955_145.jpg" alt="杨小贝的可乐情缘" width="145" height="145"></a><br><a href="http://box.poco.cn/special_topic/index.php?p=1&amp;topic_id=5301&amp;stat_request_channel=3036026589" title="杨小贝的可乐情缘" target="_blank">杨小贝的可乐情缘</a></li>
+         </ul>
+            <div class="more mt5"><a href="http://box.poco.cn/bling_topic.php" target="_blank">更多&gt;&gt;</a></div>
+    <!--网络影展结束-->
+    </div>
+    <!--推荐作品结束-->
+   </div>
+  </div>
+  <div class="col_sub">
+   <h3 class="title" style="margin-bottom: 0px;" title="POCOer都在看什么"><span class="fn_ta f13">POCOer</span>都在看什么</h3>
+   <ul class="text_list col_yelow">
+   <li style="overflow: hidden; width: 104px;"><a href="http://box.poco.cn/bling_list.php?q=%B8%DF%B4%EF&amp;stat_request_channel=813867975" target="_blank" class="" title="高达模型">高达模型</a></li> <li style="overflow: hidden; width: 104px;"><a href="http://box.poco.cn/bling_list.php?q=%C7%E9%C8%CB%BD%DA&amp;stat_request_channel=813867975" target="_blank" class="" title="情人节礼物">情人节礼物</a></li> <li style="overflow: hidden; width: 104px;"><a href="http://box.poco.cn/bling_list.php?q=%CD%C3&amp;stat_request_channel=813867975" target="_blank" class="" title="兔年礼物">兔年礼物</a></li> <li style="overflow: hidden; width: 104px;"><a href="http://box.poco.cn/bling_list.php?q=%D0%C2%C4%EA%C0%F1%CE%EF&amp;stat_request_channel=813867975" target="_blank" class="fb" title="新年创意礼物">新年创意礼物</a></li> <li style="overflow: hidden; width: 104px;"><a href="http://box.poco.cn/bling_list.php?channel_id=1&amp;stat_request_channel=3941404379_813867975" target="_blank" class="" title="有趣DIY">有趣DIY</a></li> <li style="overflow: hidden; width: 104px;"><a href="http://box.poco.cn/bling_list.htx&amp;p=2&amp;q=%D4%D3%CE%EF&amp;o=last_cmt_time#items_list&amp;stat_request_channel=813867975" target="_blank" class="fb f14" title="好玩杂物">好玩杂物</a></li> <li style="overflow: hidden; width: 104px;"><a href="http://box.poco.cn/bling_list.htx&amp;channel_id=6&amp;stat_request_channel=813867975" target="_blank" class="" title="奢侈品">奢侈品</a></li> <li style="overflow: hidden; width: 104px;"><a href="http://mag.poco.cn/interphoto/Vol65/?p=8&amp;stat_request_channel=813867975" target="_blank" class="fb f14 tag_hot" title="好莱坞搞怪连拍">好莱坞搞怪连拍</a></li> <li style="overflow: hidden; width: 104px;"><a href="http://box.poco.cn/bling_list.php?q=%CF%E0%BB%FA&amp;%CC%E1%BD%BB=%CB%D1%CB%F7&amp;stat_request_channel=813867975" target="_blank" class="" title="新潮相机">新潮相机</a></li>    </ul>
+   <div class="c_line" style="margin-top: 0px;"></div>
+
+   <div class="zbanner312">
+		<!-- 达物社区频道v2 ： 首页/二屏/大方形图片[312x214] 开始 -->
+		<iframe id="ams_iframe_1520" name="ams_iframe_1520" src="images/a_0_all_005.htm" border="0" marginwidth="0" marginheight="0" width="312" frameborder="0" height="214" scrolling="no"></iframe>
+		<!-- 达物社区频道v2 ： 首页/二屏/大方形图片[312x214] 结束 -->   
+   </div>
+   <div class="c_line"></div>
+    <h3 class="title" style="margin-bottom: 0px;" title="流行前线">流行前线</h3>
+    <ul class="text_span">
+         <li><span class="text_tit">&gt; <a href="http://bbs0.poco.cn/topic-htx-fid-57-tid-12385361-ump-1-m-0-p-0.shtml?stat_request_channel=2450890523" title="光棍情人节攻略大放送" target="_blank">光棍情人节攻略大放送</a></span><span class="date">蓝色天空</span></li>
+          <li><span class="text_tit">&gt; <a href="http://bbs0.poco.cn/topic-htx-fid-57-tid-12374967-ump-1-m-0-p-0.shtml?stat_request_channel=2450890523" title="世界各地的过年习俗" target="_blank">世界各地的过年习俗</a></span><span class="date">雪玉其中</span></li>
+          <li><span class="text_tit">&gt; <a href="http://bbs0.poco.cn/topic.php?fid=57&amp;tid=7903871&amp;p=1&amp;stat_request_channel=2450890523" title="我收藏的鱼和植物化石" target="_blank">我收藏的鱼和植物化石</a></span><span class="date">davidkun8888</span></li>
+          <li><span class="text_tit">&gt; <a href="http://bbs0.poco.cn/topic-htx-fid-69-tid-10924601-ump-1-m-0-p-0.shtml?stat_request_channel=2450890523" title="我的压岁钱居然是……" target="_blank">我的压岁钱居然是……</a></span><span class="date">dorjing</span></li>
+          <li><span class="text_tit">&gt; <a href="http://bbs0.poco.cn/topic-htx-fid-69-tid-11313458-ump-1-m-0-p-0.shtml?stat_request_channel=2450890523" title="从时尚COOL GUY PARTY 选衣看品味" target="_blank">从时尚COOL GUY PARTY</a></span><span class="date">费解</span></li>
+          <li><span class="text_tit">&gt; <a href="http://bbs0.poco.cn/topic-htx-fid-69-tid-11139556-ump-1-m-0-p-0.shtml?stat_request_channel=2450890523" title="DIY碎花裙，闪亮登场！！" target="_blank">DIY碎花裙，闪亮登场</a></span><span class="date">waterlc</span></li>
+         </ul>
+    <div class="more"><a href="http://bbs.poco.cn/forum.htx&amp;fid=69#c10" target="_blank">更多&gt;&gt;</a></div>
+  </div>
+ </div>
+ <div class="banner994">
+	<!-- 达物社区频道v2 ： 首页/二屏/大通栏[994x90] 开始 -->
+	<iframe id="ams_iframe_1522" name="ams_iframe_1522" src="images/a_0_all_006.htm" border="0" marginwidth="0" marginheight="0" width="994" frameborder="0" height="90" scrolling="no"></iframe>
+	<!-- 达物社区频道v2 ： 首页/二屏/大通栏[994x90] 结束 --> 
+ </div>
+ <div class="grid_c2f_s312">
+  <div class="col_main">
+   <div class="main_wrap">
+   <div class="pic145 clearfix"><h3 class="title mb10">达物分享</h3>
+       <ul class="clearfix">
+         <li><a href="http://box.poco.cn/bling_lastblog.php?id=5875326&amp;stat_request_channel=1483205159" target="_blank"><img src="images/9820201103101020415926_145.jpg" alt="蒙奇奇与它的邂逅" width="145" height="145"></a> <a href="http://box.poco.cn/bling_lastblog.php?id=5875326&amp;stat_request_channel=1483205159" title="蒙奇奇与它的邂逅" target="_blank">蒙奇奇与它的邂逅</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-45401700.shtml?stat_request_channel=3346874809" target="_blank">小虫子</a></p>
+     </li>
+          <li><a href="http://box.poco.cn/bling_lastphoto.php?id=2543707&amp;stat_request_channel=1483205159" target="_blank"><img src="images/6472201103101021262589_145.jpg" alt="【麦兜】梦想" width="145" height="145"></a> <a href="http://box.poco.cn/bling_lastphoto.php?id=2543707&amp;stat_request_channel=1483205159" title="【麦兜】梦想" target="_blank">【麦兜】梦想</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-55204507.shtml?stat_request_channel=3346874809" target="_blank">puzhiye</a></p>
+     </li>
+          <li><a href="http://box.poco.cn/bling_lastphoto.php?id=2544002&amp;stat_request_channel=1483205159" target="_blank"><img src="images/8421201103101023293319_145.jpg" alt="我家的熊们" width="145" height="145"></a> <a href="http://box.poco.cn/bling_lastphoto.php?id=2544002&amp;stat_request_channel=1483205159" title="我家的熊们" target="_blank">我家的熊们</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-55564864.shtml?stat_request_channel=3346874809" target="_blank">weicguoguo</a></p>
+     </li>
+         </ul>
+    <div class="d_line mb10"></div>        <ul class="clearfix">
+         <li><a href="http://box.poco.cn/bling_lastphoto.php?id=2542374&amp;stat_request_channel=1483205159" target="_blank"><img src="images/4377201103091009477014_145.jpg" alt="等待" width="145" height="145"></a> <a href="http://box.poco.cn/bling_lastphoto.php?id=2542374&amp;stat_request_channel=1483205159" title="等待" target="_blank">等待</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-56254688.shtml?stat_request_channel=3346874809" target="_blank">man-dream</a></p>
+     </li>
+          <li><a href="http://box.poco.cn/bling_lastphoto.php?id=2542502#cmt_start&amp;stat_request_channel=1483205159" target="_blank"><img src="images/6383201103091010547033_145.jpg" alt="火影手办" width="145" height="145"></a> <a href="http://box.poco.cn/bling_lastphoto.php?id=2542502#cmt_start&amp;stat_request_channel=1483205159" title="火影手办" target="_blank">火影手办</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-55795191.shtml?stat_request_channel=3346874809" target="_blank">Dezii</a></p>
+     </li>
+          <li><a href="http://box.poco.cn/bling_lastphoto.php?id=2543726#cmt_start&amp;stat_request_channel=1483205159" target="_blank"><img src="images/5901201103101022376642_145.jpg" alt="广东石湾公仔" width="145" height="145"></a> <a href="http://box.poco.cn/bling_lastphoto.php?id=2543726#cmt_start&amp;stat_request_channel=1483205159" title="广东石湾公仔" target="_blank">广东石湾公仔</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-55348027.shtml?stat_request_channel=3346874809" target="_blank">ligenpan</a></p>
+     </li>
+         </ul>
+            <ul class="clearfix">
+         <li><a href="http://box.poco.cn/bling_lastblog.php?id=5867156#cmt_start&amp;stat_request_channel=1483205159" target="_blank"><img src="images/5525201103091003253343_145.jpg" alt="我的AR.Drone飞行大玩具" width="145" height="145"></a> <a href="http://box.poco.cn/bling_lastblog.php?id=5867156#cmt_start&amp;stat_request_channel=1483205159" title="我的AR.Drone飞行大玩具" target="_blank">我的AR.Drone飞行大玩</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-56451054.shtml?stat_request_channel=3346874809" target="_blank">ccit126</a></p>
+     </li>
+          <li><a href="http://box.poco.cn/bling_lastphoto.php?id=2541678&amp;stat_request_channel=1483205159" target="_blank"><img src="images/2756201103091007275419_145.jpg" alt="Transformers 擎天柱" width="145" height="145"></a> <a href="http://box.poco.cn/bling_lastphoto.php?id=2541678&amp;stat_request_channel=1483205159" title="Transformers 擎天柱" target="_blank">Transformers 擎天柱</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-43850478.shtml?stat_request_channel=3346874809" target="_blank">emitemos</a></p>
+     </li>
+          <li><a href="http://box.poco.cn/bling_lastblog.php?id=5872937&amp;stat_request_channel=1483205159" target="_blank"><img src="images/8050201103101014166191_145.jpg" alt="分享快乐——DIY手工" width="145" height="145"></a> <a href="http://box.poco.cn/bling_lastblog.php?id=5872937&amp;stat_request_channel=1483205159" title="分享快乐——DIY手工" target="_blank">分享快乐——DIY手工</a>
+      <p class="font_nor lh18">作者：<a href="http://my.poco.cn/id-23324.shtml?stat_request_channel=3346874809" target="_blank">CK1</a></p>
+     </li>
+         </ul>
+            <div class="more"><a href="http://box.poco.cn/bling_list.php" target="_blank">更多&gt;&gt;</a></div>
+    </div>
+   </div>
+  </div>
+  <div class="col_sub">
+   <div id="ph_re">
+   <h3 class="title mb10">达物潮人</h3>
+    <div class="pic85_312 clearfix">
+   <ul class="clearfix">
+       <li><a href="http://my.poco.cn/id-56347360.shtml?stat_request_channel=737530121" title="小呆猫diamond" class="i85x85" target="_blank"><img src="images/56347360_165.jpg" alt="小呆猫diamond"></a><a href="http://my.poco.cn/id-56347360.shtml?stat_request_channel=737530121" title="小呆猫diamond" target="_blank">小呆猫di</a></li>
+        <li><a href="http://my.poco.cn/id-52218058.shtml?stat_request_channel=737530121" title="捷灵絮感" class="i85x85" target="_blank"><img src="images/52218058_86.jpg" alt="捷灵絮感"></a><a href="http://my.poco.cn/id-52218058.shtml?stat_request_channel=737530121" title="捷灵絮感" target="_blank">捷灵絮感</a></li>
+        <li><a href="http://my.poco.cn/id-56205397.shtml?stat_request_channel=737530121" title="miss_panda" class="i85x85" target="_blank"><img src="images/56205397_86.jpg" alt="miss_panda"></a><a href="http://my.poco.cn/id-56205397.shtml?stat_request_channel=737530121" title="miss_panda" target="_blank">miss_pan</a></li>
+        <li><a href="http://my.poco.cn/id-21603695.shtml?stat_request_channel=737530121" title="唐毅" class="i85x85" target="_blank"><img src="images/21603695_86.jpg" alt="唐毅"></a><a href="http://my.poco.cn/id-21603695.shtml?stat_request_channel=737530121" title="唐毅" target="_blank">唐毅</a></li>
+        <li><a href="http://my.poco.cn/id-54995487.shtml?stat_request_channel=737530121" title="jcorpim" class="i85x85" target="_blank"><img src="images/54995487_86.jpg" alt="jcorpim"></a><a href="http://my.poco.cn/id-54995487.shtml?stat_request_channel=737530121" title="jcorpim" target="_blank">jcorpim</a></li>
+        <li><a href="http://my.poco.cn/id-36079675.shtml?stat_request_channel=3346874809_737530121#this" title="o(^(OO)^)o寶寶の寶唄" class="i85x85" target="_blank"><img src="images/36079675_86.jpg" alt="o(^(OO)^)o寶寶の寶唄"></a><a href="http://my.poco.cn/id-36079675.shtml?stat_request_channel=3346874809_737530121#this" title="o(^(OO)^)o寶寶の寶唄" target="_blank">o(^(OO)^</a></li>
+        <li><a href="http://my.poco.cn/id-51800726.shtml?stat_request_channel=737530121" title="RED" class="i85x85" target="_blank"><img src="images/5369201009251150324613_85.jpg" alt="RED"></a><a href="http://my.poco.cn/id-51800726.shtml?stat_request_channel=737530121" title="RED" target="_blank">RED</a></li>
+        <li><a href="http://my.poco.cn/id-55138924.shtml?stat_request_channel=737530121" title="小米付" class="i85x85" target="_blank"><img src="images/1656201009251154083794_85.jpg" alt="小米付"></a><a href="http://my.poco.cn/id-55138924.shtml?stat_request_channel=737530121" title="小米付" target="_blank">小米付</a></li>
+        <li><a href="http://my.poco.cn/id-52460671.shtml?stat_request_channel=737530121" title="梁溪翁" class="i85x85" target="_blank"><img src="images/2945201009131223372812_85.jpg" alt="梁溪翁"></a><a href="http://my.poco.cn/id-52460671.shtml?stat_request_channel=737530121" title="梁溪翁" target="_blank">梁溪翁</a></li>
+       </ul></div>
+   <div class="more"><a href="http://box.poco.cn/bling_pocoers.php" target="_blank">更多&gt;&gt;</a></div>
+   </div>
+   <div class="zbanner312 i312x214 mt10">
+		<!-- 达物社区频道v2 ： 首页/三屏/大方形图[312x214] 开始 -->
+		
+		<!-- 达物社区频道v2 ： 首页/三屏/大方形图[312x214] 结束 -->
+   </div>
+  </div>
+ </div>
+ <!--图片展示结束-->
+</div>
+<!--content end-->
+<!--footer-->
+<!--页脚搜索-->
+
+<link rel="stylesheet" type="text/css" href="css/all_channel_pop_frame.css">
+<div id="footer_search">
+    <div class="shadow_bottom"></div>
+    <div class="footer_search_main">
+        <form action="http://my.poco.cn/tags/tag_search.php" method="get" target="_blank" onsubmit="return search_check();">
+			<input id="J_TsIDs" name="ts_ids" type="hidden"> 
+			<ul class="clearfix">
+				<li id="J_SearchOption" class="current_search_tag" onclick="search_option(this, null)">图片</li>
+				<li onclick="search_option(this, 1)">博客</li>
+				<li onclick="search_option(this, 3)">摄影</li>
+				<li onclick="search_option(this, 7)">美食</li>
+				<li onclick="search_option(this, 44)">旅游</li>
+				<li onclick="search_option(this, 104)">宠物</li>
+				<li onclick="search_option(this, 8)">人</li>
+				<li><a href="http://search.poco.cn/new/search/" target="_blank">电影</a></li>
+			</ul>
+			<div>
+				<input id="J_FooterQ" name="q" class="footer_input_key" onclick="this.select()" type="text">
+				<input class="footer_btn_search" value="" type="submit">
+			</div>
+			<div class="footer_hot_concern">
+			热门关注：<a href="http://pet.poco.cn/party/party_detail.php?party_id=11632" target="_blank">爱宠日记</a><a href="http://my.poco.cn/tags/tag_search.php?more%5B%5D=7&amp;q=%B0%D7%C7%D0%BC%A6" target="_blank">白切鸡</a><a href="http://my.poco.cn/tags/tag_search.php?more%5B%5D=6&amp;more%5B%5D2=7&amp;q=%CC%A9%B2%CB" target="_blank">泰菜</a><a href="http://my.poco.cn/tags/tag_search.php?more%5B%5D=6&amp;more%5B%5D2=7&amp;q=%CC%C0" target="_blank">汤</a><a href="http://photo.poco.cn/master_show/master_show_detail.htx&amp;show_id=942" target="_blank">决定性瞬间</a><a href="http://my.poco.cn/tags/tag_search.htx&amp;p=3&amp;q=%CB%AB%C3%E6%20%C8%CB%CF%F1&amp;b_or=&amp;ts_ids=3&amp;c=118&amp;location_id=&amp;sex=&amp;age_mark=&amp;nearby_place=&amp;order_by=sort_order%20DESC&amp;stat_request_channel=" target="_blank">双面佳人</a>
+			</div>
+        </form>
+        <a href="#" class="footer_link_top" title="返回顶部"></a>
+    </div>
+    <div class="shadow_top"></div>
+</div>
+<!--页脚搜索 end-->
+    
+<div id="footer">    
+    <!--sitemap-->
+    <div class="sitemap clearfix">
+        <div class="sitemap_about clearfix">
+                <p><strong>关于POCO</strong></p>
+				<div style="height: 40px; overflow: hidden;">
+                <a href="http://www.pocosite.com/about/" target="_blank">公司简介</a>
+                <a href="http://www.pocosite.com/about/contact.php" target="_blank">合作联系</a>
+                <a href="http://www.pocosite.com/about/cooperation.php" target="_blank">广告服务</a>
+				<a href="http://www.pocosite.com/job/" target="_blank" class="join_us" style="float: right; color: red; font-weight: bold;">加入POCO团队</a>
+				</div>
+        </div>
+        <div class="sitemap_help clearfix">
+                <p><strong>帮助 &amp; 服务</strong></p>
+				<div style="height: 40px; overflow: hidden;">
+                <a href="http://help.poco.cn/" target="_blank">帮助中心</a>
+                <a href="http://account.poco.cn/" target="_blank">服务中心</a>
+                <a href="http://www.pocosite.com/company/terms.php" target="_blank">使用条款</a>
+                <a href="http://bbs.poco.cn/forum.htx&amp;fid=2#c1" target="_blank">意见反馈</a>
+                <a href="http://bbs.poco.cn/forum.htx&amp;fid=1#c1" target="_blank">技术支持</a>
+                <a href="http://www.pocosite.com/company/download.php" target="_blank">软件下载</a>
+				</div>
+        </div>
+        <div class="sitemap_pococard clearfix">
+                <p><strong>POCO卡</strong></p>
+                <a href="http://card.poco.cn/" target="_blank"><img src="images/poco_card.gif" alt="POCO CARD" width="62" height="51"></a>
+				<p>POCO会员卡，持卡用户可在全国POCO加盟商户消费时享受折扣优惠。</p>
+        </div>
+        <div class="sitemap_cooperation clearfix">
+                <p><strong>商业合作</strong></p>
+                <a href="http://www.kachabank.com/" target="_blank"><img src="images/kachabank.gif" alt="http://www.kachabank.com" width="95" height="23"></a>
+        </div>
+    </div>
+    <!--sitemap end-->
+    
+    <!--copyright-->
+    <div class="copyright clearfix">
+        <p class="clearfix"><span class="fl">内容合作、出版发行合作联系方式：020-87396481 <a href="http://bbs0.poco.cn/topic.php?fid=8&amp;tid=6148259&amp;p=1&amp;no_menu=1" target="_blank">不良信息举报</a>　<a href="http://bbs0.poco.cn/topic.php?p=1&amp;fid=1&amp;tid=5931541&amp;p=1" target="_blank">客户服务</a></span><span class="fr"><a href="http://www.pocosite.com/company/certificate.php" target="_blank">ICP证号：粤B2-20030218</a>  Copyright<span style="font-family: Arial;">&#169;</span> 2003-2011 POCO CO.,LTD.</span></p>
+        <p><span class="fl">广告投放联系方式：<a href="http://www.cav-ad.com/" target="_blank"><img src="images/cav.gif" align="absmiddle"></a> 华东：021-32528390  华南：020-87396965  华北：010－85656512</span>
+		<a href="http://www.idc2.com.cn/" target="_blank" class="fr">远景数据中心提供网络带宽</a>
+		</p>
+    </div>
+    <!--copyright end-->
+</div>
+
+
+</div>
+<script type="text/javascript">
+/* 搜索检测 */
+function search_check(){
+	if (document.getElementById("J_FooterQ").value.replace(/(^\s*)|(\s*$)/g, "")==""){
+		alert("搜索内容不能为空。");	
+		document.getElementById("J_FooterQ").value = "";
+		document.getElementById("J_FooterQ").focus();
+		return false;
+	}
+	return true;
+}
+/* 标签切换 */
+var lastTag = document.getElementById("J_SearchOption");
+function search_option(obj, id){
+	lastTag.className = "";
+	lastTag = obj;
+	obj.className = "current_search_tag";
+	document.getElementById("J_TsIDs").value = id;
+}
+
+(function(){
+	try{
+		var temp_arr = document.domain.split('.');
+		var site_domain = temp_arr[parseInt(temp_arr.length)-3];
+		
+		var page_url = window.location.href;
+		page_url = page_url.replace(/#(.*)/gi,"");
+		
+		var is_index = 0;
+		if ( page_url=='http://' + document.domain + '/' || page_url.indexOf('index') > 0 )
+		{
+			is_index = 1;
+		}
+
+		poco_fresh_pop_frame({
+			url:'http://' + document.domain + '/module_common/fresh/poco_fresh.php?p=0&site=' + site_domain + '&is_index=' + is_index
+		});
+	}catch(e){}
+})();
+</script>
+
+<!-- 达物社区频道v2 ： 首页/疯狂广告[760x300] 结束 --></body></html>

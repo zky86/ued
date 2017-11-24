@@ -1,0 +1,120 @@
+/*  
+Theme Name:poco ued theme
+Author URI:poco.cn
+Description: poco
+*/
+
+/** 清除内外边距 **/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote, /* structural elements 结构元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form,
+fieldset,
+legend,
+button,
+input,
+textarea, /* form elements 表单元素 */
+th,
+td, /* table elements 表格元素 */
+img/* img elements 图片元素 */ { border:medium none; margin: 0; padding: 0; }
+/** 设置默认字体 **/
+body,
+button,
+input,
+select,
+textarea { font:normal 12px "宋体"; }
+input,
+select,
+form img,
+button { vertical-align:middle; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-size: 100%; }
+em { font-style:normal; }
+/** 重置列表元素 **/
+ul,
+ol { list-style: none; }
+/** 重置超链接元素 **/
+a { text-decoration: none; color:#333333; }
+a:hover { text-decoration: underline; }
+/** 重置图片元素 **/
+img { border:none; }
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+/** 清楚浮动 **/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.clear { clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
+.clearHidden{ clear:both; overflow:hidden; zoom:1}
+/*** font ***/
+.word_break { white-space:normal; word-wrap:break-word; word-break:break-all; }
+.f14 { font-size:14px; }
+.fb { font-weight:bold; }
+.lh18 { line-height:18px; }
+.lh24 { line-height:24px; }
+/** position **/
+.relative { position:relative; }
+.fr { float:right; }
+.fl { float:left; }
+.pd_t5 { padding-top:5px; }
+.pd_t10 { padding-top:10px; }
+.pd_l10 { padding-left:10px; }
+.pd_l15 { padding-left:15px; }
+.hidden { display:block; font-size:0; height:0; overflow:hidden; }
+.text_align{ text-align:center;}
+/* ====================== 重置结束 ===================== */
+ 
+.fade { display:block; background: #000; position: fixed; left: 0; top: 0; width: 100%; height: 100%; filter:alpha(opacity:60);
+opacity: 0.6; z-index: 9999; zoom:1; clear:both; _height:1000px; _position:absolute; }
+.pop_Demo{ background:url(../images/pop_register.jpg) no-repeat; width:443px; height:266px; z-index:999999; position:fixed; _position: absolute; top:50%; left:50%; margin-top:-140px; margin-left:-225px;
+_top:expression(eval(document.compatMode &&
+     document.compatMode=='CSS1Compat') ?
+     documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+     document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+     _margin-top:0
+}
+.pop_Demo .close{ padding:10px 10px 0 0;float:right;}
+
+/* 分享弹层 */
+.poco_share_box { font-size:12px; width:220px; border:#B5B5B5 1px solid; background-color:#FFF; z-index: 9999; position: absolute; overflow: hidden; left: 0px; top: 17px; display: block; }
+.poco_share_box a{ color:#000; text-decoration:none;}
+.poco_share_box a:hover{ color:#000; text-decoration:underline}
+.poco_share_box .poco_share_title, .poco_share_box .poco_share_email { padding:0px 10px; }
+.poco_share_box .poco_share_list { padding:5px 10px 0px 10px;; }
+.poco_share_box .poco_share_title { line-height:25px; height:25px; background-color:#F5F5F5; color:#000; font-weight:bold; }
+.poco_share_box .poco_share_email { padding-top:3px; padding-bottom:5px; height:20px; }
+.poco_share_box .poco_share_email a{ background:url(http://www.poco.cn/js_common/images/poco_share/share.png) 0 -270px no-repeat; line-height:20px; height:20px; display:block; padding-left:122px;}
+#J_poco_share_bnt { height:28px; }
+#J_poco_share_bnt ul {margin-top:-2px; position:relative;margin-left:-2px;background:#fff;border-width:1px;border-style:solid;height:26px;line-height:26px;width:220px;	}
+.poco_share_list a,.poco_share_list span{ background-image:url(http://www.poco.cn/js_common/images/poco_share/share.png); display:block; line-height:24px; padding-left:23px; cursor:pointer;}
+.poco_share_list .copy{ background-position:0 -1px}
+.poco_share_list .sinawb{ background-position:0 -25px}
+.poco_share_list .renren{ background-position:0 -49px}
+.poco_share_list .email{ background-position:0 -49px}
+.poco_share_list .qq_blog{ background-position:0 -76px}
+.poco_share_list .email{ background-position:0 -104px}
+.poco_share_list .pocofriend{ background-position:0 -131px}
+.poco_share_list .qq_space{ background-position:0 -156px}
+.poco_share_list .kaixin{ background-position:0 -180px}
+.poco_share_list .douban{ background-position:0 -206px}
+.poco_share_list .msn{ background-position:0 -233px}
+.poco_share_list .sohu{ background-position:0 -396px}
+.poco_share_list .netease{ background-position:0 -432px}

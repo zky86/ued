@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>间隙滚动</title>
+<link href="css/css.css" rel="stylesheet" type="text/css"  />
+<script language="javascript" type="text/javascript"  src="Scripts/scroll_080828.js"></script>
+</head>
+<body>
+<div class="w">
+<div id="Box1">
+<h1>间隙滚动 demo1</h1>
+<div class="scrollbox">
+	<div class="left" id="ArrLeft_01"><img src="images/s_left.jpg" /></div>
+	<div class="scrollList" id="SL_Cont_01">
+		<div class="pic"><img src="images/s_165x165.jpg" /></div>
+		<div class="pic"><img src="images/s_165x165.jpg" /></div>
+		<div class="pic"><img src="images/s_165x165.jpg" /></div>
+		<div class="pic"><img src="images/s_165x165.jpg" /></div>
+		<div class="pic"><img src="images/s_165x165.jpg" /></div>
+	</div><!--bodyCon-->
+<div class="right" id="ArrRight_01"><img src="images/s_right.jpg" /></div>
+<script language="javascript" type="text/javascript">
+	<!--//--><![CDATA[//><!--
+	var scrollPic_01 = new ScrollPic();
+	scrollPic_01.scrollContId   = "SL_Cont_01"; //内容容器ID
+	scrollPic_01.arrLeftId      = "ArrLeft_01";//左箭头ID
+	scrollPic_01.arrRightId     = "ArrRight_01"; //右箭头ID
+	
+	scrollPic_01.frameWidth     = 720;//显示框宽度
+	scrollPic_01.pageWidth      = 185; //翻页宽度
+	
+	scrollPic_01.speed          = 2; //移动速度(单位毫秒，越小越快)
+	scrollPic_01.space          = 15; //每次移动像素(单位px，越大越快)
+	scrollPic_01.autoPlay       = true; //自动播放 (false:手动 true:自动)
+	scrollPic_01.autoPlayTime   = 3; //自动播放间隔时间(秒)
+	
+	scrollPic_01.initialize(); //初始化
+	
+	//--><!]]>
+</script>
+</div>
+<p>ps：</p>
+<p>1、此实例为自动滚;一次滚一张。如希望一次滚4张，请修改Step 3中<span style="color:red">scrollPic_01.pageWidth      =<span style="color:#03F"> 185</span>; //翻页宽度</span> 185为4张图片总宽度即可。</p>
+<p>2、<span style="color:red">scrollPic_01.autoPlay       = <span style="color:#03F">true</span>; //自动播放</span> ( true：为自动；false：为手动)</p>
+<h4>Step 1、在html的&lt;head&gt;标签内引入风格应用文件 查看：<a href="Scripts/scroll_080828.js">scroll_080828.js</a></h4>
+<textarea name="" cols="160" rows="2">
+<script type="text/javascript" src="Scripts/scroll_080828.js"></script>
+</textarea>
+<h4>Step 2、CSS部分</h4>
+<textarea name="" cols="160" rows="13">
+
+.scrollbox{overflow:hidden;	width: 840px; height: 180px;}
+.scrollbox .left, /* 此处注意 */
+.scrollbox .right{ float: left; cursor: pointer; display:inline;}
+.scrollbox .left{ margin:35px 20px 0 10px;}
+.scrollbox .right{margin:35px 0 0 20px;}
+.scrollbox .scrollList{ float: left; display: inline; overflow: hidden;}
+.scrollbox .pic{width: 165px; height: 165px; margin-top: 2px;float:left ; padding-right:20px;}
+</textarea>
+<h4>Step 3、关联的HTML</h4>
+<textarea name="" cols="160" rows="13">
+<div class="scrollbox">
+	<div class="left" id="ArrLeft_01"><img src="images/s_left.jpg" /></div>
+		<div class="scrollList" id="SL_Cont_01">
+			<div class="pic"><img src="images/s_165x165.jpg"/></div>
+			<div class="pic"><img src="images/s_165x165.jpg"/></div>
+			<div class="pic"><img src="images/s_165x165.jpg"/></div>
+			<div class="pic"><img src="images/s_165x165.jpg"/></div>
+			<div class="pic"><img src="images/s_165x165.jpg"/></div>
+		</div>
+	<div class="right" id="ArrRight_01"><img src="images/s_right.jpg" /></div>
+</div>
+</textarea>
+<h4>Step 4、对应的javascript</h4>
+<textarea name="" cols="160" rows="19">
+<script language="javascript" type="text/javascript">
+<!--//--><![CDATA[//><!--
+	var scrollPic_01 = new ScrollPic();
+	scrollPic_01.scrollContId   = "SL_Cont_01"; //内容容器ID
+	scrollPic_01.arrLeftId      = "ArrLeft_01";//左箭头ID
+	scrollPic_01.arrRightId     = "ArrRight_01"; //右箭头ID
+	
+	scrollPic_01.frameWidth     = 720;//显示框宽度
+	scrollPic_01.pageWidth      = 185; //翻页宽度
+	
+	scrollPic_01.speed          = 2; //移动速度(单位毫秒，越小越快)
+	scrollPic_01.space          = 15; //每次移动像素(单位px，越大越快)
+	scrollPic_01.autoPlay       = true; //自动播放 (false:手动 true:自动)
+	scrollPic_01.autoPlayTime   = 3; //自动播放间隔时间(秒)
+	
+	scrollPic_01.initialize(); //初始化
+
+//--><!]]>
+</script>
+</textarea>
+</div>
+</div>
+</body>
+</html>

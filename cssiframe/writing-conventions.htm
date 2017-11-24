@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>CSS书写规范</title>
+<style type="text/css">
+*{ padding:0; margin:0}
+.content {width: 800px;margin: 0 auto; line-height:24px; font-size:14px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+h2{ font-size:14px; font-weight:bold}
+</style>
+</head>
+
+<body>
+<div class="content">
+  <h1>CSS书写规范</h1>
+  <h2>单个类写法</h2>
+  <pre>
+  
+    /* 单个类写法 */
+    .poco {text-align: center; width: 300px;}
+	
+   </pre>
+   
+   <h2>多类共享代码写法</h2>
+   <pre>
+   
+    /* 多类共享代码写法 */
+    .poco-tag1, .poco-tag2 {margin: auto; text-align: left;}
+	
+    </pre>
+    <h2>关系写法</h2>
+    <pre>
+	
+    /* 关系写法 */
+    .nav {width: 500px; height: 400px;}
+    .mainnav {width: 500px; height: 300px;}
+    .subnav {width: 500px; height: 100px;}
+	
+  </pre>
+  
+</div>
+</body>
+</html>

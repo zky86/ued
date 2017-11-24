@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>图片选项卡切换</title>
+<style type="text/css">
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:normal 14px "宋体"}
+input,select,form img,button{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+img{border:none}
+ul,ol{list-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+table{border-collapse:collapse;border-spacing:0}
+div, ul, dl { zoom:1; }
+div:after, ul:after, dl:after { content:"."; display:block; clear:both; height:0; visibility:hidden; }
+
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+h1 a{ color:#69F;  font-size:14px; font-weight:bold;}
+.w{ margin:0 auto; width:998px;}
+.tab_map{ width:635px;}
+.top_nav{ background:#000;}
+.tab_map .imgArea li{ margin:21px 0 0 26px; text-align:center; width:169px; height:255px; float:left; display:inline; background:#000;}
+.tab_map .imgArea li .img{ background:url(images/d_partA_2.jpg) no-repeat; width:165px; height:165px; padding:2px;}
+.tab_map .imgArea .cl_r{ color:#939393; padding:4px 0 0;}
+.tab_map .imgArea .ps{ color:#07ccd0; padding:5px 0;}
+
+
+textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px}
+h4 { background:#F1F1F1; font-size:14px; height:26px;  line-height:26px; margin:20px 0 16px;}
+</style>
+</head>
+
+<body>
+<div class="w">
+<h1>热点选项卡 </h1>
+<div class="tab_map">
+    <div class="top_nav" id="show1">
+        <div class="nav"><img src="images/nav_1.jpg" border="0" usemap="#mapLink" /></div>
+        <ul class="imgArea">
+            <li><div class="img"><img src="images/pic1.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：123456</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+            <li><div class="img"><img src="images/pic1.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：123456</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+            <li><div class="img"><img src="images/pic1.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：123456</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+        </ul>
+      </div>
+    <div class="top_nav" id="show2" style="display:none">
+        <div class="nav"><img src="images/nav_2.jpg" border="0" usemap="#mapLink" /></div>
+        <ul class="imgArea">
+            <li>
+                <div class="img"><img src="images/pic2.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：222222</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+            <li>
+                <div class="img"><img src="images/pic2.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：222222</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+            <li>
+                <div class="img"><img src="images/pic2.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：222222</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+        </ul>
+    </div>
+	
+				<map name="mapLink" id="mapLink">
+	            <area shape="rect" coords="3,1,249,41" href="javascript:void(0)" onclick="showDiv('show',1,2);" />
+                <area shape="rect" coords="255,4,506,44" href="javascript:void(0)" onclick="showDiv('show',2,2);" />
+			    </map>
+    <!--内容切换-->
+	<script langauge="javaScript" type="text/javascript">
+		function showDiv(name,i,end) 
+		{ 
+		for(j=1;j<=end;j++) 
+		{ 
+		document.getElementById(name+j).style.display='none'; 
+		} 
+		document.getElementById(name+i).style.display='block'; 
+		}
+    </script>
+</div>
+<h4>Step 0、说明</h4>
+<textarea name="" cols="160" rows="15">
+ps:
+
+1.给需要切换的外围div，命名show1,show2......;一个设置为显示"display:block";其他设置为隐藏"display:none"
+
+2.给导航图片做热点，map可命名为mapLink，其他的导航图片同样以这个为命名
+
+
+<map name="mapLink" id="mapLink">
+	<area shape="rect" coords="3,1,249,41" href="javascript:void(0)" onclick="showDiv('show',1,2);" />
+	<area shape="rect" coords="255,4,506,44" href="javascript:void(0)" onclick="showDiv('show',2,2);" />
+</map>
+
+
+3.切换的div id依次为 id="show1" ，id="show2"  ...
+
+</textarea>
+<h4>Step 1、对应的CSS</h4>
+<textarea name="" cols="160" rows="15">
+.tab_map{ width:635px; }
+.top_nav{ background:#000;}
+.tab_map .imgArea li{ margin:21px 0 0 26px; text-align:center; width:169px; height:255px; float:left; display:inline; background:#000;}
+.tab_map .imgArea li .img{ background:url(images/d_partA_2.jpg) no-repeat; width:165px; height:165px; padding:2px;}
+.tab_map .imgArea .cl_r{ color:#939393; padding:4px 0 0;}
+.tab_map .imgArea .ps{ color:#07ccd0; padding:5px 0;}
+</textarea>
+<h4>Step 2、对应的html</h4>
+<textarea name="" cols="160" rows="20">
+<div class="tab_map">
+    <div class="top_nav" id="show1">
+        <div class="nav"><img src="images/nav_1.jpg" border="0" usemap="#mapLink" /></div>
+        <ul class="imgArea">
+            <li><div class="img"><img src="images/pic1.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：123456</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+            <li><div class="img"><img src="images/pic1.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：123456</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+            <li><div class="img"><img src="images/pic1.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：123456</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+        </ul>
+      </div>
+    <div class="top_nav" id="show2" style="display:none">
+        <div class="nav"><img src="images/nav_2.jpg" border="0" usemap="#mapLink" /></div>
+        <ul class="imgArea">
+            <li>
+                <div class="img"><img src="images/pic2.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：222222</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+            <li>
+                <div class="img"><img src="images/pic2.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：222222</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+            <li>
+                <div class="img"><img src="images/pic2.jpg"/></div>
+                <p class="cl_r">戴尔外星人好作品展示</p>
+                <p class="cl_r">作者：戴尔</p>
+                <p class="f14 ps">票数：222222</p>
+                <p><input type="image" src="images/d_partA_4.jpg" /></p>
+            </li>
+        </ul>
+    </div>
+	
+<map name="mapLink" id="mapLink">
+	<area shape="rect" coords="3,1,249,41" href="javascript:void(0)" onclick="showDiv('show',1,2);" />
+	<area shape="rect" coords="255,4,506,44" href="javascript:void(0)" onclick="showDiv('show',2,2);" />
+</map>
+
+</div>
+</textarea>
+<h4>Step 3、对应的javascript</h4>
+<textarea name="" cols="160" rows="12">
+<script langauge="javaScript" type="text/javascript">
+function showDiv(name,i,end) 
+{ 
+	for(j=1;j<=end;j++) 
+	{ 
+		document.getElementById(name+j).style.display='none'; 
+	} 
+	
+	document.getElementById(name+i).style.display='block'; 
+}
+</script>
+</textarea>
+
+</div>
+
+<!--内容切换-->
+<script langauge="javaScript" type="text/javascript">
+function showDiv(name,i,end) 
+{ 
+for(j=1;j<=end;j++) 
+{ 
+document.getElementById(name+j).style.display='none'; 
+} 
+document.getElementById(name+i).style.display='block'; 
+}
+</script>
+</body>
+</html>

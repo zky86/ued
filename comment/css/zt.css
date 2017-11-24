@@ -1,0 +1,185 @@
+/*  
+Theme Name:poco ued theme
+Author URI:poco.cn
+Description: poco
+*/
+
+/** 清除内外边距 **/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote, /* structural elements 结构元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form,
+fieldset,
+legend,
+button,
+input,
+textarea, /* form elements 表单元素 */
+th,
+td, /* table elements 表格元素 */
+img/* img elements 图片元素 */ { border:medium none; margin: 0; padding: 0; }
+/** 设置默认字体 **/
+body,
+button,
+input,
+select,
+textarea { font:normal 12px "宋体"; }
+input,
+select,
+form img,
+button { vertical-align:middle; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-size: 100%; }
+em { font-style:normal; }
+/** 重置列表元素 **/
+ul,
+ol { list-style: none; }
+/** 重置超链接元素 **/
+a { text-decoration: none; color:#052d6f; }
+a:hover { text-decoration: underline;}
+/** 重置图片元素 **/
+img { border:none; }
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+/** 清楚浮动 **/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.clear { clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
+.coz{ clear:both; overflow:hidden; zoom:1}
+/*** font ***/
+.word_break { white-space:normal; word-wrap:break-word; word-break:break-all; }
+.f14 { font-size:14px; }
+.fb { font-weight:bold; }
+.db{ display:block}
+.dn {display:none}
+.di{ display:inline}
+.tc{ text-align:center;}
+.vam{vertical-align:middle;}
+.lh18 { line-height:18px; }
+.lh20 { line-height:20px; }
+.lh22 { line-height:22px; }
+.lh24 { line-height:24px; }
+/** position **/
+.re { position:relative; }
+.fr { float:right; }
+.fl { float:left; }
+.frdi { float:right; display:inline }
+.fldi { float:left;display:inline }
+.pt5 { padding-top:5px; }
+.pt10 { padding-top:10px; }
+.pt15 { padding-top:15px; }
+.pt20 { padding-top:20px; }
+.pb5 { padding-bottom:5px}
+.pb10 { padding-bottom:10px}
+.pb15 { padding-bottom:15px}
+.pb20 { padding-bottom:20px}
+.pl5 { padding-left:5px; }
+.pl10 { padding-left:10px; }
+.pl15 { padding-left:15px; }
+.pl20 { padding-left:20px; }
+.pr5 { padding-right:5px; }
+.pr10 { padding-right:10px; }
+.pr15 { padding-right:15px; }
+.pr20 { padding-right:20px; }
+.mt5 { margin-top:5px; }
+.mt10 { margin-top:10px; }
+.mt15 { margin-top:15px; }
+.mt20 { margin-top:20px; }
+.mb5 { margin-bottom:5px}
+.mb10 { margin-bottom:10px}
+.mb15 { margin-bottom:15px}
+.mb20 { margin-bottom:20px}
+.ml5 { margin-left:5px; }
+.ml10 { margin-left:10px; }
+.ml15 { margin-left:15px; }
+.ml20 { margin-left:20px; }
+.mr5 { margin-right:5px; }
+.mr10 { margin-right:10px; }
+.mr15 { margin-right:15px; }
+.mr20 { margin-right:20px; }
+/* ====================== 重置结束 ===================== */
+
+.contentwrap {width: 1000px;margin: 0 auto; line-height:22px; font-size:12px}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"微软雅黑"}
+a{ text-decoration:none; color:#0099cc}
+a:hover{ text-decoration:none; background:#6AC334; color:#fff}
+.textareaClass { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; }
+
+.commentBlock {width:550px;}
+.commentBlock .comList{}
+.commentBlock .comList .list{}
+.commentBlock .comList .list .desBox{margin:0px 0 0 15px;width:415px;line-height:23px;}
+.commentBlock .comList .list li{border-bottom:1px dotted #c8c7c7;clear:both; overflow:hidden;zoom:1;padding-bottom:6px;margin-top:6px;}
+.commentBlock .comList .list .desBox .zan{float:right;padding:5px 0px 0px 0px;}
+.commentBlock .comList .list .desBox .zan img{vertical-align:text-bottom;}
+.commentBlock .show_page { height:30px; clear:both; padding:10px 0; font-size:12px;}
+.commentBlock .page { margin:5px 0; float:right; height:20px; font-family:"宋体"; clear:both; }
+.commentBlock .page a {font-weight:bold; display:block; float:left; margin-right:4px; height:17px; line-height:17px; overflow:hidden; padding:0 6px; background:#052d6f; border:1px solid #cccccc; color:#fff; text-decoration:none; display:inline; }
+.commentBlock .page .click { background:#ffffff; border:1px solid #737373; color:#737373; }
+.commentBlock .textareaBox{}
+.commentBlock .textareaBox textarea{width:544px;height:122px;border:1px solid #082b6f;}
+.commentBlock .iconBar{padding:5px 5px 0 0 ;}
+.commentBlock .iconBar img{vertical-align:middle;}
+
+/* poco微博 */
+
+/* 微博列表 */
+.com_list{ }
+.com_list li{ width:550px;  line-height:24px; font-size:14px; padding:12px 0 10px;color:#235891;}
+.com_list .user_img{ width:64px;text-align:center;display:inline;float:left;}
+.com_list .com_txt{ width:470px;float:left;display:inline;margin-left:10px;}
+.com_list .com_txt .conBox{  border:1px solid #235891; padding:10px; width:450px;}
+.com_list .com_txt .user_name a{font-weight:bold;color:#235891;}
+.com_list .timeBox{padding-top:8px;font-size:12px;color:#737373;}
+.com_list .timeBox img{ vertical-align:middle;}
+.com_list .timeBox .zan{padding-left:40px;}
+.com_list .line{height:1px;overflow:hidden;width:100%;margin:5px 0;}
+
+
+
+
+
+/* 微博分享 */
+
+.commentShare{width:834px; overflow-x:hidden;overflow-y:auto; height:510px;}
+.commentShare .wboxs{width:794px;padding-bottom:15px;border-bottom:1px solid #c0c0c0;}
+.commentShare .user_img64X64{ width:64px;height:64px;}
+.commentShare .com_txt{margin-left:20px;width:710px;}
+.commentShare .com_txt .item{padding-bottom:15px;}
+.commentShare .com_txt .item .text{padding-bottom:15px;}
+.commentShare .com_txt .pop_item{width:350px;padding-bottom:15px;}
+.commentShare .com_txt .pop_item .icon{height:7px;background:url(../images/icon.gif) no-repeat;margin-left:80px;overflow:hidden;}
+.commentShare .com_txt .pop_item .info_box{width:320px;padding:15px;background:#c0c0c0;}
+.commentShare .com_txt .pop_item .img120X120{margin-top:10px;}
+.commentShare .commentItem {margin:0 0 0 35px;}
+.commentShare .commentItem .icon{height:7px;background:url(../images/icon.gif) no-repeat;margin-left:625px;overflow:hidden;}
+.commentShare .commentItem .commentBox{width:633px;background:#c0c0c0; padding:25px 20px 10px;}
+.commentShare .commentItem .textAear{text-align:right; margin-bottom:10px}
+.commentShare .commentItem .comment_textarea{ border:1px solid #E0E0E0; background:#fff; width:631px; height:22px; margin-bottom:6px}
+.commentShare .commentItem .textAear textarea{ border:none; background:#fff; margin:2px; width:627px; height:18px; line-height:18px; color:#868686}
+.commentShare .commentItem .comment_list{background:url(../images/dot.jpg) left top repeat-x}
+.commentShare .commentItem .comment_list .comment_con{background:url(../images/dot.jpg) left bottom repeat-x; padding:12px 0; }
+.commentShare .commentItem .comment_con .user_img32X32{width:32px;height:32px;}
+.commentShare .commentItem .comment_con .txt_box{margin-left:20px;width:570px;}
+.commentShare .commentItem .comment_list .more{ text-align:right; padding-top:10px}
+.commentShare .page{ text-align:right; padding:10px 86px 0 0;}
+.commentShare .page a{ color:#615f60; margin:0 6px}
+.commentShare .page a.click{ color:#db2030}
