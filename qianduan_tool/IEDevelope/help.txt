@@ -1,1 +1,0 @@
-如何出现不能汉化的情况，请复制IEDevToolbar.dll文件到IEDevToolbar安装文件下覆盖即可。
