@@ -2,27 +2,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>POCO UED ǰ�������淶��</title>
+<title>POCO UED 前端制作规范库</title>
 <script type="text/javascript" src="./Scripts/jquery.js"></script>
 <link href="./css/reset.css"  type="text/css" rel="stylesheet" />
 
 <style type="text/css">
 
 body{ background:#f9f9f9; font-size:14px; padding-bottom:25px}
-h1{ font-size:24px; font-weight:bold; color:#6AC334; font-family:"΢���ź�"; padding:25px}
+h1{ font-size:24px; font-weight:bold; color:#6AC334; font-family:"微软雅黑"; padding:25px}
 
 .wrap{ padding:15px; border:1px solid #b8b8b8 ; width:350px; margin-left:25px;border-radius: 3px}
 .wrap a{ text-decoration:none; margin-left:15px; color:#0099cc;}
 .wrap a:hover{text-decoration: underline;}
 .wrapa:hover{ text-decoration:none; background:#6AC334; color:#fff}
 .wrap li{ list-style:none}
-.wrap h3.title{ font-size:16px; font-weight:bold;font-family:"΢���ź�"; height:32px; width:337px; line-height:32px; background:#f4f4f4; border:1px solid #d7d7d7; padding-left:10px; color:#494442; margin-top:5px;border-radius: 3px;margin: 15px 0 3px 0;}
+.wrap h3.title{ font-size:16px; font-weight:bold;font-family:"微软雅黑"; height:32px; width:337px; line-height:32px; background:#f4f4f4; border:1px solid #d7d7d7; padding-left:10px; color:#494442; margin-top:5px;border-radius: 3px;margin: 15px 0 3px 0;}
 .wrap .list_block li{ border-bottom:1px dashed #d5d5d5; padding:5px 10px 5px 20px; line-height:30px;background: url(./images/dian.png) 10px 20px  no-repeat;}
  .wrap .zncss a{ margin-left:5px}
 .wrap .list_block li.cur{background: #4092f1;color: #fff;font-weight: bold;}
 .wrap .list_block li.cur a{color: #fff;}
 
-/* ����css */
+/* 搜索css */
 .search #container{position: fixed;left:50%;/*top: 40%;*/top: 60px;margin-left: -182px;}
 .search .item{padding:5px 10px;cursor:pointer;	}
 .search .addbg{background:#f0f0f0;color: #000;}
@@ -47,539 +47,539 @@ h1{ font-size:24px; font-weight:bold; color:#6AC334; font-family:"΢���ź�"; pad
 <div class="search">
 	<div id="container">
 		<div class="f16 s_title mb15">
-			<span id="results">������</span>
+			<span id="results">搜索：</span>
 			<span class="dib btn_go_url dn" id="btn_go_url">
-				<a href="#"><span id="go_txt" class="go_txt"></span>����鿴</a>
+				<a href="#"><span id="go_txt" class="go_txt"></span>点击查看</a>
 			</span>
 		</div>
 		<div class="clearfix">
 			<div class="first dib">
-				<input placeholder="��������������:"  class="inputSearch" id="kw" onKeyup="getContent(this);" />
+				<input placeholder="请输入搜索内容:"  class="inputSearch" id="kw" onKeyup="getContent(this);" />
 			</div>
 		</div>
 		<div id="append"></div>
 	</div>
 </div>
 
-<h1>POCO UED ǰ�������淶��</h1>
+<h1>POCO UED 前端制作规范库</h1>
 <div class="wrap">
-	<h3 class="title">�����淶</h3>
+	<h3 class="title">基本规范</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">ҳ������ṹ</span>
-			<a href="javascript:void(0)" onclick="showdiv('structure')">�鿴ͼƬ</a>
-			<a  href="cssiframe/basic-structure.htm" data-role="link" >ʹ��˵��</a>
+			<span class="info">页面基本结构</span>
+			<a href="javascript:void(0)" onclick="showdiv('structure')">查看图片</a>
+			<a  href="cssiframe/basic-structure.htm" data-role="link" >使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="structure">
 			<img src="images/structure.jpg"/>
-			<a href="javascript:void(0)" onclick="hidediv('structure')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('structure')">关闭</a>
 		</div>
 		<li>
-			<span class="info">html��������</span>
-			<a  href="cssiframe/html_MM.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">html常用命名</span>
+			<a  href="cssiframe/html_MM.htm" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">CSS�����淶</span>
-			<a  href="cssiframe/naming-conventions.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">CSS命名规范</span>
+			<a  href="cssiframe/naming-conventions.htm" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">CSSע�͹淶</span>
-			<a  href="cssiframe/comment-conventions.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">CSS注释规范</span>
+			<a  href="cssiframe/comment-conventions.htm" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">CSS��д�淶</span>
-			<a  href="cssiframe/writing-conventions.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">CSS书写规范</span>
+			<a  href="cssiframe/writing-conventions.htm" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">����˵��</span>
-			<a  href="cssiframe/usage.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">引用说明</span>
+			<a  href="cssiframe/usage.htm" data-role="link">使用说明</a>
 		</li>
 	</ul>
-	<h3 class="title">css���</h3>
+	<h3 class="title">css框架</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">վ���������css</span>
-			<a href="javascript:void(0)" onclick="showdiv('zncss')">�鿴ͼƬ</a>
-			<a  href="cssiframe/zn_css_iframe.html" data-role="link">ʹ��˵��</a>
+			<span class="info">站内引入基本css</span>
+			<a href="javascript:void(0)" onclick="showdiv('zncss')">查看图片</a>
+			<a  href="cssiframe/zn_css_iframe.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="zncss">
 			<img src="images/1.jpg"/>
-			<a href="javascript:void(0)" onclick="hidediv('zncss')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('zncss')">关闭</a>
 		</div>
 		<li>
-			<span class="info">ר��ר���������css</span>
-			<a href="javascript:void(0)" onclick="showdiv('ztcss')">�鿴ͼƬ</a>
-			<a  href="cssiframe/zt_css_iframe.html" data-role="link">ʹ��˵��</a>
+			<span class="info">专题专区引入基本css</span>
+			<a href="javascript:void(0)" onclick="showdiv('ztcss')">查看图片</a>
+			<a  href="cssiframe/zt_css_iframe.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="ztcss">
 			<img src="images/2.jpg"/>
-			<a href="javascript:void(0)" onclick="hidediv('ztcss')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('ztcss')">关闭</a>
 		</div>
 	</ul>
-	<h3 class="title">ģ��</h3>
+	<h3 class="title">模块</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">ҳͷ��ҳβ</span>
-			<a  href="block/header.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">页头与页尾</span>
+			<a  href="block/header.htm" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">��ͷ</span>
-			<a  href="block/header_lite.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">简头</span>
+			<a  href="block/header_lite.htm" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">�°�ҳͷ</span>
-			<a  href="block/header_v2.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">新版页头</span>
+			<a  href="block/header_v2.htm" data-role="link">使用说明</a>
 		</li>
 	</ul>
-	<h3 class="title">�Ű沼��</h3>
+	<h3 class="title">排版布局</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">���ò���</span>
-			<a  href="grid/layout.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">常用布局</span>
+			<a  href="grid/layout.htm" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">Բ�Ǳ���ͼ����</span>
-			<a  href="grid/bg_pic.html" data-role="link">ʹ��˵��</a>
+			<span class="info">圆角背景图布局</span>
+			<a  href="grid/bg_pic.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">����դ�񲼾�</span>
-			<a  href="grid/grids.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">常用栅格布局</span>
+			<a  href="grid/grids.htm" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">դ��������</span>
-			<a  href="http://svn.poco.cn/poco_css/grid-maker.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">栅格生成器</span>
+			<a  href="http://svn.poco.cn/poco_css/grid-maker.htm" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">MyPocoդ�񲼾�</span>
-			<a  href="grid/mpc-grid.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">MyPoco栅格布局</span>
+			<a  href="grid/mpc-grid.htm" data-role="link">使用说明</a>
 		</li>
 	</ul>
-	<h3 class="title">ͼƬ�ߴ�</h3>
+	<h3 class="title">图片尺寸</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">վ��ͼƬ���</span>
-			<a  href="pic_Des/image.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">站内图片规格</span>
+			<a  href="pic_Des/image.htm" data-role="link">使用说明</a>
 		</li>
 	</ul>
-	<h3 class="title">�б�</h3>
+	<h3 class="title">列表</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">վ��ͼƬ�б��������б������淶</span>
-			<a  href="picart_list/nameRule.html" data-role="link">ʹ��˵��</a>
+			<span class="info">站内图片列表，文字列表命名规范</span>
+			<a  href="picart_list/nameRule.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">�����б�һ</span>
-			<a  href="picart_list/text1.html" data-role="link">ʹ��˵��</a>
+			<span class="info">文字列表一</span>
+			<a  href="picart_list/text1.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">�����б���</span>
-			<a  href="picart_list/text2.html" data-role="link">ʹ��˵��</a>
+			<span class="info">文字列表二</span>
+			<a  href="picart_list/text2.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">ͼ���б�һ(ͼ���64pxX64px)</span>
-			<a  href="picart_list/p64_64.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图文列表一(图规格64pxX64px)</span>
+			<a  href="picart_list/p64_64.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">ͼ���б���(ͼ���85pxX85px)</span>
-			<a  href="picart_list/p85_85.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图文列表二(图规格85pxX85px)</span>
+			<a  href="picart_list/p85_85.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">ͼ���б���(ͼ���86pxX86px)</span>
-			<a  href="picart_list/p86_86.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图文列表三(图规格86pxX86px)</span>
+			<a  href="picart_list/p86_86.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">ͼ���б���(ͼ���100pxX120px)</span>
-			<a  href="picart_list/p100_120.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图文列表四(图规格100pxX120px)</span>
+			<a  href="picart_list/p100_120.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">ͼ���б���(ͼ���135pxX85px)</span>
-			<a  href="picart_list/p135_85.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图文列表五(图规格135pxX85px)</span>
+			<a  href="picart_list/p135_85.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">ͼ���б���(ͼ���145pxX145px)</span>
-			<a  href="picart_list/p145_145.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图文列表六(图规格145pxX145px)</span>
+			<a  href="picart_list/p145_145.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">ͼ���б���(ͼ���165pxX165px)</span>
-			<a  href="picart_list/p165_165.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图文列表七(图规格165pxX165px)</span>
+			<a  href="picart_list/p165_165.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">������ͼ���б�</span>
-			<a  href="picart_list/p_other.html" data-role="link">ʹ��˵��</a>
+			<span class="info">特殊规格图文列表</span>
+			<a  href="picart_list/p_other.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">��ҳ����</span>
-			<a  href="picart_list/page.html" data-role="link">ʹ��˵��</a>
+			<span class="info">分页列码</span>
+			<a  href="picart_list/page.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">��ҳ����ڶ���</span>
-			<a  href="picart_list/pageZn.html" data-role="link">ʹ��˵��</a>
+			<span class="info">分页列码第二种</span>
+			<a  href="picart_list/pageZn.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">΢��ͼ���б�</span>
-			<a  href="picart_list/wb_list.html" data-role="link">ʹ��˵��</a>
+			<span class="info">微薄图文列表</span>
+			<a  href="picart_list/wb_list.html" data-role="link">使用说明</a>
 		</li>
 	</ul>
-	<h3 class="title">����Ӧģ��</h3>
+	<h3 class="title">自适应模块</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">����_ʱ��</span>
-			<a href="javascript:void(0)" onclick="showdiv('title_time_list')">�鿴ͼƬ</a>
-			<a href="zsy/title_time_list.html" data-role="link">ʹ��˵��</a>
+			<span class="info">标题_时间</span>
+			<a href="javascript:void(0)" onclick="showdiv('title_time_list')">查看图片</a>
+			<a href="zsy/title_time_list.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="title_time_list">
 			<img src="images/title_time_list.png" />
-			<a href="javascript:void(0)" onclick="hidediv('title_time_list')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('title_time_list')">关闭</a>
 		</div>
 		<li>
-			<span class="info">ͼƬ_����_����</span>
-			<a href="javascript:void(0)" onclick="showdiv('title_pic_content')">�鿴ͼƬ</a>
-			<a href="zsy/pic_title_content.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图片_标题_内容</span>
+			<a href="javascript:void(0)" onclick="showdiv('title_pic_content')">查看图片</a>
+			<a href="zsy/pic_title_content.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="title_pic_content">
 			<img src="images/title_pic_content.png" />
-			<a href="javascript:void(0)" onclick="hidediv('title_pic_content')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('title_pic_content')">关闭</a>
 		</div>
 		<li>
-			<span class="info">�����߶�����Ӧ</span>
-			<a href="">�鿴ͼƬ</a>
-			<a href="pic_center/Three_column_adaptive.html" data-role="link">ʹ��˵��</a>
+			<span class="info">三栏高度自适应</span>
+			<a href="">查看图片</a>
+			<a href="pic_center/Three_column_adaptive.html" data-role="link">使用说明</a>
 		</li>
 	</ul>
-	<h3 class="title">JavaScript Ч��</h3>
+	<h3 class="title">JavaScript 效果</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">�ȵ�ѡ�</span>
-			<a href="javascript:void(0)" onclick="showdiv('img1')">�鿴ͼƬ</a>
-			<a href="tab/tab_map_pic.html" data-role="link">ʹ��˵��</a>
+			<span class="info">热点选项卡</span>
+			<a href="javascript:void(0)" onclick="showdiv('img1')">查看图片</a>
+			<a href="tab/tab_map_pic.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="img1">
 			<img src="tab/images/tab_pic.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('img1')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('img1')">关闭</a>
 		</div>
 		<li>
-			<span class="info">ͼƬѡ�</span>
-			<a href="javascript:void(0)"  onclick="showdiv('tab_navImg')" >�鿴ͼƬ</a>
-			<a href="tab/tab_navImg.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图片选项卡</span>
+			<a href="javascript:void(0)"  onclick="showdiv('tab_navImg')" >查看图片</a>
+			<a href="tab/tab_navImg.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="tab_navImg">
 			<img src="images/tab_navImg.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('tab_navImg')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('tab_navImg')">关闭</a>
 		</div>
 		<li>
-			<span class="info">����ѡ�</span>
-			<a href="javascript:void(0)" onclick="showdiv('tab_common')">�鿴ͼƬ</a>
-			<a href="tab/tab_list_pic.html" data-role="link">ʹ��˵��</a>
+			<span class="info">常规选项卡</span>
+			<a href="javascript:void(0)" onclick="showdiv('tab_common')">查看图片</a>
+			<a href="tab/tab_list_pic.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="tab_common">
 			<img src="images/tab_com.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('tab_common')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('tab_common')">关闭</a>
 		</div>
 		<li>
-			<span class="info">վ��ѡ�</span>
-			<a href="javascript:void(0)" onclick="showdiv('img2')">�鿴ͼƬ</a>
-			<a href="tab/tab_zn_toggle.html" data-role="link">ʹ��˵��</a>
+			<span class="info">站内选项卡</span>
+			<a href="javascript:void(0)" onclick="showdiv('img2')">查看图片</a>
+			<a href="tab/tab_zn_toggle.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="img2">
 			<img src="tab/images/xh_qh_3.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('img2')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('img2')">关闭</a>
 		</div>
 		<li>
-			<span class="info">��϶����</span>
-			<a href="javascript:void(0)" onclick="showdiv('img3')">&nbsp;�鿴ͼƬ</a>
-			<a  href="scroll/demo.html" data-role="link">ʹ��˵��</a>
+			<span class="info">间隙滚动</span>
+			<a href="javascript:void(0)" onclick="showdiv('img3')">&nbsp;查看图片</a>
+			<a  href="scroll/demo.html" data-role="link">使用说明</a>
 			<a href="scroll/jxgd.html"></a>
 		</li>
 		<div class="zncss"  style="display:none" id="img3">
 			<img src="scroll/images/jxgd.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('img3')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('img3')">关闭</a>
 		</div>
 		<li>
-			<span class="info">�޷����</span>
-			<a href="javascript:void(0)" onclick="showdiv('img4')">&nbsp; �鿴ͼƬ</a>
-			<a  href="scroll/wfgd.html" data-role="link">ʹ��˵��</a>
+			<span class="info">无缝滚动</span>
+			<a href="javascript:void(0)" onclick="showdiv('img4')">&nbsp; 查看图片</a>
+			<a  href="scroll/wfgd.html" data-role="link">使用说明</a>
 			<a href="scroll/wfgd.html"></a>
 		</li>
 		<div class="zncss"  style="display:none" id="img4">
 			<img src="scroll/images/xh_s_2.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('img4')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('img4')">关闭</a>
 		</div>
 		<li>
-			<span class="info">���ֹ���</span>
-			<a href="scroll/text_paly.html" data-role="link">ʹ��˵��</a>
+			<span class="info">文字滚动</span>
+			<a href="scroll/text_paly.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">��������ͼ</span>
-			<a href="javascript:void(0)" onclick="showdiv('img6')">�鿴ͼƬ</a>
-			<a href="figure_focus/figure.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">五屏焦点图</span>
+			<a href="javascript:void(0)" onclick="showdiv('img6')">查看图片</a>
+			<a href="figure_focus/figure.htm" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="img6">
 			<img src="figure_focus/images/five_pic.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('img6')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('img6')">关闭</a>
 		</div>
 		<li>
-			<span class="info">���ҷ���Ч��</span>
-			<a href="javascript:void(0)" onclick="showdiv('img8')">�鿴ͼƬ</a>
-			<a href="figure_focus/figure3.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">左右翻滚效果</span>
+			<a href="javascript:void(0)" onclick="showdiv('img8')">查看图片</a>
+			<a href="figure_focus/figure3.htm" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="img8">
 			<img src="figure_focus/images/scroll_pic.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('img8')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('img8')">关闭</a>
 		</div>
 		<li>
-			<span class="info">���ҷ���Ч��(ȫ��)</span>
-			<a href="javascript:void(0)" onclick="showdiv('img9')">�鿴ͼƬ</a>
-			<a href="figure_focus/figure4.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">左右翻滚效果(全屏)</span>
+			<a href="javascript:void(0)" onclick="showdiv('img9')">查看图片</a>
+			<a href="figure_focus/figure4.htm" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="img9">
 			<img src="figure_focus/images/scroll_pic-auto.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('img9')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('img9')">关闭</a>
 		</div>
 		<li>
-			<span class="info">���䷭��Ч��(�ɴ�����ͼ)</span>
-			<a href="javascript:void(0)" onclick="showdiv('img10')">�鿴ͼƬ</a>
-			<a href="figure_focus/figure5.htm" data-role="link">ʹ��˵��</a>
+			<span class="info">渐变翻滚效果(可带缩率图)</span>
+			<a href="javascript:void(0)" onclick="showdiv('img10')">查看图片</a>
+			<a href="figure_focus/figure5.htm" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="img10">
 			<img src="figure_focus/images/scroll_pic-2.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('img10')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('img10')">关闭</a>
 		</div>
 		<li>
-			<span class="info">���ұ任����ͼ</span>
-			<a href="javascript:void(0)" onclick="showdiv('img7')">�鿴ͼƬ</a>
-			<a href="figure_focus/figure2.html" data-role="link">ʹ��˵��</a>
+			<span class="info">左右变换焦点图</span>
+			<a href="javascript:void(0)" onclick="showdiv('img7')">查看图片</a>
+			<a href="figure_focus/figure2.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="img7">
 			<img src="figure_focus/images/three_pic.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('img7')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('img7')">关闭</a>
 		</div>
 		<li>
-			<span class="info">������չʾ</span>
-			<a href="javascript:void(0)" onclick="showdiv('picshow')">�鿴ͼƬ</a>
-			<a  href="scroll/picShow.html" data-role="link">ʹ��˵��</a>
+			<span class="info">相册滚动展示</span>
+			<a href="javascript:void(0)" onclick="showdiv('picshow')">查看图片</a>
+			<a  href="scroll/picShow.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="picshow">
 			<img  src="scroll/images/picshow.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('picshow')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('picshow')">关闭</a>
 		</div>
 		<li>
-			<span class="info">������չʾ(�෽λ)</span>
-			<a  href="scroll/picShow2.html" data-role="link">ʹ��˵��</a>
+			<span class="info">相册滚动展示(多方位)</span>
+			<a  href="scroll/picShow2.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">���ý���ͼ</span>
-			<a href="javascript:void(0)" onclick="showdiv('usefocus')">�鿴ͼƬ</a>
-			<a href="figure_focus/demo2.html" data-role="link">ʹ��˵��</a>
+			<span class="info">常用焦点图</span>
+			<a href="javascript:void(0)" onclick="showdiv('usefocus')">查看图片</a>
+			<a href="figure_focus/demo2.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="usefocus">
 			<img src="images/usefocus.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('usefocus')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('usefocus')">关闭</a>
 		</div>
 		<li style="display:none">
-			<span class="info">JQ����ͼ���allinone</span>
-			<a href="javascript:void(0)" onclick="showdiv('allinone')">�鿴ͼƬ</a>
-			<a  href="allinone/demo.html" data-role="link">ʹ��˵��</a>
+			<span class="info">JQ焦点图插件allinone</span>
+			<a href="javascript:void(0)" onclick="showdiv('allinone')">查看图片</a>
+			<a  href="allinone/demo.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="allinone">
 			<!-- <img  src="allinone/images/demo-index.png" /> -->
-			<a href="javascript:void(0)" onclick="hidediv('allinone')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('allinone')">关闭</a>
 		</div>
 		<li>
-			<span class="info">IE�˾�(iepngfix)</span>
-			<a href="javascript:void(0)" onclick="showdiv('img7')">�鿴ͼƬ</a>
-			<a href="iepngfix/ie_alpha_pngfix.html" data-role="link">ʹ��˵��</a>
+			<span class="info">IE滤镜(iepngfix)</span>
+			<a href="javascript:void(0)" onclick="showdiv('img7')">查看图片</a>
+			<a href="iepngfix/ie_alpha_pngfix.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="img7">
 			<img src="iepngfix/images/png_min.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('img7')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('img7')">关闭</a>
 		</div>
 		<li>
-			<span class="info">ͼƬչʾ�϶�Ч��</span>
-			<a href="javascript:void(0)" onclick="showdiv('picSlider')">�鿴ͼƬ</a>
-			<a href="picSlider/index.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图片展示拖动效果</span>
+			<a href="javascript:void(0)" onclick="showdiv('picSlider')">查看图片</a>
+			<a href="picSlider/index.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="picSlider">
 			<img src="images/picSlider.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('picSlider')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('picSlider')">关闭</a>
 		</div>
 		<li>
-			<span class="info">ͼƬ�������л�Ч��</span>
-			<a href="imgView/index.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图片上下张切换效果</span>
+			<a href="imgView/index.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">ҳ�淵��ͷ��Ч��</span>
-			<a href="scrollTop/scrollTop.html" data-role="link">ʹ��˵��</a>
+			<span class="info">页面返回头部效果</span>
+			<a href="scrollTop/scrollTop.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">�ֻ�ѡ������ʱ��ؼ�Ч��</span>
-			<a href="dateTime/dateTime.html" data-role="link">ʹ��˵��</a>
+			<span class="info">手机选择日期时间控件效果</span>
+			<a href="dateTime/dateTime.html" data-role="link">使用说明</a>
 		</li>
 	</ul>
-	<h3 class="title">ר�ⳣ��</h3>
+	<h3 class="title">专题常用</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">ͼƬ_����_�б�</span>
-			<a href="javascript:void(0)" onclick="showdiv('list_block')">�鿴ͼƬ</a>
-			<a href="topic/list_block.html" data-role="link">ʹ��˵��</a>
+			<span class="info">图片_标题_列表</span>
+			<a href="javascript:void(0)" onclick="showdiv('list_block')">查看图片</a>
+			<a href="topic/list_block.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="list_block">
 			<img src="images/list_block.png" />
-			<a href="javascript:void(0)" onclick="hidediv('list_block')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('list_block')">关闭</a>
 		</div>
 		<li>
-			<span class="info">��½��</span>
-			<a href="topic/login.html" data-role="link">ʹ��˵��</a>
+			<span class="info">登陆框</span>
+			<a href="topic/login.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">ע���</span>
-			<a href="javascript:void(0)" onclick="showdiv('register')">�鿴ͼƬ</a>
-			<a href="topic/register.html" data-role="link">ʹ��˵��</a>
+			<span class="info">注册框</span>
+			<a href="javascript:void(0)" onclick="showdiv('register')">查看图片</a>
+			<a href="topic/register.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="register">
 			<img src="images/register.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('register')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('register')">关闭</a>
 		</div>
 		<li>
-			<span class="info">���԰�ģ��</span>
-			<a href="javascript:void(0)" onclick="showdiv('comment')">�鿴ͼƬ</a>
-			<a  href="comment/index.html" data-role="link">ʹ��˵��</a>
+			<span class="info">留言板模块</span>
+			<a href="javascript:void(0)" onclick="showdiv('comment')">查看图片</a>
+			<a  href="comment/index.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="comment">
 			<img  src="comment/comment.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('comment')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('comment')">关闭</a>
 		</div>
 		<li>
-			<span class="info">΢���б�ģ��</span>
-			<a  href="comment/status_topic.html" data-role="link">ʹ��˵��</a>
+			<span class="info">微博列表模块</span>
+			<a  href="comment/status_topic.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">΢������ģ��</span>
-			<a  href="comment/΢������.html" data-role="link">ʹ��˵��</a>
+			<span class="info">微博分享模块</span>
+			<a  href="comment/微博分享.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">���־��е�����</span>
-			<a href="javascript:void(0)" onclick="showdiv('pop')">�鿴ͼƬ</a>
-			<a href="topic/pop.html" data-role="link">ʹ��˵��</a>
+			<span class="info">遮罩居中弹出框</span>
+			<a href="javascript:void(0)" onclick="showdiv('pop')">查看图片</a>
+			<a href="topic/pop.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="pop">
 			<img src="images/pop.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('pop')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('pop')">关闭</a>
 		</div>
 		<li>
-			<span class="info">��������</span>
-			<a href="javascript:void(0)" onclick="showdiv('fxtc_block')">�鿴ͼƬ</a>
-			<a href="topic/fxpop.html" data-role="link">ʹ��˵��</a>
+			<span class="info">分享弹层</span>
+			<a href="javascript:void(0)" onclick="showdiv('fxtc_block')">查看图片</a>
+			<a href="topic/fxpop.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="fxtc_block">
 			<img src="images/fxtc.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('fxtc_block')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('fxtc_block')">关闭</a>
 		</div>
 		<li>
-			<span class="info">IE ��������ɫ����</span>
-			<a href="topic/ie_bar_cor.html" data-role="link">ʹ��˵��</a>
+			<span class="info">IE 滚动条颜色代码</span>
+			<a href="topic/ie_bar_cor.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">��������ɫ��jquery�棩</span>
-			<a href="topic/bar_cor_jquery.html" data-role="link">ʹ��˵��</a>
+			<span class="info">滚动条颜色（jquery版）</span>
+			<a href="topic/bar_cor_jquery.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">������ͼƬģ��</span>
-			<a href="jscrollpane/scroll.html" data-role="link">ʹ��˵��</a>
+			<span class="info">滚动条图片模拟</span>
+			<a href="jscrollpane/scroll.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">�ײ���Ȩģ��</span>
-			<a href="topic/footer.html" data-role="link">ʹ��˵��</a>
+			<span class="info">底部版权模块</span>
+			<a href="topic/footer.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">δ֪�߶�ͼƬ��ֱ����</span>
-			<a href="pic_center/pic_center.html" data-role="link">ʹ��˵��</a>
+			<span class="info">未知高度图片垂直居中</span>
+			<a href="pic_center/pic_center.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">���������״��ʾ</span>
-			<a href="pic_center/font_qc.html" data-role="link">ʹ��˵��</a>
+			<span class="info">文字溢出点状显示</span>
+			<a href="pic_center/font_qc.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">����͸����CSS</span>
-			<a href="topic/translucent.html" data-role="link">ʹ��˵��</a>
-		</li>
-	</ul>
-	<h3 class="title">��ɫ�������淶</h3>
-	<ul class="list_block">
-		<li>
-			<span class="info">����Ƶ��ģ���ַ</span>
-			<a href="bianselong/DES.htm" data-role="link">ʹ��˵��</a>
-		</li>
-		<li>
-			<span class="info">��ɫ������˵���ĵ�</span>
-			<a href="DOC/" data-role="link">ʹ��˵��</a>
+			<span class="info">背景透明度CSS</span>
+			<a href="topic/translucent.html" data-role="link">使用说明</a>
 		</li>
 	</ul>
-	<h3 class="title">����������֢</h3>
+	<h3 class="title">变色龙制作规范</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">li��IE��FF�¼�϶����</span>
-			<a href="compatible_FAQ/lipx/lipx.html" data-role="link">ʹ��˵��</a>
+			<span class="info">各个频道模板地址</span>
+			<a href="bianselong/DES.htm" data-role="link">使用说明</a>
+		</li>
+		<li>
+			<span class="info">变色龙制作说明文档</span>
+			<a href="DOC/" data-role="link">使用说明</a>
+		</li>
+	</ul>
+	<h3 class="title">兼容疑难杂症</h3>
+	<ul class="list_block">
+		<li>
+			<span class="info">li在IE与FF下间隙问题</span>
+			<a href="compatible_FAQ/lipx/lipx.html" data-role="link">使用说明</a>
 		</li>
 	</ul>
 	<h3 class="title">HTML5 CSS3</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">Բ��ͶӰ</span>
-			<a href="javascript:void(0)" onclick="showdiv('circle')">�鿴ͼƬ</a>
-			<a href="html5_css3/yuanjiao.html" data-role="link">ʹ��˵��</a>
+			<span class="info">圆角投影</span>
+			<a href="javascript:void(0)" onclick="showdiv('circle')">查看图片</a>
+			<a href="html5_css3/yuanjiao.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="circle">
 			<img src="images/circle.jpg" />
-			<a href="javascript:void(0)" onclick="hidediv('circle')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('circle')">关闭</a>
 		</div>
 	</ul>
 	<ul class="list_block">
 		<li>
-			<span class="info">��������</span>
-			<a href="javascript:void(0)" onclick="showdiv('jbxl')">�鿴ͼƬ</a>
-			<a href="html5_css3/jbxl.html" data-role="link">ʹ��˵��</a>
+			<span class="info">渐变下拉</span>
+			<a href="javascript:void(0)" onclick="showdiv('jbxl')">查看图片</a>
+			<a href="html5_css3/jbxl.html" data-role="link">使用说明</a>
 		</li>
 		<div class="zncss"  style="display:none" id="jbxl">
 			<img src="images/jbxl.png" />
-			<a href="javascript:void(0)" onclick="hidediv('jbxl')">�ر�</a>
+			<a href="javascript:void(0)" onclick="hidediv('jbxl')">关闭</a>
 		</div>
 	</ul>
-	<h3 class="title">ǰ�˹���</h3>
+	<h3 class="title">前端工具</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">CSSѹ���Ż�</span>
-			<a href="http://svn.poco.cn/poco_css/CssCompressor/css_optimiser.php" data-role="link">ʹ��˵��</a>
+			<span class="info">CSS压缩优化</span>
+			<a href="http://svn.poco.cn/poco_css/CssCompressor/css_optimiser.php" data-role="link">使用说明</a>
 		</li>
 		<li>
 			<span class="info">HttpWatch</span>
-			<a href="qianduan_tool/httpwatch/httpwatch.html" data-role="link">ʹ��˵��</a>
+			<a href="qianduan_tool/httpwatch/httpwatch.html" data-role="link">使用说明</a>
 		</li>
 		<li>
 			<span class="info">IEDevelope Tools</span>
-			<a href="qianduan_tool/IEDevelope/IEDevToolbar.html" data-role="link">ʹ��˵��</a>
+			<a href="qianduan_tool/IEDevelope/IEDevToolbar.html" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">jQuery API�����ĵ����Դ��</span>
-			<a href="qianduan_tool/jquery/jquery_help.html"  data-role="link">ʹ��˵��</a>
+			<span class="info">jQuery API帮助文档与库源码</span>
+			<a href="qianduan_tool/jquery/jquery_help.html"  data-role="link">使用说明</a>
 		</li>
 	</ul>
 	<h3 class="title">DOC</h3>
 	<ul class="list_block">
 		<li>
-			<span class="info">WEBǰ�������淶˵��</span>
-			<a href="DOC/" data-role="link">ʹ��˵��</a>
+			<span class="info">WEB前端制作规范说明</span>
+			<a href="DOC/" data-role="link">使用说明</a>
 		</li>
 		<li>
-			<span class="info">���淶��ά������˵��</span>
-			<a href="DOC/about.html" data-role="link">ʹ��˵��</a>
+			<span class="info">本规范库维护更新说明</span>
+			<a href="DOC/about.html" data-role="link">使用说明</a>
 		</li>
-		<!-- <li><a href="#">���ض���</a></li> -->
+		<!-- <li><a href="#">返回顶部</a></li> -->
 	</ul>
 </div>
 
 
 <div id="go-top" class="go-top">
-	<a href="javascript:;">���ض���</a>
+	<a href="javascript:;">返回顶部</a>
 </div>
 
 <script type="text/javascript">
@@ -599,7 +599,7 @@ function hidediv(obj_div_hide)
 		
 }	
 
-// ���ض���
+// 返回顶部
 $('#go-top').on('click', function(event) {
     event.preventDefault();
     $("html,body").animate({scrollTop:0},200);
@@ -607,12 +607,12 @@ $('#go-top').on('click', function(event) {
 
 
 ////////////////////////////////////////
-////  2015-9-2 ������������ 	    ////
-////  ��Բ						   ////				
+////  2015-9-2 增加搜索功能 	    ////
+////  汤圆						   ////				
 //////////////////////////////////////
 
 var data = [];
-// json���ݸ�ʽ��װ
+// json数据格式组装
 $('.wrap  li').each(function(i, val) {
 	data.push({
 		i : i ,
@@ -700,7 +700,7 @@ var moveNext = function()
 
 var dojob = function()
 {
-	console.log("���� enter");
+	console.log("键盘 enter");
     $("#kw").blur();
     var value = $(".addbg").text();
     $("#kw").val(value);
@@ -744,7 +744,7 @@ function getFocus(obj)
 
 function getCon(obj)
 {
-    console.log('�����');
+    console.log('鼠标点击');
 
     var value = $(obj).html();
     $("#kw").val(value);
@@ -763,7 +763,7 @@ function go_url(url,index,val)
 	$('.wrap  li').eq(index).addClass('cur');
 	$("html,body").animate({scrollTop:$('.wrap  li').eq(index).parent().offset().top},200);
     $('#go_txt').html(val);
-    $('#results').html('���������');
+    $('#results').html('搜索结果：');
 }
 </script>
 </body>
