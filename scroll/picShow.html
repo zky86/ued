@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>Ïà²áÕ¹Ê¾Ä£¿é</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ç›¸å†Œå±•ç¤ºæ¨¡å—</title>
 <link href="css/zt.css" type="text/css" rel="stylesheet"  />
 
 <style>
 .content {width: 1000px;margin: 0 auto; line-height:22px; font-size:12px}
-h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"Î¢ÈíÑÅºÚ"}
+h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: center;border-bottom: #ccc solid 1px; margin-bottom:20px; padding:15px 0;font-family:"å¾®è½¯é›…é»‘"}
  textarea { background:#F2F3F7;border:1px dashed #CCCCCC; display:block; padding:5px; margin-bottom:25px}
 </style>
 </head>
@@ -16,7 +16,7 @@ h1 {font-size: 26px;font-weight:bold;color: #3FA600;padding: 10px;text-align: ce
 
 <div class="content">
 
-	<h1>Ïà²áÕ¹Ê¾Ä£¿é</h1>
+	<h1>ç›¸å†Œå±•ç¤ºæ¨¡å—</h1>
 	
 
 <div class="picshow-block clearfix">
@@ -58,9 +58,9 @@ document.getElementsByClassName = function(cl) {
 	return retnode;
 }
 var MyMar;
-var speed = 1; //ËÙ¶È£¬Ô½´óÔ½Âı
-var spec = 1; //Ã¿´Î¹ö¶¯µÄ¼ä¾à, Ô½´ó¹ö¶¯Ô½¿ì
-var ipath = 'images/'; //Í¼Æ¬Â·¾¶
+var speed = 1; //é€Ÿåº¦ï¼Œè¶Šå¤§è¶Šæ…¢
+var spec = 1; //æ¯æ¬¡æ»šåŠ¨çš„é—´è·, è¶Šå¤§æ»šåŠ¨è¶Šå¿«
+var ipath = 'images/'; //å›¾ç‰‡è·¯å¾„
 var thumbs = document.getElementsByClassName('thumb_img');
 for (var i=0; i<thumbs.length; i++) {
 	var obj=thumbs[i];
@@ -68,10 +68,10 @@ for (var i=0; i<thumbs.length; i++) {
 	thumbs[i].onclick = function () {window.location.href= this.getAttribute('rel');}
 }
 $('main_img').onclick = function () {window.location.href= this.getAttribute('link');}
-$('gotop').onmouseover = function() {this.src = ipath + 'btn_top.jpg'; MyMar=setInterval(gotop,speed);} //ÏòÉÏÊó±ê¾­¹ıÊ±°´Å¥Í¼Æ¬
-$('gotop').onmouseout = function() {this.src = ipath + 'btn_top.jpg'; clearInterval(MyMar);}//ÏòÉÏÊó±êÀë¿ª°´Å¥Í¼Æ¬
-$('gobottom').onmouseover = function() {this.src = ipath + 'btn_bottom.jpg'; MyMar=setInterval(gobottom,speed);}//ÏòÏÂÊó±ê¾­¹ıÊ±°´Å¥Í¼Æ¬
-$('gobottom').onmouseout = function() {this.src = ipath + 'btn_bottom.jpg'; clearInterval(MyMar);}//ÏòÏÂÊó±êÀë¿ª°´Å¥Í¼Æ¬
+$('gotop').onmouseover = function() {this.src = ipath + 'btn_top.jpg'; MyMar=setInterval(gotop,speed);} //å‘ä¸Šé¼ æ ‡ç»è¿‡æ—¶æŒ‰é’®å›¾ç‰‡
+$('gotop').onmouseout = function() {this.src = ipath + 'btn_top.jpg'; clearInterval(MyMar);}//å‘ä¸Šé¼ æ ‡ç¦»å¼€æŒ‰é’®å›¾ç‰‡
+$('gobottom').onmouseover = function() {this.src = ipath + 'btn_bottom.jpg'; MyMar=setInterval(gobottom,speed);}//å‘ä¸‹é¼ æ ‡ç»è¿‡æ—¶æŒ‰é’®å›¾ç‰‡
+$('gobottom').onmouseout = function() {this.src = ipath + 'btn_bottom.jpg'; clearInterval(MyMar);}//å‘ä¸‹é¼ æ ‡ç¦»å¼€æŒ‰é’®å›¾ç‰‡
 function gotop() {$('showArea').scrollTop-=spec;}
 function gobottom() {$('showArea').scrollTop+=spec;}						
 </script> 
@@ -139,9 +139,9 @@ document.getElementsByClassName = function(cl) {
 	return retnode;
 }
 var MyMar;
-var speed = 1; //ËÙ¶È£¬Ô½´óÔ½Âı
-var spec = 1; //Ã¿´Î¹ö¶¯µÄ¼ä¾à, Ô½´ó¹ö¶¯Ô½¿ì
-var ipath = 'images/'; //Í¼Æ¬Â·¾¶
+var speed = 1; //é€Ÿåº¦ï¼Œè¶Šå¤§è¶Šæ…¢
+var spec = 1; //æ¯æ¬¡æ»šåŠ¨çš„é—´è·, è¶Šå¤§æ»šåŠ¨è¶Šå¿«
+var ipath = 'images/'; //å›¾ç‰‡è·¯å¾„
 var thumbs = document.getElementsByClassName('thumb_img');
 for (var i=0; i<thumbs.length; i++) {
 	var obj=thumbs[i];
@@ -149,10 +149,10 @@ for (var i=0; i<thumbs.length; i++) {
 	thumbs[i].onclick = function () {window.location.href= this.getAttribute('rel');}
 }
 $('main_img').onclick = function () {window.location.href= this.getAttribute('link');}
-$('gotop').onmouseover = function() {this.src = ipath + 'btn_top.jpg'; MyMar=setInterval(gotop,speed);} //ÏòÉÏÊó±ê¾­¹ıÊ±°´Å¥Í¼Æ¬
-$('gotop').onmouseout = function() {this.src = ipath + 'btn_top.jpg'; clearInterval(MyMar);}//ÏòÉÏÊó±êÀë¿ª°´Å¥Í¼Æ¬
-$('gobottom').onmouseover = function() {this.src = ipath + 'btn_bottom.jpg'; MyMar=setInterval(gobottom,speed);}//ÏòÏÂÊó±ê¾­¹ıÊ±°´Å¥Í¼Æ¬
-$('gobottom').onmouseout = function() {this.src = ipath + 'btn_bottom.jpg'; clearInterval(MyMar);}//ÏòÏÂÊó±êÀë¿ª°´Å¥Í¼Æ¬
+$('gotop').onmouseover = function() {this.src = ipath + 'btn_top.jpg'; MyMar=setInterval(gotop,speed);} //å‘ä¸Šé¼ æ ‡ç»è¿‡æ—¶æŒ‰é’®å›¾ç‰‡
+$('gotop').onmouseout = function() {this.src = ipath + 'btn_top.jpg'; clearInterval(MyMar);}//å‘ä¸Šé¼ æ ‡ç¦»å¼€æŒ‰é’®å›¾ç‰‡
+$('gobottom').onmouseover = function() {this.src = ipath + 'btn_bottom.jpg'; MyMar=setInterval(gobottom,speed);}//å‘ä¸‹é¼ æ ‡ç»è¿‡æ—¶æŒ‰é’®å›¾ç‰‡
+$('gobottom').onmouseout = function() {this.src = ipath + 'btn_bottom.jpg'; clearInterval(MyMar);}//å‘ä¸‹é¼ æ ‡ç¦»å¼€æŒ‰é’®å›¾ç‰‡
 function gotop() {$('showArea').scrollTop-=spec;}
 function gobottom() {$('showArea').scrollTop+=spec;}						
 </script>

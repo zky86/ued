@@ -1,1 +1,0 @@
-document.write('<script language=javascript src=\'http://a-m-s.poco.cn/show.htx&zone_id=1597&.mail.=1\'><\/script>');

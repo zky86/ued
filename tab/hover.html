@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 <title></title>
 <link href="css/reset.css" rel="stylesheet" />
 <style type="text/css">
 body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
-body,button,input,select,textarea{font:normal 12px "����"}
+body,button,input,select,textarea{font:normal 12px "宋体"}
 input,select,form img,button{vertical-align:middle}
 h1,h2,h3,h4,h5,h6{font-size:100%}
 em{font-style:normal}
@@ -19,7 +19,7 @@ a{text-decoration:none}
 .clearfix{display:inline-block}
 * html .clearfix{height:1%}
 .content {font-size: 14px; line-height: 24px; margin: 0 auto;width: 994px; overflow:hidden;}
-h1 { border-bottom: 1px solid #CCCCCC; color: #3FA600;font-family: "΢���ź�"; font-size: 26px;font-weight: bold; margin-bottom: 20px; padding: 15px 0;text-align: center;}
+h1 { border-bottom: 1px solid #CCCCCC; color: #3FA600;font-family: "微软雅黑"; font-size: 26px;font-weight: bold; margin-bottom: 20px; padding: 15px 0;text-align: center;}
 .tabTurnPlay .navTitle { padding-bottom:10px; position:relative; }
 .tabTurnPlay .s { position:absolute; border-left:5px solid #fff; border-right:5px solid #fff; border-top:5px solid #f28d04; width:0; height:0; top:26px; }
 .tabTurnPlay .navTitle ul { border:1px solid #dcdcdc; background:#ededed; overflow:hidden; zoom:1; }
@@ -51,7 +51,7 @@ textarea {
 			},
 			$ = B.obj;
 		
-		//��ǩ�л�
+		//标签切换
 		function funTabTurnPlay(_Id){
 			this.emId = _Id + "_tabTurnPlay";
  			
@@ -119,82 +119,82 @@ for(var i=0; i<obj.getElementsByTagName('div').length; i++)
 </head>
 <body>
 <div class="content">
-<h1>list�л�ҳ</h1>
+<h1>list切换页</h1>
  <div id="r1_tabTurnPlay" class="tabTurnPlay">
   <div class="navTitle">
    <ul>
-    <li class="cur"><a href="#">���߷���</a></li>
-    <li><a href="#">���߽��</a></li>
-    <li><a href="#">����֪ͨ</a></li>
-    <li><a href="#">�������</a></li>
+    <li class="cur"><a href="#">政策发布</a></li>
+    <li><a href="#">政策解读</a></li>
+    <li><a href="#">工作通知</a></li>
+    <li><a href="#">征求意见</a></li>
    </ul>
    <i class="s" style="left:40px;"></i> </div>
    
-   <!--�л�����1-->
+   <!--切换内容1-->
   <div rel="con1" class="con">
    <ul>
-    <li><a href="#" target="_blank" >���񲿹���2010���52�� ���ڶ�ԭ���������Ľ�...</a></li>
-    <li><a href="#" target="_blank" >���񲿹���2010���48��  ���ڶ�ԭ����ŷ�˵�...</a></li>
-    <li><a href="#" target="_blank">���񲿰칫����������Ͷ�ʻ��������Զ��ۻ�����...</a></li>
-    <li><a href="#" target="_blank">�л����񹲺͹����񲿹���2010���49�� </a></li>
+    <li><a href="#" target="_blank" >商务部公告2010年第52号 关于对原产于美国的进...</a></li>
+    <li><a href="#" target="_blank" >商务部公告2010年第48号  关于对原产于欧盟的...</a></li>
+    <li><a href="#" target="_blank">商务部办公厅关于外商投资互联网、自动售货机方...</a></li>
+    <li><a href="#" target="_blank">中华人民共和国商务部公告2010年第49号 </a></li>
    </ul>
    <ul>
-    <li><a href="#" target="_blank" >������������ҵ��������Ա��ȫ�����涨��</a></li>
-    <li><a href="#" target="_blank">������������ҵ��������Ա��ȫ�����涨��</a></li>
-    <li><a href="#" target="_blank">�л����񹲺͹����񲿹���2010���47��</a></li>
-    <li><a href="#" target="_blank">���񲿹��ڹ淶��չ��ԡҵ��ָ�����</a></li>
-    <li class="more01"><a href="#">����&gt;&gt;</a></li>
+    <li><a href="#" target="_blank" >《境外中资企业机构和人员安全管理规定》</a></li>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》</a></li>
+    <li><a href="#" target="_blank">中华人民共和国商务部公告2010年第47号</a></li>
+    <li><a href="#" target="_blank">商务部关于规范发展沐浴业的指导意见</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
    </ul>
   </div>
   
-  <!--�л�����2-->
+  <!--切换内容2-->
   <div rel="con2" class="con" style="display:none;">
    <ul>
-    <li><a href="#" target="_blank">������������ҵ��������Ա��ȫ�����涨����� </a></li>
-    <li><a href="#" target="_blank" >�����ǡ���־������ҫƽ���������£�����Ϣ����...</a></li>
-    <li><a href="#" target="_blank">���񲿲���˾�����˾�ȡ��������Ʒ������˰���...</a></li>
-    <li><a href="#" target="_blank">�зǺ�����̳���Ľ첿�������龭ó�ٴ����ݽ��</a></li>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
    </ul>
    <ul>
-    <li><a href="#">���񲿹�ƽó�׾ָ����˽���й�����ũ��Ʒ����...</a></li>
-    <li><a href="#">�������ŷ����˾�3�·��ҹ���ó���������...</a></li>
-    <li><a href="#">��̨���洬�����ʴ�</a></li>
-    <li><a href="#">���񲿹���˾�����˾��й�-��³��óЭ�����ܼ���...</a></li>
-    <li class="more01"><a href="#">����&gt;&gt;</a></li>
+    <li><a href="#">商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
    </ul>
   </div>
   
-  <!--�л�����3-->
+  <!--切换内容3-->
   <div rel="con3" class="con" style="display:none;">
    <ul>
-    <li><a href="#" target="_blank">������������ҵ��������Ա��ȫ�����涨����� </a></li>
-    <li><a href="#" target="_blank" >�����ǡ���־������ҫƽ���������£�����Ϣ����...</a></li>
-    <li><a href="#" target="_blank">���񲿲���˾�����˾�ȡ��������Ʒ������˰���...</a></li>
-    <li><a href="#" target="_blank">�зǺ�����̳���Ľ첿�������龭ó�ٴ����ݽ��</a></li>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
    </ul>
    <ul>
-    <li><a href="#">���񲿹�ƽó�׾ָ����˽���й�����ũ��Ʒ����...</a></li>
-    <li><a href="#">�������ŷ����˾�3�·��ҹ���ó���������...</a></li>
-    <li><a href="#">��̨���洬�����ʴ�</a></li>
-    <li><a href="#">���񲿹���˾�����˾��й�-��³��óЭ�����ܼ���...</a></li>
-    <li class="more01"><a href="#">����&gt;&gt;</a></li>
+    <li><a href="#">商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
    </ul>
   </div>
   
-  <!--�л�����4-->
+  <!--切换内容4-->
   <div rel="con4" class="con" style="display:none;">
    <ul>
-    <li><a href="#" target="_blank">22������������ҵ��������Ա��ȫ�����涨����� </a></li>
-    <li><a href="#" target="_blank" >�����ǡ���־������ҫƽ���������£�����Ϣ����...</a></li>
-    <li><a href="#" target="_blank">���񲿲���˾�����˾�ȡ��������Ʒ������˰���...</a></li>
-    <li><a href="#" target="_blank">�зǺ�����̳���Ľ첿�������龭ó�ٴ����ݽ��</a></li>
+    <li><a href="#" target="_blank">22《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
    </ul>
    <ul>
-    <li><a href="#">111���񲿹�ƽó�׾ָ����˽���й�����ũ��Ʒ����...</a></li>
-    <li><a href="#">�������ŷ����˾�3�·��ҹ���ó���������...</a></li>
-    <li><a href="#">��̨���洬�����ʴ�</a></li>
-    <li><a href="#">���񲿹���˾�����˾��й�-��³��óЭ�����ܼ���...</a></li>
-    <li class="more01"><a href="#">����&gt;&gt;</a></li>
+    <li><a href="#">111商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
    </ul>
   </div>
  </div>
@@ -227,7 +227,7 @@ for(var i=0; i<obj.getElementsByTagName('div').length; i++)
 			},
 			$ = B.obj;
 		
-		//��ǩ�л�
+		//标签切换
 		function funTabTurnPlay(_Id){
 			this.emId = _Id + "_tabTurnPlay";
  			
@@ -297,83 +297,83 @@ for(var i=0; i<obj.getElementsByTagName('div').length; i++)
     <div id="r1_tabTurnPlay" class="tabTurnPlay">
   <div class="navTitle">
    <ul>
-    <li class="cur"><a href="#">���߷���</a></li>
-    <li><a href="#">���߽��</a></li>
-    <li><a href="#">����֪ͨ</a></li>
-    <li><a href="#">�������</a></li>
+    <li class="cur"><a href="#">政策发布</a></li>
+    <li><a href="#">政策解读</a></li>
+    <li><a href="#">工作通知</a></li>
+    <li><a href="#">征求意见</a></li>
    </ul>
    <i class="s" style="left:40px;"></i> </div>
    
-   <!--�л�����1-->
+   <!--切换内容1-->
   <div rel="con1" class="con">
    <ul>
-    <li><a href="#" target="_blank" >���񲿹���2010���52�� ���ڶ�ԭ���������Ľ�...</a></li>
-    <li><a href="#" target="_blank" >���񲿹���2010���48��  ���ڶ�ԭ����ŷ�˵�...</a></li>
-    <li><a href="#" target="_blank">���񲿰칫����������Ͷ�ʻ��������Զ��ۻ�����...</a></li>
-    <li><a href="#" target="_blank">�л����񹲺͹����񲿹���2010���49�� </a></li>
+    <li><a href="#" target="_blank" >商务部公告2010年第52号 关于对原产于美国的进...</a></li>
+    <li><a href="#" target="_blank" >商务部公告2010年第48号  关于对原产于欧盟的...</a></li>
+    <li><a href="#" target="_blank">商务部办公厅关于外商投资互联网、自动售货机方...</a></li>
+    <li><a href="#" target="_blank">中华人民共和国商务部公告2010年第49号 </a></li>
    </ul>
    <ul>
-    <li><a href="#" target="_blank" >������������ҵ��������Ա��ȫ�����涨��</a></li>
-    <li><a href="#" target="_blank">������������ҵ��������Ա��ȫ�����涨��</a></li>
-    <li><a href="#" target="_blank">�л����񹲺͹����񲿹���2010���47��</a></li>
-    <li><a href="#" target="_blank">���񲿹��ڹ淶��չ��ԡҵ��ָ�����</a></li>
-    <li class="more01"><a href="#">����&gt;&gt;</a></li>
+    <li><a href="#" target="_blank" >《境外中资企业机构和人员安全管理规定》</a></li>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》</a></li>
+    <li><a href="#" target="_blank">中华人民共和国商务部公告2010年第47号</a></li>
+    <li><a href="#" target="_blank">商务部关于规范发展沐浴业的指导意见</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
    </ul>
   </div>
   
-  <!--�л�����2-->
+  <!--切换内容2-->
   <div rel="con2" class="con" style="display:none;">
    <ul>
-    <li><a href="#" target="_blank">������������ҵ��������Ա��ȫ�����涨����� </a></li>
-    <li><a href="#" target="_blank" >�����ǡ���־������ҫƽ���������£�����Ϣ����...</a></li>
-    <li><a href="#" target="_blank">���񲿲���˾�����˾�ȡ��������Ʒ������˰���...</a></li>
-    <li><a href="#" target="_blank">�зǺ�����̳���Ľ첿�������龭ó�ٴ����ݽ��</a></li>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
    </ul>
    <ul>
-    <li><a href="#">���񲿹�ƽó�׾ָ����˽���й�����ũ��Ʒ����...</a></li>
-    <li><a href="#">�������ŷ����˾�3�·��ҹ���ó���������...</a></li>
-    <li><a href="#">��̨���洬�����ʴ�</a></li>
-    <li><a href="#">���񲿹���˾�����˾��й�-��³��óЭ�����ܼ���...</a></li>
-    <li class="more01"><a href="#">����&gt;&gt;</a></li>
+    <li><a href="#">商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
    </ul>
   </div>
   
-  <!--�л�����3-->
+  <!--切换内容3-->
   <div rel="con3" class="con" style="display:none;">
    <ul>
-    <li><a href="#" target="_blank">������������ҵ��������Ա��ȫ�����涨����� </a></li>
-    <li><a href="#" target="_blank" >�����ǡ���־������ҫƽ���������£�����Ϣ����...</a></li>
-    <li><a href="#" target="_blank">���񲿲���˾�����˾�ȡ��������Ʒ������˰���...</a></li>
-    <li><a href="#" target="_blank">�зǺ�����̳���Ľ첿�������龭ó�ٴ����ݽ��</a></li>
+    <li><a href="#" target="_blank">《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
    </ul>
    <ul>
-    <li><a href="#">���񲿹�ƽó�׾ָ����˽���й�����ũ��Ʒ����...</a></li>
-    <li><a href="#">�������ŷ����˾�3�·��ҹ���ó���������...</a></li>
-    <li><a href="#">��̨���洬�����ʴ�</a></li>
-    <li><a href="#">���񲿹���˾�����˾��й�-��³��óЭ�����ܼ���...</a></li>
-    <li class="more01"><a href="#">����&gt;&gt;</a></li>
+    <li><a href="#">商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
    </ul>
   </div>
   
-  <!--�л�����4-->
+  <!--切换内容4-->
   <div rel="con4" class="con" style="display:none;">
    <ul>
-    <li><a href="#" target="_blank">22������������ҵ��������Ա��ȫ�����涨����� </a></li>
-    <li><a href="#" target="_blank" >�����ǡ���־������ҫƽ���������£�����Ϣ����...</a></li>
-    <li><a href="#" target="_blank">���񲿲���˾�����˾�ȡ��������Ʒ������˰���...</a></li>
-    <li><a href="#" target="_blank">�зǺ�����̳���Ľ첿�������龭ó�ٴ����ݽ��</a></li>
+    <li><a href="#" target="_blank">22《境外中资企业机构和人员安全管理规定》解读 </a></li>
+    <li><a href="#" target="_blank" >《求是》杂志刊发蒋耀平副部长文章：以信息化推...</a></li>
+    <li><a href="#" target="_blank">商务部财务司负责人就取消部分商品出口退税答记...</a></li>
+    <li><a href="#" target="_blank">中非合作论坛第四届部长级会议经贸举措内容解读</a></li>
    </ul>
    <ul>
-    <li><a href="#">111���񲿹�ƽó�׾ָ����˽���й�����ũ��Ʒ����...</a></li>
-    <li><a href="#">�������ŷ����˾�3�·��ҹ���ó���������...</a></li>
-    <li><a href="#">��̨���洬�����ʴ�</a></li>
-    <li><a href="#">���񲿹���˾�����˾��й�-��³��óЭ�����ܼ���...</a></li>
-    <li class="more01"><a href="#">����&gt;&gt;</a></li>
+    <li><a href="#">111商务部公平贸易局负责人解读中国首起农产品反补...</a></li>
+    <li><a href="#">商务部新闻发言人就3月份我国外贸出现逆差答记...</a></li>
+    <li><a href="#">赴台湾渔船工作问答</a></li>
+    <li><a href="#">商务部国际司负责人就中国-秘鲁自贸协定接受记者...</a></li>
+    <li class="more01"><a href="#">更多&gt;&gt;</a></li>
    </ul>
   </div>
  </div>
     </textarea>
-	<div style="text-align:right; font-size:16px; padding:10px; font-size:12px;"><a href="#" style="color:#6AC334;">�ص�����</a></div>
+	<div style="text-align:right; font-size:16px; padding:10px; font-size:12px;"><a href="#" style="color:#6AC334;">回到顶部</a></div>
 </div>
 <script type="text/javascript" language="javascript">
       (new funTabTurnPlay('r1')).inits();

@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="email=no">
-    <title>jQueryÊÖ»úÒÆ¶¯¶Ë´¥ÆÁÈÕÀúÈÕÆÚÑ¡Ôñ</title>
+    <title>jQueryæ‰‹æœºç§»åŠ¨ç«¯è§¦å±æ—¥å†æ—¥æœŸé€‰æ‹©</title>
     <link href="css/css.css" rel="stylesheet" type="text/css"  />
     <link href="css/dateTime.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
@@ -21,43 +21,43 @@ $(function(){
 
 <body>
     <div class="w">
-        <h1>Ê¹ÓÃËµÃ÷</h1>
-        <h4>ÊµÀı£º</h4>
+        <h1>ä½¿ç”¨è¯´æ˜</h1>
+        <h4>å®ä¾‹ï¼š</h4>
         <div>
-           <!--Ğ§¹ûhtml¿ªÊ¼-->
+           <!--æ•ˆæœhtmlå¼€å§‹-->
            <div class="demo">
                <div class="lie">
-                   ÈÕÆÚÉèÖÃ-1:<input  id="beginTime" class="kbtn" />
+                   æ—¥æœŸè®¾ç½®-1:<input  id="beginTime" class="kbtn" />
                </div>
                <div class="lie">
-                   ÈÕÆÚÉèÖÃ-2:<input id="endTime" class="kbtn" />
+                   æ—¥æœŸè®¾ç½®-2:<input id="endTime" class="kbtn" />
                </div>
            </div>
            <div id="datePlugin"></div>
-           <!--Ğ§¹ûhtml½áÊø-->  
+           <!--æ•ˆæœhtmlç»“æŸ-->  
         </div>
         <br />
-        <h4>Step 1¡¢ÔÚhtmlµÄ&lt;head&gt;±êÇ©ÄÚÒıÈë·ç¸ñÓ¦ÓÃÎÄ¼ş</h4>
+        <h4>Step 1ã€åœ¨htmlçš„&lt;head&gt;æ ‡ç­¾å†…å¼•å…¥é£æ ¼åº”ç”¨æ–‡ä»¶</h4>
         <p>
             <pre><code>&lt;script type="text/javascript" src="js/jquery-1.9.1.min.js"&gt;&lt;/script&gt;<br/>&lt;script type="text/javascript" src="js/date.js"&gt;&lt;/script&gt;<br />&lt;script type="text/javascript" src="js/iscroll.js"&gt;&lt;/script&gt;</code></pre>
-            <p class="link" style="font-size:12px;">¿ÉÓ¦ÓÃÓÚÊÖ»ú¶Ë(¼æÈİ:FF¡¢chrome¡¢²»¼æÈİIE)</p>
+            <p class="link" style="font-size:12px;">å¯åº”ç”¨äºæ‰‹æœºç«¯(å…¼å®¹:FFã€chromeã€ä¸å…¼å®¹IE)</p>
             <h4>
-                Step 2¡¢´´½¨±ê×¼µÄhtml½á¹¹£¬²¢Ìî³äÄãµÄÄÚÈİ(tip1:#beginTimeÎª¼òµ¥Ä£Ê½£¬#endTimeÎª°üº¬Ê±¡¢·ÖÄ£Ê½£»tips2:Òª¸ü¸Ä¿Ø¼ş±êÌâ£¬Çëµ½date.jsÀïĞŞ¸Ä¡£)
+                Step 2ã€åˆ›å»ºæ ‡å‡†çš„htmlç»“æ„ï¼Œå¹¶å¡«å……ä½ çš„å†…å®¹(tip1:#beginTimeä¸ºç®€å•æ¨¡å¼ï¼Œ#endTimeä¸ºåŒ…å«æ—¶ã€åˆ†æ¨¡å¼ï¼›tips2:è¦æ›´æ”¹æ§ä»¶æ ‡é¢˜ï¼Œè¯·åˆ°date.jsé‡Œä¿®æ”¹ã€‚)
             </h4>
      <textarea name="" cols="160" rows="14">
-    <!--Ğ§¹ûhtml¿ªÊ¼-->
+    <!--æ•ˆæœhtmlå¼€å§‹-->
     <div class="demo">
         <div class="lie">
-            ÈÕÆÚÉèÖÃ-1:<input  id="beginTime" class="kbtn" />
+            æ—¥æœŸè®¾ç½®-1:<input  id="beginTime" class="kbtn" />
         </div>
         <div class="lie">
-            ÈÕÆÚÉèÖÃ-2:<input id="endTime" class="kbtn" />
+            æ—¥æœŸè®¾ç½®-2:<input id="endTime" class="kbtn" />
         </div>
     </div>
     <div id="datePlugin"></div>
-    <!--Ğ§¹ûhtml½áÊø--> 
+    <!--æ•ˆæœhtmlç»“æŸ--> 
     </textarea>
-            <h4>Step 3¡¢ÔÚstep1´úÂëÖ®ºóµÄÈÎÒâÒ»¸öÎ»ÖÃµ÷ÓÃ(½¨ÒéÔÚ&lt;head&gt;±êÇ©½áÊøÇ°µ÷ÓÃ)</h4>
+            <h4>Step 3ã€åœ¨step1ä»£ç ä¹‹åçš„ä»»æ„ä¸€ä¸ªä½ç½®è°ƒç”¨(å»ºè®®åœ¨&lt;head&gt;æ ‡ç­¾ç»“æŸå‰è°ƒç”¨)</h4>
     <textarea name="" cols="160" rows="19">
     <link href="css/dateTime.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
